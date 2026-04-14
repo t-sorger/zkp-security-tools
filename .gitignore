@@ -1,0 +1,13 @@
+surveys/.DS_Store
+.DS_Store
+surveys/figures/.mplconfig
+surveys/scripts/__pycache__
+surveys/figures/summary.md
+# Ignore generated artifacts under public/, but track the post-processed
+# tool-evaluation dataset used to regenerate Figure 2 / Table IV.
+surveys/public/*
+!surveys/public/dataset
+surveys/public/dataset/*
+!surveys/public/dataset/tools-evaluation.json
+!surveys/public/dataset/bugs.json
+surveys/.venv

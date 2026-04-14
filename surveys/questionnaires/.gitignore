@@ -1,0 +1,17 @@
+# Ignore LaTeX files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Include .tex and Makefile
+!*.tex
+!Makefile
+
+auditors.pdf
+developers.pdf

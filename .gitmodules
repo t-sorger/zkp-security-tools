@@ -1,0 +1,6 @@
+[submodule "zkbugs"]
+	path = zkbugs
+	url = https://github.com/zksecurity/zkbugs.git
+[submodule "zkhydra"]
+	path = zkhydra
+	url = https://github.com/zksecurity/zkhydra.git

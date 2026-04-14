@@ -1,0 +1,593 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}% provides \ocircle and \Box
+\usepackage{enumitem}% easy control of topsep and leftmargin for lists
+\usepackage{color}% used for background color
+\usepackage{forloop}% used for \Qrating and \Qlines
+\usepackage{ifthen}% used for \Qitem and \QItem
+\usepackage{typearea}
+\usepackage{array}
+\usepackage{hyperref}
+\areaset{17cm}{26cm}
+\setlength{\topmargin}{-1cm}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\ihead{Developers' and Researchers' Perspective on Zero-Knowledge Security}
+\ohead{\pagemark}
+\chead{}
+\cfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beginning of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% 2010, 2012 by Sven Hartenstein
+%% mail@svenhartenstein.de
+%% http://www.svenhartenstein.de
+
+%% \Qq = Questionaire question. Oh, this is just too simple. It helps
+%% making it easy to globally change the appearance of questions.
+\newcommand{\Qq}[1]{\textbf{#1}}
+
+%% \QO = Circle or box to be ticked. Used both by direct call and by
+%% \Qrating and \Qlist.
+\newcommand{\QO}{$\Box$}% or: $\ocircle$
+
+
+%% \Qline = Again, this is very simple. It helps setting the line
+%% thickness globally. Used both by direct call and by \Qlines.
+\newcommand{\Qline}[1]{\noindent\rule{#1}{0.6pt}}
+
+%% \Qlines = Insert NUM lines with width=\linewith. You can change the
+%% \vskip value to adjust the spacing.
+\newcounter{ql}
+\newcommand{\Qlines}[1]{\forloop{ql}{0}{\value{ql}<#1}{\vskip0em\Qline{\linewidth}}}
+
+%% \Qlist = This is an environment very similar to itemize but with
+%% \QO in front of each list item. Useful for classical multiple
+%% choice. Change leftmargin and topsep accourding to your taste.
+\newenvironment{Qlist}{%
+\renewcommand{\labelitemi}{\QO}
+\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+}{%
+\end{itemize}
+}
+
+%% \Qitem = Item with automatic numbering. 
+\newcounter{itemnummer}
+\newcommand{\Qitem}[2][]{% #1 optional, #2 notwendig
+\ifthenelse{\equal{#1}{}}{\stepcounter{itemnummer}}{}
+\ifthenelse{\equal{#1}{a}}{\stepcounter{itemnummer}}{}
+\begin{enumerate}[topsep=2pt,leftmargin=2.8em]
+\item[\textbf{\arabic{itemnummer}#1.}] #2
+\end{enumerate}
+}
+
+%% \QItem = Like \Qitem but with alternating background color. This
+%% might be error prone as I hard-coded some lengths (-5.25pt and
+%% -3pt)! I do not yet understand why I need them.
+\definecolor{bgodd}{rgb}{0.8,0.8,0.8}
+\definecolor{bgeven}{rgb}{0.9,0.9,0.9}
+\newcounter{itemoddeven}
+\newlength{\gb}
+\newcommand{\QItem}[2][]{% #1 optional, #2 notwendig
+\setlength{\gb}{\linewidth}
+\addtolength{\gb}{-5.25pt}
+\ifthenelse{\equal{\value{itemoddeven}}{0}}{%
+\noindent\colorbox{bgeven}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\stepcounter{itemoddeven}%
+}{%
+\noindent\colorbox{bgodd}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\setcounter{itemoddeven}{0}%
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% ##########################################################
+\begin{center}
+    \textbf{\huge Developers' and Researchers' Perspective on Zero-Knowledge Security}
+\end{center}\vskip1em
+% ##########################################################
+
+% ##########################################################
+\section*{Introduction}
+This questionnaire is part of a research project conducted by Stefanos Chaliasos, Alex Hicks, Arman Kolozyan, and Tom Sorger, studying the current state of zero-knowledge security from the perspective of developers and researchers building ZK systems.
+Your participation is \textbf{anonymous}.
+To preserve participants' privacy, only aggregated results will be shared publicly: as part of a research paper, a blog post, and a dedicated page on \href{https://zkbugs.com/}{zkbugs}.
+Individual responses will not be published.
+The questionnaire should take approximately \textbf{5--10 minutes} to complete.
+Feel free to \textit{skip any question that you would prefer not to answer}, or that does not apply to you.
+Thank you for contributing your time and expertise.
+% ##########################################################
+
+% ##########################################################
+\section{Demographics}
+% The following questions are intended to gauge participants' experience level and to understand the nature of the ZK systems and protocols they work on.
+
+% Q1
+\QItem{ \Qq{Please specify your software development experience in years.}
+\begin{Qlist}
+    \item [A] 0--2
+    \item [B] 3--5
+    \item [C] 6--10
+    \item [D] 11+
+\end{Qlist}
+}
+
+% Q2
+\QItem{ \Qq{Please specify your ZKP development experience in years.}
+\begin{Qlist}
+    \item [A] Less than 1
+    \item [B] 1--2
+    \item [C] 3--5
+    \item [D] 6+
+\end{Qlist}
+}
+
+% Q3
+\QItem{ \Qq{What is the size of the engineering (ZK-focused) team in the organisation you work for?}
+\begin{Qlist}
+    \item [A] 1--5
+    \item [B] 6--25
+    \item [C] 26+
+    \item [D] I'm an independent auditor
+\end{Qlist}
+}
+
+% Q4
+\QItem{ \Qq{What best describes the deployment stage of the most advanced ZK project you have contributed to?}
+\begin{Qlist}
+\item [A] Design/specification only
+\item [B] Academic/research prototype (not production-bound)
+\item [C] Active development
+\item [D] Public testnet or staging
+\item [E] Mainnet or production deployment
+\end{Qlist}
+}
+
+% Q5
+\QItem{ \Qq{Which ZKP system do you work with? Select all that apply.}
+\begin{Qlist}
+\item [A] Circuit DSLs (e.g., Circom, Noir, Cairo, Leo, Halo2, Plonky3)
+\item [B] zkVMs (e.g., RISC Zero, SP1, Jolt, zkWasm)
+\item [C] zkEVMs (e.g., Scroll, Polygon zkEVM)
+\item [D] zkVM Guest (e.g., Bridges implemented with zkVMs)
+\item [E] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q6
+\QItem{ \Qq{In which primary domain(s) are the ZK systems you develop deployed?}
+\begin{Qlist}
+\item [A] Public Blockchain Infrastructure (e.g., L1/L2 scaling, zkEVMs, Bridges)
+\item [B] Decentralized Applications (dApps) (e.g., DeFi, Privacy Mixers, On-chain Gaming)
+\item [C] Digital Identity \& Credentials (e.g., zk-ID, KYC/AML compliance, Sybil resistance)
+\item [D] Privacy Infrastructure (e.g., privacy enabling L1/L2s)
+\item [E] Verifiable Computing \& AI (e.g., ZK-ML, verifying outsourced computation)
+\item [F] Libraries/Infra (e.g., cryptographic libraries)
+\item [G] Other: \Qline{13cm}
+\end{Qlist}
+}
+
+% Q7
+\QItem{ \Qq{What layer of the ZKP stack do you primarily work with? Select all that apply.}
+\begin{Qlist}
+\item [A] Circuit/constraint correctness
+\item [B] VM semantics 
+\item [C] Proof system 
+\item [D] Verifiers
+\item [E] Compilation Pipelines
+\item [F] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q8
+\QItem{ \Qq{Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.}
+\begin{Qlist}
+    \item [A] Research papers (e.g., ePrint, conference proceedings)
+    \item [B] Social media (e.g., X (Twitter), YouTube)
+    \item [C] Blog posts (e.g., Medium)
+    \item [D] Security company reports (e.g., zkSecurity, Veridise, Trail of Bits)
+    \item [E] ZKP community forums (e.g., ZKProof, Ethereum Research)
+    \item [F] Colleagues
+    \item [G] Conferences/workshops
+    \item [H] Documentation
+    \item [I] GitHub repositories (e.g., bug trackers, issues)
+    \item [J] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q9
+\QItem{ \Qq{Regarding the resources selected in the previous question, how would you characterize the current rate of new security information being produced?}
+\begin{Qlist}
+    \item [A] High Velocity: New vulnerabilities and techniques emerge weekly; I must check these resources constantly to stay relevant.
+    \item [B] Steady Growth: There is a consistent stream of new information, but the core security principles remain largely unchanged month-to-month.
+    \item [C] Static/Slow: The ``classic'' papers and docs still cover 90\% of what I need; new exploits are rare or mostly variations of known issues.
+    \item [D] Fragmented: Information is being produced, but it is too scattered across resources to track effectively.
+\end{Qlist}
+}
+
+% Q10
+\QItem{ \Qq{How knowledgeable are you about zero-knowledge security from 1 (not familiar) to 5 (expert)?}
+\begin{Qlist}
+\item [1] Not Familiar
+\item [2] 
+\item [3] 
+\item [4]
+\item [5] Expert
+\end{Qlist}
+}
+% ##########################################################
+
+\section{Security Effort \& AI Impact }
+
+% Q11
+\QItem{ \Qq{What is the average duration of a full external ZK security audit for projects you work on?}
+\begin{Qlist}
+    \item [A] One week or less
+    \item [B] 2--4 weeks
+    \item [C] 1--2 months
+    \item [D] 3 months+
+\end{Qlist}
+}
+
+% Q12
+\QItem{ \Qq{How much effort is typically required to integrate security analysis or formal verification tools into your ZK codebase (e.g., specifications, frontends, CI)?}
+\begin{Qlist}
+    \item [A] Minimal (Plug-and-play)
+    \item [B] Low (Few hours of configuration)
+    \item [C] Moderate (1-3 days of custom coding/specs)
+    \item [D] High (Requires a dedicated sub-phase of the audit)
+\end{Qlist}
+}
+
+% Q13
+\QItem{ \Qq{How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?}
+\begin{Qlist}
+    \item [A] Reduced costs/time significantly (more than 25\% efficiency gain)
+    \item [B] Marginal efficiency gains, but delivery expectations from stakeholders remain the same
+    \item [C] No impact on timing or workload yet
+    \item [D] Increased time/cost due to manual verification of AI-generated code or suggestions
+    \item [E] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q14
+\QItem{ \Qq{How has the introduction of AI/LLMs affected the security of your ZK codebases during development?}
+\begin{Qlist}
+    \item [A] Less secure (i.e., bugs introduced by the AI and went uncovered during development)
+    \item [B] More secure (i.e., AI detected bugs during development)
+    \item [C] No impact
+    \item [D] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% ##########################################################
+
+\section{Familiarity/experience with security tools}
+
+% Q15
+\QItem{ \Qq{Which of the following types of tools have you used for ZKP security analysis? Including potentially internal or paid tools. Select all that apply.}
+\begin{Qlist}
+    \item [A] Static analyser (e.g., Circomspect, Custom Static Analysis Tools)
+    \item [B] Theorem Provers/DSLs (e.g., Clean, zkLean, Lean) 
+    \item [C] Automated (or semi-automated) Formal Verification (e.g., Picus, Civer)
+    \item [D] Fuzzer for circuits or ZKVMs (e.g., zkFuzz, Arguzz)
+    \item [E] LLMs (Interactive sessions with Claude/Codex with or without agent skills)
+    \item [F] Customised Property-based testing
+    \item [G] Automated tools leveraging AI (e.g., zkao)
+    \item [H] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q16
+\QItem{ \Qq{Name up to five tools you frequently use. Write internal + tool type for non-public tools (e.g., Internal + Static Analysis)}:\vspace{0.4cm}\\
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\Qline{15cm}
+}
+
+% Q17
+\QItem{ \Qq{Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance?}
+
+\begin{tabular}{|>{\centering\arraybackslash}p{3cm}|*{5}{>{\centering\arraybackslash}p{2cm}|}}
+    \hline
+& \textbf{Strongly Disagree} & \textbf{Disagree} & \textbf{Neutral} & \textbf{Agree} & \textbf{Strongly Agree} \\
+\hline
+Low false positives (tool does not wrongly indicate that there is a vulnerability) & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Ease of use (e.g., simple CLI, integrated into IDE) & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Documentation & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Report quality (i.e., detail of vulnerabilities detected) & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Scalability/performance (Time to report) & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Producing PoC & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Cost (Free vs Paid options) & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Integration with CI/CD pipelines & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Confidence of completeness & \QO & \QO & \QO & \QO & \QO \\
+\hline
+\end{tabular}
+}
+
+% Q18
+\QItem{ \Qq{What other factors could positively or negatively affect you when using a security analysis tool?}\vspace{0.4cm}\\
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\Qline{15cm}
+}
+
+% Q19
+\QItem{ \Qq{Which vulnerabilities do you think are more difficult to detect during development?}
+\begin{Qlist}
+    \item [A] Under-constrained circuits (missing constraints allowing unsound proofs)
+    \item [B] Over-constrained circuits (constraints that are too strict, blocking valid witnesses)
+    \item [C] Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic)
+    \item [D] Bit decomposition, range-check, or overflow/underflow errors
+    \item [E] Incorrect public input handling or signal aliasing
+    \item [F] Unsound proof system implementation or configuration
+    \item [G] Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences)
+    \item [H] Hash function or cryptographic primitive misuse in circuits
+    \item [I] Fiat-Shamir related attacks
+    \item [J] Incorrect integration in a system
+    \item [K] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q20
+\QItem{ \Qq{Which vulnerabilities do you think are more adequately covered by security tools?}
+\begin{Qlist}
+    \item [A] Under-constrained circuits (missing constraints allowing unsound proofs)
+    \item [B] Over-constrained circuits (constraints that are too strict, blocking valid witnesses)
+    \item [C] Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic)
+    \item [D] Bit decomposition, range-check, or overflow/underflow errors
+    \item [E] Incorrect public input handling or signal aliasing
+    \item [F] Unsound proof system implementation or configuration
+    \item [G] Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences)
+    \item [H] Hash function or cryptographic primitive misuse in circuits
+    \item [I] Fiat-Shamir related attacks
+    \item [J] Incorrect integration in a system
+    \item [K] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q21
+\QItem{ \Qq{Which vulnerabilities that you deem crucial \textbf{cannot} be detected by \textbf{automated security} tools (including LLMs) that you have used? Select all that apply.}
+\begin{Qlist}
+    \item [A] Under-constrained circuits (missing constraints allowing unsound proofs)
+    \item [B] Over-constrained circuits (constraints that are too strict, blocking valid witnesses)
+    \item [C] Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic)
+    \item [D] Bit decomposition, range-check, or overflow/underflow errors
+    \item [E] Incorrect public input handling or signal aliasing
+    \item [F] Unsound proof system implementation or configuration
+    \item [G] Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences)
+    \item [H] Hash function or cryptographic primitive misuse in circuits
+    \item [I] Fiat-Shamir related attacks
+    \item [J] Incorrect integration in a system
+    \item [K] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q22
+\QItem{ \Qq{Do you find security tools helpful when developing or reviewing ZK circuits and systems?}
+\begin{Qlist}
+\item [1] Counter-productive
+\item [2] 
+\item [3] 
+\item [4]
+\item [5] Essential
+\end{Qlist}
+}
+
+% Q23
+\QItem{ \Qq{For which languages or frameworks do you use security tools (\textbf{excluding interactive LLMs})? Select all that apply.}
+\begin{Qlist}
+    \item [A] Circom
+    \item [B] Halo2 
+    \item [C] Zirgen
+    \item [D] Gnark
+    \item [E] Plonky3
+    \item [F] zkVM Guest Programs
+    \item [G] Noir
+    \item [H] Leo
+    \item [I] Cairo
+    \item [J] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q24
+\QItem{ \Qq{What percentage of security researchers do you believe AI auditing currently outperforms?}
+\begin{Qlist}
+    \item [A] 0\%
+    \item [B] 1--25\%
+    \item [C] 26--50\%
+    \item [D] 51--75\%
+    \item [E] 76--99\%
+    \item [F] 100\%
+\end{Qlist}
+}
+
+% Q25
+\QItem{ \Qq{What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?}
+\begin{Qlist}
+    \item [A] 0\%
+    \item [B] 1--25\%
+    \item [C] 26--50\%
+    \item [D] 51--75\%
+    \item [E] 76--99\%
+    \item [F] 100\%
+\end{Qlist}
+}
+
+% Q26
+\QItem{ \Qq{Which tools do you think are mostly missing on the market, and would you use if available?}
+\begin{Qlist}
+    \item [A] Quick Static Analysis or Linters
+    \item [B] Automated Formal Verification
+    \item [C] Domain Specific Interactive Provers (with LLM support)
+    \item [D] LLM Skills
+    \item [E] AI Tools
+    \item [F] Fuzzers
+    \item [G] Proof Assistants
+\end{Qlist}
+}
+
+% Q27
+\QItem{ \Qq{Have you ever tried a ZK security tool and decided not to continue using it? If so, why?}\vspace{0.4cm}\\
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\Qline{15cm}
+}
+
+% Q28
+\QItem{ \Qq{In which tasks do you think LLMs are extremely good already? Select all that apply.}
+\begin{Qlist}
+    \vspace{0.4cm}
+    \item [A] Nothing
+    \item [B] Validating bugs and producing PoC
+    \item [C] Finding bugs in Circuit Code
+    \item [D] Finding bugs in non-ZK application code (e.g., Rust)
+    \item [E] Finding bugs in proof system code
+    \item [F] Finding bugs in zkVM guest programs
+    \item [G] Everything
+\end{Qlist}
+}
+
+% Q29
+\QItem{ \Qq{When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?}
+\begin{Qlist}
+    \item [A] Not concerned: The risk is negligible compared to human error.
+    \item [B] Somewhat concerned: We perform sanity checks on tool outputs.
+    \item [C] Highly concerned: We use multiple tools or manual cross-checks to mitigate TCB risks.
+\end{Qlist}
+}
+
+% ##########################################################
+
+\section{Security practices you apply (or applied by other team members in your current organisation)}
+If you are an independent developer or researcher, answer the following questions on how you apply security practices.
+
+% Q30
+\QItem{ \Qq{What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?}
+\begin{Qlist}
+    \item [A] Manual verification
+    \item [B] Formal verification 
+    \item [C] Differential testing (comparing circuit output against a reference implementation)
+    \item [D] Property-based or fuzz testing
+    \item [E] Running/extending developer test suites (e.g., unit and integration tests)
+    \item [F] Using open source security tools
+    \item [G] Using internal security tools
+    \item [H] Using LLMs interactively
+    \item [I] Using customized LLM Skills
+    \item [J] Using automated AI tools
+    \item [K] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q31
+\QItem{ \Qq{What are the security practices that your organisation follows? Select all that apply.}
+\begin{Qlist}
+    \item [A] Code Reviews
+    \item [B] Internal Auditing
+    \item [C] External Auditing
+    \item [D] Bug Bounty 
+    \item [E] Runtime monitoring 
+    \item [F] Testing (e.g., unit testing, integration testing) 
+    \item [G] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q32
+\QItem{ \Qq{What kind of security tools are you using inside the organisation you work for? Select all that apply.}
+\begin{Qlist}
+    \item [A] Open-source
+    \item [B] Internally developed
+    \item [C] Extended existing open-source tools
+    \item [D] Third-party service
+    \item [E] We don't use any security tools
+\end{Qlist}
+}
+
+% Q33
+\QItem{ \Qq{Does the organisation you work for develop in-house security tools? Select all that apply.}
+\begin{Qlist}
+    \item [A] AI-Assisted Decision Support
+    \item [B] Autonomous AI Security Systems
+    \item [C] Traditional (Non-AI) Security Tools
+    \item [D] No In-House Development
+    \item [E] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q34
+\QItem{ \Qq{If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?}
+\begin{Qlist}
+    \item [A] Circuit/protocol developers
+    \item [B] Auditors
+    \item [C] Auditors and developers collaboratively
+    \item [D] I don't know
+    \item [E] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q35
+\QItem{ \Qq{How are you validating their specifications?}\vspace{0.4cm}\\
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\Qline{15cm}
+}
+
+% Q36
+\QItem{ \Qq{What is the most common reason your organisation might push back against adopting certain automated or formal verification tools during development?}
+\begin{Qlist}
+    \item [A] Cost/Extra budget requirements
+    \item [B] Timeline: Belief that it will slow down delivery
+    \item [C] Skepticism: Lack of trust in ``mathematical proof'' over manual review
+    \item [D] Other: \Qline{13.3cm}
+\end{Qlist}
+}
+
+% Q37
+\QItem{ \Qq{To what extent do you agree with each of the following statements?}
+
+\begin{tabular}{|>{\centering\arraybackslash}p{3cm}|*{5}{>{\centering\arraybackslash}p{2cm}|}}
+    \hline
+& \textbf{Strongly Disagree} & \textbf{Disagree} & \textbf{Neutral} & \textbf{Agree} & \textbf{Strongly Agree} \\
+\hline
+The feedback of security audits improves the quality of the audited application & \QO & \QO & \QO & \QO & \QO \\
+\hline
+Most of the issues reported on security audits are resolved before shipping an application & \QO & \QO & \QO & \QO & \QO \\
+\hline
+A primary reason to do a security audit is that they are typically considered important & \QO & \QO & \QO & \QO & \QO \\
+\hline
+\end{tabular}
+}
+
+% Q38
+\QItem{ \Qq{Is there anything else you would like to add?}\vspace{0.4cm}\\
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\vspace{0.4cm}\Qline{15cm}\\ 
+\Qline{15cm}
+}
+% ##########################################################
+\end{document}
