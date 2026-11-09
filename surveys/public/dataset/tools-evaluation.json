@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T11:15:45+00:00",
-  "run_timestamp": "2026-06-10T11:15:26+00:00",
-  "timeout_seconds": 300,
+  "generated_at": "2026-11-09T20:00:00+00:00",
+  "run_timestamp": "2026-06-30T12:42:50+00:00",
+  "timeout_seconds": 600,
   "source": {
     "repo": "https://github.com/zksecurity/zkhydra",
     "snapshot_summary": {
@@ -16,12 +16,7 @@
           "processed": 70,
           "errors": 0,
           "skipped": 0,
-          "evaluation_counts": {
-            "TruePositive": 83,
-            "FalseNegative": 217,
-            "Undecided": 0,
-            "untriaged": 0
-          }
+          "evaluation_counts": null
         },
         "original": {
           "ran": true,
@@ -30,12 +25,7 @@
           "processed": 56,
           "errors": 0,
           "skipped": 0,
-          "evaluation_counts": {
-            "TruePositive": 14,
-            "FalseNegative": 160,
-            "Undecided": 0,
-            "untriaged": 0
-          }
+          "evaluation_counts": null
         }
       },
       "bugs_with_distinct_original": [
@@ -116,14 +106,6 @@
       "description": "Verifies circom templates against safety annotations."
     },
     {
-      "id": "ecne",
-      "dir": "ecneproject",
-      "name": "Ecne",
-      "kind": "Symbolic Verification",
-      "url": "https://github.com/franklynwang/EcneProject",
-      "description": "R1CS soundness checker that bounds witnesses against inputs."
-    },
-    {
       "id": "circomspect",
       "dir": "circomspect",
       "name": "Circomspect",
@@ -168,14 +150,6 @@
           "unknown": 0,
           "missing": 0
         },
-        "ecne": {
-          "safe": 33,
-          "vulnerable": 30,
-          "error": 0,
-          "timeout": 7,
-          "unknown": 0,
-          "missing": 0
-        },
         "circomspect": {
           "safe": 47,
           "vulnerable": 10,
@@ -216,16 +190,6 @@
           {
             "pattern": "Timed out",
             "count": 14
-          },
-          {
-            "pattern": "Other / uncategorized",
-            "count": 1
-          }
-        ],
-        "ecne": [
-          {
-            "pattern": "Timed out",
-            "count": 6
           },
           {
             "pattern": "Other / uncategorized",
@@ -328,13 +292,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 22.8,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -381,12 +338,6 @@
               }
             },
             "civer": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
@@ -439,13 +390,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 20.73,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -505,14 +449,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 1,
-                "execution_time_s": 13.4,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -565,13 +501,6 @@
                 "failed": 0,
                 "timeout_components": 0,
                 "execution_time_s": 0.13,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 23.09,
                 "ground_truth_match": "FalseNegative"
               }
             },
@@ -628,13 +557,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 17.5,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -681,13 +603,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 18.17,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -739,13 +654,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 27.04,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -805,14 +713,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 1,
-                "execution_time_s": 25.55,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -862,13 +762,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 26.94,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -931,14 +824,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 7,
-                "execution_time_s": 23.19,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -992,13 +877,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 48.44,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -1047,13 +925,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 32.31,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -1105,13 +976,6 @@
                 "failed": 0,
                 "timeout_components": 0,
                 "execution_time_s": 66.86,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 20.95,
                 "ground_truth_match": "FalseNegative"
               }
             },
@@ -1168,13 +1032,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 18.93,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -1225,13 +1082,6 @@
                 "failed": 0,
                 "timeout_components": 0,
                 "execution_time_s": 49.64,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 16.06,
                 "ground_truth_match": "FalseNegative"
               }
             },
@@ -1287,13 +1137,6 @@
                 "failed": 0,
                 "timeout_components": 1,
                 "execution_time_s": 507.2
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 23.56,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -1352,14 +1195,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 12,
-                "execution_time_s": 23.64,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -1412,13 +1247,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 76.66,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -1461,12 +1289,6 @@
               }
             },
             "civer": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
@@ -1524,12 +1346,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -1576,12 +1392,6 @@
               }
             },
             "civer": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
@@ -1642,13 +1452,6 @@
                 "execution_time_s": 500.26
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 19.82,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -1707,13 +1510,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 15.82,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -1769,13 +1565,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 29.35,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -1827,13 +1616,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 22.41,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -1883,14 +1665,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 2,
-                "execution_time_s": 28.22,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -1946,13 +1720,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 22.89,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2001,13 +1768,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 91.09,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -2067,14 +1827,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 6,
-                "execution_time_s": 18.08,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2126,13 +1878,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 21.03,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -2193,13 +1938,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 27.61,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -2252,12 +1990,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2304,13 +2036,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 27.53,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -2367,13 +2092,6 @@
                 "execution_time_s": 504.09
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 12.93,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2428,13 +2146,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 34.13,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2482,12 +2193,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict"
               }
             },
             "circomspect": {
@@ -2540,13 +2245,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 13.7,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2595,13 +2293,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 44.08,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -2658,13 +2349,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 15.08,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -2715,13 +2399,6 @@
                 "failed": 0,
                 "timeout_components": 1,
                 "execution_time_s": 501.91
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 34.89,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -2779,13 +2456,6 @@
                 "execution_time_s": 553.48
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 18.06,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2836,14 +2506,6 @@
                 "failed": 1,
                 "timeout_components": 1,
                 "execution_time_s": 502.19,
-                "ground_truth_match": "TruePositive"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 16,
-                "execution_time_s": 16.91,
                 "ground_truth_match": "TruePositive"
               }
             },
@@ -2903,14 +2565,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 67,
-                "execution_time_s": 20.02,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -2964,14 +2618,6 @@
                 "failed": 1,
                 "timeout_components": 1,
                 "execution_time_s": 502.3,
-                "ground_truth_match": "TruePositive"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 67,
-                "execution_time_s": 20.33,
                 "ground_truth_match": "TruePositive"
               }
             },
@@ -3033,14 +2679,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 2,
-                "execution_time_s": 18.91,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3096,14 +2734,6 @@
                 "failed": 1,
                 "timeout_components": 0,
                 "execution_time_s": 0.04,
-                "ground_truth_match": "TruePositive"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 2,
-                "execution_time_s": 16.19,
                 "ground_truth_match": "TruePositive"
               }
             },
@@ -3165,14 +2795,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 3,
-                "execution_time_s": 16.31,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3230,14 +2852,6 @@
                 "execution_time_s": 500.1
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 3,
-                "execution_time_s": 16.74,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3287,13 +2901,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 25.29,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -3347,13 +2954,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 141.61,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3403,13 +3003,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 142.66,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -3462,14 +3055,6 @@
                 "failed": 0,
                 "timeout_components": 1,
                 "execution_time_s": 500.16
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 64,
-                "execution_time_s": 22.96,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -3526,13 +3111,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 18.87,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3585,13 +3163,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 328.75
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3642,13 +3213,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 33.87,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3697,13 +3261,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 24.9,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3749,13 +3306,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 25.84,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -3816,14 +3366,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 1,
-                "execution_time_s": 22.3,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -3881,14 +3423,6 @@
                 "execution_time_s": 500.26
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 34,
-                "execution_time_s": 22.21,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -3942,13 +3476,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 19.49,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -3998,13 +3525,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 14.07,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -4060,14 +3580,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 3,
-                "execution_time_s": 15.92,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -4121,14 +3633,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 3,
-                "execution_time_s": 17.31,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -4178,13 +3682,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 18.91,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -4237,13 +3734,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 27.95,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -4294,13 +3784,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 13.21,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -4347,13 +3830,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 148.34,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -4403,13 +3879,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 17.48,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -4471,14 +3940,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 2,
-                "execution_time_s": 22.17,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "error",
               "details": {
@@ -4524,14 +3985,6 @@
           "vulnerable": 4,
           "error": 36,
           "timeout": 11,
-          "unknown": 0,
-          "missing": 0
-        },
-        "ecne": {
-          "safe": 27,
-          "vulnerable": 8,
-          "error": 4,
-          "timeout": 17,
           "unknown": 0,
           "missing": 0
         },
@@ -4587,20 +4040,6 @@
           {
             "pattern": "Other / uncategorized",
             "count": 8
-          },
-          {
-            "pattern": "File or template not found (P1014)",
-            "count": 1
-          }
-        ],
-        "ecne": [
-          {
-            "pattern": "Other / uncategorized",
-            "count": 16
-          },
-          {
-            "pattern": "Timed out",
-            "count": 4
           },
           {
             "pattern": "File or template not found (P1014)",
@@ -4678,13 +4117,6 @@
                 "execution_time_s": 500.81
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 14.23,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -4738,14 +4170,6 @@
                 "failed": 0,
                 "timeout_components": 0,
                 "execution_time_s": 0.27,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 1,
-                "execution_time_s": 19.37,
                 "ground_truth_match": "FalseNegative"
               }
             },
@@ -4803,13 +4227,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 13.05,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -4863,13 +4280,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 14.31,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -4916,13 +4326,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 14.69,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -4974,13 +4377,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 14.15,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -5036,14 +4432,6 @@
                 "ground_truth_match": "TruePositive"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "bad_constraints": 1,
-                "execution_time_s": 11.18,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5090,12 +4478,6 @@
               }
             },
             "civer": {
-              "verdict": "error",
-              "details": {
-                "reason": "File or template not found (P1014)"
-              }
-            },
-            "ecne": {
               "verdict": "error",
               "details": {
                 "reason": "File or template not found (P1014)"
@@ -5152,13 +4534,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 43.18,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5206,13 +4581,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 27.59,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -5263,13 +4631,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 20.24,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -5323,13 +4684,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 206.83
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5377,13 +4731,6 @@
                 "reason": "Civer parsed templates but never verified",
                 "execution_time_s": 458.2,
                 "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 202.43
               }
             },
             "circomspect": {
@@ -5436,13 +4783,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 234.77
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5493,13 +4833,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 160.82,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5545,12 +4878,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
               }
             },
             "circomspect": {
@@ -5601,13 +4928,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 303.1
               }
             },
             "circomspect": {
@@ -5663,12 +4983,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "error",
-              "details": {
-                "reason": "Ecne aborted during input parsing"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -5719,12 +5033,6 @@
                 "reason": "Civer produced no usable output",
                 "execution_time_s": 538.01,
                 "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "error",
-              "details": {
-                "reason": "Ecne aborted during input parsing"
               }
             },
             "circomspect": {
@@ -5779,12 +5087,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "error",
-              "details": {
-                "reason": "Ecne aborted during input parsing"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -5835,13 +5137,6 @@
                 "reason": "Civer aborted without a verdict",
                 "execution_time_s": 382.08,
                 "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 274.24
               }
             },
             "circomspect": {
@@ -5896,13 +5191,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 299.79,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -5951,13 +5239,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 152.89
               }
             },
             "circomspect": {
@@ -6010,13 +5291,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 195.36,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6065,13 +5339,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 55.83,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6124,13 +5391,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 186.85
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6179,13 +5439,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 345.87,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6242,13 +5495,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 32.2,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6299,13 +5545,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 333.07,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6352,13 +5591,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 18.47,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -6413,13 +5645,6 @@
                 "failed": 0,
                 "timeout_components": 1,
                 "execution_time_s": 504.04
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 13.43,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6478,13 +5703,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 15.45,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6532,13 +5750,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 364.59,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6591,13 +5802,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 18.88,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6646,13 +5850,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 40.65,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6709,13 +5906,6 @@
                 "ground_truth_match": "FalseNegative"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 14.27,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "vulnerable",
               "details": {
@@ -6765,12 +5955,6 @@
                 "reason": "Civer produced no usable output",
                 "execution_time_s": 262.77,
                 "ground_truth_match": "FalseNegative"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Hit the global tool timeout"
               }
             },
             "circomspect": {
@@ -6826,13 +6010,6 @@
                 "execution_time_s": 536.84
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 13.54,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6883,13 +6060,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 206.56
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -6938,13 +6108,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 90.91,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -6998,13 +6161,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 68.21,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7052,13 +6208,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 543.44
               }
             },
             "circomspect": {
@@ -7113,13 +6262,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 216.89
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7168,13 +6310,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 363.6,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -7227,13 +6362,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 23.91,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7282,13 +6410,6 @@
               "verdict": "timeout",
               "details": {
                 "reason": "Hit the global tool timeout"
-              }
-            },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 23.27,
-                "ground_truth_match": "FalseNegative"
               }
             },
             "circomspect": {
@@ -7341,13 +6462,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "safe",
-              "details": {
-                "execution_time_s": 23.28,
-                "ground_truth_match": "FalseNegative"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7394,13 +6508,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 476.77
               }
             },
             "circomspect": {
@@ -7451,13 +6558,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 280.75
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7504,13 +6604,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 100.38,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -7562,13 +6655,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 62.04,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7615,13 +6701,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 428.08
               }
             },
             "circomspect": {
@@ -7672,13 +6751,6 @@
                 "reason": "Pragma version mismatch (P1003)"
               }
             },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 60.0,
-                "ground_truth_match": "TruePositive"
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7725,13 +6797,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "vulnerable",
-              "details": {
-                "execution_time_s": 92.98,
-                "ground_truth_match": "TruePositive"
               }
             },
             "circomspect": {
@@ -7783,13 +6848,6 @@
                 "reason": "Hit the global tool timeout"
               }
             },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 211.91
-              }
-            },
             "circomspect": {
               "verdict": "safe",
               "details": {
@@ -7836,13 +6894,6 @@
               "verdict": "error",
               "details": {
                 "reason": "Pragma version mismatch (P1003)"
-              }
-            },
-            "ecne": {
-              "verdict": "timeout",
-              "details": {
-                "reason": "Ecne killed before producing a verdict",
-                "execution_time_s": 284.53
               }
             },
             "circomspect": {

@@ -10,8 +10,8 @@ python3 scripts/build_tools_evaluation.py \
 
 Reads:
     <zkhydra_output_dir>/summary.json
-    <zkhydra_output_dir>/{direct,original}/<bug>/ground_truth.json
-    <zkhydra_output_dir>/{direct,original}/<bug>/<tool>/{results.json,parsed.json,evaluation.json,raw.txt}
+    <zkhydra_output_dir>/{isolated,project}/<bug>/ground_truth.json
+    <zkhydra_output_dir>/{isolated,project}/<bug>/<tool>/{results.json,parsed.json,evaluation.json,raw.txt}
     <zkhydra_output_dir>/report.{both,direct,original}.pdf
     <website_bugs_json> (to resolve website_bug_id by Path leaf)
 
@@ -46,14 +46,6 @@ TOOLS = [
         "kind": "Formal Verification",
         "url": "https://github.com/costa-group/circom_civer",
         "description": "Verifies circom templates against safety annotations.",
-    },
-    {
-        "id": "ecne",
-        "dir": "ecneproject",
-        "name": "Ecne",
-        "kind": "Symbolic Verification",
-        "url": "https://github.com/franklynwang/EcneProject",
-        "description": "R1CS soundness checker that bounds witnesses against inputs.",
     },
     {
         "id": "circomspect",
@@ -125,9 +117,6 @@ def details_for_tool(tool_id: str, parsed: dict | None, results: dict | None) ->
                 if k in stats
             }
         )
-    elif tool_id == "ecne":
-        if parsed.get("constraint_status"):
-            out["constraint_status"] = parsed["constraint_status"]
     elif tool_id == "circomspect":
         stats = parsed.get("statistics") or {}
         out.update({k: stats[k] for k in stats if k != "total_issues" or stats[k]})
@@ -332,46 +321,6 @@ def parse_civer(raw: str) -> tuple[str, dict]:
     return "unknown", details
 
 
-def parse_ecne(raw: str) -> tuple[str, dict]:
-    text = strip_ansi(tail_for_scan(raw))
-    early_verdict, early_reason = detect_error_or_timeout(text)
-    if early_verdict:
-        return early_verdict, {"reason": early_reason}
-
-    bad_marker = "------ Bad Constraints ------"
-    sound_marker = "has sound constraints"
-    unsound_marker = "potentially unsound constraints"
-    bad_idx = text.find(bad_marker)
-    bad_constraints_count = 0
-    if bad_idx != -1:
-        # Count "constraint #" occurrences after the marker.
-        bad_constraints_count = len(
-            re.findall(r"constraint #\d+", text[bad_idx + len(bad_marker):])
-        )
-
-    details: dict = {}
-    if bad_constraints_count:
-        details["bad_constraints"] = bad_constraints_count
-
-    # "potentially unsound constraints" is Ecne's text verdict that the
-    # circuit is under-constrained even when the Bad Constraints listing is
-    # missing (truncated logs, large circuits).
-    if bad_constraints_count > 0 or unsound_marker in text:
-        return "vulnerable", details
-    if sound_marker in text:
-        return "safe", details
-    if "previous errors were found" in text:
-        return "error", {"reason": "Ecne reported a circom error"}
-    # Ecne ran (we see progress markers) but produced no verdict — the
-    # runner killed it mid-analysis.
-    if "Reading Constraints" in text or "Mode 1:" in text or "setup solver" in text:
-        return "timeout", {"reason": "Ecne killed before producing a verdict"}
-    # Ecne aborted on a circom constant during input parsing.
-    if "= call trace:" in text or "found here" in text:
-        return "error", {"reason": "Ecne aborted during input parsing"}
-    return "unknown", details
-
-
 def parse_circomspect(raw: str) -> tuple[str, dict]:
     text = strip_ansi(tail_for_scan(raw))
     early_verdict, early_reason = detect_error_or_timeout(text)
@@ -487,7 +436,6 @@ def parse_conscs(raw: str) -> tuple[str, dict]:
 PARSERS = {
     "picus": parse_picus,
     "civer": parse_civer,
-    "ecne": parse_ecne,
     "circomspect": parse_circomspect,
     "zkfuzz": parse_zkfuzz,
     "conscs": parse_conscs,
@@ -625,8 +573,9 @@ def main() -> int:
         "modes": {},
     }
 
-    for mode in ("direct", "original"):
-        mode_dir = src / mode
+    # zkhydra's direct/original modes are called isolated/project in the paper.
+    for mode, folder in (("direct", "isolated"), ("original", "project")):
+        mode_dir = src / folder
         if not mode_dir.is_dir():
             print(f"warn: {mode_dir} missing, skipping mode")
             continue
