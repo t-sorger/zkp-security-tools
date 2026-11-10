@@ -1,0 +1,66 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.09,
+  "findings": [
+    {
+      "bug_title": "P1000",
+      "unified_bug_title": "Computational-Issue",
+      "description": "Failed to open file `circuits/comparators.circom`.",
+      "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+      "position": {
+        "line": 16,
+        "column": 1,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "P1000"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+      "position": {
+        "line": 38,
+        "column": 27,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+      "position": {
+        "line": 43,
+        "column": 38,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+      "position": {
+        "line": 46,
+        "column": 28,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    }
+  ]
+}

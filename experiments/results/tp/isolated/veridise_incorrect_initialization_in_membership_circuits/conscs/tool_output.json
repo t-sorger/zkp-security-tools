@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n8 constraints, 5 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.000464 \n** counterexample: {} \n\n",
+  "execution_time": 1.6628174781799316,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_incorrect_initialization_in_membership_circuits/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

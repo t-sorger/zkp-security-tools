@@ -1,0 +1,319 @@
+stdout:
+circomspect: analyzing template 'Step'
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:93:29
+   │
+93 │     for (var i = 0; i < 32; i++) {
+   │                             ^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:103:48
+    │
+103 │     for (var i = 0; i < TRUNCATED_SHA256_SIZE; i++) {
+    │                                                ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:111:29
+    │
+111 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:127:29
+    │
+127 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:142:32
+    │
+142 │         for (var j = 0; j < K; j++) {
+    │                                ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:140:46
+    │
+140 │     for (var i = 0; i < SYNC_COMMITTEE_SIZE; i++) {
+    │                                              ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:149:36
+    │
+149 │             for (var l = 0; l < K; l++) {
+    │                                    ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:148:32
+    │
+148 │         for (var j = 0; j < 2; j++) {
+    │                                ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:147:28
+    │
+147 │     for (var i = 0; i < 2; i++) {
+    │                            ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:154:29
+    │
+154 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:167:53
+    │
+167 │         for (var j = 0; j < FINALIZED_HEADER_DEPTH; j++) {
+    │                                                     ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:165:29
+    │
+165 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:171:29
+    │
+171 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:182:57
+    │
+182 │         for (var j = 0; j < EXECUTION_STATE_ROOT_DEPTH; j++) {
+    │                                                         ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:180:29
+    │
+180 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:186:29
+    │
+186 │     for (var i = 0; i < 32; i++) {
+    │                             ^^^ Field element arithmetic here.
+    │
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+    = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:93:21
+   │
+93 │     for (var i = 0; i < 32; i++) {
+   │                     ^^^^^^ Field element comparison here.
+   │
+   = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+   = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:103:21
+    │
+103 │     for (var i = 0; i < TRUNCATED_SHA256_SIZE; i++) {
+    │                     ^^^^^^^^^^^^^^^^^^^^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:111:21
+    │
+111 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:127:21
+    │
+127 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:140:21
+    │
+140 │     for (var i = 0; i < SYNC_COMMITTEE_SIZE; i++) {
+    │                     ^^^^^^^^^^^^^^^^^^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:142:25
+    │
+142 │         for (var j = 0; j < K; j++) {
+    │                         ^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:147:21
+    │
+147 │     for (var i = 0; i < 2; i++) {
+    │                     ^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:148:25
+    │
+148 │         for (var j = 0; j < 2; j++) {
+    │                         ^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:149:29
+    │
+149 │             for (var l = 0; l < K; l++) {
+    │                             ^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:154:21
+    │
+154 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:165:21
+    │
+165 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:167:25
+    │
+167 │         for (var j = 0; j < FINALIZED_HEADER_DEPTH; j++) {
+    │                         ^^^^^^^^^^^^^^^^^^^^^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:171:21
+    │
+171 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:180:21
+    │
+180 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:182:25
+    │
+182 │         for (var j = 0; j < EXECUTION_STATE_ROOT_DEPTH; j++) {
+    │                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:186:21
+    │
+186 │     for (var i = 0; i < 32; i++) {
+    │                     ^^^^^^ Field element comparison here.
+    │
+    = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+    = To ignore this type of result, use `--allow CS0003`.
+
+warning[CS0010]: Using `Num2Bits` to convert field elements to bits may lead to aliasing issues.
+    ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom:101:40
+    │
+101 │     component bitifyPublicInputsRoot = Num2Bits(TRUNCATED_SHA256_SIZE);
+    │                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Circomlib template `Num2Bits` instantiated here.
+    │
+    = Consider using `Num2Bits_strict` if the input size may be >= than the prime size.
+    = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#non-strict-binary-conversion.
+    = To ignore this type of result, use `--allow CS0010`.
+
+circomspect: 33 issues found.
+
+stderr:

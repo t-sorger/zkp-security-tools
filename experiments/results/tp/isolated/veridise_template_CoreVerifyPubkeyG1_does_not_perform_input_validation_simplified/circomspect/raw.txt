@@ -1,0 +1,36 @@
+stdout:
+error[P1000]: Failed to open file `circuits/bitify.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-vpb6fbes/circuit.circom:2:1
+  │
+2 │ include "circuits/bitify.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+error[P1000]: Failed to open file `circuits/comparators.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-vpb6fbes/circuit.circom:3:1
+  │
+3 │ include "circuits/comparators.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+error[P1000]: Failed to open file `circuits/gates.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-vpb6fbes/circuit.circom:4:1
+  │
+4 │ include "circuits/gates.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+error[P1000]: Failed to open file `./bls_signature.circom`.
+   ┌─ /tmp/evaluation_tool-circomspect-vpb6fbes/circuit.circom:19:1
+   │
+19 │ include "./bls_signature.circom";
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+   │
+   = To ignore this type of result, use `--allow P1000`.
+
+circomspect: 4 issues found.
+
+stderr:

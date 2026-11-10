@@ -1,0 +1,5 @@
+** filename: poseidon_vanchor_2_2.circom 
+** result: CONSTRAINED! 
+** time: 40.793352 
+** counterexample: {} 
+

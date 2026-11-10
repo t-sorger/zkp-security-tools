@@ -1,0 +1,24 @@
+{
+    "result": "Underconstrained",
+    "signals_with_multiple_values": [
+        {
+            "name": "main.encoded",
+            "first_value": "52983525027888",
+            "second_value": "0",
+            "template": "main"
+        }
+    ],
+    "counterexample": {
+        "inputs": {
+            "main.day": "0",
+            "main.month": "0",
+            "main.year": "0"
+        },
+        "first_outputs": {
+            "main.encoded": "52983525027888"
+        },
+        "second_outputs": {
+            "main.encoded": "0"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n937 constraints, 7 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: ownershipVerifier_main.circom \n** result: CONSTRAINED! \n** time: 0.027423 \n** counterexample: {} \n\n",
+  "execution_time": 0.30821943283081055,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_ownershipproofs_could_identify_issuers/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

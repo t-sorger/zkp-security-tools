@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/worm-privacy/proof-of-burn/0802485d24fed18fe063e51bcbb0bc830585855f/circuits/spend.circom",
+            "line": 47,
+            "column": 34
+        }
+    ],
+    "statistics": {
+        "total_issues": 1,
+        "warnings": 0,
+        "notes": 1,
+        "errors": 0
+    }
+}

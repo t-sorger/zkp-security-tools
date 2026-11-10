@@ -1,0 +1,269 @@
+{
+  "unit": "nocturne__joinsplit",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "Zellic (M. Leip, K. Li, M. Sharma)",
+        "date": "2023-10-20",
+        "scope": "protocol repo @ bfcbfcfcb8cf1a2209c874700a43ecac28e18fe7: all 7 circuits (joinsplit, subtreeupdate, canonAddrSigCheck, lib, tree, bitifyBE, scalarMulWitGen) + contracts; PR27 re-reviewed",
+        "url": "https://github.com/Zellic/publications/blob/master/Nocturne%20-%20Zellic%20Audit%20Report.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Nocturne v1 ran on Ethereum mainnet from Nov 2023 (later sunset): Teller proxy (constructor 'NocturneTeller') has 810 txs; addresses from @nocturne-xyz/config mainnet.json.",
+      "url": "https://etherscan.io/address/0xA561492dFC1A90418Cc8b9577204d56C17CB32Ff"
+    },
+    "CommitNote": "'publish contracts 3.0.0 (#29)': the commit listed for circuits 3.0.0 / contracts 3.0.0 on Nocturne's security page (deployed version); after the Zellic fix commit 50fe52a and the re-reviewed PR27 (c9a4d4f) and final circuit artifacts (c2bcb2e). The .circom files are identical to the audited bfcbfcf."
+  },
+  "provenance": {
+    "Project": "https://github.com/nocturne-xyz/protocol",
+    "ProjectName": "nocturne",
+    "Commit": "f66fd0274e96f4eb62663552ecd29fb86e5b4a04",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "Zellic (M. Leip, K. Li, M. Sharma)",
+          "date": "2023-10-20",
+          "scope": "protocol repo @ bfcbfcfcb8cf1a2209c874700a43ecac28e18fe7: all 7 circuits (joinsplit, subtreeupdate, canonAddrSigCheck, lib, tree, bitifyBE, scalarMulWitGen) + contracts; PR27 re-reviewed",
+          "url": "https://github.com/Zellic/publications/blob/master/Nocturne%20-%20Zellic%20Audit%20Report.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Nocturne v1 ran on Ethereum mainnet from Nov 2023 (later sunset): Teller proxy (constructor 'NocturneTeller') has 810 txs; addresses from @nocturne-xyz/config mainnet.json.",
+        "url": "https://etherscan.io/address/0xA561492dFC1A90418Cc8b9577204d56C17CB32Ff"
+      },
+      "CommitNote": "'publish contracts 3.0.0 (#29)': the commit listed for circuits 3.0.0 / contracts 3.0.0 on Nocturne's security page (deployed version); after the Zellic fix commit 50fe52a and the re-reviewed PR27 (c9a4d4f) and final circuit artifacts (c2bcb2e). The .circom files are identical to the audited bfcbfcf."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "Zellic 3.5",
+        "title": "Note encryption is unconstrained (note ciphertexts are free inputs, receiver may get an undecryptable/ mismatched note)",
+        "location": "packages/circuits/circuits/joinsplit.circom:JoinSplit",
+        "status": "acknowledged"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/nocturne",
+    "LinkPaths": [
+      "dataset/codebases/audited/nocturne"
+    ],
+    "Entrypoint": "../../../../codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 124892
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 11,
+      "soundness": [],
+      "warnings": [
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 272,
+            "column": 25,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 273,
+            "column": 26,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 290,
+            "column": 21,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 306,
+            "column": 47,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 307,
+            "column": 39,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 308,
+            "column": 40,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 317,
+            "column": 27,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 328,
+            "column": 33,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 368,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 503,
+            "column": 37,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+          "position": {
+            "line": 505,
+            "column": 49,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        }
+      ],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

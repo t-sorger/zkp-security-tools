@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n21253 constraints, 7 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 6.869478 \n** counterexample: {} \n\n",
+  "execution_time": 7.125654697418213,
+  "raw_output_file": "output/conscs-both-run-2/direct/leastauthority_previously_correct_ownership_proof_disabled_via_code_changes/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

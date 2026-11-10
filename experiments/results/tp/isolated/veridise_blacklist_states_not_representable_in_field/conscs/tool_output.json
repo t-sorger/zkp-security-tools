@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n13863 constraints, 20 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 2.649894 \n** counterexample: {} \n\n",
+  "execution_time": 2.970902919769287,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_blacklist_states_not_representable_in_field/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,9 @@
+{
+    "result": "Properly Constrained",
+    "signals_with_multiple_values": [],
+    "counterexample": {
+        "inputs": {},
+        "first_outputs": {},
+        "second_outputs": {}
+    }
+}

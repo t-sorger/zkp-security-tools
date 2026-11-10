@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n59009 constraints, 49 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: withdraw.circom \n** result: CONSTRAINED! \n** time: 10.342462 \n** counterexample: {} \n\n",
+  "execution_time": 10.747389554977417,
+  "raw_output_file": "output/fp-run/tornado-core__withdraw/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

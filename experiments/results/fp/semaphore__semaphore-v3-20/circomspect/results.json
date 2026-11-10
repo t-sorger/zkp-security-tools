@@ -1,0 +1,66 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.06,
+  "findings": [
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+      "position": {
+        "line": 76,
+        "column": 34,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+      "position": {
+        "line": 85,
+        "column": 27,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+      "position": {
+        "line": 76,
+        "column": 21,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    },
+    {
+      "bug_title": "UnderConstrainedSignal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Intermediate signals should typically occur in at least two separate constraints.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+      "position": {
+        "line": 84,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0017"
+      }
+    }
+  ]
+}

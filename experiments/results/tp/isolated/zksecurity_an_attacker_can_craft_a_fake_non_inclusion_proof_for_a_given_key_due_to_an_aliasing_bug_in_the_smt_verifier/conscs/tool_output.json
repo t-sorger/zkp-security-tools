@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n5344 constraints, 9 inputs, 1 outputs.\nparse done\nconsidering edge 798727  4.7e-05\ntrying grobner 1 7e-05\ntrying grobner 2 2.80551\nconsidering edge 798727  4.5e-05\ntrying grobner 1 6.5e-05\ntrying grobner 2 2.471793\nconsidering edge 798727  3.5e-05\ntrying grobner 1 5.3e-05\ntrying grobner 2 2.668446\nconsidering edge 798727  3.7e-05\ntrying grobner 1 5.7e-05\ntrying grobner 2 2.817087\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 487.607331 \n** counterexample: {} \n\n",
+  "execution_time": 489.03986835479736,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_an_attacker_can_craft_a_fake_non_inclusion_proof_for_a_given_key_due_to_an_aliasing_bug_in_the_smt_verifier/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

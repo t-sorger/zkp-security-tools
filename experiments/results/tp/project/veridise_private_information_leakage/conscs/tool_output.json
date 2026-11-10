@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n81260 constraints, 107 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: hydra-s2_main.circom \n** result: CONSTRAINED! \n** time: 91.019116 \n** counterexample: {} \n\n",
+  "execution_time": 91.44041609764099,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_private_information_leakage/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

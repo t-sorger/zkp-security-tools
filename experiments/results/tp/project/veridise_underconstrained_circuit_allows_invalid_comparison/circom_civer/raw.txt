@@ -1,0 +1,29 @@
+stdout:
+[32mtemplate instances[0m: 9
+
+--------------------------------------------
+--------------------------------------------
+-------- CIVER VERIFICATION RESULTS --------
+--------------------------------------------
+--------------------------------------------
+
+-> CIVER could not verify weak safety of all components
+Components timeout when checking weak-safety: 
+    - Num2Bits(254), 
+  * Number of verified components (weak-safety): 8
+  * Number of failed components (weak-safety): 0
+  * Number of timeout components (weak-safety): 1
+  * Percentage of verified constraints: 60.91954022988506 - (795 / 1305)
+  * Percentage of verified components: 86.66666666666667 - (13 / 15)
+
+
+--------------------------------------------
+--------------------------------------------
+
+[32mEverything went okay, circom safe[0m
+
+stderr:
+[0m[1m[38;5;11mwarning[P1004][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/Unirep/Unirep/0985a28c38c8b2e7b7a9e80f43e63179fdd08b89/packages/circuits/circuits/bigComparators.circom" does not include pragma version. Assuming pragma version (2, 1, 6)[0m
+ [0m[34m=[0m At the beginning of file "/evaluation_tool/extended_dataset/dataset/codebases/circom/Unirep/Unirep/0985a28c38c8b2e7b7a9e80f43e63179fdd08b89/packages/circuits/circuits/bigComparators.circom", you should add the directive "pragma circom <Version>", to indicate which compiler version you are using.
+
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

@@ -1,0 +1,6 @@
+stdout:
+working directory: /var/tmp/picus17770343371777034337728
+Exiting Picus with the code 1
+
+stderr:
+exception: "error writing to stream port\n  system error: No space left on device; errno=28\n  context...:\n   /evaluation_tool/tools/picus/picus/solver-helper.rkt:16:0: make-solve\n   /evaluation_tool/tools/picus/picus/algorithms/dpvl.rkt:66:0: dpvl-solve\n   /evaluation_tool/tools/picu...

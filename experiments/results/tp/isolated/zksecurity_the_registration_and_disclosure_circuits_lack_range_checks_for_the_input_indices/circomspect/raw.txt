@@ -1,0 +1,12 @@
+stdout:
+error[P1000]: Failed to open file `./snippet_register_id.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-lnaamhdp/circuit.circom:2:1
+  │
+2 │ include "./snippet_register_id.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+circomspect: 1 issue found.
+
+stderr:

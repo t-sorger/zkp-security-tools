@@ -1,0 +1,38 @@
+{
+  "bug_name": "Nullifier Verification Can Be Disabled in ZSwapV1",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Circuit Design Issue",
+  "location": {
+    "Path": "circuits/circuits/zSwapV1.circom",
+    "Function": "ZSwapV1",
+    "Line": "683-686"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/pantherfoundation/panther-core",
+  "commit": "b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "fix_commit": "69db60e",
+  "reproduced": false,
+  "short_description": "In the `ZSwapV1` template (zSwapV1.circom around line 680-690), the nullifier of the zAccount input UTXO is checked via:\n```\ncomponent zAccountUtxoInNullifierHasherProver = ForceEqualIfEnabled();\nzAccountUtxoInNullifierHasherProver.in[0] <== zAccountUtxoInNullifier;\nzAccountUtxoInNullifierHasherProver.in[1] <== zAccountUtxoInNullifierHasher.out;\nzAccountUtxoInNullifierHasherProver.enabled <== zAccountUtxoInSpendPrivKey;\n```\nThe `enabled` signal of `ForceEqualIfEnabled()` is wired to `zAccountUtxoInSpendPrivKey`. An attacker can set `zAccountUtxoInSpendPrivKey = 0` — which is a valid private key that derives the neutral/infinity public key `(0, 1)` via `BabyPbk` — and this disables the entire nullifier check, allowing any value for `zAccountUtxoInNullifier`. Because this nullifier is what prevents a zAccount input UTXO from being spent twice, an attacker can spend the same zAccount UTXO infinitely many times by producing arbitrary fresh nullifier values.",
+  "proposed_mitigation": "Always enforce the nullifier verification by setting `zAccountUtxoInNullifierHasherProver.enabled <== 1;` instead of gating it on `zAccountUtxoInSpendPrivKey`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-panther.pdf",
+      "Bug ID": "V-PAN-VUL-004: Nullifier verification can be disabled"
+    }
+  },
+  "codebase": "dataset/codebases/circom/pantherfoundation/panther-core/b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/mainZSwapV1.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": false,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "direct"
+}

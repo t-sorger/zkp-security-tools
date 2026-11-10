@@ -1,0 +1,32 @@
+stdout:
+circomspect: analyzing template 'VC_AND_DISCLOSE'
+warning[CS0006]: The signal `user_identifier` is not used by the template.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom:26:5
+   │
+26 │     signal input user_identifier;
+   │     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This signal is unused and could be removed.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#unused-variable-or-parameter.
+   = To ignore this type of result, use `--allow CS0006`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom:34:43
+   │
+34 │     signal input forbidden_countries_list[FORBIDDEN_COUNTRIES_LIST_LENGTH * 3];
+   │                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom:60:39
+   │
+60 │     signal ofacIntermediaryOutput <== ofacCheckResult * selector_ofac;
+   │                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+circomspect: 3 issues found.
+
+stderr:

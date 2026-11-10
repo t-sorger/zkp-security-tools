@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "\u001b[32mtemplate instances\u001b[0m: 236\n",
+  "stderr": "\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "return_code": -9,
+  "msg": "stdout:\n\u001b[32mtemplate instances\u001b[0m: 236\n\nstderr:\n\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "execution_time": 561.4333183765411,
+  "raw_output_file": "output/fp-run/zk-email-verify__emailverifier/circom_civer/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

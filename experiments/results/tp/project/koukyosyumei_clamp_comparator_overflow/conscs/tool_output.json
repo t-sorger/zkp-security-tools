@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n53 constraints, 4 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: clamp_main.circom \n** result: NOT SURE \n** time: 0.479317 \n** counterexample: {} \n\n",
+  "execution_time": 0.741502046585083,
+  "raw_output_file": "output/conscs-both-run-2/original/koukyosyumei_clamp_comparator_overflow/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

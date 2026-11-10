@@ -1,0 +1,5 @@
+** filename: vc_and_disclose_aadhaar_main.circom 
+** result: maximum recursion depth exceeded 
+** time: 99999999 
+** counterexample: None 
+

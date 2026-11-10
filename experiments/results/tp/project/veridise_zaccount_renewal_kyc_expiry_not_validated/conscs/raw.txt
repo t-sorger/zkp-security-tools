@@ -1,0 +1,5 @@
+** filename: mainZAccountRenewalV1.circom 
+** result: CONSTRAINED! 
+** time: 475.720286 
+** counterexample: {} 
+

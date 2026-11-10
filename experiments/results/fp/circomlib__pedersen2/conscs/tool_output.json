@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n8127 constraints, 2 inputs, 2 outputs.\nparse done\nconsidering edge 4054234  3.1e-05\ntrying grobner 1 5e-05\ntrying grobner 2 6.826306\nconsidering edge 4054234  3.4e-05\ntrying grobner 1 5.1e-05\ntrying grobner 2 5.539926\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: pedersen2_test.circom \n** result: NOT SURE \n** time: 371.181381 \n** counterexample: {} \n\n",
+  "execution_time": 375.46839332580566,
+  "raw_output_file": "output/fp-run/circomlib__pedersen2/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

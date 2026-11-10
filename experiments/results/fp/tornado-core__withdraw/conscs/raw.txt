@@ -1,0 +1,5 @@
+** filename: withdraw.circom 
+** result: CONSTRAINED! 
+** time: 10.342462 
+** counterexample: {} 
+

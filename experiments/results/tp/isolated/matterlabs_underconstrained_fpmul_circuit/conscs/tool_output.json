@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1011 constraints, 13 inputs, 4 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 28.719204 \n** counterexample: {} \n\n",
+  "execution_time": 29.004844903945923,
+  "raw_output_file": "output/conscs-both-run-2/direct/matterlabs_underconstrained_fpmul_circuit/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

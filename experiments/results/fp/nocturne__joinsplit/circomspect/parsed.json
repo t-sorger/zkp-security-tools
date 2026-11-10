@@ -1,0 +1,110 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 272,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 273,
+            "column": 26
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 290,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 306,
+            "column": 47
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 307,
+            "column": 39
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 308,
+            "column": 40
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 317,
+            "column": 27
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 328,
+            "column": 33
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 368,
+            "column": 5
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 503,
+            "column": 37
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/joinsplit.circom",
+            "line": 505,
+            "column": 49
+        }
+    ],
+    "statistics": {
+        "total_issues": 11,
+        "warnings": 0,
+        "notes": 11,
+        "errors": 0
+    }
+}

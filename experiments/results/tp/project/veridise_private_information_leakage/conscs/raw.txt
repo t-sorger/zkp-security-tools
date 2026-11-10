@@ -1,0 +1,5 @@
+** filename: hydra-s2_main.circom 
+** result: CONSTRAINED! 
+** time: 91.019116 
+** counterexample: {} 
+

@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 605.297913312912,
+    "findings": [
+        {
+            "file": "dsc_sha256_rsa_65537_4096.circom",
+            "type": "TIMEOUT",
+            "time": 605.297913312912,
+            "counter-example": "None"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

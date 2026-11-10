@@ -1,0 +1,42 @@
+{
+  "bug_name": "MiMC Hash: Assigned but not Constrained",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Assigned but Unconstrained",
+  "location": {
+    "Path": "circuits/mimcsponge.circom",
+    "Function": "MiMCSponge",
+    "Line": "26"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/iden3/circomlib",
+  "commit": "324b8bf8cc4a80357354752deb6c2ae5be22e5f5",
+  "fix_commit": "109cdf40567fce284dca1d535819ce28922653e0",
+  "reproduced": false,
+  "short_description": "In `MiMCSponge` template, `outs[0]` is assigned but not constrained, so it can be any value. Note that the circuit code is modified from a newer version since the original buggy code couldn't be reproduced in Circom version 2. The bug idea is still the same.",
+  "proposed_mitigation": "Use `<==` instead of `<--` to add a constraint to `outs[0]`.",
+  "source": {
+    "Bug Tracker": {
+      "Source Link": "https://github.com/0xPARC/zk-bug-tracker?tab=readme-ov-file#14-mimc-hash-assigned-but-not-constrained",
+      "Bug ID": "MiMC Hash: Assigned but not Constrained"
+    }
+  },
+  "codebase": "dataset/codebases/circom/iden3/circomlib/324b8bf8cc4a80357354752deb6c2ae5be22e5f5",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "aptos-labs/keyless-zk-proofs/koukyosyumei_unconstrained_base64_decoded_len",
+    "inference-labs-inc/subnet-2-circom/koukyosyumei_subtract_unconstrained_multiplier",
+    "personaelabs/spartan-ecdsa/yacademy_under_constrained_circuits_compromising_the_soundness_of_the_system",
+    "siv-org/verifiable-private-overrides/koukyosyumei_extractstringfrompoint_shiftedfirstbyte_unconstrained",
+    "succinctlabs/telepathy-circuits/veridise_arrayxor_is_under_constrained"
+  ],
+  "mode": "direct"
+}

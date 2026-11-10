@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: register_sha256_sha256_sha256_rsa_65537_4096.circom \n** result: TIMEOUT \n** time: 604.0907738208771 \n** counterexample: None \n\n",
+  "execution_time": 604.4703431129456,
+  "raw_output_file": "output/fp-run/self__register-sha256-sha256-sha256-rsa-65537-4096/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

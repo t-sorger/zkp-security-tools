@@ -1,0 +1,18 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.07,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Subtract does not satisfy weak safety",
+      "position": {
+        "component": "Subtract"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.13,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Counter example found: UnderConstrained (Unused-Output)",
+      "metadata": {
+        "severity": "error",
+        "assignments": {
+          "main.decoded_len": "0"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n3804 constraints, 5 inputs, 2 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 18.096086 \n** counterexample: {} \n\n",
+  "execution_time": 20.097408533096313,
+  "raw_output_file": "output/conscs-both-run-2/direct/koukyosyumei_spend_missing_range_check/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,36 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.22,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out[54]` is expected to be `0`",
+      "position": {
+        "signal": "main.out[54]"
+      },
+      "metadata": {
+        "severity": "error",
+        "expected_value": "0",
+        "assignments": {
+          "main.out[70]": "0",
+          "main.out[211]": "0",
+          "main.out[17]": "1",
+          "main.out[212]": "1",
+          "main.out[213]": "1",
+          "main.out[132]": "1",
+          "main.out[120]": "0",
+          "main.out[141]": "0",
+          "main.out[75]": "0",
+          "main.out[39]": "1",
+          "main.out[163]": "0",
+          "main.out[28]": "1",
+          "main.out[137]": "0",
+          "main.out[82]": "0",
+          "main.out[184]": "0",
+          "main.out[6]": "0"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n164860 constraints, 170 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: authV3.circom \n** result: TIMEOUT \n** time: 600.0101318359375 \n** counterexample: None \n\n",
+  "execution_time": 625.9823381900787,
+  "raw_output_file": "output/fp-run/iden3-circuits__authv3-40-64/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

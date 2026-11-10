@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.1277627944946,
+  "raw_output_file": "output/conscs-both-run-2/direct/yacademy_input_signal_s_is_not_constrained_in_eff_ecdsa_circom/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

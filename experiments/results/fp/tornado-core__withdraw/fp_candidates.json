@@ -1,0 +1,337 @@
+{
+  "unit": "tornado-core__withdraw",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "ABDK Consulting (D. Khovratovich, M. Vladimirov)",
+        "date": "2019-11-25",
+        "scope": "circom circuits (withdraw.circom, merkleTree.circom); fixes in commits 7193655, f8cd3fe, 07168f9, 9efab84",
+        "url": "https://github.com/abdk-consulting/audits/blob/main/tornado/Tornado_circuit_audit.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Tornado.Cash pools on Ethereum mainnet since Dec 2019 (e.g. 0.1 ETH pool: 11k+ txs, ~645 ETH still locked); per CoinDesk (2020-05-18) the contracts were updated after the trusted-setup MPC ceremony completed 2020-05-10, which postdates the v2.1 circuit.",
+      "url": "https://etherscan.io/address/0x12D66f87A04A9E220743712cE6d9bB1B5616B8Fc"
+    },
+    "CommitNote": "Tag v2.1: last change to circuits/ (all later commits touch only contracts/CLI). Includes all ABDK fixes (merged 2019-11-25, first release v2.0 2019-12-17); v2.1 additionally re-adds 4 squaring constraints binding recipient/relayer/fee/refund. This is the circuit used in the May 2020 trusted-setup ceremony whose verifier is live on mainnet, hence chosen over v2.0 (diff v2.0..v2.1 in circuits/ is only those 4 extra constraints)."
+  },
+  "provenance": {
+    "Project": "https://github.com/tornadocash/tornado-core",
+    "ProjectName": "tornado-core",
+    "Commit": "a533ad9ffb62163a42d4fa9a09984c5dd4e5c41d",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "ABDK Consulting (D. Khovratovich, M. Vladimirov)",
+          "date": "2019-11-25",
+          "scope": "circom circuits (withdraw.circom, merkleTree.circom); fixes in commits 7193655, f8cd3fe, 07168f9, 9efab84",
+          "url": "https://github.com/abdk-consulting/audits/blob/main/tornado/Tornado_circuit_audit.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Tornado.Cash pools on Ethereum mainnet since Dec 2019 (e.g. 0.1 ETH pool: 11k+ txs, ~645 ETH still locked); per CoinDesk (2020-05-18) the contracts were updated after the trusted-setup MPC ceremony completed 2020-05-10, which postdates the v2.1 circuit.",
+        "url": "https://etherscan.io/address/0x12D66f87A04A9E220743712cE6d9bB1B5616B8Fc"
+      },
+      "CommitNote": "Tag v2.1: last change to circuits/ (all later commits touch only contracts/CLI). Includes all ABDK fixes (merged 2019-11-25, first release v2.0 2019-12-17); v2.1 additionally re-adds 4 squaring constraints binding recipient/relayer/fee/refund. This is the circuit used in the May 2020 trusted-setup ceremony whose verifier is live on mainnet, hence chosen over v2.0 (diff v2.0..v2.1 in circuits/ is only those 4 extra constraints)."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "ABDK-2 (Remaining Minor Issue)",
+        "title": "pathIndices should be explicitly bit-checked in Withdraw rather than inside the low-level Selector/DualMux",
+        "location": "circuits/merkleTree.circom:DualMux / circuits/withdraw.circom:Withdraw",
+        "status": "acknowledged (authors declined: bit check is enforced in DualMux via s*(1-s)===0); architectural, not a soundness bug"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/tornado-core",
+    "LinkPaths": [
+      "dataset/codebases/audited/tornado-core"
+    ],
+    "Entrypoint": "../../../../codebases/audited/tornado-core/circuits/withdraw.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 59009
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 4,
+      "warning_count": 9,
+      "soundness": [
+        {
+          "bug_title": "UnderConstrainedSignal",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Intermediate signals should typically occur in at least two separate constraints.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 62,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "warning",
+            "code": "CS0017"
+          }
+        },
+        {
+          "bug_title": "UnderConstrainedSignal",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Intermediate signals should typically occur in at least two separate constraints.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 60,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "warning",
+            "code": "CS0017"
+          }
+        },
+        {
+          "bug_title": "UnderConstrainedSignal",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Intermediate signals should typically occur in at least two separate constraints.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 61,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "warning",
+            "code": "CS0017"
+          }
+        },
+        {
+          "bug_title": "UnderConstrainedSignal",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Intermediate signals should typically occur in at least two separate constraints.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 59,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "warning",
+            "code": "CS0017"
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 51,
+            "column": 33,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 63,
+            "column": 25,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 64,
+            "column": 19,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 65,
+            "column": 23,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 66,
+            "column": 22,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementComparison",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 51,
+            "column": 21,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0003"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 23,
+            "column": 29,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 20,
+            "column": 30,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementComparison",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+          "position": {
+            "line": 20,
+            "column": 21,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0003"
+          }
+        }
+      ],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "success",
+      "soundness_count": 3,
+      "warning_count": 0,
+      "soundness": [
+        {
+          "bug_title": "Weak-Safety-Violation",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Component MontgomeryAdd does not satisfy weak safety",
+          "position": {
+            "component": "MontgomeryAdd"
+          },
+          "metadata": {
+            "severity": "error",
+            "params": []
+          }
+        },
+        {
+          "bug_title": "Weak-Safety-Violation",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Component Montgomery2Edwards does not satisfy weak safety",
+          "position": {
+            "component": "Montgomery2Edwards"
+          },
+          "metadata": {
+            "severity": "error",
+            "params": []
+          }
+        },
+        {
+          "bug_title": "Weak-Safety-Violation",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Component Edwards2Montgomery does not satisfy weak safety",
+          "position": {
+            "component": "Edwards2Montgomery"
+          },
+          "metadata": {
+            "severity": "error",
+            "params": []
+          }
+        }
+      ],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

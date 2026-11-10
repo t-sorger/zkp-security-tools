@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: rsa-test.circom \n** result: TIMEOUT \n** time: 600.5135598182678 \n** counterexample: None \n\n",
+  "execution_time": 600.8548491001129,
+  "raw_output_file": "output/fp-run/zk-email-verify__rsaverifier65537-121-17/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

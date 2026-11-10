@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n31168 constraints, 161 inputs, 7 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: maximum recursion depth exceeded \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 66.2358512878418,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_missing_byte_range_checks_allows_packed_data_pollution/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

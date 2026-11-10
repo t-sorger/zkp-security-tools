@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "error[TAC01]: The template `Poseidon` does not exist.\n    ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom:133:33\n    │\n133 │     signal output nullifier <== Poseidon(2)([secret, scope]);\n    │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Unknown template `Poseidon` instantiated here.\n    │\n    = To ignore this type of result, use `--allow TAC01`.\n\ncircomspect: 1 issue found.\n",
+  "stderr": "",
+  "return_code": 1,
+  "msg": "stdout:\nerror[TAC01]: The template `Poseidon` does not exist.\n    ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom:133:33\n    │\n133 │     signal output nullifier <== Poseidon(2)([secret, scope]);\n    │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Unknown template `Poseidon` instantiated here.\n    │\n    = To ignore this type of result, use `--allow TAC01`.\n\ncircomspect: 1 issue found.\n\nstderr:\n",
+  "execution_time": 0.012886762619018555,
+  "raw_output_file": "output/fp-rerun-vc-and-disclose/self__vc-and-disclose/circomspect/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

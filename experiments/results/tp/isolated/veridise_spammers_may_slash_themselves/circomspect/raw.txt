@@ -1,0 +1,14 @@
+stdout:
+circomspect: analyzing template 'Withdraw'
+warning[CS0006]: The signal `addressHash` is not used by the template.
+   ┌─ /tmp/evaluation_tool-circomspect-wp9cg3nn/circuit.circom:13:5
+   │
+13 │     signal input addressHash;
+   │     ^^^^^^^^^^^^^^^^^^^^^^^^ This signal is unused and could be removed.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#unused-variable-or-parameter.
+   = To ignore this type of result, use `--allow CS0006`.
+
+circomspect: 1 issue found.
+
+stderr:

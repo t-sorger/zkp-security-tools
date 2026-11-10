@@ -1,0 +1,18 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.04,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Montgomery2Edwards does not satisfy weak safety",
+      "position": {
+        "component": "Montgomery2Edwards"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    }
+  ]
+}

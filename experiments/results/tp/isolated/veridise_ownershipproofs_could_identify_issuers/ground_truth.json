@@ -1,0 +1,38 @@
+{
+  "bug_name": "OwnershipProofs could identify issuers",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "packages/privacy-circuits/src/circom/ownershipVerifier/ownershipVerifier.circom",
+    "Function": "OwnershipVerifier",
+    "Line": "5-31"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/Arianee/arianee-sdk",
+  "commit": "b7da01e0c81b9cccdc257040997c3500eb59db4f",
+  "fix_commit": "",
+  "reproduced": false,
+  "short_description": "The `OwnershipVerifier` template computes `commitmentHasher = Poseidon(3)` over `sig[0]`, `sig[1]`, `sig[2]` and constrains `commitmentHasher.out === pubCommitmentHash`. The three `sig` signals are intended to be an issuer's (R, S, V) ECDSA signature that is kept static per issuer, and the `tokenId` is never fed into the hash. Nothing in the circuit or in `ArianeeIssuerProxy.tryRegisterCommitment` forces different tokens to use different commitments, so a private issuer can re-use the same `pubCommitmentHash` across many tokens. Because commitments are effectively per-issuer identifiers, as soon as any single token is linked to an issuer, all other tokens sharing the same commitment are linked too, leaking the full set of assets and activity controlled by that issuer. The recommended fix binds `tokenId` (and any other per-token data) into the commitment, e.g. `commitmentHasher = Poseidon(4)` with `inputs[3] <== tokenId`.",
+  "proposed_mitigation": "Include per-token information in the commitment hash so that commitments cannot be reused across tokens. Concretely, extend the circuit to `Poseidon(4)` with `tokenId` as the fourth input, add `tokenId` as a public input, and verify it against the token being operated on in `ArianeeIssuerProxy`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-arianee.pdf",
+      "Bug ID": "V-ARIA-VUL-002: OwnershipProofs could identify issuers"
+    }
+  },
+  "codebase": "dataset/codebases/circom/Arianee/arianee-sdk/b7da01e0c81b9cccdc257040997c3500eb59db4f",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/privacy-circuits/src/circom/ownershipVerifier/generated/ownershipVerifier_main.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "direct"
+}

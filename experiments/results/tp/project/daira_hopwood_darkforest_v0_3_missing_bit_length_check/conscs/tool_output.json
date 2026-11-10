@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2005 constraints, 5 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 5.750722 \n** counterexample: {} \n\n",
+  "execution_time": 6.298715591430664,
+  "raw_output_file": "output/conscs-both-run-2/original/daira_hopwood_darkforest_v0_3_missing_bit_length_check/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

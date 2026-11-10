@@ -1,0 +1,46 @@
+{
+  "bug_name": "The registration and disclosure circuits lack range checks for the input indices",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Wrong Translation of Logic into Constraints",
+  "location": {
+    "Path": "circuits/circuits/register_id/register_id.circom",
+    "Function": "REGISTER_ID",
+    "Line": "101-105"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/selfxyz/self",
+  "commit": "4f18c75041bb47c1862169eef82c22067642a83a",
+  "fix_commit": "49de54966e40709ac59d4070fd4bd0279b2a10c0",
+  "reproduced": false,
+  "short_description": "There are actually two separate issues with this code. (1) The computation `dsc_pubKey_offset + dsc_pubKey_actual_size` could overflow or underflow the field, leading to a wrong check semantics. (2) The `LessEqThan` template checks that the first input is less than or equal to the second input, but it assumes that both of the inputs are between 0 and 2^{12} - 1. If this is not the case, the circuit will produce some unexpected behaviour, as for example `LessEqThan(12)` with input values p - 1 and 0 will return 1 instead of 0. In this context, the intended range of the indices is to be between 0 and 2^{12} - 1, so this check could pass even if the indices are outside this range, leading to unexpected behaviour in the circuit.",
+  "proposed_mitigation": "We recommend to ensure that every computation done with indices does not overflow or underflow the field, by adding additional range checks. Additionally, we recommend to add range checks to the input signals of the `LessEqThan` template, to ensure that there is no unexpected behaviour when the inputs are outside the intended range.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/zksecurity-celo-self-audit-2.pdf",
+      "Bug ID": "#03 - The registration and disclosure circuits lack range checks for the input indices"
+    }
+  },
+  "codebase": "dataset/codebases/circom/selfxyz/self/4f18c75041bb47c1862169eef82c22067642a83a",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/register_id/instances/register_id_sha256_sha256_sha256_rsa_65537_4096.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Moonsong-Labs/zksync-social-login-circuit/openzeppelin_non_determinism_of_some_inputs",
+    "Unirep/Unirep/veridise_missing_range_checks_on_comparison_circuits",
+    "banyancomputer/hot-proofs-blake3-circom/koukyosyumei_checkdepth_comparator_overflow",
+    "darkforest-eth/darkforest-v0.3/daira_hopwood_darkforest_v0_3_missing_bit_length_check",
+    "inference-labs-inc/subnet-2-circom/koukyosyumei_clamp_comparator_overflow",
+    "siv-org/verifiable-private-overrides/koukyosyumei_emitifinrange_lessthan_overflow",
+    "worm-privacy/proof-of-burn/koukyosyumei_spend_missing_range_check"
+  ],
+  "mode": "direct"
+}

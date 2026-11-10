@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n190532 constraints, 281 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 481.846109 \n** counterexample: {} \n\n",
+  "execution_time": 482.35179257392883,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_zaccount_renewal_multiple_nullifiers_same_utxo/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

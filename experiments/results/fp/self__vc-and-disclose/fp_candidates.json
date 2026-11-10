@@ -1,0 +1,182 @@
+{
+  "unit": "self__vc-and-disclose",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "zkSecurity",
+        "date": "2025-01",
+        "scope": "core dependencies (RSA, RSA-PSS, ECDSA + big-int), protocol circuits (dsc/register/disclose) and contracts, TEE proof delegation (OpenPassport monorepo)",
+        "url": "https://reports.zksecurity.xyz/reports/celo-self-audit/"
+      },
+      {
+        "auditor": "zkSecurity",
+        "date": "2025-06",
+        "scope": "EU ID circuits (register_id, vc_and_disclose_id, disclose_id), all OFAC circuits, SMT non-inclusion (utils/crypto/merkle-trees/smt.circom), V2 contracts; at 4f18c75",
+        "url": "https://reports.zksecurity.xyz/reports/celo-self-audit-2/"
+      },
+      {
+        "auditor": "zkSecurity",
+        "date": "2025-09",
+        "scope": "Aadhaar circuits (REGISTER_AADHAAR, VC_AND_DISCLOSE_Aadhaar, pack.circom) at 3905a30a and FpPowGenericMod at 145cc894",
+        "url": "https://reports.zksecurity.xyz/reports/self-aadhaar-circuits/"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Self (ex-OpenPassport) app in production on Celo mainnet; the official @selfxyz/contracts README lists per-circuit Groth16 verifiers, e.g. Verifier_dsc_sha256_rsa_65537_4096 at 0x711e655c43410fB985c4EDB48E9bCBdDb770368d, which has code on Celo mainnet (eth_getCode via forno.celo.org).",
+      "url": "https://cdn.jsdelivr.net/npm/@selfxyz/contracts@1.2.3/README.md"
+    },
+    "CommitNote": "Squash-merge 'Feat/aadhaar (#949)' on main, same day as the third zkSecurity report (2025-09-09). The repo has no git tags/releases. It postdates the Jan-2025 audit fixes (PRs #331/#354/#358/#360 etc.) and the June-2025 fixes ('Circuit audit fixes (#644)' 22681b1f, 8801c6c, 49de549), and contains the Aadhaar fixes for #00 (AssertBytes in CountryNotInList), #02 (Num2Bits(7) on minimumAge) and #05 (dummy constraint removed). The individual Aadhaar fix commits cited in the report (60501d1, 285f0a9, ...) were squashed and do not exist in the history; Aadhaar circuit files are untouched on main after this commit."
+  },
+  "provenance": {
+    "Project": "https://github.com/selfxyz/self",
+    "ProjectName": "self",
+    "Commit": "b50a2892be3d61017eb14d27e0f34dd388c5bca1",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "zkSecurity",
+          "date": "2025-01",
+          "scope": "core dependencies (RSA, RSA-PSS, ECDSA + big-int), protocol circuits (dsc/register/disclose) and contracts, TEE proof delegation (OpenPassport monorepo)",
+          "url": "https://reports.zksecurity.xyz/reports/celo-self-audit/"
+        },
+        {
+          "auditor": "zkSecurity",
+          "date": "2025-06",
+          "scope": "EU ID circuits (register_id, vc_and_disclose_id, disclose_id), all OFAC circuits, SMT non-inclusion (utils/crypto/merkle-trees/smt.circom), V2 contracts; at 4f18c75",
+          "url": "https://reports.zksecurity.xyz/reports/celo-self-audit-2/"
+        },
+        {
+          "auditor": "zkSecurity",
+          "date": "2025-09",
+          "scope": "Aadhaar circuits (REGISTER_AADHAAR, VC_AND_DISCLOSE_Aadhaar, pack.circom) at 3905a30a and FpPowGenericMod at 145cc894",
+          "url": "https://reports.zksecurity.xyz/reports/self-aadhaar-circuits/"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Self (ex-OpenPassport) app in production on Celo mainnet; the official @selfxyz/contracts README lists per-circuit Groth16 verifiers, e.g. Verifier_dsc_sha256_rsa_65537_4096 at 0x711e655c43410fB985c4EDB48E9bCBdDb770368d, which has code on Celo mainnet (eth_getCode via forno.celo.org).",
+        "url": "https://cdn.jsdelivr.net/npm/@selfxyz/contracts@1.2.3/README.md"
+      },
+      "CommitNote": "Squash-merge 'Feat/aadhaar (#949)' on main, same day as the third zkSecurity report (2025-09-09). The repo has no git tags/releases. It postdates the Jan-2025 audit fixes (PRs #331/#354/#358/#360 etc.) and the June-2025 fixes ('Circuit audit fixes (#644)' 22681b1f, 8801c6c, 49de549), and contains the Aadhaar fixes for #00 (AssertBytes in CountryNotInList), #02 (Num2Bits(7) on minimumAge) and #05 (dummy constraint removed). The individual Aadhaar fix commits cited in the report (60501d1, 285f0a9, ...) were squashed and do not exist in the history; Aadhaar circuit files are untouched on main after this commit."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "zkSec-2025-01 #02",
+        "title": "Big Integer Zero-Check Is Not Sound (carry accumulation over native field) - client 'evaluating alternatives'; template unchanged in shape at pin",
+        "location": "circuits/circuits/utils/crypto/bigInt/bigIntComparators.circom:BigIntIsZero",
+        "status": "acknowledged"
+      },
+      {
+        "id": "zkSec-2025-01 #05",
+        "title": "Trusting the start offset of the public key inside the certificate may lead to signature forgery - only a heuristic mitigation (surrounding-byte check, PR #358), no DER parser",
+        "location": "circuits/circuits/dsc/dsc.circom (and register pubkey extraction)",
+        "status": "partially fixed"
+      },
+      {
+        "id": "zkSec-2025-01 #06",
+        "title": "The big integer library used for ECDSA verification is immature",
+        "location": "circuits/circuits/utils/crypto/bigInt/*",
+        "status": "acknowledged"
+      },
+      {
+        "id": "zkSec-2025-01 #0e",
+        "title": "Over-constraint in ECDSA for point duplication (forwarded to external library team)",
+        "location": "circuits/circuits/utils/crypto/signature/ecdsa/*",
+        "status": "acknowledged"
+      },
+      {
+        "id": "zkSec-2025-01 #0f",
+        "title": "Over-constraint in ECDSA for edge case in scalar multiplication (forwarded to external library team)",
+        "location": "circuits/circuits/utils/crypto/signature/ecdsa/*",
+        "status": "acknowledged"
+      },
+      {
+        "id": "zkSec-2025-06 #07",
+        "title": "The sparse Merkle tree stores truncated hashes instead of full hashes (collision risk)",
+        "location": "circuits/circuits/utils/crypto/merkle-trees/smt.circom",
+        "status": "acknowledged"
+      },
+      {
+        "id": "zkSec-2025-09 #01",
+        "title": "Invalid assumptions about Aadhaar name field formatting (nullifier/OFAC); only uppercase-normalisation mitigation",
+        "location": "circuits/circuits/register/register_aadhaar.circom, utils/aadhaar/*",
+        "status": "acknowledged"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/self",
+    "LinkPaths": [
+      "dataset/codebases/audited/self",
+      "dataset/codebases/audited/self/.fpdeps/node_modules",
+      "dataset/codebases/audited/self/.fpdeps/zk-kit.circom/packages/binary-merkle-root/src",
+      "dataset/codebases/audited/self/.fpdeps/node_modules/circomlib/circuits"
+    ],
+    "Entrypoint": "../../../../codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 225194
+  },
+  "tools": {
+    "circomspect": {
+      "status": "failed",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [
+        {
+          "bug_title": "TAC01",
+          "unified_bug_title": "Computational-Issue",
+          "description": "The template `Poseidon` does not exist.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom",
+          "position": {
+            "line": 133,
+            "column": 33,
+            "template": null
+          },
+          "metadata": {
+            "severity": "error",
+            "code": "TAC01"
+          }
+        }
+      ],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "failed",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "failed",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

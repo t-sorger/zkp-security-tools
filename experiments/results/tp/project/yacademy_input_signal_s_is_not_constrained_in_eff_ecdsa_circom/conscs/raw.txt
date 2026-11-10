@@ -1,0 +1,5 @@
+** filename: pubkey_membership.circom 
+** result: CONSTRAINED! 
+** time: 16.901417 
+** counterexample: {} 
+

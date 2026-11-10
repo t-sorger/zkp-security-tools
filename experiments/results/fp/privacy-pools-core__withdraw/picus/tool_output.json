@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "The circuit is properly constrained\nExiting Picus with the code 8\n",
+  "stderr": "",
+  "return_code": 8,
+  "msg": "stdout:\nThe circuit is properly constrained\nExiting Picus with the code 8\n\nstderr:\n",
+  "execution_time": 3.5173394680023193,
+  "raw_output_file": "output/fp-run/privacy-pools-core__withdraw/picus/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n0 constraints, 9 inputs, 4 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: UNDER-CONSTRAINED! \n** time: 0.004189 \n** counterexample: {None: ({5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 1: 1, 2: 1, 3: 1, 4: 1}, {5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 1: 0, 2: 0, 3: 0, 4: 0})} \n\n",
+  "execution_time": 0.2602505683898926,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_arrayxor_is_under_constrained/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

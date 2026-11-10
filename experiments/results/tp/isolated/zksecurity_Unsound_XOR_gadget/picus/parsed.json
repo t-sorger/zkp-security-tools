@@ -1,0 +1,9 @@
+{
+    "result": "Tool cannot determine whether the circuit is properly constrained",
+    "signals_with_multiple_values": [],
+    "counterexample": {
+        "inputs": {},
+        "first_outputs": {},
+        "second_outputs": {}
+    }
+}

@@ -1,0 +1,24 @@
+10:21:04: [core.py:584]: 	[INFO]: 	================================================================================
+10:21:04: [core.py:585]: 	[INFO]: 	Processing bug: koukyosyumei_checkdepth_comparator_overflow
+10:21:04: [core.py:586]: 	[INFO]: 	================================================================================
+10:21:04: [core.py:590]: 	[INFO]: 	Generated ground truth: output/extended_dataset-rerun-symlink-fix/direct/koukyosyumei_checkdepth_comparator_overflow/ground_truth.json
+10:21:04: [core.py:162]: 	[INFO]: 	Running circomspect...
+10:21:04: [base.py:569]: 	[INFO]: 	Running: 'circomspect /tmp/evaluation_tool-circomspect-x52rz8wv/circuit.circom -l INFO -v'
+10:21:04: [base.py:459]: 	[INFO]: 	circomspect: Found 0 findings in 0.01s
+10:21:04: [core.py:162]: 	[INFO]: 	Running circom_civer...
+10:21:04: [base.py:569]: 	[INFO]: 	Running: 'civer_circom /evaluation_tool/extended_dataset/dataset/circom/banyancomputer/hot-proofs-blake3-circom/koukyosyumei_checkdepth_comparator_overflow/circuit.circom --check_safety --verbose --verification_timeout 500000 --O0 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/banyancomputer/hot-proofs-blake3-circom/76b83107eb00c8f886bde82172eaa3cdd5d57f25 -l /evaluation_tool/extended_dataset/dataset/circom/dependencies/circomlib'
+10:21:04: [base.py:459]: 	[INFO]: 	circom_civer: Found 0 findings in 0.14s
+10:21:04: [core.py:162]: 	[INFO]: 	Running picus...
+10:21:04: [base.py:569]: 	[INFO]: 	Running: '/evaluation_tool/tools/picus/run-picus /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/koukyosyumei_checkdepth_comparator_overflow/scratch/circuit.r1cs'
+10:21:05: [base.py:459]: 	[INFO]: 	picus: Found 0 findings in 1.19s
+10:21:05: [core.py:162]: 	[INFO]: 	Running ecneproject...
+10:21:05: [base.py:569]: 	[INFO]: 	Running: 'julia --project=/evaluation_tool/tools/ecneproject /evaluation_tool/tools/ecneproject/src/Ecne.jl --r1cs /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/koukyosyumei_checkdepth_comparator_overflow/scratch/circuit.r1cs --name circuit --sym /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/koukyosyumei_checkdepth_comparator_overflow/scratch/circuit.sym'
+10:21:19: [base.py:459]: 	[INFO]: 	ecneproject: Found 0 findings in 13.40s
+10:21:19: [core.py:162]: 	[INFO]: 	Running zkfuzz...
+10:21:19: [base.py:569]: 	[INFO]: 	Running: 'zkfuzz /evaluation_tool/extended_dataset/dataset/circom/banyancomputer/hot-proofs-blake3-circom/koukyosyumei_checkdepth_comparator_overflow/circuit.circom -l /evaluation_tool/extended_dataset/dataset/codebases/circom/banyancomputer/hot-proofs-blake3-circom/76b83107eb00c8f886bde82172eaa3cdd5d57f25 -l /evaluation_tool/extended_dataset/dataset/circom/dependencies/circomlib'
+10:21:19: [base.py:459]: 	[INFO]: 	zkfuzz: Found 1 findings in 0.03s
+10:21:19: [core.py:550]: 	[INFO]: 	circomspect evaluation: FalseNegative
+10:21:19: [core.py:550]: 	[INFO]: 	circom_civer evaluation: FalseNegative
+10:21:19: [core.py:550]: 	[INFO]: 	picus evaluation: FalseNegative
+10:21:19: [core.py:550]: 	[INFO]: 	ecneproject evaluation: FalseNegative
+10:21:19: [core.py:550]: 	[INFO]: 	zkfuzz evaluation: Undecided

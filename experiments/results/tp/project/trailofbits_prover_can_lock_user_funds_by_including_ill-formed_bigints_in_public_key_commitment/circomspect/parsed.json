@@ -1,0 +1,308 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 93,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 103,
+            "column": 48
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 111,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 127,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 142,
+            "column": 32
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 140,
+            "column": 46
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 149,
+            "column": 36
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 148,
+            "column": 32
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 147,
+            "column": 28
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 154,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 167,
+            "column": 53
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 165,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 171,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 182,
+            "column": 57
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 180,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 186,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 93,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 103,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 111,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 127,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 140,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 142,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 147,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 148,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 149,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 154,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 165,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 167,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 171,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 180,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 182,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 186,
+            "column": 21
+        },
+        {
+            "severity": "warning",
+            "code": "CS0010",
+            "name": "NonStrictBinaryConversion",
+            "message": "Using `Num2Bits` to convert field elements to bits may lead to aliasing issues.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934/circuits/step.circom",
+            "line": 101,
+            "column": 40
+        }
+    ],
+    "statistics": {
+        "total_issues": 33,
+        "warnings": 1,
+        "notes": 32,
+        "errors": 0
+    }
+}

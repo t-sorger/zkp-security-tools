@@ -1,0 +1,77 @@
+stdout:
+circomspect: analyzing template 'Main'
+warning[CS0006]: The signal `p` is not used by the template.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:18:5
+   │
+18 │     signal input p;
+   │     ^^^^^^^^^^^^^^ This signal is unused and could be removed.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#unused-variable-or-parameter.
+   = To ignore this type of result, use `--allow CS0006`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:24:43
+   │
+24 │     component rp = MultiRangeProof(2, 40, 2 ** 32);
+   │                                           ^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:33:13
+   │
+33 │     xSq <== x * x;
+   │             ^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:34:13
+   │
+34 │     ySq <== y * y;
+   │             ^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:35:13
+   │
+35 │     rSq <== r * r;
+   │             ^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:36:20
+   │
+36 │     comp.in[0] <== xSq + ySq;
+   │                    ^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+warning[CS0014]: Inputs to `LessThan` need to be constrained to ensure that they are non-negative
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:37:20
+   │
+37 │     comp.in[1] <== rSq;
+   │                    ^^^ `rSq` needs to be constrained to ensure that it is <= p/2.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#unconstrained-less-than.
+   = To ignore this type of result, use `--allow CS0014`.
+
+warning[CS0014]: Inputs to `LessThan` need to be constrained to ensure that they are non-negative
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom:36:20
+   │
+36 │     comp.in[0] <== xSq + ySq;
+   │                    ^^^^^^^^^ `(xSq + ySq)` needs to be constrained to ensure that it is <= p/2.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#unconstrained-less-than.
+   = To ignore this type of result, use `--allow CS0014`.
+
+circomspect: 8 issues found.
+
+stderr:

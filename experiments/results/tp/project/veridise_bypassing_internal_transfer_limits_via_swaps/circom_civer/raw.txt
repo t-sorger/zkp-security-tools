@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/pantherfoundation/panther-core/06a818632053719b56ace37ef12c9b31904af1e2/circuits/circuits/mainZSwapV1.circom" requires pragma version (2, 1, 9) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

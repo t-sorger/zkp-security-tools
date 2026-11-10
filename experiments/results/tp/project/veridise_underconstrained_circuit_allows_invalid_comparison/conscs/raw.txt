@@ -1,0 +1,5 @@
+** filename: bigComparators.circom 
+** result: CONSTRAINED! 
+** time: 33.749601 
+** counterexample: {} 
+

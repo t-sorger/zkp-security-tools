@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.03,
+  "findings": [
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/worm-privacy/proof-of-burn/0802485d24fed18fe063e51bcbb0bc830585855f/circuits/spend.circom",
+      "position": {
+        "line": 47,
+        "column": 34,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    }
+  ]
+}

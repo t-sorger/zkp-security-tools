@@ -1,0 +1,5 @@
+** filename: canonAddrSigCheck.circom 
+** result: CONSTRAINED! 
+** time: 2.29551 
+** counterexample: {} 
+

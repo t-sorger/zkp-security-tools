@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2283 constraints, 5 inputs, 2 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: commitment.circom \n** result: CONSTRAINED! \n** time: 14.337748 \n** counterexample: {} \n\n",
+  "execution_time": 15.451908826828003,
+  "raw_output_file": "output/fp-run/privacy-pools-core__commitment/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

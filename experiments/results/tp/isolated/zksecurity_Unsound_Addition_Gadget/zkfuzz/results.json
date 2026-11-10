@@ -1,0 +1,24 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.02,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out` is expected to be `4026531791`",
+      "position": {
+        "signal": "main.out"
+      },
+      "metadata": {
+        "severity": "error",
+        "expected_value": "4026531791",
+        "assignments": {
+          "main.tmp": "21888242871839275222246405745257275088548364400416034343698204186575808495552",
+          "main.out": "279172874190",
+          "main.b": "3",
+          "main.a": "21888242871839275222246405745257275088548364400416034343698204186575808495564"
+        }
+      }
+    }
+  ]
+}

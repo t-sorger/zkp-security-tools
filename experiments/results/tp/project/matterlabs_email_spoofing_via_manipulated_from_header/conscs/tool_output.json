@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.1213672161102,
+  "raw_output_file": "output/conscs-both-run-2/original/matterlabs_email_spoofing_via_manipulated_from_header/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

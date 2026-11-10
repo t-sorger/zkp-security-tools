@@ -1,0 +1,83 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/bitify.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 3,
+            "column": 1
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 16,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 22,
+            "column": 24
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 25,
+            "column": 26
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 16,
+            "column": 19
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 22,
+            "column": 19
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 25,
+            "column": 19
+        },
+        {
+            "severity": "warning",
+            "code": "CS0010",
+            "name": "NonStrictBinaryConversion",
+            "message": "Using `Num2Bits` to convert field elements to bits may lead to aliasing issues.",
+            "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+            "line": 14,
+            "column": 24
+        }
+    ],
+    "statistics": {
+        "total_issues": 8,
+        "warnings": 1,
+        "notes": 6,
+        "errors": 1
+    }
+}

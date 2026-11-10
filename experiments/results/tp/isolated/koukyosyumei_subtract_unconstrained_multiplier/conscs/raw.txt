@@ -1,0 +1,5 @@
+** filename: circuit.circom 
+** result: NOT SURE 
+** time: 0.011802 
+** counterexample: {} 
+

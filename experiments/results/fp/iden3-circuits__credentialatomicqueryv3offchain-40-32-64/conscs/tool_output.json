@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n196801 constraints, 314 inputs, 6 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: credentialAtomicQueryV3.circom \n** result: TIMEOUT \n** time: 600.0062439441681 \n** counterexample: None \n\n",
+  "execution_time": 621.3676707744598,
+  "raw_output_file": "output/fp-run/iden3-circuits__credentialatomicqueryv3offchain-40-32-64/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

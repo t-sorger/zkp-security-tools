@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n3136 constraints, 11 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 31.790373 \n** counterexample: {} \n\n",
+  "execution_time": 33.370914459228516,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_missing_boolean_constraints_in_the_merkle_tree_path_leads_to_an_attacker_being_able_to_craft_a_fake_merkle_proof_for_an_arbitrary_leaf/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

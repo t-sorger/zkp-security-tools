@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n21260 constraints, 7 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: ownership_proof.circom \n** result: CONSTRAINED! \n** time: 6.827229 \n** counterexample: {} \n\n",
+  "execution_time": 7.093725919723511,
+  "raw_output_file": "output/conscs-both-run-2/original/leastauthority_previously_correct_ownership_proof_disabled_via_code_changes/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

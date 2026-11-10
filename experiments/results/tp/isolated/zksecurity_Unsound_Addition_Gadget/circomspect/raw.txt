@@ -1,0 +1,12 @@
+stdout:
+error[P1000]: Failed to open file `./add32bits.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-vg0_y5ds/circuit.circom:3:1
+  │
+3 │ include "./add32bits.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+circomspect: 1 issue found.
+
+stderr:

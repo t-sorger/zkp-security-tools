@@ -1,0 +1,12 @@
+stdout:
+
+stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/circom/siv-org/verifiable-private-overrides/koukyosyumei_extractstringfrompoint_shiftedfirstbyte_unconstrained/circuit.circom" requires pragma version (2, 2, 2) that is not supported by the compiler (version (2, 2, 1))[0m
+
+previous errors were found

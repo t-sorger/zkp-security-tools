@@ -1,0 +1,5 @@
+** filename: email-verifier-test.circom 
+** result: TIMEOUT 
+** time: 601.1430351734161 
+** counterexample: None 
+

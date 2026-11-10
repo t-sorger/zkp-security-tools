@@ -1,0 +1,32 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.16,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Counter example found: UnderConstrained (Unexpected-Input)",
+      "metadata": {
+        "severity": "error",
+        "assignments": {
+          "main.enabled": "5",
+          "main.zoneId": "1",
+          "main.offset": "6715975333987630041287637275232177554310190370921446576340427892909230335453",
+          "main.zoneIds": "21888242871839275222246405745257275088548364400416034343698204186575808495602",
+          "main.prover.n2b_zoneIds.out[44]": "1",
+          "main.prover.n2b_zoneIds.out[104]": "0",
+          "main.prover.b2n_zoneIds[8].in[0]": "1",
+          "main.prover.n2b_zoneIds.out[136]": "0",
+          "main.prover.n2b_zoneIds.out[230]": "1",
+          "main.prover.n2b_zoneIds.out[2]": "0",
+          "main.prover.n2b_zoneIds.out[246]": "1",
+          "main.prover.b2n_zoneIds[8].in[11]": "1",
+          "main.prover.n2b_zoneIds.out[19]": "1",
+          "main.prover.n2b_zoneIds.out[153]": "0",
+          "main.prover.b2n_zoneIds[4].in[13]": "1",
+          "main.prover.forceIsEqual[3].in[1]": "17377"
+        }
+      }
+    }
+  ]
+}

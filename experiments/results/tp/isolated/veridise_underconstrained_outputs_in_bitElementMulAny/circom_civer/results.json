@@ -1,0 +1,18 @@
+{
+  "status": "bugs_found",
+  "execution_time": 502.19,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component MontgomeryAdd does not satisfy weak safety",
+      "position": {
+        "component": "MontgomeryAdd"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    }
+  ]
+}

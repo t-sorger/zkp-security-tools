@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "circomspect: No issues found.\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "stdout:\ncircomspect: No issues found.\n\nstderr:\n",
+  "execution_time": 0.024492740631103516,
+  "raw_output_file": "output/fp-run/maci__maci-messageprocessorqv-10-20-2/circomspect/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,5 @@
+** filename: circuit.circom 
+** result:  
+** time: 99999999 
+** counterexample: None 
+

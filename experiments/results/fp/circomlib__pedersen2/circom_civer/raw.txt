@@ -1,0 +1,32 @@
+stdout:
+[32mtemplate instances[0m: 12
+
+--------------------------------------------
+--------------------------------------------
+-------- CIVER VERIFICATION RESULTS --------
+--------------------------------------------
+--------------------------------------------
+
+-> CIVER could not verify weak safety of all components
+Components that do not satisfy weak safety: 
+    - MontgomeryAdd(), 
+    - Edwards2Montgomery(), 
+    - Montgomery2Edwards(), 
+Components timeout when checking weak-safety: 
+    - Num2Bits(253), 
+    - BabyAdd(), 
+    - MontgomeryDouble(), 
+  * Number of verified components (weak-safety): 6
+  * Number of failed components (weak-safety): 3
+  * Number of timeout components (weak-safety): 3
+  * Percentage of verified constraints: 70.98560354374308 - (5769 / 8127)
+  * Percentage of verified components: 17.098445595854923 - (132 / 772)
+
+
+--------------------------------------------
+--------------------------------------------
+
+[32mEverything went okay, circom safe[0m
+
+stderr:
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

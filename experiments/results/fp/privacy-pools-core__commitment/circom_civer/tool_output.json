@@ -1,0 +1,11 @@
+{
+  "status": "fail",
+  "stdout": "",
+  "stderr": "\u001b[0m\u001b[1m\u001b[38;5;9merror[P1003]\u001b[0m\u001b[1m: File \"/zkhydra/output/fp-corpus/dataset/codebases/audited/privacy-pools-core/packages/circuits/circuits/main/commitment.circom\" requires pragma version (2, 2, 0) that is not supported by the compiler (version (2, 1, 6))\u001b[0m\n\n\u001b[31mprevious errors were found\u001b[0m\n",
+  "return_code": 1,
+  "msg": "stdout:\n\nstderr:\n\u001b[0m\u001b[1m\u001b[38;5;9merror[P1003]\u001b[0m\u001b[1m: File \"/zkhydra/output/fp-corpus/dataset/codebases/audited/privacy-pools-core/packages/circuits/circuits/main/commitment.circom\" requires pragma version (2, 2, 0) that is not supported by the compiler (version (2, 1, 6))\u001b[0m\n\n\u001b[31mprevious errors were found\u001b[0m\n",
+  "execution_time": 0.004647970199584961,
+  "raw_output_file": "output/fp-run/privacy-pools-core__commitment/circom_civer/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

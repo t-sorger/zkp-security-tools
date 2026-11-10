@@ -1,0 +1,9 @@
+[
+  {
+    "unit": "privacy-pools-core__withdraw",
+    "tool": "zkfuzz",
+    "finding_index": 0,
+    "finding_fp": "e08316ba7a3ced5f",
+    "status": "RealIssue"
+  }
+]

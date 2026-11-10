@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 11.133932,
+    "findings": [
+        {
+            "file": "test_bigmod_22.circom",
+            "type": "NOT SURE",
+            "time": 11.133932,
+            "counter-example": "{}"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

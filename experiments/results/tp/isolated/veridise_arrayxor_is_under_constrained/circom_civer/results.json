@@ -1,0 +1,20 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.13,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component ArrayXOR(4) does not satisfy weak safety",
+      "position": {
+        "component": "ArrayXOR"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": [
+          4
+        ]
+      }
+    }
+  ]
+}

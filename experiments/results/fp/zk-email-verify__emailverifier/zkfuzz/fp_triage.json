@@ -1,0 +1,9 @@
+[
+  {
+    "unit": "zk-email-verify__emailverifier",
+    "tool": "zkfuzz",
+    "finding_index": 0,
+    "finding_fp": "875785d89ec1b003",
+    "status": "FalsePositive"
+  }
+]

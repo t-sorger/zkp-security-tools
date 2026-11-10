@@ -1,0 +1,5 @@
+** filename: eddsaposeidon_test.circom 
+** result: CONSTRAINED! 
+** time: 1.014314 
+** counterexample: {} 
+

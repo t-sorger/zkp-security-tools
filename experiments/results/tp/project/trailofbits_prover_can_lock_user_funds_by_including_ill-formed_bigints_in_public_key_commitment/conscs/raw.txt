@@ -1,0 +1,1 @@
+[Precompiled R1CS unavailable: circom failed in the precompile step; see scratch/compile.log]

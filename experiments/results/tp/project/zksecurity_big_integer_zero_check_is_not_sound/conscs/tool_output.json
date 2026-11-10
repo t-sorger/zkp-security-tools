@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.0056648254395,
+  "raw_output_file": "output/conscs-both-run-2/original/zksecurity_big_integer_zero_check_is_not_sound/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

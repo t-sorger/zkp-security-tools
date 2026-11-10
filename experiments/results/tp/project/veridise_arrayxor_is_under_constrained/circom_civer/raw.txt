@@ -1,0 +1,1897 @@
+stdout:
+[32mtemplate instances[0m: 1522
+
+stderr:
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->SubgroupCheckG1
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->SubgroupCheckG1
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->SubgroupCheckG2
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->SubgroupCheckG2
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":37:9
+   [0m[34m│[0m  
+[0m[34m37[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[2][0] = [4649817190157321,[0m
+[0m[34m38[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m39[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m40[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m41[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m42[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m43[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":37:9
+   [0m[34m│[0m  
+[0m[34m37[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[2][0] = [4649817190157321,[0m
+[0m[34m38[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m39[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m40[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m41[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m42[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m43[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":44:9
+   [0m[34m│[0m  
+[0m[34m44[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[2][1] = [4649817190157321,[0m
+[0m[34m45[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m46[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m47[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m48[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m49[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m50[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":44:9
+   [0m[34m│[0m  
+[0m[34m44[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[2][1] = [4649817190157321,[0m
+[0m[34m45[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m46[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m47[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m48[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m49[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m50[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":51:9
+   [0m[34m│[0m  
+[0m[34m51[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[3][0] = [4649817190157321,[0m
+[0m[34m52[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m53[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m54[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m55[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m56[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m57[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":51:9
+   [0m[34m│[0m  
+[0m[34m51[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[3][0] = [4649817190157321,[0m
+[0m[34m52[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    14178090100713872,[0m
+[0m[34m53[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    25898210532243870,[0m
+[0m[34m54[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6361890036890480,[0m
+[0m[34m55[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    6755281389607612,[0m
+[0m[34m56[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    401348527762810,[0m
+[0m[34m57[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    470331148861392][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":58:9
+   [0m[34m│[0m  
+[0m[34m58[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[3][1] = [31097504852074146,[0m
+[0m[34m59[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    21847832108733923,[0m
+[0m[34m60[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    11215546103677201,[0m
+[0m[34m61[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    1564033941097252,[0m
+[0m[34m62[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    9796175148277139,[0m
+[0m[34m63[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    23041766052141807,[0m
+[0m[34m64[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    1359550313685033][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":58:9
+   [0m[34m│[0m  
+[0m[34m58[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        roots[3][1] = [31097504852074146,[0m
+[0m[34m59[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    21847832108733923,[0m
+[0m[34m60[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    11215546103677201,[0m
+[0m[34m61[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    1564033941097252,[0m
+[0m[34m62[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    9796175148277139,[0m
+[0m[34m63[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    23041766052141807,[0m
+[0m[34m64[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                    1359550313685033][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_roots_of_unity
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+           ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+           ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":75:9
+   [0m[34m│[0m  
+[0m[34m75[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[0][0] = [15111404105178256,[0m
+[0m[34m76[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     12179658998385743,[0m
+[0m[34m77[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     23072200951145993,[0m
+[0m[34m78[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     9032482684664404,[0m
+[0m[34m79[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     23305776986956055,[0m
+[0m[34m80[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     5290624451499435,[0m
+[0m[34m81[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     464473045539356][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":75:9
+   [0m[34m│[0m  
+[0m[34m75[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[0][0] = [15111404105178256,[0m
+[0m[34m76[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     12179658998385743,[0m
+[0m[34m77[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     23072200951145993,[0m
+[0m[34m78[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     9032482684664404,[0m
+[0m[34m79[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     23305776986956055,[0m
+[0m[34m80[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     5290624451499435,[0m
+[0m[34m81[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     464473045539356][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":82:9
+   [0m[34m│[0m  
+[0m[34m82[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[0][1] = [12283190417025461,[0m
+[0m[34m83[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     20834464198811383,[0m
+[0m[34m84[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     18619727854230373,[0m
+[0m[34m85[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     19507968258096915,[0m
+[0m[34m86[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     5803508121078619,[0m
+[0m[34m87[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11236708505185735,[0m
+[0m[34m88[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     568856440213905][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":82:9
+   [0m[34m│[0m  
+[0m[34m82[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[0][1] = [12283190417025461,[0m
+[0m[34m83[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     20834464198811383,[0m
+[0m[34m84[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     18619727854230373,[0m
+[0m[34m85[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     19507968258096915,[0m
+[0m[34m86[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     5803508121078619,[0m
+[0m[34m87[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11236708505185735,[0m
+[0m[34m88[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     568856440213905][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":89:9
+   [0m[34m│[0m  
+[0m[34m89[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[2][0] = [25832285470060055,[0m
+[0m[34m90[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     4957529455978525,[0m
+[0m[34m91[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11309477484109628,[0m
+[0m[34m92[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     34786223745332771,[0m
+[0m[34m93[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     32011200050324214,[0m
+[0m[34m94[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11140434959259260,[0m
+[0m[34m95[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     752550210394889][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":89:9
+   [0m[34m│[0m  
+[0m[34m89[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[2][0] = [25832285470060055,[0m
+[0m[34m90[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     4957529455978525,[0m
+[0m[34m91[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11309477484109628,[0m
+[0m[34m92[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     34786223745332771,[0m
+[0m[34m93[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     32011200050324214,[0m
+[0m[34m94[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     11140434959259260,[0m
+[0m[34m95[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     752550210394889][0m;
+   [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+   [0m[34m│[0m  
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->OptSimpleSWU2
+          ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":96:9
+    [0m[34m│[0m  
+[0m[34m 96[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[2][1] = [17831328741298113,[0m
+[0m[34m 97[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     28196239014888719,[0m
+[0m[34m 98[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     105869995940733,[0m
+[0m[34m 99[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     9669258860454335,[0m
+[0m[34m100[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     12680438922771573,[0m
+[0m[34m101[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     19435555960961745,[0m
+[0m[34m102[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     748772277207452][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->OptSimpleSWU2
+           ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":96:9
+    [0m[34m│[0m  
+[0m[34m 96[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m        etas[2][1] = [17831328741298113,[0m
+[0m[34m 97[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     28196239014888719,[0m
+[0m[34m 98[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     105869995940733,[0m
+[0m[34m 99[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     9669258860454335,[0m
+[0m[34m100[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     12680438922771573,[0m
+[0m[34m101[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     19435555960961745,[0m
+[0m[34m102[0m [0m[34m│[0m [0m[33m│[0m [0m[33m                     748772277207452][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->OptSimpleSWU2
+           ->get_etas
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->Iso3Map
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->Iso3Map
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":117:9
+    [0m[34m│[0m
+[0m[34m117[0m [0m[34m│[0m         [0m[33mcoeffs[0][0][0] = [15950248680265686, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":117:9
+    [0m[34m│[0m
+[0m[34m117[0m [0m[34m│[0m         [0m[33mcoeffs[0][0][0] = [15950248680265686, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":118:9
+    [0m[34m│[0m
+[0m[34m118[0m [0m[34m│[0m         [0m[33mcoeffs[0][0][1] = [15950248680265686, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":118:9
+    [0m[34m│[0m
+[0m[34m118[0m [0m[34m│[0m         [0m[33mcoeffs[0][0][1] = [15950248680265686, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":119:9
+    [0m[34m│[0m
+[0m[34m119[0m [0m[34m│[0m         [0m[33mcoeffs[0][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":119:9
+    [0m[34m│[0m
+[0m[34m119[0m [0m[34m│[0m         [0m[33mcoeffs[0][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":120:9
+    [0m[34m│[0m
+[0m[34m120[0m [0m[34m│[0m         [0m[33mcoeffs[0][1][1] = [11821949021832986, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":120:9
+    [0m[34m│[0m
+[0m[34m120[0m [0m[34m│[0m         [0m[33mcoeffs[0][1][1] = [11821949021832986, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":121:9
+    [0m[34m│[0m
+[0m[34m121[0m [0m[34m│[0m         [0m[33mcoeffs[0][2][0] = [11821949021832990, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":121:9
+    [0m[34m│[0m
+[0m[34m121[0m [0m[34m│[0m         [0m[33mcoeffs[0][2][0] = [11821949021832990, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":122:9
+    [0m[34m│[0m
+[0m[34m122[0m [0m[34m│[0m         [0m[33mcoeffs[0][2][1] = [23925373020398477, 12008640736482598, 24380851218295013, 26661172671971889, 17526751185616239, 7814371526634872, 609960487515475][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":122:9
+    [0m[34m│[0m
+[0m[34m122[0m [0m[34m│[0m         [0m[33mcoeffs[0][2][1] = [23925373020398477, 12008640736482598, 24380851218295013, 26661172671971889, 17526751185616239, 7814371526634872, 609960487515475][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":123:9
+    [0m[34m│[0m
+[0m[34m123[0m [0m[34m│[0m         [0m[33mcoeffs[0][3][0] = [27772197702098641, 20013442957632273, 16977207223501411, 11048465426985092, 34728404155321983, 8828725064705003, 1626561300041267][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":123:9
+    [0m[34m│[0m
+[0m[34m123[0m [0m[34m│[0m         [0m[33mcoeffs[0][3][0] = [27772197702098641, 20013442957632273, 16977207223501411, 11048465426985092, 34728404155321983, 8828725064705003, 1626561300041267][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":124:9
+    [0m[34m│[0m
+[0m[34m124[0m [0m[34m│[0m         [0m[33mcoeffs[0][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":124:9
+    [0m[34m│[0m
+[0m[34m124[0m [0m[34m│[0m         [0m[33mcoeffs[0][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":125:9
+    [0m[34m│[0m
+[0m[34m125[0m [0m[34m│[0m         [0m[33mcoeffs[1][0][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":125:9
+    [0m[34m│[0m
+[0m[34m125[0m [0m[34m│[0m         [0m[33mcoeffs[1][0][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":126:9
+    [0m[34m│[0m
+[0m[34m126[0m [0m[34m│[0m         [0m[33mcoeffs[1][0][1] = [35747322042231395, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":126:9
+    [0m[34m│[0m
+[0m[34m126[0m [0m[34m│[0m         [0m[33mcoeffs[1][0][1] = [35747322042231395, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":127:9
+    [0m[34m│[0m
+[0m[34m127[0m [0m[34m│[0m         [0m[33mcoeffs[1][1][0] = [12, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":127:9
+    [0m[34m│[0m
+[0m[34m127[0m [0m[34m│[0m         [0m[33mcoeffs[1][1][0] = [12, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":128:9
+    [0m[34m│[0m
+[0m[34m128[0m [0m[34m│[0m         [0m[33mcoeffs[1][1][1] = [35747322042231455, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":128:9
+    [0m[34m│[0m
+[0m[34m128[0m [0m[34m│[0m         [0m[33mcoeffs[1][1][1] = [35747322042231455, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":129:9
+    [0m[34m│[0m
+[0m[34m129[0m [0m[34m│[0m         [0m[33mcoeffs[1][2][0] = [1, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":129:9
+    [0m[34m│[0m
+[0m[34m129[0m [0m[34m│[0m         [0m[33mcoeffs[1][2][0] = [1, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":130:9
+    [0m[34m│[0m
+[0m[34m130[0m [0m[34m│[0m         [0m[33mcoeffs[1][2][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":130:9
+    [0m[34m│[0m
+[0m[34m130[0m [0m[34m│[0m         [0m[33mcoeffs[1][2][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":131:9
+    [0m[34m│[0m
+[0m[34m131[0m [0m[34m│[0m         [0m[33mcoeffs[1][3][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":131:9
+    [0m[34m│[0m
+[0m[34m131[0m [0m[34m│[0m         [0m[33mcoeffs[1][3][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":132:9
+    [0m[34m│[0m
+[0m[34m132[0m [0m[34m│[0m         [0m[33mcoeffs[1][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":132:9
+    [0m[34m│[0m
+[0m[34m132[0m [0m[34m│[0m         [0m[33mcoeffs[1][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":133:9
+    [0m[34m│[0m
+[0m[34m133[0m [0m[34m│[0m         [0m[33mcoeffs[2][0][0] = [22455448142010118, 21348055796076581, 27572038961197616, 1120560719995342, 22827171220970826, 11095397727559917, 1491014525037828][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":133:9
+    [0m[34m│[0m
+[0m[34m133[0m [0m[34m│[0m         [0m[33mcoeffs[2][0][0] = [22455448142010118, 21348055796076581, 27572038961197616, 1120560719995342, 22827171220970826, 11095397727559917, 1491014525037828][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":134:9
+    [0m[34m│[0m
+[0m[34m134[0m [0m[34m│[0m         [0m[33mcoeffs[2][0][1] = [22455448142010118, 21348055796076581, 27572038961197616, 1120560719995342, 22827171220970826, 11095397727559917, 1491014525037828][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":134:9
+    [0m[34m│[0m
+[0m[34m134[0m [0m[34m│[0m         [0m[33mcoeffs[2][0][1] = [22455448142010118, 21348055796076581, 27572038961197616, 1120560719995342, 22827171220970826, 11095397727559917, 1491014525037828][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":135:9
+    [0m[34m│[0m
+[0m[34m135[0m [0m[34m│[0m         [0m[33mcoeffs[2][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":135:9
+    [0m[34m│[0m
+[0m[34m135[0m [0m[34m│[0m         [0m[33mcoeffs[2][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":136:9
+    [0m[34m│[0m
+[0m[34m136[0m [0m[34m│[0m         [0m[33mcoeffs[2][1][1] = [15950248680265662, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":136:9
+    [0m[34m│[0m
+[0m[34m136[0m [0m[34m│[0m         [0m[33mcoeffs[2][1][1] = [15950248680265662, 32024958503631044, 4244301805875352, 29783714120969249, 35703698803053471, 29228779030399226, 406640325010316][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":137:9
+    [0m[34m│[0m
+[0m[34m137[0m [0m[34m│[0m         [0m[33mcoeffs[2][2][0] = [11821949021832988, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":137:9
+    [0m[34m│[0m
+[0m[34m137[0m [0m[34m│[0m         [0m[33mcoeffs[2][2][0] = [11821949021832988, 24017281472965197, 12732905417626058, 17293548324979811, 35053502371232479, 15628743053269744, 1219920975030950][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":138:9
+    [0m[34m│[0m
+[0m[34m138[0m [0m[34m│[0m         [0m[33mcoeffs[2][2][1] = [23925373020398479, 12008640736482598, 24380851218295013, 26661172671971889, 17526751185616239, 7814371526634872, 609960487515475][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":138:9
+    [0m[34m│[0m
+[0m[34m138[0m [0m[34m│[0m         [0m[33mcoeffs[2][2][1] = [23925373020398479, 12008640736482598, 24380851218295013, 26661172671971889, 17526751185616239, 7814371526634872, 609960487515475][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":139:9
+    [0m[34m│[0m
+[0m[34m139[0m [0m[34m│[0m         [0m[33mcoeffs[2][3][0] = [14480323801877264, 5335576544261059, 7435489548777956, 4243102168992702, 4975321819444090, 32509805231324272, 1287694362532669][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":139:9
+    [0m[34m│[0m
+[0m[34m139[0m [0m[34m│[0m         [0m[33mcoeffs[2][3][0] = [14480323801877264, 5335576544261059, 7435489548777956, 4243102168992702, 4975321819444090, 32509805231324272, 1287694362532669][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":140:9
+    [0m[34m│[0m
+[0m[34m140[0m [0m[34m│[0m         [0m[33mcoeffs[2][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":140:9
+    [0m[34m│[0m
+[0m[34m140[0m [0m[34m│[0m         [0m[33mcoeffs[2][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":141:9
+    [0m[34m│[0m
+[0m[34m141[0m [0m[34m│[0m         [0m[33mcoeffs[3][0][0] = [35747322042231035, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":141:9
+    [0m[34m│[0m
+[0m[34m141[0m [0m[34m│[0m         [0m[33mcoeffs[3][0][0] = [35747322042231035, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":142:9
+    [0m[34m│[0m
+[0m[34m142[0m [0m[34m│[0m         [0m[33mcoeffs[3][0][1] = [35747322042231035, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":142:9
+    [0m[34m│[0m
+[0m[34m142[0m [0m[34m│[0m         [0m[33mcoeffs[3][0][1] = [35747322042231035, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":143:9
+    [0m[34m│[0m
+[0m[34m143[0m [0m[34m│[0m         [0m[33mcoeffs[3][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":143:9
+    [0m[34m│[0m
+[0m[34m143[0m [0m[34m│[0m         [0m[33mcoeffs[3][1][0] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":144:9
+    [0m[34m│[0m
+[0m[34m144[0m [0m[34m│[0m         [0m[33mcoeffs[3][1][1] = [35747322042231251, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":144:9
+    [0m[34m│[0m
+[0m[34m144[0m [0m[34m│[0m         [0m[33mcoeffs[3][1][1] = [35747322042231251, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":145:9
+    [0m[34m│[0m
+[0m[34m145[0m [0m[34m│[0m         [0m[33mcoeffs[3][2][0] = [18, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":145:9
+    [0m[34m│[0m
+[0m[34m145[0m [0m[34m│[0m         [0m[33mcoeffs[3][2][0] = [18, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":146:9
+    [0m[34m│[0m
+[0m[34m146[0m [0m[34m│[0m         [0m[33mcoeffs[3][2][1] = [35747322042231449, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":146:9
+    [0m[34m│[0m
+[0m[34m146[0m [0m[34m│[0m         [0m[33mcoeffs[3][2][1] = [35747322042231449, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":147:9
+    [0m[34m│[0m
+[0m[34m147[0m [0m[34m│[0m         [0m[33mcoeffs[3][3][0] = [1, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":147:9
+    [0m[34m│[0m
+[0m[34m147[0m [0m[34m│[0m         [0m[33mcoeffs[3][3][0] = [1, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":148:9
+    [0m[34m│[0m
+[0m[34m148[0m [0m[34m│[0m         [0m[33mcoeffs[3][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":148:9
+    [0m[34m│[0m
+[0m[34m148[0m [0m[34m│[0m         [0m[33mcoeffs[3][3][1] = [0, 0, 0, 0, 0, 0, 0][0m;
+    [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->Iso3Map
+           ->get_iso3_coeffs
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->ClearCofactorG2
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->MapToG2
+         ->ClearCofactorG2
+          ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":179:5
+    [0m[34m│[0m
+[0m[34m179[0m [0m[34m│[0m     [0m[33mg2[0][0] = [95420233661880, 1773856045391785, 5044075188989616, 23082975677810779, 22805092780977487, 23121359448368568, 161253150172098][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":179:5
+    [0m[34m│[0m
+[0m[34m179[0m [0m[34m│[0m     [0m[33mg2[0][0] = [95420233661880, 1773856045391785, 5044075188989616, 23082975677810779, 22805092780977487, 23121359448368568, 161253150172098][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":180:5
+    [0m[34m│[0m
+[0m[34m180[0m [0m[34m│[0m     [0m[33mg2[0][1] = [12522360964131710, 27624298323292107, 31369054948478259, 20553930357265165, 32921944760061193, 30416570139545860, 1398625365433447][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":180:5
+    [0m[34m│[0m
+[0m[34m180[0m [0m[34m│[0m     [0m[33mg2[0][1] = [12522360964131710, 27624298323292107, 31369054948478259, 20553930357265165, 32921944760061193, 30416570139545860, 1398625365433447][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":181:5
+    [0m[34m│[0m
+[0m[34m181[0m [0m[34m│[0m     [0m[33mg2[1][0] = [5440959206139905, 5515662923731907, 10491004233861355, 28691331721860307, 27955817036233384, 18631882631076677, 907600843284315][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":181:5
+    [0m[34m│[0m
+[0m[34m181[0m [0m[34m│[0m     [0m[33mg2[1][0] = [5440959206139905, 5515662923731907, 10491004233861355, 28691331721860307, 27955817036233384, 18631882631076677, 907600843284315][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":182:5
+    [0m[34m│[0m
+[0m[34m182[0m [0m[34m│[0m     [0m[33mg2[1][1] = [11548582681213374, 7404909498155861, 12768329608264924, 12731371725497493, 11463081752430568, 7184576637437304, 424072857758157][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":182:5
+    [0m[34m│[0m
+[0m[34m182[0m [0m[34m│[0m     [0m[33mg2[1][1] = [11548582681213374, 7404909498155861, 12768329608264924, 12731371725497493, 11463081752430568, 7184576637437304, 424072857758157][0m;
+    [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+    [0m[34m│[0m
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->MapToG2
+          ->ClearCofactorG2
+           ->get_generator_G2
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":157:5
+    [0m[34m│[0m  
+[0m[34m157[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m    g1[0] = [16589478066046651,[0m
+[0m[34m158[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             22658679592837110,[0m
+[0m[34m159[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             35004527604248919,[0m
+[0m[34m160[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             16789302793630161,[0m
+[0m[34m161[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             7530538873701625,[0m
+[0m[34m162[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             32234187716135413,[0m
+[0m[34m163[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             1684953952445941][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m──────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->CoreVerifyPubkeyG1NoCheck
+          ->get_generator_G1
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":157:5
+    [0m[34m│[0m  
+[0m[34m157[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m    g1[0] = [16589478066046651,[0m
+[0m[34m158[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             22658679592837110,[0m
+[0m[34m159[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             35004527604248919,[0m
+[0m[34m160[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             16789302793630161,[0m
+[0m[34m161[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             7530538873701625,[0m
+[0m[34m162[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             32234187716135413,[0m
+[0m[34m163[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             1684953952445941][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m──────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->CoreVerifyPubkeyG1NoCheck
+          ->get_generator_G1
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":164:5
+    [0m[34m│[0m  
+[0m[34m164[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m    g1[1] = [11860609209853921,[0m
+[0m[34m165[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             4091579406338073,[0m
+[0m[34m166[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             12578493816062195,[0m
+[0m[34m167[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             13088963032438982,[0m
+[0m[34m168[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             24961455755233629,[0m
+[0m[34m169[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             8501508834176643,[0m
+[0m[34m170[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             612415636564648][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->CoreVerifyPubkeyG1NoCheck
+          ->get_generator_G1
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+    [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":164:5
+    [0m[34m│[0m  
+[0m[34m164[0m [0m[34m│[0m [0m[33m╭[0m [0m[33m    g1[1] = [11860609209853921,[0m
+[0m[34m165[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             4091579406338073,[0m
+[0m[34m166[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             12578493816062195,[0m
+[0m[34m167[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             13088963032438982,[0m
+[0m[34m168[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             24961455755233629,[0m
+[0m[34m169[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             8501508834176643,[0m
+[0m[34m170[0m [0m[34m│[0m [0m[33m│[0m [0m[33m             612415636564648][0m;
+    [0m[34m│[0m [0m[33m╰[0m[0m[33m─────────────────────────────^ found here[0m
+    [0m[34m│[0m  
+    [0m[34m=[0m call trace:
+      ->Step
+       ->VerifySyncCommitteeSignature
+        ->CoreVerifyPubkeyG1
+         ->CoreVerifyPubkeyG1NoCheck
+          ->get_generator_G1
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpEasyPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpEasyPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpEasyPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpEasyPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 4, given 2[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/final_exp.circom":76:5
+   [0m[34m│[0m
+[0m[34m76[0m [0m[34m│[0m     [0m[33mvar g5sqc[4][50] = signed_Fp2_mult_w6(len, g5sq.out, XI0)[0m; // overflow < (1+XI0)*2k*2^{2n}
+   [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpHardPart
+           ->Fp12CyclotomicExp
+            ->Fp12CyclotomicDecompress
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 4, given 2[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/final_exp.circom":76:5
+   [0m[34m│[0m
+[0m[34m76[0m [0m[34m│[0m     [0m[33mvar g5sqc[4][50] = signed_Fp2_mult_w6(len, g5sq.out, XI0)[0m; // overflow < (1+XI0)*2k*2^{2n}
+   [0m[34m│[0m     [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpHardPart
+           ->Fp12CyclotomicExp
+            ->Fp12CyclotomicDecompress
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpHardPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[0m[1m[38;5;11mwarning[T3001][0m[1m: Typing warning: Mismatched dimensions, assigning to an array an expression of smaller length, the remaining positions are assigned to 0.
+  Expected length: 50, given 7[0m
+   [0m[34m┌─[0m "/evaluation_tool/extended_dataset/dataset/codebases/circom/succinctlabs/telepathy-circuits/9c84fb0f38531718296d9b611f8bd6107f61a9b8/circuits/pairing/bls12_381_func.circom":18:9
+   [0m[34m│[0m
+[0m[34m18[0m [0m[34m│[0m         [0m[33mp = [35747322042231467, 36025922209447795, 1084959616957103, 7925923977987733, 16551456537884751, 23443114579904617, 1829881462546425][0m;
+   [0m[34m│[0m         [0m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [0m[33mfound here[0m
+   [0m[34m│[0m
+   [0m[34m=[0m call trace:
+     ->Step
+      ->VerifySyncCommitteeSignature
+       ->CoreVerifyPubkeyG1
+        ->CoreVerifyPubkeyG1NoCheck
+         ->FinalExponentiate
+          ->FinalExpHardPart
+           ->Fp12FrobeniusMap
+            ->get_BLS12_381_prime
+
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

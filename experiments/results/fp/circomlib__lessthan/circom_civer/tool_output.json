@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "\u001b[32mtemplate instances\u001b[0m: 2\n\n--------------------------------------------\n--------------------------------------------\n-------- CIVER VERIFICATION RESULTS --------\n--------------------------------------------\n--------------------------------------------\n\n-> All components satisfy weak safety :)\n  * Number of verified components (weak-safety): 2\n  * Number of failed components (weak-safety): 0\n  * Number of timeout components (weak-safety): 0\n  * Percentage of verified constraints: 100 - (36 / 36)\n  * Percentage of verified components: 100 - (2 / 2)\n\n\n--------------------------------------------\n--------------------------------------------\n\n\u001b[32mEverything went okay, circom safe\u001b[0m\n",
+  "stderr": "\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "return_code": 0,
+  "msg": "stdout:\n\u001b[32mtemplate instances\u001b[0m: 2\n\n--------------------------------------------\n--------------------------------------------\n-------- CIVER VERIFICATION RESULTS --------\n--------------------------------------------\n--------------------------------------------\n\n-> All components satisfy weak safety :)\n  * Number of verified components (weak-safety): 2\n  * Number of failed components (weak-safety): 0\n  * Number of timeout components (weak-safety): 0\n  * Percentage of verified constraints: 100 - (36 / 36)\n  * Percentage of verified components: 100 - (2 / 2)\n\n\n--------------------------------------------\n--------------------------------------------\n\n\u001b[32mEverything went okay, circom safe\u001b[0m\n\nstderr:\n\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "execution_time": 0.11055684089660645,
+  "raw_output_file": "output/fp-run/circomlib__lessthan/circom_civer/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

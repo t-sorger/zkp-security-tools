@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CS0006",
+            "name": "UnusedVariableValue",
+            "message": "The signal `addressHash` is not used by the template.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Rate-Limiting-Nullifier/circom-rln/022b690b5615d1e26874013cf216136875d8f3ab/circuits/withdraw.circom",
+            "line": 7,
+            "column": 5
+        }
+    ],
+    "statistics": {
+        "total_issues": 1,
+        "warnings": 1,
+        "notes": 0,
+        "errors": 0
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "circomspect: No issues found.\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "stdout:\ncircomspect: No issues found.\n\nstderr:\n",
+  "execution_time": 0.0802152156829834,
+  "raw_output_file": "output/fp-run/iden3-circuits__authv3-40-64/circomspect/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

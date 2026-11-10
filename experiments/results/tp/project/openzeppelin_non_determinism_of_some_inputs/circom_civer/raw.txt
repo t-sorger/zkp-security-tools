@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b/utils/verify-nonce.circom" requires pragma version (2, 2, 0) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

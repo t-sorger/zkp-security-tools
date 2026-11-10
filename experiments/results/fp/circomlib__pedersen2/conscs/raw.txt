@@ -1,0 +1,5 @@
+** filename: pedersen2_test.circom 
+** result: NOT SURE 
+** time: 371.181381 
+** counterexample: {} 
+

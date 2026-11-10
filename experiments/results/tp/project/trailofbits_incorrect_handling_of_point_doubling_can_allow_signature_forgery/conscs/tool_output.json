@@ -1,0 +1,11 @@
+{
+  "status": "fail",
+  "stdout": "",
+  "stderr": "[Precompiled R1CS unavailable: circom failed in the precompile step; see scratch/compile.log]",
+  "return_code": 1,
+  "msg": "[Precompiled R1CS unavailable: circom failed in the precompile step; see scratch/compile.log]",
+  "execution_time": 0.0003185272216796875,
+  "raw_output_file": "output/conscs-both-run-2/original/trailofbits_incorrect_handling_of_point_doubling_can_allow_signature_forgery/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

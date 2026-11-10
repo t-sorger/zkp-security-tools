@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 1800.1010167598724,
+  "raw_output_file": "output/fp-run/circomlib__babypbk/picus/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

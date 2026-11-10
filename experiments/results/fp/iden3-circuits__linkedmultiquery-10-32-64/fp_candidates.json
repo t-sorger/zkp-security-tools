@@ -1,0 +1,127 @@
+{
+  "unit": "iden3-circuits__linkedmultiquery-10-32-64",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "Trail of Bits",
+        "date": "2024-05",
+        "scope": "iden3/circuits Circom circuits at 7a1e04de (authV2, credentialAtomicQueryV3 on/off-chain, linkedMultiQuery10, stateTransition and lib); fix review of PR #131 in appendix C",
+        "url": "https://github.com/trailofbits/publications/blob/master/reviews/2024-05-polygonlabs-iden3circuits-securityreview.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Core circuits of Polygon ID / Privado ID; Privado docs list them (incl. credentialAtomicQueryV3-beta.1, linkedMultiQuery10-beta.1) for production verifiers, and State (0x624ce98D2d27b20b8f8d521723Df8fC4db71D79D) and VALIDATOR_V3 (0xd179f29d00Cd0E8978eb6eB847CaCF9E2A956336) have code on Polygon PoS mainnet (eth_getCode checked).",
+      "url": "https://docs.privado.id/docs/verifier/circuits/"
+    },
+    "CommitNote": "Tag v2.0.0: the first release tag after the ToB audit (fixes merged in a135e48 'Audit fixes (#131)', 2024-04-17, fix-reviewed in the 2024-05-03 report; master then sat at f97118a until 2025). The repo has no tag between v1.0.0 (2023-02, pre-audit, the V2 ceremony version) and v2.0.0. Between f97118a and v2.0.0 the selected circuits only change cosmetically (signal tag, two dummy squaring constraints on public inputs in credentialAtomicQueryV3OffChain, StateTransition renamed StateTransitionV3); v2.0.0 also adds an unaudited credentialAtomicQueryV3Universal circuit, which is not selected."
+  },
+  "provenance": {
+    "Project": "https://github.com/iden3/circuits",
+    "ProjectName": "iden3-circuits",
+    "Commit": "62b65d3cca3c07efc8269f8da56b21fa7dec650a",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "Trail of Bits",
+          "date": "2024-05",
+          "scope": "iden3/circuits Circom circuits at 7a1e04de (authV2, credentialAtomicQueryV3 on/off-chain, linkedMultiQuery10, stateTransition and lib); fix review of PR #131 in appendix C",
+          "url": "https://github.com/trailofbits/publications/blob/master/reviews/2024-05-polygonlabs-iden3circuits-securityreview.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Core circuits of Polygon ID / Privado ID; Privado docs list them (incl. credentialAtomicQueryV3-beta.1, linkedMultiQuery10-beta.1) for production verifiers, and State (0x624ce98D2d27b20b8f8d521723Df8fC4db71D79D) and VALIDATOR_V3 (0xd179f29d00Cd0E8978eb6eB847CaCF9E2A956336) have code on Polygon PoS mainnet (eth_getCode checked).",
+        "url": "https://docs.privado.id/docs/verifier/circuits/"
+      },
+      "CommitNote": "Tag v2.0.0: the first release tag after the ToB audit (fixes merged in a135e48 'Audit fixes (#131)', 2024-04-17, fix-reviewed in the 2024-05-03 report; master then sat at f97118a until 2025). The repo has no tag between v1.0.0 (2023-02, pre-audit, the V2 ceremony version) and v2.0.0. Between f97118a and v2.0.0 the selected circuits only change cosmetically (signal tag, two dummy squaring constraints on public inputs in credentialAtomicQueryV3OffChain, StateTransition renamed StateTransitionV3); v2.0.0 also adds an unaudited credentialAtomicQueryV3Universal circuit, which is not selected."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "TOB-IDEN3-3",
+        "title": "Lack of domain separation in hash functions",
+        "location": "circuits/lib (claim/identity Poseidon hashing; e.g. lib/utils/claimUtils.circom, lib/utils/idUtils.circom)",
+        "status": "unresolved"
+      },
+      {
+        "id": "TOB-IDEN3-4",
+        "title": "SpongeHash is not a sponge hash",
+        "location": "circuits/lib/utils/spongeHash.circom:SpongeHash",
+        "status": "unresolved"
+      },
+      {
+        "id": "TOB-IDEN3-5",
+        "title": "Ambiguous padding in SpongeHash",
+        "location": "circuits/lib/utils/spongeHash.circom:SpongeHash",
+        "status": "unresolved"
+      },
+      {
+        "id": "TOB-IDEN3-6",
+        "title": "Signature challenge does not bind claim or query",
+        "location": "circuits/auth/authV3.circom:AuthV3 (audited as authV2)",
+        "status": "unresolved"
+      },
+      {
+        "id": "TOB-IDEN3-7",
+        "title": "Linked queries can prove expired or revoked claims",
+        "location": "circuits/linked/multiQuery.circom:LinkedMultiQuery",
+        "status": "unresolved"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/iden3-circuits",
+    "LinkPaths": [
+      "dataset/codebases/audited/iden3-circuits"
+    ],
+    "Entrypoint": "../../../../codebases/audited/iden3-circuits/circuits/linkedMultiQuery10.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 644027
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

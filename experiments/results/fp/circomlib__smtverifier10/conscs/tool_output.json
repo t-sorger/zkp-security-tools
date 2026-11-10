@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n12582 constraints, 19 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: smtverifier10_test.circom \n** result: CONSTRAINED! \n** time: 0.485636 \n** counterexample: {} \n\n",
+  "execution_time": 0.7436621189117432,
+  "raw_output_file": "output/fp-run/circomlib__smtverifier10/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

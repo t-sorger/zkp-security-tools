@@ -1,0 +1,5 @@
+** filename: credentialAtomicQueryV3.circom 
+** result: TIMEOUT 
+** time: 600.0062439441681 
+** counterexample: None 
+

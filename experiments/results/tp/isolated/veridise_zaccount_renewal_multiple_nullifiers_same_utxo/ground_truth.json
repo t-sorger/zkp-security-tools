@@ -1,0 +1,40 @@
+{
+  "bug_name": "zAccountRenewalV1 Can Validate Multiple Nullifiers for the Same UTXO Commitment",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "circuits/circuits/zAccountRenewalV1.circom",
+    "Function": "ZAccountRenewalV1",
+    "Line": "314-321"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/pantherfoundation/panther-core",
+  "commit": "b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "fix_commit": "903edd3",
+  "reproduced": false,
+  "short_description": "In the `ZAccountRenewalV1` template (zAccountRenewalV1.circom), the nullifier derivation uses `zAccountUtxoInNullifierHasher.privKey <== zAccountUtxoInNullifierPrivKey` and `zAccountUtxoInNullifierHasher.commitment <== zAccountUtxoInNoteHasher.out`, and the circuit later compares the hashed output against the public `zAccountUtxoInNullifier` input via `ForceEqualIfEnabled()`. However, there is **no constraint enforcing that `zAccountUtxoInNullifierPubKey[2]` is derived from `zAccountUtxoInNullifierPrivKey`**. Because `zAccountUtxoInNullifierPubKey[2]` is a separate input to the hash that builds the zAccount note commitment, the circuit accepts any `zAccountUtxoInNullifierPrivKey` that hashes to a valid nullifier — the key pair does not have to be consistent. An attacker can renew the same zAccount UTXO commitment multiple times using different `zAccountUtxoInNullifierPrivKey` values, each producing a distinct nullifier. Because the renewal flow also lets users deposit and withdraw ZKP, this enables draining the pool by re-spending the same UTXO.",
+  "proposed_mitigation": "Add constraints that enforce `zAccountUtxoInNullifierPubKey[2]` to be derived from `zAccountUtxoInNullifierPrivKey` via `BabyPbk` — e.g., instantiate a `BabyPbk` with `in <== zAccountUtxoInNullifierPrivKey` and force `Ax === zAccountUtxoInNullifierPubKey[0]` and `Ay === zAccountUtxoInNullifierPubKey[1]`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-panther.pdf",
+      "Bug ID": "V-PAN-VUL-002: zAccountRenewalV1 can validate multiple nullifiers for the same UTXO commitment"
+    }
+  },
+  "codebase": "dataset/codebases/circom/pantherfoundation/panther-core/b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/mainZAccountRenewalV1.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": false,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "personaelabs/spartan-ecdsa/yacademy_input_signal_s_is_not_constrained_in_eff_ecdsa_circom"
+  ],
+  "mode": "direct"
+}

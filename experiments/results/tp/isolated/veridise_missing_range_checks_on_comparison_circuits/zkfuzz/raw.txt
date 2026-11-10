@@ -1,0 +1,18 @@
+[Timed out]
+Partial stdout:
+🎲 Random Seed: 6837434040979775004
+[2K🧬 Generation: 0/500 (-6)[2K🧬 Generation: 1/500 (-59)[2K🧬 Generation: 2/500 (-45)[2K🧬 Generation: 3/500 (-39)[2K🧬 Generation: 4/500 (-20)[2K🧬 Generation: 5/500 (-39)[2K🧬 Generation: 6/500 (-12)[2K🧬 Generation: 7/500 (-39)[2K🧬 Generation: 8/500 (-20)[2K🧬 Generation: 9/500 (-39)[2K🧬 Generation: 10/500 (-12)[2K🧬 Generation: 11/500 (-20)[2K🧬 Generation: 12/500 (-2)[2K🧬 Generation: 13/500 (-39)[2K🧬 Generation: 14/500 (-20)[2K🧬 Generation: 15/500 (-30)[2K🧬 Generation: 16/500 (-6)[2K🧬 Generation: 17/500 (-6)[2K🧬 Generation: 18/500 (-39)[2K🧬 Generation: 19/500 (-12)[2K🧬 Generation: 20/500 (-2)[2K🧬 Generation: 21/500 (-51)[2K🧬 Generation: 22/500 (-39)[2K🧬 Generation: 23/500 (-12)[2K🧬 Generation: 24/500 (-12)[2K🧬 Generation: 25/500 (-42)[2K🧬 Generation: 26/500 (-2)[2K🧬 Generation: 27/500 (-30)[2K🧬 Generation: 28/500 (-39)[2K🧬 Generation: 29/500 (-6)[2K🧬 Generation: 30/500 (-6)[2K🧬 Generation: 31/500 (-72)[2K🧬 Generation: 32/500 (-20)[2K🧬 Generation: 33/500 (-39)[2K🧬 Generation: 34/500 (-39)[2K🧬 Generation: 35/500 (-6)[2K🧬 Generation: 36/500 (-20)[2K🧬 Generation: 37/500 (-30)[2K🧬 Generation: 38/500 (-39)[2K🧬 Generation: 39/500 (-81)[2K🧬 Generation: 40/500 (-79)[2K🧬 Generation: 41/500 (-51)[2K🧬 Generation: 42/500 (-72)[2K🧬 Generation: 43/500 (-118)[2K🧬 Generation: 44/500 (-81)[2K🧬 Generation: 45/500 (-6)[2K🧬 Generation: 46/500 (-30)[2K🧬 Generation: 47/500 (-41)[2K🧬 Generation: 48/500 (-39)[2K🧬 Generation: 49/500 (-56)[2K🧬 Generation: 50/500 (-6)[2K🧬 Generation: 51/500 (-39)[2K🧬 Generation: 52/500 (-20)[2K🧬 Generation: 53/500 (-30)[2K🧬 Generation: 54/500 (-12)[2K🧬 Generation: 55/500 (-69)[2K🧬 Generation: 56/500 (-56)[2K🧬 Generation: 57/500 (-2)[2K🧬 Generation: 58/500 (-30)[2K🧬 Generation: 59/500 (-79)[2K🧬 Generation: 60/500 (-39)[2K🧬 Generation: 61/500 (-12)[2K🧬 Generation: 62/500 (-39)[2K🧬 Generation: 63/500 (-69)[2K🧬 Generation: 64/500 (-30)[2K🧬 Generation: 65/500 (-79)[2K🧬 Generation: 66/500 (-6)[2K🧬 Generation: 67/500 (-39)[2K🧬 Generation: 68/500 (-12)[2K🧬 Generation: 69/500 (-39)[2K🧬 Generation: 70/500 (-30)[2K🧬 Generation: 71/500 (-69)[2K🧬 Generation: 72/500 (-41)
+Partial stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...

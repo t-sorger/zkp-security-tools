@@ -1,0 +1,7 @@
+{
+  "status": "TruePositive",
+  "reason": "Tool found 1 issues but ground truth is Computational Issues",
+  "need_manual_analysis": true,
+  "manual_analysis": "Done",
+  "manual_analysis_reasoning": ""
+}

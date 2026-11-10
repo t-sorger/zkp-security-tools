@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.126309633255,
+  "raw_output_file": "output/conscs-both-run-2/original/matterlabs_emailauth_fails_with_overlapping_invitation_code_regex/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

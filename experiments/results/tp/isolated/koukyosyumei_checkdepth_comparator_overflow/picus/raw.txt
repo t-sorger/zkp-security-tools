@@ -1,0 +1,6 @@
+stdout:
+working directory: /var/tmp/picus17771988651777198865636
+The circuit is properly constrained
+Exiting Picus with the code 8
+
+stderr:

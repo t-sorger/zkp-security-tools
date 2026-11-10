@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n17689 constraints, 45 inputs, 2 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: semaphore.circom \n** result: TIMEOUT \n** time: 602.3770105838776 \n** counterexample: None \n\n",
+  "execution_time": 616.309757232666,
+  "raw_output_file": "output/fp-run/semaphore__semaphore-v3-20/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

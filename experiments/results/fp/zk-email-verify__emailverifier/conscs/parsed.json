@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 601.1430351734161,
+    "findings": [
+        {
+            "file": "email-verifier-test.circom",
+            "type": "TIMEOUT",
+            "time": 601.1430351734161,
+            "counter-example": "None"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1305 constraints, 3 inputs, 1 outputs.\nparse done\nconsidering edge 12141  8.1e-05\ntrying grobner 1 0.000106\ntrying grobner 2 6.504095\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: bigComparators.circom \n** result: CONSTRAINED! \n** time: 33.749601 \n** counterexample: {} \n\n",
+  "execution_time": 34.15746068954468,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_underconstrained_circuit_allows_invalid_comparison/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

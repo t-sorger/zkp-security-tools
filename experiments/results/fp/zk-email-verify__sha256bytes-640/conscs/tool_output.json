@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: sha-test.circom \n** result: TIMEOUT \n** time: 602.9247508049011 \n** counterexample: None \n\n",
+  "execution_time": 603.2379558086395,
+  "raw_output_file": "output/fp-run/zk-email-verify__sha256bytes-640/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

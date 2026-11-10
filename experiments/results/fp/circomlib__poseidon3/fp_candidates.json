@@ -1,0 +1,157 @@
+{
+  "unit": "circomlib__poseidon3",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "Veridise + 0xPARC Community + Ethereum Foundation",
+        "date": "2022-11",
+        "scope": "Joint audit of circom-bigint and its dependency circomlib at commit cff5ab6 (= tag v2.0.5), Jul 28 to Nov 15, 2022. Picus (static analysis) was run over circomlib, and Coda (Coq) certified Num2Bits, Bits2Num, IsZero, IsEqual, LessThan, the gates and EscalarProduct. There were 10 circomlib findings, V-CIRCOMLIB-VUL-001..010, all with status 'Open'.",
+        "url": "https://veridise.com/wp-content/uploads/2024/11/VAR_EF_0xparc_Circom.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "The circomlib npm package has 25,762 downloads per week (2026-10-29..11-04) and is the standard dependency of deployed circuits such as Tornado Cash, Semaphore and iden3/Polygon ID.",
+      "url": "https://www.npmjs.com/package/circomlib"
+    },
+    "CommitNote": "This is tag v2.0.5, the audited commit and the latest npm release. No audit fixes were ever made: every Veridise finding is 'Open' and the report has no fix-review. circuits/ and test/circuits/ are byte-identical from v2.0.5 to HEAD 35e54ea (2025-04-03); 'git diff --stat cff5ab6 HEAD' touches only CI, LICENSE, README, package*.json and two JS tests. The older MiMC 'assigned but not constrained' bug (Kobi Gurkan, fix 109cdf4, 2019-09-17) is an ancestor of this commit, so it is fixed here."
+  },
+  "provenance": {
+    "Project": "https://github.com/iden3/circomlib",
+    "ProjectName": "circomlib",
+    "Commit": "cff5ab6288b55ef23602221694a6a38a0239dcc0",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "Veridise + 0xPARC Community + Ethereum Foundation",
+          "date": "2022-11",
+          "scope": "Joint audit of circom-bigint and its dependency circomlib at commit cff5ab6 (= tag v2.0.5), Jul 28 to Nov 15, 2022. Picus (static analysis) was run over circomlib, and Coda (Coq) certified Num2Bits, Bits2Num, IsZero, IsEqual, LessThan, the gates and EscalarProduct. There were 10 circomlib findings, V-CIRCOMLIB-VUL-001..010, all with status 'Open'.",
+          "url": "https://veridise.com/wp-content/uploads/2024/11/VAR_EF_0xparc_Circom.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "The circomlib npm package has 25,762 downloads per week (2026-10-29..11-04) and is the standard dependency of deployed circuits such as Tornado Cash, Semaphore and iden3/Polygon ID.",
+        "url": "https://www.npmjs.com/package/circomlib"
+      },
+      "CommitNote": "This is tag v2.0.5, the audited commit and the latest npm release. No audit fixes were ever made: every Veridise finding is 'Open' and the report has no fix-review. circuits/ and test/circuits/ are byte-identical from v2.0.5 to HEAD 35e54ea (2025-04-03); 'git diff --stat cff5ab6 HEAD' touches only CI, LICENSE, README, package*.json and two JS tests. The older MiMC 'assigned but not constrained' bug (Kobi Gurkan, fix 109cdf4, 2019-09-17) is an ancestor of this commit, so it is fixed here."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "V-CIRCOMLIB-VUL-001",
+        "title": "Decoder accepting bogus output signal (critical, underconstrained)",
+        "location": "circuits/multiplexer.circom:Decoder (L78)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-002",
+        "title": "Underconstrained points in Edwards2Montgomery (critical)",
+        "location": "circuits/montgomery.circom:Edwards2Montgomery (L30)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-003",
+        "title": "Underconstrained points in Montgomery2Edwards (critical)",
+        "location": "circuits/montgomery.circom:Montgomery2Edwards (L49)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-004",
+        "title": "Underconstrained points in MontgomeryAdd (critical)",
+        "location": "circuits/montgomery.circom:MontgomeryAdd (L89)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-005",
+        "title": "Underconstrained points in MontgomeryDouble (critical)",
+        "location": "circuits/montgomery.circom:MontgomeryDouble (L122)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-006",
+        "title": "Underconstrained outputs in BitElementMulAny (critical)",
+        "location": "circuits/escalarmulany.circom:BitElementMulAny (L34)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-007",
+        "title": "Underconstrained outputs in Window4 (critical)",
+        "location": "circuits/pedersen.circom:Window4 (L25)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-008",
+        "title": "Underconstrained outputs in WindowMulFix (critical)",
+        "location": "circuits/escalarmulfix.circom:WindowMulFix (L48)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-009",
+        "title": "Underconstrained outputs in Bits2Point (warning: empty template)",
+        "location": "circuits/pointbits.circom:Bits2Point (L73)",
+        "status": "open"
+      },
+      {
+        "id": "V-CIRCOMLIB-VUL-010",
+        "title": "Underconstrained outputs in Point2Bits (warning: empty template)",
+        "location": "circuits/pointbits.circom:Point2Bits (L129)",
+        "status": "open"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/circomlib",
+    "LinkPaths": [
+      "dataset/codebases/audited/circomlib"
+    ],
+    "Entrypoint": "../../../../codebases/audited/circomlib/test/circuits/poseidon3_test.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 765
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

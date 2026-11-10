@@ -1,0 +1,18 @@
+stdout:
+working directory: /var/tmp/picus17770271421777027142849
+The circuit is underconstrained
+Counterexample:
+  inputs:
+    main.a: 0
+    main.b: 0
+  first possible outputs:
+[33m    main.out: 0[0m
+  second possible outputs:
+[33m    main.out: 1[0m
+  first internal variables:
+[33m    main.tmp: 0[0m
+  second internal variables:
+[33m    main.tmp: 1368015184586208377692962645747596915105636153469842199510504144919754569108[0m
+Exiting Picus with the code 9
+
+stderr:

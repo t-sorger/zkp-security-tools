@@ -1,0 +1,1523 @@
+{
+  "mode": "original",
+  "dataset": "zkbugs/dataset/circom",
+  "total": 56,
+  "processed": 56,
+  "errors": 0,
+  "skipped": 0,
+  "jobs": 4,
+  "bugs": [
+    {
+      "bug_name": "daira_hopwood_darkforest_v0_3_missing_bit_length_check",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 8
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_checkdepth_comparator_overflow",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_clamp_comparator_overflow",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_emitifinrange_lessthan_overflow",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_extractstringfrompoint_shiftedfirstbyte_unconstrained",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 1
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_spend_missing_range_check",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_subtract_unconstrained_multiplier",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_unconstrained_base64_decoded_len",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "koukyosyumei_under_constrained_date_encoder",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "leastauthority_Circuit_Does_Not_Check_the_ERC_20_Sum_Correctly_",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "leastauthority_previously_correct_ownership_proof_disabled_via_code_changes",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "matterlabs_email_spoofing_via_manipulated_from_header",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "matterlabs_emailauth_fails_with_overlapping_invitation_code_regex",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "matterlabs_fromaddrregex_allows_email_address_spoofing",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "matterlabs_underconstrained_fpmul_circuit",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "openzeppelin_mismatched_base64url_decoding_may_break_completeness",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 4
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "openzeppelin_non_determinism_of_some_inputs",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 4
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "trailofbits_incorrect_handling_of_point_doubling_can_allow_signature_forgery",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "trailofbits_prover_can_lock_user_funds_by_including_ill-formed_bigints_in_public_key_commitment",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "trailofbits_prover_can_lock_user_funds_by_supplying_non-reduced_Y_values_to_G1BigIntToSignFlag",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_arrayxor_is_under_constrained",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_babyjubjub_suborder_constraints_not_applied_correctly",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_blacklist_states_not_representable_in_field",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_bypassing_internal_transfer_limits_via_swaps",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_creditnoteproofs_can_be_stolen",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_data_escrow_encrypted_message_wrong_input",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_fortxreward_abstracted_away_in_reward_calc",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_incorrect_initialization_in_membership_circuits",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_kyt_signature_verification_fails_nonzero_hash",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_missing_range_checks_in_bigmod",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_missing_range_checks_on_comparison_circuits",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_no_zero_value_validation",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_nullifier_verification_can_be_disabled",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_ownershipproofs_could_identify_issuers",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_private_information_leakage",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_spammers_may_slash_themselves",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_template_CoreVerifyPubkeyG1_does_not_perform_input_validation_simplified",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_underconstrained_circuit_allows_invalid_comparison",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_unsafe_num2bits_254_blacklist_leaf",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_zaccount_renewal_kyc_expiry_not_validated",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_zaccount_renewal_multiple_nullifiers_same_utxo",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_zero_padding_for_sha256_in_ExpandMessageXMD_is_vulnerable_to_an_overflow",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 33
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_zone_id_inclusion_prover_bypass",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "veridise_zone_limits_bypass_zswapv1",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "yacademy_Knowledge_of_any_member_signature_allow_to_generate_proof_of_membership",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "yacademy_input_signal_s_is_not_constrained_in_eff_ecdsa_circom",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "yacademy_under_constrained_circuits_compromising_the_soundness_of_the_system",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "success",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_an_attacker_can_craft_a_fake_non_inclusion_proof_for_a_given_key_due_to_an_aliasing_bug_in_the_smt_verifier",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_big_integer_zero_check_is_not_sound",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_exclusion_check_of_forbidden_countries_is_unsound_and_incomplete_due_to_incorrect_indexing",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 3
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_forbidden_country_check_bypass_via_packed_byte_overflow",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_missing_boolean_constraints_in_the_merkle_tree_path_leads_to_an_attacker_being_able_to_craft_a_fake_merkle_proof_for_an_arbitrary_leaf",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_missing_byte_range_checks_allows_packed_data_pollution",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "failed",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_second_pre_image_attacks_on_packbytesandposeidon_may_be_used_to_register_arbitrary_passports_and_dsc_certificates",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 1
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_sha256_templates_return_zero_on_arbitrary_inputs",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "timeout",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    },
+    {
+      "bug_name": "zksecurity_the_registration_and_disclosure_circuits_lack_range_checks_for_the_input_indices",
+      "status": "processed",
+      "mode": "original",
+      "tools": {
+        "circomspect": {
+          "status": "success",
+          "findings_count": 0
+        },
+        "circom_civer": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "picus": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "zkfuzz": {
+          "status": "failed",
+          "findings_count": 0
+        },
+        "conscs": {
+          "status": "timeout",
+          "findings_count": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n53324 constraints, 35 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 39.775942 \n** counterexample: {} \n\n",
+  "execution_time": 40.10398554801941,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_private_information_leakage/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,128 @@
+{
+  "unit": "zk-email-verify__rsaverifier65537-121-17",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "yAcademy",
+        "date": "2023",
+        "scope": "circuits/helpers/*.circom at commit 1f28986 (base64, rsa, bigint helpers)",
+        "url": "https://docs.zk.email/files/yacademy-zkemail-audit-report.pdf"
+      },
+      {
+        "auditor": "zkSecurity",
+        "date": "2024-05",
+        "scope": "all circom templates in packages/circuits at f2fb77c (+ zk-regex compiler); fixes reviewed at 95cd90 (npm 6.1.1)",
+        "url": "https://docs.zk.email/files/zk_email_zksecurity_audit.pdf"
+      },
+      {
+        "auditor": "Matter Labs",
+        "date": "2024-10",
+        "scope": "all Circom files in packages/circuits at fc99497 (multi-repo ZK Email account-recovery review); fix commit 9ed3769",
+        "url": "https://docs.zk.email/files/matterlabs-zkemail-audit-report.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Core library (@zk-email/circuits, ~2.4k npm downloads/month) underlying ZK Email's EmailAuth circuit, whose Groth16Verifier/EmailAuth contracts are deployed on Base mainnet and ZKsync Era (eth_getCode on Base mainnet for 0xa63e3640633Ac39457D6B3770659821d16CA11cE returns code).",
+      "url": "https://docs.zk.email/account-recovery/deployed-contracts"
+    },
+    "CommitNote": "Tag v6.3.2. The Matter Labs report (Oct 2024, latest circuit audit) names 9ed3769 as the final zk-email-verify commit after fixes (FpMul r<p check, a6c3ecc / #226); it also contains the earlier zkSecurity fixes (v6.1.0/6.1.1). Version pins from yarn.lock: @zk-email/zk-regex-circom 2.3.1, circomlib 2.0.5."
+  },
+  "provenance": {
+    "Project": "https://github.com/zkemail/zk-email-verify",
+    "ProjectName": "zk-email-verify",
+    "Commit": "9ed3769dc3d96fb0d7c45f1f014dcd9bfb63675b",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "yAcademy",
+          "date": "2023",
+          "scope": "circuits/helpers/*.circom at commit 1f28986 (base64, rsa, bigint helpers)",
+          "url": "https://docs.zk.email/files/yacademy-zkemail-audit-report.pdf"
+        },
+        {
+          "auditor": "zkSecurity",
+          "date": "2024-05",
+          "scope": "all circom templates in packages/circuits at f2fb77c (+ zk-regex compiler); fixes reviewed at 95cd90 (npm 6.1.1)",
+          "url": "https://docs.zk.email/files/zk_email_zksecurity_audit.pdf"
+        },
+        {
+          "auditor": "Matter Labs",
+          "date": "2024-10",
+          "scope": "all Circom files in packages/circuits at fc99497 (multi-repo ZK Email account-recovery review); fix commit 9ed3769",
+          "url": "https://docs.zk.email/files/matterlabs-zkemail-audit-report.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Core library (@zk-email/circuits, ~2.4k npm downloads/month) underlying ZK Email's EmailAuth circuit, whose Groth16Verifier/EmailAuth contracts are deployed on Base mainnet and ZKsync Era (eth_getCode on Base mainnet for 0xa63e3640633Ac39457D6B3770659821d16CA11cE returns code).",
+        "url": "https://docs.zk.email/account-recovery/deployed-contracts"
+      },
+      "CommitNote": "Tag v6.3.2. The Matter Labs report (Oct 2024, latest circuit audit) names 9ed3769 as the final zk-email-verify commit after fixes (FpMul r<p check, a6c3ecc / #226); it also contains the earlier zkSecurity fixes (v6.1.0/6.1.1). Version pins from yarn.lock: @zk-email/zk-regex-circom 2.3.1, circomlib 2.0.5."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "zkSecurity-07",
+        "title": "Base64Decode does not distinguish between 'A' and '=' (padding char can replace 'A' with same output); client documented the behaviour instead of changing it (commit 27ccac)",
+        "location": "packages/circuits/lib/base64.circom:Base64Lookup/Base64Decode",
+        "status": "acknowledged"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/zk-email-verify",
+    "LinkPaths": [
+      "dataset/codebases/audited/zk-email-verify",
+      "dataset/codebases/audited/zk-email-verify/node_modules"
+    ],
+    "Entrypoint": "../../../../codebases/audited/zk-email-verify/packages/circuits/tests/test-circuits/rsa-test.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 208463
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n11137 constraints, 33 inputs, 33 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result:  \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 254.46818733215332,
+  "raw_output_file": "output/conscs-both-run-2/direct/matterlabs_emailauth_fails_with_overlapping_invitation_code_regex/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

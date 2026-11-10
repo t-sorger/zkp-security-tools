@@ -1,0 +1,137 @@
+stdout:
+circomspect: analyzing template 'Withdraw'
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:51:33
+   │
+51 │     for (var i = 0; i < levels; i++) {
+   │                                 ^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:63:25
+   │
+63 │     recipientSquare <== recipient * recipient;
+   │                         ^^^^^^^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:64:19
+   │
+64 │     feeSquare <== fee * fee;
+   │                   ^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:65:23
+   │
+65 │     relayerSquare <== relayer * relayer;
+   │                       ^^^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:66:22
+   │
+66 │     refundSquare <== refund * refund;
+   │                      ^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:51:21
+   │
+51 │     for (var i = 0; i < levels; i++) {
+   │                     ^^^^^^^^^^ Field element comparison here.
+   │
+   = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+   = To ignore this type of result, use `--allow CS0003`.
+
+warning[CS0017]: Intermediate signals should typically occur in at least two separate constraints.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:62:5
+   │
+62 │     signal refundSquare;
+   │     ^^^^^^^^^^^^^^^^^^^ The intermediate signal `refundSquare` is declared here.
+   ·
+66 │     refundSquare <== refund * refund;
+   │     -------------------------------- The intermediate signal `refundSquare` is constrained here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#under-constrained-signal.
+   = To ignore this type of result, use `--allow CS0017`.
+
+warning[CS0017]: Intermediate signals should typically occur in at least two separate constraints.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:60:5
+   │
+60 │     signal feeSquare;
+   │     ^^^^^^^^^^^^^^^^ The intermediate signal `feeSquare` is declared here.
+   ·
+64 │     feeSquare <== fee * fee;
+   │     ----------------------- The intermediate signal `feeSquare` is constrained here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#under-constrained-signal.
+   = To ignore this type of result, use `--allow CS0017`.
+
+warning[CS0017]: Intermediate signals should typically occur in at least two separate constraints.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:61:5
+   │
+61 │     signal relayerSquare;
+   │     ^^^^^^^^^^^^^^^^^^^^ The intermediate signal `relayerSquare` is declared here.
+   ·
+65 │     relayerSquare <== relayer * relayer;
+   │     ----------------------------------- The intermediate signal `relayerSquare` is constrained here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#under-constrained-signal.
+   = To ignore this type of result, use `--allow CS0017`.
+
+warning[CS0017]: Intermediate signals should typically occur in at least two separate constraints.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:59:5
+   │
+59 │     signal recipientSquare;
+   │     ^^^^^^^^^^^^^^^^^^^^^^ The intermediate signal `recipientSquare` is declared here.
+   ·
+63 │     recipientSquare <== recipient * recipient;
+   │     ----------------------------------------- The intermediate signal `recipientSquare` is constrained here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#under-constrained-signal.
+   = To ignore this type of result, use `--allow CS0017`.
+
+circomspect: analyzing template 'CommitmentHasher'
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:23:29
+   │
+23 │         commitmentHasher.in[i + 248] <== secretBits.out[i];
+   │                             ^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:20:30
+   │
+20 │     for (var i = 0; i < 248; i++) {
+   │                              ^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+note[CS0003]: Comparisons with field elements greater than `p/2` may produce unexpected results.
+   ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom:20:21
+   │
+20 │     for (var i = 0; i < 248; i++) {
+   │                     ^^^^^^^ Field element comparison here.
+   │
+   = Field elements are always normalized to the interval `(-p/2, p/2]` before they are compared.
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-comparison.
+   = To ignore this type of result, use `--allow CS0003`.
+
+circomspect: 13 issues found.
+
+stderr:

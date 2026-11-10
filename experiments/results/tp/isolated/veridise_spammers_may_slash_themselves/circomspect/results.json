@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.1,
+  "findings": [
+    {
+      "bug_title": "UnusedVariableValue",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "The signal `addressHash` is not used by the template.",
+      "file": "/tmp/evaluation_tool-circomspect-wp9cg3nn/circuit.circom",
+      "position": {
+        "line": 13,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0006"
+      }
+    }
+  ]
+}

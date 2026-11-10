@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n664 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 9.506227 \n** counterexample: {} \n\n",
+  "execution_time": 9.789446830749512,
+  "raw_output_file": "output/conscs-both-run-2/direct/kobi_gurkan_mimc_hash_assigned_but_not_constrained/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

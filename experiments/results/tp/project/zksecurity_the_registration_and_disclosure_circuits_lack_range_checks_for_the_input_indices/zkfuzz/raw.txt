@@ -1,0 +1,16 @@
+stdout:
+
+stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...

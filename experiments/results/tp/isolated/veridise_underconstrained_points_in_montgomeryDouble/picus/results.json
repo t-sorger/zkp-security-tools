@@ -1,0 +1,40 @@
+{
+  "status": "bugs_found",
+  "execution_time": 1.48,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained Signal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out[0]` can be `5322068362127053380761936828261197253630416030257971508159916442316514342224` or `0` for inputs (main.in[0]=19227208690775748531865437331126676461733156385287048589618245965417551240156, main.in[1]=0)",
+      "position": {
+        "signal": "main.out[0]"
+      },
+      "metadata": {
+        "severity": "error",
+        "inputs": {
+          "main.in[0]": "19227208690775748531865437331126676461733156385287048589618245965417551240156",
+          "main.in[1]": "0"
+        },
+        "first_value": "5322068362127053380761936828261197253630416030257971508159916442316514342224",
+        "second_value": "0"
+      }
+    },
+    {
+      "bug_title": "Under-Constrained Signal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out[1]` can be `0` or `11395287471962378606215025428882238971762841540906324053591198862844560648166` for inputs (main.in[0]=19227208690775748531865437331126676461733156385287048589618245965417551240156, main.in[1]=0)",
+      "position": {
+        "signal": "main.out[1]"
+      },
+      "metadata": {
+        "severity": "error",
+        "inputs": {
+          "main.in[0]": "19227208690775748531865437331126676461733156385287048589618245965417551240156",
+          "main.in[1]": "0"
+        },
+        "first_value": "0",
+        "second_value": "11395287471962378606215025428882238971762841540906324053591198862844560648166"
+      }
+    }
+  ]
+}

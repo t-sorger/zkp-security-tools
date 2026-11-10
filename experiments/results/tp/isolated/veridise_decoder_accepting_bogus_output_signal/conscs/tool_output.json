@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n6 constraints, 2 inputs, 5 outputs.\nparse done\nconsidering edge 0  2.8e-05\ntrying grobner 1 4.3e-05\nfound grobner 0.01864\nconflict NOT found  0.103458\nBUT SAT FOUND  0.106736\nCOUNTER FOUND  0.108514\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: UNDER-CONSTRAINED! \n** time: 0.11391 \n** counterexample: {1: ({5: 0, 4: 0, 6: 0, 3: 0, 2: 0, 1: 0}, {5: 1, 4: 0, 6: 0, 3: 0, 2: 0, 1: 1})} \n\n",
+  "execution_time": 0.39855504035949707,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_decoder_accepting_bogus_output_signal/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

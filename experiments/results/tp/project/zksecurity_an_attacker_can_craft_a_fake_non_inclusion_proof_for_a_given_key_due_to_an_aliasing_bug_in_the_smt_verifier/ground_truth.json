@@ -1,0 +1,43 @@
+{
+  "bug_name": "An attacker can craft a fake non-inclusion proof for a given key due to an aliasing bug in the SMT verifier",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Wrong Translation of Logic into Constraints",
+  "location": {
+    "Path": "circuits/circuits/utils/crypto/merkle-trees/smt.circom",
+    "Function": "SMTVerify",
+    "Line": "27-35"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/selfxyz/self",
+  "commit": "4f18c75041bb47c1862169eef82c22067642a83a",
+  "fix_commit": "99e8eece5e0867017ca076731fba63ed96ae4711",
+  "reproduced": false,
+  "short_description": "The `Num2Bits(254)` component presents an aliasing issue. The Num2Bits circuit in circomlib, witnesses the binary representation in the `out` array, and then checks that the recomposed value matches the input `in`. This computation is done modulo the field size, which is smaller than 2^254. Therefore, for approximately a quarter of the possible keys, an attacker can witness a different binary representation of the key.",
+  "proposed_mitigation": "We recommend replacing the `Num2Bits` component with `Num2Bits_strict`, which does not have the aliasing issue.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/zksecurity-celo-self-audit-2.pdf",
+      "Bug ID": "#00 - An attacker can craft a fake non-inclusion proof for a given key due to an aliasing bug in the SMT verifier"
+    }
+  },
+  "codebase": "dataset/codebases/circom/selfxyz/self/4f18c75041bb47c1862169eef82c22067642a83a",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/register_id/instances/register_id_sha256_sha256_sha256_rsa_65537_4096.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Unirep/Unirep/veridise_underconstrained_circuit_allows_invalid_comparison",
+    "iden3/circuits/trailofbits_unsafe_use_of_num2bits_in_multiple_circuits",
+    "pantherfoundation/panther-core/veridise_babyjubjub_suborder_constraints_not_applied_correctly",
+    "pantherfoundation/panther-core/veridise_unsafe_num2bits_254_blacklist_leaf"
+  ],
+  "mode": "original"
+}

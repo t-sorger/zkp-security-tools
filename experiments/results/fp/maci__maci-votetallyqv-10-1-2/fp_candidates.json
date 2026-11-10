@@ -1,0 +1,110 @@
+{
+  "unit": "maci__maci-votetallyqv-10-1-2",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "HashCloak",
+        "date": "2026-03",
+        "scope": "MACI v3: packages/circuits (all Circom), packages/contracts, excubiae policies; audited commit d79aaad297f0721bae2ec7c416dc989442b8d335 (2026-01-13); fix review on main at 3a64a2386bff4bcddc7dba5137476921db22959c; 18 findings (1 Critical, 3 High, 5 Medium, 3 Low, 6 Info), all Resolved",
+        "url": "https://maci.pse.dev/audit_reports/20260317_Hashcloak_audit_report.pdf"
+      },
+      {
+        "auditor": "HashCloak",
+        "date": "2022-09",
+        "scope": "MACI v1 circuits + contracts (older major version, fixes in v1.1.1)",
+        "url": "https://maci.pse.dev/audit_reports/202220930_Hashcloak_audit_report.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "MACI ran production QF rounds 2022-2024 (ETH Mexico, Devcon SEA, ETHPrague, ...) and the v3 docs list shared MACI contracts on Arbitrum One mainnet (Verifier 0x2427Ab201488Ac81Bec421F179B1Be23c55ebC27) and Optimism; repo now archived.",
+      "url": "https://maci.pse.dev/docs/supported-networks/deployed-contracts"
+    },
+    "CommitNote": "Tag v3.0.0: first release tag containing the HashCloak fix-review commit 3a64a238 (2026-03-09). packages/circuits differs from the fix-review commit only in package.json/CHANGELOG."
+  },
+  "provenance": {
+    "Project": "https://github.com/privacy-ethereum/maci",
+    "ProjectName": "maci",
+    "Commit": "4d0e3a35f9f0c0122101050903bfcb383f7aaaa4",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "HashCloak",
+          "date": "2026-03",
+          "scope": "MACI v3: packages/circuits (all Circom), packages/contracts, excubiae policies; audited commit d79aaad297f0721bae2ec7c416dc989442b8d335 (2026-01-13); fix review on main at 3a64a2386bff4bcddc7dba5137476921db22959c; 18 findings (1 Critical, 3 High, 5 Medium, 3 Low, 6 Info), all Resolved",
+          "url": "https://maci.pse.dev/audit_reports/20260317_Hashcloak_audit_report.pdf"
+        },
+        {
+          "auditor": "HashCloak",
+          "date": "2022-09",
+          "scope": "MACI v1 circuits + contracts (older major version, fixes in v1.1.1)",
+          "url": "https://maci.pse.dev/audit_reports/202220930_Hashcloak_audit_report.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "MACI ran production QF rounds 2022-2024 (ETH Mexico, Devcon SEA, ETHPrague, ...) and the v3 docs list shared MACI contracts on Arbitrum One mainnet (Verifier 0x2427Ab201488Ac81Bec421F179B1Be23c55ebC27) and Optimism; repo now archived.",
+        "url": "https://maci.pse.dev/docs/supported-networks/deployed-contracts"
+      },
+      "CommitNote": "Tag v3.0.0: first release tag containing the HashCloak fix-review commit 3a64a238 (2026-03-09). packages/circuits differs from the fix-review commit only in package.json/CHANGELOG."
+    },
+    "KnownUnfixed": [],
+    "Codebase": "dataset/codebases/audited/maci",
+    "LinkPaths": [
+      "dataset/codebases/audited/maci",
+      "dataset/codebases/audited/maci/packages/circuits/node_modules/circomlib/circuits",
+      "dataset/codebases/audited/maci/packages/circuits/node_modules/@zk-kit/circuits/circom"
+    ],
+    "Entrypoint": "circuit.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 100082
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

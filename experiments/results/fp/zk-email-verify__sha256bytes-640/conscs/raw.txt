@@ -1,0 +1,5 @@
+** filename: sha-test.circom 
+** result: TIMEOUT 
+** time: 602.9247508049011 
+** counterexample: None 
+

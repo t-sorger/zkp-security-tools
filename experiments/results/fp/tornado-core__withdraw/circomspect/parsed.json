@@ -1,0 +1,128 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 51,
+            "column": 33
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 63,
+            "column": 25
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 64,
+            "column": 19
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 65,
+            "column": 23
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 66,
+            "column": 22
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 51,
+            "column": 21
+        },
+        {
+            "severity": "warning",
+            "code": "CS0017",
+            "name": "UnderConstrainedSignal",
+            "message": "Intermediate signals should typically occur in at least two separate constraints.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 62,
+            "column": 5
+        },
+        {
+            "severity": "warning",
+            "code": "CS0017",
+            "name": "UnderConstrainedSignal",
+            "message": "Intermediate signals should typically occur in at least two separate constraints.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 60,
+            "column": 5
+        },
+        {
+            "severity": "warning",
+            "code": "CS0017",
+            "name": "UnderConstrainedSignal",
+            "message": "Intermediate signals should typically occur in at least two separate constraints.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 61,
+            "column": 5
+        },
+        {
+            "severity": "warning",
+            "code": "CS0017",
+            "name": "UnderConstrainedSignal",
+            "message": "Intermediate signals should typically occur in at least two separate constraints.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 59,
+            "column": 5
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 23,
+            "column": 29
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 20,
+            "column": 30
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/circuits/withdraw.circom",
+            "line": 20,
+            "column": 21
+        }
+    ],
+    "statistics": {
+        "total_issues": 13,
+        "warnings": 4,
+        "notes": 9,
+        "errors": 0
+    }
+}

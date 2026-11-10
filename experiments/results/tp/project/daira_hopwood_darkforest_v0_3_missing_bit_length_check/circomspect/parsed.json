@@ -1,0 +1,83 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CS0006",
+            "name": "UnusedVariableValue",
+            "message": "The signal `p` is not used by the template.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 18,
+            "column": 5
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 24,
+            "column": 43
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 33,
+            "column": 13
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 34,
+            "column": 13
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 35,
+            "column": 13
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 36,
+            "column": 20
+        },
+        {
+            "severity": "warning",
+            "code": "CS0014",
+            "name": "UnconstrainedLessThan",
+            "message": "Inputs to `LessThan` need to be constrained to ensure that they are non-negative",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 37,
+            "column": 20
+        },
+        {
+            "severity": "warning",
+            "code": "CS0014",
+            "name": "UnconstrainedLessThan",
+            "message": "Inputs to `LessThan` need to be constrained to ensure that they are non-negative",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+            "line": 36,
+            "column": 20
+        }
+    ],
+    "statistics": {
+        "total_issues": 8,
+        "warnings": 3,
+        "notes": 5,
+        "errors": 0
+    }
+}

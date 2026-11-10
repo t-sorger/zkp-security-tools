@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.0565330982208,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_zone_limits_bypass_zswapv1/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

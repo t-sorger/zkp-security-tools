@@ -1,0 +1,139 @@
+stdout:
+🎲 Random Seed: 1461119317443331386
+
+[2K🧬 Generation: 0/500 (0)
+    └─ Solution found in generation 0
+
+stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...
+╔══════════════════════════════════════════════════════════════╗
+║🚨 Counter Example:                                           ║
+║    🔥 UnderConstrained (Non-Deterministic) 🔥
+║           ➡️ `main.out` is expected to be `109` 
+║    🔍 Assignment Details: 
+║           ➡️ main.out = 66033133 
+║           ➡️ main.b = 21888242871839275222246405745257275088548364400416034343698204186575808495522 
+║           ➡️ main.a = 21888242871839275222246405745257275088548364400416034343698204186575808495567 
+║           ➡️ main.xor.xor_bits[28] = 0 
+║           ➡️ main.xor.a_bits[24] = 1 
+║           ➡️ main.xor.xor_bits[1] = 64 
+║           ➡️ main.xor.a_bits[31] = 1 
+║           ➡️ main.xor.xor_bits[29] = 0 
+║           ➡️ main.xor.a_bits[14] = 1 
+║           ➡️ main.xor.b_bits[10] = 1 
+║           ➡️ main.xor.xor_bits[2] = 1 
+║           ➡️ main.xor.b_bits[19] = 1 
+║           ➡️ main.xor.xor_bits[10] = 0 
+║           ➡️ main.xor.xor_bits[19] = 0 
+║           ➡️ main.xor.xor_bits[0] = 1 
+║           ➡️ main.xor.xor_bits[23] = 0 
+║           ➡️ main.xor.a_bits[25] = 1 
+║           ➡️ main.xor.b_bits[11] = 1 
+║           ➡️ main.xor.xor_bits[30] = 0 
+║           ➡️ main.xor.xor_bits[3] = 1 
+║           ➡️ main.xor.xor_bits[11] = 0 
+║           ➡️ main.xor.xor_bits[17] = 0 
+║           ➡️ main.xor.xor_bits[20] = 63 
+║           ➡️ main.xor.b_bits[8] = 1 
+║           ➡️ main.xor.b_bits[6] = 21888242871839275222246405745257275088548364400416034343698204186575808495533 
+║           ➡️ main.xor.b_bits[22] = 1 
+║           ➡️ main.xor.xor_bits[7] = 0 
+║           ➡️ main.xor.b_bits[16] = 1 
+║           ➡️ main.xor.b_bits[24] = 1 
+║           ➡️ main.xor.xor_bits[26] = 0 
+║           ➡️ main.xor.a_bits[13] = 5 
+║           ➡️ main.xor.b_bits[5] = 1 
+║           ➡️ main.xor.xor_bits[24] = 0 
+║           ➡️ main.xor.a_bits[27] = 1 
+║           ➡️ main.xor.b_bits[3] = 0 
+║           ➡️ main.xor.xor_bits[31] = 0 
+║           ➡️ main.xor.a_bits[4] = 0 
+║           ➡️ main.xor.b_bits[1] = 1 
+║           ➡️ main.xor.b_bits[12] = 1 
+║           ➡️ main.xor.xor_bits[21] = 0 
+║           ➡️ main.xor.b_bits[29] = 1 
+║           ➡️ main.xor.xor_bits[12] = 0 
+║           ➡️ main.xor.b_bits[23] = 1 
+║           ➡️ main.xor.b_bits[30] = 1 
+║           ➡️ main.xor.b_bits[2] = 0 
+║           ➡️ main.xor.a_bits[9] = 1 
+║           ➡️ main.xor.b_bits[0] = 0 
+║           ➡️ main.xor.a_bits[8] = 1 
+║           ➡️ main.xor.xor_bits[14] = 0 
+║           ➡️ main.xor.a_bits[6] = 1 
+║           ➡️ main.xor.xor_bits[13] = 21888242871839275222246405745257275088548364400416034343698204186575808495613 
+║           ➡️ main.xor.b_bits[17] = 1 
+║           ➡️ main.xor.a_bits[16] = 1 
+║           ➡️ main.xor.a_bits[18] = 1 
+║           ➡️ main.xor.b_bits[20] = 21888242871839275222246405745257275088548364400416034343698204186575808495555 
+║           ➡️ main.xor.b_bits[7] = 0 
+║           ➡️ main.xor.xor_bits[25] = 0 
+║           ➡️ main.xor.a_bits[5] = 0 
+║           ➡️ main.xor.b_bits[26] = 1 
+║           ➡️ main.xor.xor_bits[27] = 0 
+║           ➡️ main.xor.a_bits[15] = 1 
+║           ➡️ main.xor.b_bits[31] = 1 
+║           ➡️ main.xor.a_bits[22] = 1 
+║           ➡️ main.xor.b_bits[21] = 1 
+║           ➡️ main.xor.a_bits[29] = 1 
+║           ➡️ main.xor.a_bits[23] = 1 
+║           ➡️ main.xor.a_bits[30] = 1 
+║           ➡️ main.xor.a_bits[2] = 1 
+║           ➡️ main.xor.out = 66033133 
+║           ➡️ main.xor.a_bits[10] = 1 
+║           ➡️ main.xor.a_bits[28] = 0 
+║           ➡️ main.xor.b_bits[4] = 0 
+║           ➡️ main.xor.a_bits[0] = 1 
+║           ➡️ main.xor.a = 21888242871839275222246405745257275088548364400416034343698204186575808495567 
+║           ➡️ main.xor.xor_bits[4] = 0 
+║           ➡️ main.xor.a_bits[19] = 1 
+║           ➡️ main.xor.a_bits[11] = 1 
+║           ➡️ main.xor.a_bits[17] = 1 
+║           ➡️ main.xor.a_bits[26] = 1 
+║           ➡️ main.xor.a_bits[1] = 21888242871839275222246405745257275088548364400416034343698204186575808495554 
+║           ➡️ main.xor.b_bits[9] = 1 
+║           ➡️ main.xor.b_bits[14] = 1 
+║           ➡️ main.xor.b_bits[25] = 1 
+║           ➡️ main.xor.xor_bits[9] = 0 
+║           ➡️ main.xor.a_bits[7] = 0 
+║           ➡️ main.xor.xor_bits[15] = 0 
+║           ➡️ main.xor.b = 21888242871839275222246405745257275088548364400416034343698204186575808495522 
+║           ➡️ main.xor.xor_bits[22] = 0 
+║           ➡️ main.xor.xor_bits[8] = 0 
+║           ➡️ main.xor.xor_bits[6] = 85 
+║           ➡️ main.xor.b_bits[18] = 1 
+║           ➡️ main.xor.xor_bits[18] = 0 
+║           ➡️ main.xor.a_bits[3] = 1 
+║           ➡️ main.xor.xor_bits[16] = 0 
+║           ➡️ main.xor.a_bits[20] = 1 
+║           ➡️ main.xor.a_bits[21] = 1 
+║           ➡️ main.xor.b_bits[27] = 1 
+║           ➡️ main.xor.xor_bits[5] = 1 
+║           ➡️ main.xor.b_bits[28] = 0 
+║           ➡️ main.xor.a_bits[12] = 1 
+║           ➡️ main.xor.b_bits[15] = 1 
+║           ➡️ main.xor.b_bits[13] = 1 
+╚══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                        zkFuzz Report                        ║
+╚═══════════════════════════════════════════════════════════════╝
+📊 Execution Summary:
+ ├─ Prime Number      : 21888242871839275222246405745257275088548364400416034343698204186575808495617
+ ├─ Compression Rate  : 36.00% (36/100)
+ ├─ Verification      : 💥 NOT SAFE 💥
+ └─ Execution Time    : 22.447641ms
+════════════════════════════════════════════════════════════════
+Everything went okay

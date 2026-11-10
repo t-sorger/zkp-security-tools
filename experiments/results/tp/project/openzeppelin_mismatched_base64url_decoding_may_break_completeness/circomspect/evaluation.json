@@ -1,0 +1,7 @@
+{
+  "status": "FalseNegative",
+  "reason": "Tool found 4 issues but none match Over-Constrained",
+  "need_manual_analysis": true,
+  "manual_analysis": "Done",
+  "manual_analysis_reasoning": ""
+}

@@ -1,0 +1,22 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Unexpected-Input)",
+    "assignments": {
+        "main.states[2][14]": "0",
+        "main.prev_states0[5][0]": "0",
+        "main.reveal0[2]": "0",
+        "main.prev_states0[22][0]": "0",
+        "main.states[8][13]": "0",
+        "main.is_reveal0[2]": "0",
+        "main.states[5][1]": "0",
+        "main.prev_states0[1][0]": "0",
+        "main.states[7][6]": "0",
+        "main.prev_states0[4][2]": "0",
+        "main.states[4][0]": "1",
+        "main.states[3][6]": "0",
+        "main.prev_states0[21][0]": "0",
+        "main.is_substr0[0]": "0",
+        "main.reveal0[6]": "0",
+        "main.from_zero_enabled[5]": "1"
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.02,
+  "findings": [
+    {
+      "bug_title": "P1000",
+      "unified_bug_title": "Computational-Issue",
+      "description": "Failed to open file `circuits/comparators.circom`.",
+      "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+      "position": {
+        "line": 3,
+        "column": 1,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "P1000"
+      }
+    },
+    {
+      "bug_title": "P1000",
+      "unified_bug_title": "Computational-Issue",
+      "description": "Failed to open file `circuits/mimcsponge.circom`.",
+      "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+      "position": {
+        "line": 4,
+        "column": 1,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "P1000"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+      "position": {
+        "line": 31,
+        "column": 36,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    }
+  ]
+}

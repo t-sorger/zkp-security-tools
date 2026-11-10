@@ -1,0 +1,7 @@
+{
+  "status": "FalseNegative",
+  "reason": "Tool found no under-constrained signals",
+  "need_manual_analysis": false,
+  "manual_analysis": "N/A",
+  "manual_analysis_reasoning": "N/A"
+}

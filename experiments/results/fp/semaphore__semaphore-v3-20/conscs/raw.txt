@@ -1,0 +1,5 @@
+** filename: semaphore.circom 
+** result: TIMEOUT 
+** time: 602.3770105838776 
+** counterexample: None 
+

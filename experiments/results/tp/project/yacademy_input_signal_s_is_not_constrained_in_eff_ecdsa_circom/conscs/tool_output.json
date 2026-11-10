@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n37550 constraints, 47 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: pubkey_membership.circom \n** result: CONSTRAINED! \n** time: 16.901417 \n** counterexample: {} \n\n",
+  "execution_time": 17.198203086853027,
+  "raw_output_file": "output/conscs-both-run-2/original/yacademy_input_signal_s_is_not_constrained_in_eff_ecdsa_circom/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

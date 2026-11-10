@@ -1,0 +1,46 @@
+{
+  "bug_name": "Missing Range Checks on Comparison Circuits",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Unsafe Reuse of Circuit",
+  "location": {
+    "Path": "packages/circuits/circuits/epochKeyLite.circom",
+    "Function": "EpochKeyLite",
+    "Line": "45-48"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/Unirep/Unirep",
+  "commit": "0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+  "fix_commit": "f7b0bcd39383d5ec4d17edec2ad91bc01333bf36",
+  "reproduced": false,
+  "short_description": "Input of `LessThan(8)` is assumed to have <=8 bits, but there is no constraint for it in `LessThan` template. Attacker can use large values such as `p - 1` to trigger overflow and make something like `p - 1 < EPOCH_KEY_NONCE_PER_EPOCH` return true.",
+  "proposed_mitigation": "Implement range check so that attacker can't exploit overflow in `LessThan`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-unirep.pdf",
+      "Bug ID": "V-UNI-VUL-002: Missing Range Checks on Comparison Circuits"
+    }
+  },
+  "codebase": "dataset/codebases/circom/Unirep/Unirep/0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/generated/epochKeyLite.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Moonsong-Labs/zksync-social-login-circuit/openzeppelin_non_determinism_of_some_inputs",
+    "banyancomputer/hot-proofs-blake3-circom/koukyosyumei_checkdepth_comparator_overflow",
+    "darkforest-eth/darkforest-v0.3/daira_hopwood_darkforest_v0_3_missing_bit_length_check",
+    "inference-labs-inc/subnet-2-circom/koukyosyumei_clamp_comparator_overflow",
+    "selfxyz/self/zksecurity_the_registration_and_disclosure_circuits_lack_range_checks_for_the_input_indices",
+    "siv-org/verifiable-private-overrides/koukyosyumei_emitifinrange_lessthan_overflow",
+    "worm-privacy/proof-of-burn/koukyosyumei_spend_missing_range_check"
+  ],
+  "mode": "original"
+}

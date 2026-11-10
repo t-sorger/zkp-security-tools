@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 1800.100622177124,
+  "raw_output_file": "output/fp-run/self__register-sha256-sha256-sha256-rsa-65537-4096/picus/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

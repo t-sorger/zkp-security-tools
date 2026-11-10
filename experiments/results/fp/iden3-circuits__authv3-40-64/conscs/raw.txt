@@ -1,0 +1,5 @@
+** filename: authV3.circom 
+** result: TIMEOUT 
+** time: 600.0101318359375 
+** counterexample: None 
+

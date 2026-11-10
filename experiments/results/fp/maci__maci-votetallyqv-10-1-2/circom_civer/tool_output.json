@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "\u001b[32mtemplate instances\u001b[0m: 221\n\n--------------------------------------------\n--------------------------------------------\n-------- CIVER VERIFICATION RESULTS --------\n--------------------------------------------\n--------------------------------------------\n\n-> All components satisfy weak safety :)\n  * Number of verified components (weak-safety): 221\n  * Number of failed components (weak-safety): 0\n  * Number of timeout components (weak-safety): 0\n  * Percentage of verified constraints: 100 - (100082 / 100082)\n  * Percentage of verified components: 100 - (13422 / 13422)\n\n\n--------------------------------------------\n--------------------------------------------\n\n\u001b[32mEverything went okay, circom safe\u001b[0m\n",
+  "stderr": "\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "return_code": 0,
+  "msg": "stdout:\n\u001b[32mtemplate instances\u001b[0m: 221\n\n--------------------------------------------\n--------------------------------------------\n-------- CIVER VERIFICATION RESULTS --------\n--------------------------------------------\n--------------------------------------------\n\n-> All components satisfy weak safety :)\n  * Number of verified components (weak-safety): 221\n  * Number of failed components (weak-safety): 0\n  * Number of timeout components (weak-safety): 0\n  * Percentage of verified constraints: 100 - (100082 / 100082)\n  * Percentage of verified components: 100 - (13422 / 13422)\n\n\n--------------------------------------------\n--------------------------------------------\n\n\u001b[32mEverything went okay, circom safe\u001b[0m\n\nstderr:\n\u001b[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)\u001b[0m\n",
+  "execution_time": 3.0482687950134277,
+  "raw_output_file": "output/fp-run/maci__maci-votetallyqv-10-1-2/circom_civer/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

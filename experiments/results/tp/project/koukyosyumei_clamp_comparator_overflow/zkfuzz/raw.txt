@@ -1,0 +1,92 @@
+stdout:
+🎲 Random Seed: 11119170567756029111
+
+[2K🧬 Generation: 0/500 (0)
+    └─ Solution found in generation 0
+
+stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...
+╔══════════════════════════════════════════════════════════════╗
+║🚨 Counter Example:                                           ║
+║    🧟 UnderConstrained (Unexpected-Input) 🧟
+║           Violated Condition: (BoolOr (BoolAnd (Eq 1 main.LessThan[1].out) (Lt main.LessThan[1].in[0] main.LessThan[1].in[1])) (BoolAnd (Eq 0 main.LessThan[1].out) (GEq main.LessThan[1].in[0] main.LessThan[1].in[1]))) 
+║    🔍 Assignment Details: 
+║           ➡️ main.temp_max = 8 
+║           ➡️ main.temp_2[0] = 8 
+║           ➡️ main.temp_1[1] = 0 
+║           ➡️ main.temp_2[1] = 21888242871839275222246405745257275088548364400416034343698204186575808495560 
+║           ➡️ main.b = 8 
+║           ➡️ main.temp_min = 21888242871839275222246405745257275088548364400416034343698204186575808495560 
+║           ➡️ main.min = 8 
+║           ➡️ main.out = 21888242871839275222246405745257275088548364400416034343698204186575808495560 
+║           ➡️ main.val = 2 
+║           ➡️ main.max = 21888242871839275222246405745257275088548364400416034343698204186575808495560 
+║           ➡️ main.temp_1[0] = 0 
+║           ➡️ main.LessThan[1].in[0] = 21888242871839275222246405745257275088548364400416034343698204186575808495560 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[0].in = 1 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[4].in = 1 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[3].in = 1 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[8].in = 0 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[7].in = 1 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[6].in = 0 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[3].in = 1 
+║           ➡️ main.LessThan[1].toBits.out[8] = 0 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[1].in = 1 
+║           ➡️ main.LessThan[0].toBits.out[5] = 1 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[1].in = 1 
+║           ➡️ main.LessThan[0].out = 1 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[8].in = 0 
+║           ➡️ main.LessThan[1].toBits.out[5] = 1 
+║           ➡️ main.LessThan[0].toBits.out[1] = 1 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[2].in = 1 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[5].in = 1 
+║           ➡️ main.LessThan[0].toBits.out[2] = 0 
+║           ➡️ main.LessThan[1].toBits.out[1] = 1 
+║           ➡️ main.LessThan[0].toBits.out[0] = 0 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[0].in = 0 
+║           ➡️ main.LessThan[1].toBits.AssertBit_13_210[5].in = 1 
+║           ➡️ main.LessThan[1].toBits.out[2] = 1 
+║           ➡️ main.LessThan[1].toBits.out[4] = 1 
+║           ➡️ main.LessThan[1].out = 1 
+║           ➡️ main.LessThan[1].toBits.out[0] = 1 
+║           ➡️ main.LessThan[0].toBits.out[6] = 1 
+║           ➡️ main.LessThan[0].toBits.out[4] = 1 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[6].in = 1 
+║           ➡️ main.LessThan[0].toBits.out[7] = 1 
+║           ➡️ main.LessThan[0].in[1] = 8 
+║           ➡️ main.LessThan[1].in[1] = 8 
+║           ➡️ main.LessThan[1].toBits.in = 191 
+║           ➡️ main.LessThan[1].toBits.out[3] = 1 
+║           ➡️ main.LessThan[1].toBits.out[6] = 0 
+║           ➡️ main.LessThan[1].toBits.out[7] = 1 
+║           ➡️ main.LessThan[0].toBits.out[3] = 1 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[4].in = 1 
+║           ➡️ main.LessThan[0].toBits.in = 250 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[2].in = 0 
+║           ➡️ main.LessThan[0].toBits.AssertBit_13_210[7].in = 1 
+║           ➡️ main.LessThan[0].in[0] = 2 
+║           ➡️ main.LessThan[0].toBits.out[8] = 0 
+╚══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                        zkFuzz Report                        ║
+╚═══════════════════════════════════════════════════════════════╝
+📊 Execution Summary:
+ ├─ Prime Number      : 21888242871839275222246405745257275088548364400416034343698204186575808495617
+ ├─ Compression Rate  : 72.00% (54/75)
+ ├─ Verification      : 💥 NOT SAFE 💥
+ └─ Execution Time    : 16.39738ms
+════════════════════════════════════════════════════════════════
+Everything went okay

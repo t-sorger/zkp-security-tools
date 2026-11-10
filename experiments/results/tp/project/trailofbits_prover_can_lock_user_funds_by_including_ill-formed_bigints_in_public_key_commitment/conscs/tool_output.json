@@ -1,0 +1,11 @@
+{
+  "status": "fail",
+  "stdout": "",
+  "stderr": "[Precompiled R1CS unavailable: circom failed in the precompile step; see scratch/compile.log]",
+  "return_code": 1,
+  "msg": "[Precompiled R1CS unavailable: circom failed in the precompile step; see scratch/compile.log]",
+  "execution_time": 0.00028896331787109375,
+  "raw_output_file": "output/conscs-both-run-2/original/trailofbits_prover_can_lock_user_funds_by_including_ill-formed_bigints_in_public_key_commitment/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

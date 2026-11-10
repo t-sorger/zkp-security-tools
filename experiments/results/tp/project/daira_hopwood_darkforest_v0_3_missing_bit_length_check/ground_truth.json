@@ -1,0 +1,46 @@
+{
+  "bug_name": "Dark Forest v0.3: Missing Bit Length Check",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Unsafe Reuse of Circuit",
+  "location": {
+    "Path": "circuits/range_proof/circuit.circom",
+    "Function": "RangeProof",
+    "Line": "16-22"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/darkforest-eth/darkforest-v0.3",
+  "commit": "1c83685e22e0463d5481c83e21616745b3204c9c",
+  "fix_commit": "https://github.com/darkforest-eth/circuits/commit/1b5c8440a487614d4a3e6ed523df0aee71a05b6e#diff-440e6bdf86d42398f40d29b9df0b9e6992c6859194d2a7f3c8c68fb46d0f2040",
+  "reproduced": false,
+  "short_description": "Input of `LessThan(bits)` is assumed to take inputs bounded by `2**(bits-1)`, but there is no constraint for it in `LessThan` template. Attacker can use unexpected values outside the range and pass all the constraints, rendering this RangeProof useless. Note: The original circuit does not contain the output `out`, it was added to prevent snarkJS 'Scalar size does not match' error.",
+  "proposed_mitigation": "Add constraints to check the range of `in` and `max_abs_value`. This can be done using the `Num2Bits` template.",
+  "source": {
+    "Bug Tracker": {
+      "Source Link": "https://github.com/0xPARC/zk-bug-tracker",
+      "Bug ID": "Dark Forest v0.3: Missing Bit Length Check"
+    }
+  },
+  "codebase": "dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/init/circuit.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Moonsong-Labs/zksync-social-login-circuit/openzeppelin_non_determinism_of_some_inputs",
+    "Unirep/Unirep/veridise_missing_range_checks_on_comparison_circuits",
+    "banyancomputer/hot-proofs-blake3-circom/koukyosyumei_checkdepth_comparator_overflow",
+    "inference-labs-inc/subnet-2-circom/koukyosyumei_clamp_comparator_overflow",
+    "selfxyz/self/zksecurity_the_registration_and_disclosure_circuits_lack_range_checks_for_the_input_indices",
+    "siv-org/verifiable-private-overrides/koukyosyumei_emitifinrange_lessthan_overflow",
+    "worm-privacy/proof-of-burn/koukyosyumei_spend_missing_range_check"
+  ],
+  "mode": "original"
+}

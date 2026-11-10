@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n4604 constraints, 29 inputs, 14 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 207.929073 \n** counterexample: {} \n\n",
+  "execution_time": 208.95088601112366,
+  "raw_output_file": "output/conscs-both-run-2/direct/trailofbits_incorrect_handling_of_point_doubling_can_allow_signature_forgery/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

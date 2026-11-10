@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n24 constraints, 6 inputs, 4 outputs.\nparse done\nconsidering edge 5034  3.4e-05\ntrying grobner 1 5.6e-05\ntrying grobner 2 5.019106\nfound grobner 5.577426\nconflict NOT found  11.778163\nREDIRECT\nread done\n24 constraints, 6 inputs, 4 outputs.\nparse done\nconsidering edge 5034  2.8e-05\ntrying grobner 1 4.7e-05\ntrying grobner 2 5.004482\nfound grobner 5.552263\nconflict NOT found  11.726042\nREDIRECT\nread done\n24 constraints, 6 inputs, 4 outputs.\nparse done\nconsidering edge 5034  2.7e-05\ntrying grobner 1 4.7e-05\ntrying grobner 2 5.005033\nfound grobner 5.585746\nconflict NOT found  11.697753\nREDIRECT\nread done\n24 constraints, 6 inputs, 4 outputs.\nparse done\nconsidering edge 5034  2.4e-05\ntrying grobner 1 4.3e-05\ntrying grobner 2 5.004218\nfound grobner 5.54642\nconflict NOT found  11.576875\n('NOT SURE', 26.587027, {})\n('NOT SURE', 53.449219, {})\n('NOT SURE', 80.35494, {})\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 107.280781 \n** counterexample: {} \n\n",
+  "execution_time": 107.6522285938263,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_underconstrained_outputs_in_bitElementMulAny/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

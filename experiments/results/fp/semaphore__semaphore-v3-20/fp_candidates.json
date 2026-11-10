@@ -1,0 +1,158 @@
+{
+  "unit": "semaphore__semaphore-v3-20",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "Veridise",
+        "date": "2023-01",
+        "scope": "circuits (semaphore.circom, tree.circom) + contracts, Semaphore v3 at commit 27320f1; report dated 2023-01-05 (review Dec 1-31 2022); includes formal verification of the circuit templates",
+        "url": "https://semaphore.pse.dev/Semaphore_3.0.0_Audit.pdf"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "Semaphore V3 (Semaphore.sol 0xc60E0Ee1a2770d5F619858C641f14FC4a6401520 + SemaphoreVerifier 0xCAbeED6cB96a287000aBd834b0B79c05e6Ea4d07) deployed on Arbitrum One mainnet and used as the identity/membership layer by many apps (Zupass, Unirep, etc.).",
+      "url": "https://docs.semaphore.pse.dev/V3/deployed-contracts"
+    },
+    "CommitNote": "Tag v3.0.0: first stable release after the Veridise report (2023-01-05). The audited commit 27320f1 is not in the public history (rebased away); all circuit findings (V-SEM-VUL-009 nLevels comment) are marked Fixed in the report and the v3.0.0 circuit carries the nLevels 16..32 note. The repo's own main is Semaphore(20)."
+  },
+  "provenance": {
+    "Project": "https://github.com/semaphore-protocol/semaphore",
+    "ProjectName": "semaphore",
+    "Commit": "1bb57ca607afc21a85c73826c53fc768cbacc8a1",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "Veridise",
+          "date": "2023-01",
+          "scope": "circuits (semaphore.circom, tree.circom) + contracts, Semaphore v3 at commit 27320f1; report dated 2023-01-05 (review Dec 1-31 2022); includes formal verification of the circuit templates",
+          "url": "https://semaphore.pse.dev/Semaphore_3.0.0_Audit.pdf"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "Semaphore V3 (Semaphore.sol 0xc60E0Ee1a2770d5F619858C641f14FC4a6401520 + SemaphoreVerifier 0xCAbeED6cB96a287000aBd834b0B79c05e6Ea4d07) deployed on Arbitrum One mainnet and used as the identity/membership layer by many apps (Zupass, Unirep, etc.).",
+        "url": "https://docs.semaphore.pse.dev/V3/deployed-contracts"
+      },
+      "CommitNote": "Tag v3.0.0: first stable release after the Veridise report (2023-01-05). The audited commit 27320f1 is not in the public history (rebased away); all circuit findings (V-SEM-VUL-009 nLevels comment) are marked Fixed in the report and the v3.0.0 circuit carries the nLevels 16..32 note. The repo's own main is Semaphore(20)."
+    },
+    "KnownUnfixed": [],
+    "Codebase": "dataset/codebases/audited/semaphore",
+    "LinkPaths": [
+      "dataset/codebases/audited/semaphore"
+    ],
+    "Entrypoint": "../../../../codebases/audited/semaphore/packages/circuits/semaphore.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 17689
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 1,
+      "warning_count": 3,
+      "soundness": [
+        {
+          "bug_title": "UnderConstrainedSignal",
+          "unified_bug_title": "Under-Constrained",
+          "description": "Intermediate signals should typically occur in at least two separate constraints.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+          "position": {
+            "line": 84,
+            "column": 5,
+            "template": null
+          },
+          "metadata": {
+            "severity": "warning",
+            "code": "CS0017"
+          }
+        }
+      ],
+      "warnings": [
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+          "position": {
+            "line": 76,
+            "column": 34,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementArithmetic",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+          "position": {
+            "line": 85,
+            "column": 27,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0004"
+          }
+        },
+        {
+          "bug_title": "FieldElementComparison",
+          "unified_bug_title": "Warning (Other -- probably not a bug)",
+          "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+          "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/semaphore/packages/circuits/semaphore.circom",
+          "position": {
+            "line": 76,
+            "column": 21,
+            "template": null
+          },
+          "metadata": {
+            "severity": "note",
+            "code": "CS0003"
+          }
+        }
+      ],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

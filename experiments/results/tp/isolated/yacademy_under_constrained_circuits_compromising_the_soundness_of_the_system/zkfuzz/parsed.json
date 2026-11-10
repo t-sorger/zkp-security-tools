@@ -1,0 +1,24 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Non-Deterministic)",
+    "signal": "main.out[54]",
+    "expected_value": "0",
+    "assignments": {
+        "main.out[70]": "0",
+        "main.out[211]": "0",
+        "main.out[17]": "1",
+        "main.out[212]": "1",
+        "main.out[213]": "1",
+        "main.out[132]": "1",
+        "main.out[120]": "0",
+        "main.out[141]": "0",
+        "main.out[75]": "0",
+        "main.out[39]": "1",
+        "main.out[163]": "0",
+        "main.out[28]": "1",
+        "main.out[137]": "0",
+        "main.out[82]": "0",
+        "main.out[184]": "0",
+        "main.out[6]": "0"
+    }
+}

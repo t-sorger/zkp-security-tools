@@ -1,0 +1,47 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `@zk-email/circuits/utils/bytes.circom`.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b/jwt-tx-validation.circom",
+            "line": 5,
+            "column": 1
+        },
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circomlib/circuits/poseidon.circom`.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b/jwt-tx-validation.circom",
+            "line": 6,
+            "column": 1
+        },
+        {
+            "severity": "warning",
+            "code": "CS0012",
+            "name": "TooManyArguments",
+            "message": "`JwtTxValidation` takes too many parameters. This increases coupling and decreases readability.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b/jwt-tx-validation.circom",
+            "line": 38,
+            "column": 3
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b/jwt-tx-validation.circom",
+            "line": 73,
+            "column": 27
+        }
+    ],
+    "statistics": {
+        "total_issues": 4,
+        "warnings": 1,
+        "notes": 1,
+        "errors": 2
+    }
+}

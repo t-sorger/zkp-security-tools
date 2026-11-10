@@ -1,0 +1,32 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.02,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Counter example found: UnderConstrained (Unexpected-Input)",
+      "metadata": {
+        "severity": "error",
+        "assignments": {
+          "main.temp_max": "8",
+          "main.temp_2[0]": "8",
+          "main.temp_1[1]": "0",
+          "main.temp_2[1]": "21888242871839275222246405745257275088548364400416034343698204186575808495560",
+          "main.b": "8",
+          "main.temp_min": "21888242871839275222246405745257275088548364400416034343698204186575808495560",
+          "main.min": "8",
+          "main.out": "21888242871839275222246405745257275088548364400416034343698204186575808495560",
+          "main.val": "2",
+          "main.max": "21888242871839275222246405745257275088548364400416034343698204186575808495560",
+          "main.temp_1[0]": "0",
+          "main.LessThan[1].in[0]": "21888242871839275222246405745257275088548364400416034343698204186575808495560",
+          "main.LessThan[1].toBits.AssertBit_13_210[0].in": "1",
+          "main.LessThan[1].toBits.AssertBit_13_210[4].in": "1",
+          "main.LessThan[0].toBits.AssertBit_13_210[3].in": "1",
+          "main.LessThan[0].toBits.AssertBit_13_210[8].in": "0"
+        }
+      }
+    }
+  ]
+}

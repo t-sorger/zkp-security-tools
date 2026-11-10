@@ -1,0 +1,5 @@
+** filename: ownership_proof.circom 
+** result: CONSTRAINED! 
+** time: 6.827229 
+** counterexample: {} 
+

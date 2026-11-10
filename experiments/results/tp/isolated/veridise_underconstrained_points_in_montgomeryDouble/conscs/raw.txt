@@ -1,0 +1,383 @@
+[Timed out]
+Partial stdout:
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.7e-05
+trying grobner 1 4.3e-05
+found grobner 0.020924
+conflict NOT found  0.683129
+BUT SAT FOUND  2.697191
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.5e-05
+trying grobner 1 4.2e-05
+found grobner 0.004749
+conflict NOT found  0.620638
+BUT SAT FOUND  2.632776
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.3e-05
+trying grobner 1 3.7e-05
+found grobner 0.004912
+conflict NOT found  0.675984
+BUT SAT FOUND  2.691842
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.5e-05
+found grobner 0.004859
+conflict NOT found  0.652824
+BUT SAT FOUND  2.665357
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.7e-05
+found grobner 0.005023
+conflict NOT found  0.635275
+BUT SAT FOUND  2.65493
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.8e-05
+trying grobner 1 3.2e-05
+found grobner 0.004919
+conflict NOT found  0.640506
+BUT SAT FOUND  2.652712
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.6e-05
+found grobner 0.004795
+conflict NOT found  0.678843
+BUT SAT FOUND  2.692226
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  4.5e-05
+trying grobner 1 6.1e-05
+found grobner 0.005163
+conflict NOT found  0.870974
+BUT SAT FOUND  2.891938
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2e-05
+trying grobner 1 3.4e-05
+found grobner 0.005098
+conflict NOT found  0.666109
+BUT SAT FOUND  2.677872
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.8e-05
+found grobner 0.004735
+conflict NOT found  0.815113
+BUT SAT FOUND  2.828248
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.7e-05
+found grobner 0.00532
+conflict NOT found  0.849568
+BUT SAT FOUND  2.866348
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.8e-05
+found grobner 0.010209
+conflict NOT found  0.787167
+BUT SAT FOUND  2.801092
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.8e-05
+trying grobner 1 4.5e-05
+found grobner 0.007511
+conflict NOT found  0.667938
+BUT SAT FOUND  2.692963
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 5.7e-05
+found grobner 0.004912
+conflict NOT found  0.657384
+BUT SAT FOUND  2.673987
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.3e-05
+trying grobner 1 3.8e-05
+found grobner 0.004779
+conflict NOT found  0.647138
+BUT SAT FOUND  2.658817
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.8e-05
+trying grobner 1 3.3e-05
+found grobner 0.004756
+conflict NOT found  0.684546
+BUT SAT FOUND  2.7023
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 3.4e-05
+found grobner 0.004524
+conflict NOT found  0.619559
+BUT SAT FOUND  2.631026
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.7e-05
+trying grobner 1 4.4e-05
+found grobner 0.005076
+conflict NOT found  0.639487
+BUT SAT FOUND  2.652113
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.6e-05
+found grobner 0.004797
+conflict NOT found  0.651731
+BUT SAT FOUND  2.666305
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 3.3e-05
+found grobner 0.00479
+conflict NOT found  0.656847
+BUT SAT FOUND  2.685829
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.7e-05
+found grobner 0.004932
+conflict NOT found  0.648608
+BUT SAT FOUND  2.660381
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2e-05
+trying grobner 1 3.5e-05
+found grobner 0.004918
+conflict NOT found  0.665251
+BUT SAT FOUND  2.684407
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2e-05
+trying grobner 1 3.4e-05
+found grobner 0.004781
+conflict NOT found  0.693498
+BUT SAT FOUND  2.711884
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.1e-05
+trying grobner 1 2.3e-05
+found grobner 0.004826
+conflict NOT found  0.820116
+BUT SAT FOUND  2.843177
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.2e-05
+trying grobner 1 2.3e-05
+found grobner 0.005618
+conflict NOT found  0.856833
+BUT SAT FOUND  2.869768
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.6e-05
+found grobner 0.012091
+conflict NOT found  0.701387
+BUT SAT FOUND  2.714359
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.6e-05
+trying grobner 1 4.1e-05
+found grobner 0.005309
+conflict NOT found  0.644892
+BUT SAT FOUND  2.664886
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2e-05
+trying grobner 1 3.6e-05
+found grobner 0.004858
+conflict NOT found  0.659608
+BUT SAT FOUND  2.671828
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.7e-05
+found grobner 0.004992
+conflict NOT found  0.664623
+BUT SAT FOUND  2.680602
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.7e-05
+found grobner 0.005034
+conflict NOT found  0.651675
+BUT SAT FOUND  2.6709
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.2e-05
+trying grobner 1 3.6e-05
+found grobner 0.004814
+conflict NOT found  0.653364
+BUT SAT FOUND  2.668712
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.6e-05
+found grobner 0.004823
+conflict NOT found  0.655681
+BUT SAT FOUND  2.667445
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 3.4e-05
+found grobner 0.004814
+conflict NOT found  0.659483
+BUT SAT FOUND  2.673954
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.3e-05
+trying grobner 1 3.9e-05
+found grobner 0.004908
+conflict NOT found  0.701911
+BUT SAT FOUND  2.715659
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.1e-05
+trying grobner 1 3.6e-05
+found grobner 0.004968
+conflict NOT found  0.673947
+BUT SAT FOUND  2.688143
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.4e-05
+trying grobner 1 3.9e-05
+found grobner 0.005548
+conflict NOT found  0.70602
+BUT SAT FOUND  2.723797
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2e-05
+trying grobner 1 3.3e-05
+found grobner 0.004915
+conflict NOT found  0.775644
+BUT SAT FOUND  2.800168
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 3.6e-05
+found grobner 0.005297
+conflict NOT found  0.896017
+BUT SAT FOUND  2.916579
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.9e-05
+trying grobner 1 3.6e-05
+found grobner 0.014912
+conflict NOT found  0.870811
+BUT SAT FOUND  2.894166
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.6e-05
+trying grobner 1 4.3e-05
+found grobner 0.006403
+conflict NOT found  0.683311
+BUT SAT FOUND  2.706371
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  2.4e-05
+trying grobner 1 4e-05
+found grobner 0.004916
+conflict NOT found  0.660408
+BUT SAT FOUND  2.674983
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+parse done
+considering edge 0  1.3e-05
+trying grobner 1 2.4e-05
+found grobner 0.004386
+conflict NOT found  0.630852
+BUT SAT FOUND  2.645094
+REDIRECT
+read done
+4 constraints, 3 inputs, 2 outputs.
+Partial stderr:

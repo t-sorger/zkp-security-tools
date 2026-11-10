@@ -1,0 +1,5 @@
+** filename: circuit.circom 
+** result: b'canceled' 
+** time: 99999999 
+** counterexample: None 
+

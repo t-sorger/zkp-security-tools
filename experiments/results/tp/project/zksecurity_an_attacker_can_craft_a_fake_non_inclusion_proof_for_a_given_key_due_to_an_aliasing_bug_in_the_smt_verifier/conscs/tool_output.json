@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.0404767990112,
+  "raw_output_file": "output/conscs-both-run-2/original/zksecurity_an_attacker_can_craft_a_fake_non_inclusion_proof_for_a_given_key_due_to_an_aliasing_bug_in_the_smt_verifier/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

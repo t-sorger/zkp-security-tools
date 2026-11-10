@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom" requires pragma version (2, 1, 9) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

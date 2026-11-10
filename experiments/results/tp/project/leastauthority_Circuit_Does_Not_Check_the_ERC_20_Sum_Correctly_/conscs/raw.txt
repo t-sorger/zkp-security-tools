@@ -1,0 +1,5 @@
+** filename: zk_transaction_1_1.circom 
+** result: CONSTRAINED! 
+** time: 59.597843 
+** counterexample: {} 
+

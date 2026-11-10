@@ -1,0 +1,15 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Non-Deterministic)",
+    "signal": "main.out[1]",
+    "expected_value": "21888242871839275222246405745257275088548364400416034343698204186575808495611",
+    "assignments": {
+        "main.in1[1]": "6",
+        "main.in1[0]": "6",
+        "main.lamda": "5",
+        "main.out[0]": "21888242871839275222246405745257275088548364400416034343698204186575808326932",
+        "main.out[1]": "843449",
+        "main.in2[1]": "6",
+        "main.in2[0]": "6"
+    }
+}

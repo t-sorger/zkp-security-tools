@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n765 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: poseidon3_test.circom \n** result: CONSTRAINED! \n** time: 4.048103 \n** counterexample: {} \n\n",
+  "execution_time": 4.880576848983765,
+  "raw_output_file": "output/fp-run/circomlib__poseidon3/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 600.0062439441681,
+    "findings": [
+        {
+            "file": "credentialAtomicQueryV3.circom",
+            "type": "TIMEOUT",
+            "time": 600.0062439441681,
+            "counter-example": "None"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

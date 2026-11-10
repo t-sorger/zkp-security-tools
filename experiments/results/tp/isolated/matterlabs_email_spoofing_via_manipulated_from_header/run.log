@@ -1,0 +1,23 @@
+10:20:52: [core.py:584]: 	[INFO]: 	================================================================================
+10:20:52: [core.py:585]: 	[INFO]: 	Processing bug: matterlabs_email_spoofing_via_manipulated_from_header
+10:20:52: [core.py:586]: 	[INFO]: 	================================================================================
+10:20:52: [core.py:590]: 	[INFO]: 	Generated ground truth: output/extended_dataset-rerun-symlink-fix/direct/matterlabs_email_spoofing_via_manipulated_from_header/ground_truth.json
+10:20:52: [core.py:162]: 	[INFO]: 	Running circomspect...
+10:20:52: [base.py:569]: 	[INFO]: 	Running: 'circomspect /tmp/evaluation_tool-circomspect-9r3oxsqw/circuit.circom -l INFO -v'
+10:20:52: [base.py:459]: 	[INFO]: 	circomspect: Found 0 findings in 0.02s
+10:20:52: [core.py:162]: 	[INFO]: 	Running circom_civer...
+10:20:52: [base.py:569]: 	[INFO]: 	Running: 'civer_circom /evaluation_tool/extended_dataset/dataset/circom/zkemail/zk-regex/matterlabs_email_spoofing_via_manipulated_from_header/circuit.circom --check_safety --verbose --verification_timeout 500000 --O0 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/node_modules -l /evaluation_tool/extended_dataset/dataset/circom/dependencies'
+10:21:59: [base.py:459]: 	[INFO]: 	circom_civer: Found 0 findings in 66.86s
+10:21:59: [core.py:162]: 	[INFO]: 	Running picus...
+10:21:59: [base.py:569]: 	[INFO]: 	Running: '/evaluation_tool/tools/picus/run-picus /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/matterlabs_email_spoofing_via_manipulated_from_header/scratch/circuit.r1cs'
+10:31:59: [base.py:590]: 	[WARNING]: 	Process for 'picus' analysing '/evaluation_tool/extended_dataset/dataset/circom/zkemail/zk-regex/matterlabs_email_spoofing_via_manipulated_from_header' exceeded 600 seconds and timed out. Partial output: 
+10:31:59: [core.py:162]: 	[INFO]: 	Running ecneproject...
+10:31:59: [base.py:569]: 	[INFO]: 	Running: 'julia --project=/evaluation_tool/tools/ecneproject /evaluation_tool/tools/ecneproject/src/Ecne.jl --r1cs /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/matterlabs_email_spoofing_via_manipulated_from_header/scratch/circuit.r1cs --name circuit --sym /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/matterlabs_email_spoofing_via_manipulated_from_header/scratch/circuit.sym'
+10:32:20: [base.py:459]: 	[INFO]: 	ecneproject: Found 0 findings in 20.95s
+10:32:20: [core.py:162]: 	[INFO]: 	Running zkfuzz...
+10:32:20: [base.py:569]: 	[INFO]: 	Running: 'zkfuzz /evaluation_tool/extended_dataset/dataset/circom/zkemail/zk-regex/matterlabs_email_spoofing_via_manipulated_from_header/circuit.circom -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/node_modules -l /evaluation_tool/extended_dataset/dataset/circom/dependencies'
+10:32:22: [base.py:459]: 	[INFO]: 	zkfuzz: Found 1 findings in 1.38s
+10:32:22: [core.py:550]: 	[INFO]: 	circomspect evaluation: FalseNegative
+10:32:22: [core.py:550]: 	[INFO]: 	circom_civer evaluation: FalseNegative
+10:32:22: [core.py:550]: 	[INFO]: 	ecneproject evaluation: FalseNegative
+10:32:22: [core.py:550]: 	[INFO]: 	zkfuzz evaluation: Undecided

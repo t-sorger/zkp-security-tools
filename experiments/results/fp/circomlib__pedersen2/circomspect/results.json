@@ -1,0 +1,66 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.02,
+  "findings": [
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+      "position": {
+        "line": 20,
+        "column": 23,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+      "position": {
+        "line": 24,
+        "column": 24,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+      "position": {
+        "line": 20,
+        "column": 16,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+      "position": {
+        "line": 24,
+        "column": 17,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "bug_name": "Underconstrained points in MontgomeryAdd",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "circuits/montgomery.circom",
+    "Function": "MontgomeryAdd",
+    "Line": "102-103"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/iden3/circomlib",
+  "commit": "cff5ab6288b55ef23602221694a6a38a0239dcc0",
+  "fix_commit": "",
+  "reproduced": false,
+  "short_description": "Lambda calculation involves a division but there is no constraint on the divisor to be non-zero. In this case `out[1]` is underconstrained and can be set to any value.",
+  "proposed_mitigation": "Send `in2[0] - in1[0]` to `isZero` template and let the constraint there do the work.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-circomlib.pdf",
+      "Bug ID": "V-CIRCOMLIB-VUL-004: Underconstrained points in MontgomeryAdd"
+    }
+  },
+  "codebase": "dataset/codebases/circom/iden3/circomlib/cff5ab6288b55ef23602221694a6a38a0239dcc0",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "iden3/circomlib/veridise_underconstrained_outputs_in_bitElementMulAny",
+    "iden3/circomlib/veridise_underconstrained_outputs_in_window4",
+    "iden3/circomlib/veridise_underconstrained_outputs_in_windowmulfix",
+    "iden3/circomlib/veridise_underconstrained_points_in_edwards2Montgomery",
+    "iden3/circomlib/veridise_underconstrained_points_in_montgomery2Edwards",
+    "iden3/circomlib/veridise_underconstrained_points_in_montgomeryDouble"
+  ],
+  "mode": "direct"
+}

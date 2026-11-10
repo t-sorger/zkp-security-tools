@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2 constraints, 2 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: UNDER-CONSTRAINED! \n** time: 0.009584 \n** counterexample: {None: ({4: 0, 2: 0, 3: 0, 1: 0}, {4: 18481287785235026074738421601404851006291316796894296537754749955444280185873, 3: 3406955086604249147507984143852424082257047603521737805943454231131528309745, 2: 0, 1: 1})} \n\n",
+  "execution_time": 0.262667179107666,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_unsound_left_rotation/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

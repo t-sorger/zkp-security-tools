@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n98753 constraints, 7 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 132.103792 \n** counterexample: {} \n\n",
+  "execution_time": 132.51971793174744,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_data_escrow_encrypted_message_wrong_input/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

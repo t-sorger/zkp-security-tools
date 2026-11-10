@@ -1,0 +1,38 @@
+{
+  "bug_name": "Incorrect handling of point doubling can allow signature forgery",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Unsafe Reuse of Circuit",
+  "location": {
+    "Path": "circuits/pairing/curve.circom",
+    "Function": "EllipticCurveAddUnequal",
+    "Line": "155-227"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/succinctlabs/telepathy-circuits",
+  "commit": "b0c839cef30c3c25ef41d1ad3000081784766934",
+  "fix_commit": "",
+  "reproduced": false,
+  "short_description": "`G1Add` calls `EllipticCurveAddUnequal`. The template `EllipticCurveAddUnequal` assumes input `a` and `b` are two unequal public keys but this is not checked. Attacker can use two same public keys to do sophisticated attacks. In such scenario, the constraint on output in `EllipticCurveAddUnequal` reduces to 0 = 0 so it is always true. In other words, attacker can do point doubling at a place where it is supposed to do point addition of two unequal EC points.",
+  "proposed_mitigation": "Change `G1Add` to use `EllipticCurveAdd`, which correctly handles equal inputs by checking and managing point doubling.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/trailofbits-telepathy.pdf",
+      "Bug ID": "3. Incorrect handling of point doubling can allow signature forgery"
+    }
+  },
+  "codebase": "dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/step.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "original"
+}

@@ -1,0 +1,5 @@
+** filename: poseidon3_test.circom 
+** result: CONSTRAINED! 
+** time: 4.048103 
+** counterexample: {} 
+

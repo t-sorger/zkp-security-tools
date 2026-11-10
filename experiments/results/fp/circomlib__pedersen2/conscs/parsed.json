@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 371.181381,
+    "findings": [
+        {
+            "file": "pedersen2_test.circom",
+            "type": "NOT SURE",
+            "time": 371.181381,
+            "counter-example": "{}"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

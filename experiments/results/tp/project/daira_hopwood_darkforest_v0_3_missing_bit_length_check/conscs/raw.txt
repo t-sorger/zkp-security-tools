@@ -1,0 +1,5 @@
+** filename: circuit.circom 
+** result: CONSTRAINED! 
+** time: 5.750722 
+** counterexample: {} 
+

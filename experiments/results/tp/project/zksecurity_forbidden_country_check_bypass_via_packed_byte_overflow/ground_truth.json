@@ -1,0 +1,44 @@
+{
+  "bug_name": "Forbidden Country Check Bypass via Packed Byte Overflow",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Wrong Translation of Logic into Constraints",
+  "location": {
+    "Path": "circuits/circuits/utils/aadhaar/disclose/country_not_in_list.circom",
+    "Function": "CountryNotInList",
+    "Line": "12-29"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/selfxyz/self",
+  "commit": "3905a30aeb19016d22c5493b8b34ade2d118da4e",
+  "fix_commit": [
+    "60501d17ee9b339e36c3a2a0d63f24bda65110a8",
+    "4914074d11d1d6e4579c7fa4d20c0eae4fc1e02f"
+  ],
+  "reproduced": false,
+  "short_description": "The elements of `forbidden_countries_list` are not range‑checked to be bytes, which means PackBytes allows for aliasing.",
+  "proposed_mitigation": "Add explicit byte range constraints, for example using `AssertBytes`, on every country code element before passing them to `PackBytes` in `CountryNotInList`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/zksecurity-self-aadhaar-circuits.pdf",
+      "Bug ID": "#00 - Forbidden Country Check Bypass via Packed Byte Overflow"
+    }
+  },
+  "codebase": "dataset/codebases/circom/selfxyz/self/3905a30aeb19016d22c5493b8b34ade2d118da4e",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/disclose/generated/vc_and_disclose_aadhaar_main.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "selfxyz/self/zksecurity_missing_byte_range_checks_allows_packed_data_pollution",
+    "selfxyz/self/zksecurity_second_pre_image_attacks_on_packbytesandposeidon_may_be_used_to_register_arbitrary_passports_and_dsc_certificates"
+  ],
+  "mode": "original"
+}

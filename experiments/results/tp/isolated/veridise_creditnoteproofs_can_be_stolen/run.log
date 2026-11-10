@@ -1,0 +1,30 @@
+10:10:36: [core.py:584]: 	[INFO]: 	================================================================================
+10:10:36: [core.py:585]: 	[INFO]: 	Processing bug: veridise_creditnoteproofs_can_be_stolen
+10:10:36: [core.py:586]: 	[INFO]: 	================================================================================
+10:10:36: [core.py:590]: 	[INFO]: 	Generated ground truth: output/extended_dataset-rerun-symlink-fix/direct/veridise_creditnoteproofs_can_be_stolen/ground_truth.json
+10:10:37: [core.py:162]: 	[INFO]: 	Running circomspect...
+10:10:37: [base.py:569]: 	[INFO]: 	Running: 'circomspect /tmp/evaluation_tool-circomspect-hnlyxvai/circuit.circom -l INFO -v'
+10:10:37: [base.py:459]: 	[INFO]: 	circomspect: Found 0 findings in 0.02s
+10:10:37: [core.py:162]: 	[INFO]: 	Running circom_civer...
+10:10:37: [base.py:569]: 	[INFO]: 	Running: 'civer_circom /evaluation_tool/extended_dataset/dataset/circom/Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen/circuit.circom --check_safety --verbose --verification_timeout 500000 --O0 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/Arianee/arianee-sdk/b7da01e0c81b9cccdc257040997c3500eb59db4f -l /evaluation_tool/extended_dataset/dataset/circom/dependencies/circomlib'
+10:10:37: [base.py:613]: 	[WARNING]: 	Process for 'circom_civer' analysing '/evaluation_tool/extended_dataset/dataset/circom/Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen' failed with exit code 1. Partial output: 
+10:10:37: [base.py:406]: 	[ERROR]: 	circom_civer: stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/circom/Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen/circuit.circom" requires pragma version (2, 1, 8) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m
+
+10:10:37: [core.py:162]: 	[INFO]: 	Running picus...
+10:10:37: [base.py:569]: 	[INFO]: 	Running: '/evaluation_tool/tools/picus/run-picus /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/veridise_creditnoteproofs_can_be_stolen/scratch/circuit.r1cs'
+10:10:41: [base.py:459]: 	[INFO]: 	picus: Found 0 findings in 3.85s
+10:10:41: [core.py:162]: 	[INFO]: 	Running ecneproject...
+10:10:41: [base.py:569]: 	[INFO]: 	Running: 'julia --project=/evaluation_tool/tools/ecneproject /evaluation_tool/tools/ecneproject/src/Ecne.jl --r1cs /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/veridise_creditnoteproofs_can_be_stolen/scratch/circuit.r1cs --name circuit --sym /evaluation_tool/output/extended_dataset-rerun-symlink-fix/direct/veridise_creditnoteproofs_can_be_stolen/scratch/circuit.sym'
+10:11:04: [base.py:459]: 	[INFO]: 	ecneproject: Found 0 findings in 22.89s
+10:11:04: [core.py:162]: 	[INFO]: 	Running zkfuzz...
+10:11:04: [base.py:569]: 	[INFO]: 	Running: 'zkfuzz /evaluation_tool/extended_dataset/dataset/circom/Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen/circuit.circom -l /evaluation_tool/extended_dataset/dataset/codebases/circom/Arianee/arianee-sdk/b7da01e0c81b9cccdc257040997c3500eb59db4f -l /evaluation_tool/extended_dataset/dataset/circom/dependencies/circomlib'
+10:21:04: [base.py:590]: 	[WARNING]: 	Process for 'zkfuzz' analysing '/evaluation_tool/extended_dataset/dataset/circom/Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen' exceeded 600 seconds and timed out. Partial output: 🎲 Random Seed: 15882369664681745857
+[2K🧬 Generation: 0/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)
+10:21:04: [core.py:550]: 	[INFO]: 	circomspect evaluation: FalseNegative
+10:21:04: [core.py:550]: 	[INFO]: 	picus evaluation: FalseNegative
+10:21:04: [core.py:550]: 	[INFO]: 	ecneproject evaluation: FalseNegative

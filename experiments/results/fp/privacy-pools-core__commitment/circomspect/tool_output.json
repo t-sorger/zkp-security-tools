@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "circomspect: No issues found.\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "stdout:\ncircomspect: No issues found.\n\nstderr:\n",
+  "execution_time": 0.04981279373168945,
+  "raw_output_file": "output/fp-run/privacy-pools-core__commitment/circomspect/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

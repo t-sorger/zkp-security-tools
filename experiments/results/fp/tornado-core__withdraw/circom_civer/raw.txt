@@ -1,0 +1,35 @@
+stdout:
+[32mtemplate instances[0m: 21
+
+--------------------------------------------
+--------------------------------------------
+-------- CIVER VERIFICATION RESULTS --------
+--------------------------------------------
+--------------------------------------------
+
+-> CIVER could not verify weak safety of all components
+Components that do not satisfy weak safety: 
+    - MontgomeryAdd(), 
+    - Montgomery2Edwards(), 
+    - Edwards2Montgomery(), 
+Components timeout when checking weak-safety: 
+    - MiMCFeistel(220), 
+    - MontgomeryDouble(), 
+    - BabyAdd(), 
+  * Number of verified components (weak-safety): 14
+  * Number of failed components (weak-safety): 3
+  * Number of timeout components (weak-safety): 3
+  * Percentage of verified constraints: 29.975088545815044 - (17688 / 59009)
+  * Percentage of verified components: 18.958155422715627 - (444 / 2342)
+
+
+--------------------------------------------
+--------------------------------------------
+
+[32mEverything went okay, circom safe[0m
+
+stderr:
+[0m[1m[38;5;11mwarning[P1004][0m[1m: File "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/node_modules/circomlib/circuits/binsum.circom" does not include pragma version. Assuming pragma version (2, 1, 6)[0m
+ [0m[34m=[0m At the beginning of file "/zkhydra/output/fp-corpus/dataset/codebases/audited/tornado-core/node_modules/circomlib/circuits/binsum.circom", you should add the directive "pragma circom <Version>", to indicate which compiler version you are using.
+
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

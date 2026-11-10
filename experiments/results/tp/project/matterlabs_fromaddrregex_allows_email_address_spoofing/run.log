@@ -1,0 +1,26 @@
+10:35:05: [core.py:584]: 	[INFO]: 	================================================================================
+10:35:05: [core.py:585]: 	[INFO]: 	Processing bug: matterlabs_fromaddrregex_allows_email_address_spoofing
+10:35:05: [core.py:586]: 	[INFO]: 	================================================================================
+10:35:05: [core.py:590]: 	[INFO]: 	Generated ground truth: output/extended_dataset-rerun-symlink-fix/original/matterlabs_fromaddrregex_allows_email_address_spoofing/ground_truth.json
+10:36:02: [core.py:162]: 	[INFO]: 	Running circomspect...
+10:36:02: [base.py:569]: 	[INFO]: 	Running: 'circomspect /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/packages/circom/tests/circuits/test_from_addr_regex.circom -l INFO -v'
+10:36:02: [base.py:459]: 	[INFO]: 	circomspect: Found 0 findings in 0.00s
+10:36:02: [core.py:162]: 	[INFO]: 	Running circom_civer...
+10:36:02: [base.py:569]: 	[INFO]: 	Running: 'civer_circom /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/packages/circom/tests/circuits/test_from_addr_regex.circom --check_safety --verbose --verification_timeout 500000 --O0 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/node_modules -l /evaluation_tool/extended_dataset/dataset/circom/dependencies'
+10:37:31: [base.py:459]: 	[INFO]: 	circom_civer: Found 0 findings in 88.53s
+10:37:31: [core.py:162]: 	[INFO]: 	Running picus...
+10:37:31: [base.py:569]: 	[INFO]: 	Running: '/evaluation_tool/tools/picus/run-picus /evaluation_tool/output/extended_dataset-rerun-symlink-fix/original/matterlabs_fromaddrregex_allows_email_address_spoofing/scratch/test_from_addr_regex.r1cs'
+10:47:30: [base.py:613]: 	[WARNING]: 	Process for 'picus' analysing '/evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/packages/circom/tests/circuits' failed with exit code 137. Partial output: 
+10:47:30: [base.py:406]: 	[ERROR]: 	picus: stdout:
+
+stderr:
+/evaluation_tool/tools/picus/run-picus: line 5:  1105 Killed                  PLTSTDERR="error none@picus" racket $parent_path/picus.rkt "$@"
+
+10:47:30: [core.py:162]: 	[INFO]: 	Running ecneproject...
+10:47:30: [base.py:569]: 	[INFO]: 	Running: 'julia --project=/evaluation_tool/tools/ecneproject /evaluation_tool/tools/ecneproject/src/Ecne.jl --r1cs /evaluation_tool/output/extended_dataset-rerun-symlink-fix/original/matterlabs_fromaddrregex_allows_email_address_spoofing/scratch/test_from_addr_regex.r1cs --name circuit --sym /evaluation_tool/output/extended_dataset-rerun-symlink-fix/original/matterlabs_fromaddrregex_allows_email_address_spoofing/scratch/test_from_addr_regex.sym'
+10:51:25: [base.py:459]: 	[INFO]: 	ecneproject: Found 0 findings in 234.77s
+10:51:25: [core.py:162]: 	[INFO]: 	Running zkfuzz...
+10:51:25: [base.py:569]: 	[INFO]: 	Running: 'zkfuzz /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/packages/circom/tests/circuits/test_from_addr_regex.circom -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74 -l /evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-regex/531575345558ba938675d725bd54df45c866ef74/node_modules -l /evaluation_tool/extended_dataset/dataset/circom/dependencies'
+10:53:24: [base.py:459]: 	[INFO]: 	zkfuzz: Found 0 findings in 119.11s
+10:53:24: [core.py:550]: 	[INFO]: 	circomspect evaluation: FalseNegative
+10:53:24: [core.py:550]: 	[INFO]: 	circom_civer evaluation: FalseNegative

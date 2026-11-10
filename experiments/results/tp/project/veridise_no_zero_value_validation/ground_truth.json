@@ -1,0 +1,38 @@
+{
+  "bug_name": "No Zero Value Validation",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "packages/circuits/semaphore.circom",
+    "Function": "Semaphore",
+    "Line": "73-81"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/semaphore-protocol/semaphore",
+  "commit": "27320f17233b18de477a74919084fba76513470f",
+  "fix_commit": "",
+  "reproduced": false,
+  "short_description": "In the `Semaphore` template, the `MerkleTreeInclusionProof` accepts any `leaf` value including `zeroValue` (the default empty-leaf value used to initialize the incremental Merkle tree). Since `hashes[0] <== leaf` has no constraint rejecting `zeroValue`, and the on-chain tree is initialized with `zeroValue` at every empty position, anyone who knows the `zeroValue` and the corresponding sibling path can generate a valid inclusion proof. This `zeroValue` acts as an implicit group member that cannot be removed and whose addition does not trigger a `MemberAdded` event, giving the group creator (or anyone who knows the value) guaranteed unauthorized access.",
+  "proposed_mitigation": "Add a constraint in the circuit to reject proofs where the identity commitment equals `zeroValue`, e.g., by adding a non-equality check on the leaf before the Merkle proof.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-semaphore.pdf",
+      "Bug ID": "V-SEM-VUL-001: No Zero Value Validation"
+    }
+  },
+  "codebase": "dataset/codebases/circom/semaphore-protocol/semaphore/27320f17233b18de477a74919084fba76513470f",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/generated/semaphore_main.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "original"
+}

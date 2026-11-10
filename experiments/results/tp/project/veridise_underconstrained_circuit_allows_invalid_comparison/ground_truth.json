@@ -1,0 +1,42 @@
+{
+  "bug_name": "Underconstrained Circuit allows Invalid Comparison",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Arithmetic Field Issues",
+  "location": {
+    "Path": "packages/circuits/circuits/bigComparators.circom",
+    "Function": "BigLessThan",
+    "Line": "41-45"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/Unirep/Unirep",
+  "commit": "0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+  "fix_commit": "3348caa362d5d632d29c532ffa88023d55628eab",
+  "reproduced": false,
+  "short_description": "`Num2Bits(254)` is used so malicious prover can provide input that is larger than scalar field modulus `p` but smaller than `2**254`, exploiting the overflow. That makes some comparison opertions invalid, for example, `1 < p` evaluates to true but in the circuit it is treated as `1 < 0`.",
+  "proposed_mitigation": "Use `Num2Bits_strict` rather than `Num2Bits(254)`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-unirep.pdf",
+      "Bug ID": "V-UNI-VUL-001: Underconstrained Circuit allows Invalid Comparison"
+    }
+  },
+  "codebase": "dataset/codebases/circom/Unirep/Unirep/0985a28c38c8b2e7b7a9e80f43e63179fdd08b89",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/generated/bigComparators.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "iden3/circuits/trailofbits_unsafe_use_of_num2bits_in_multiple_circuits",
+    "pantherfoundation/panther-core/veridise_unsafe_num2bits_254_blacklist_leaf",
+    "selfxyz/self/zksecurity_an_attacker_can_craft_a_fake_non_inclusion_proof_for_a_given_key_due_to_an_aliasing_bug_in_the_smt_verifier"
+  ],
+  "mode": "original"
+}

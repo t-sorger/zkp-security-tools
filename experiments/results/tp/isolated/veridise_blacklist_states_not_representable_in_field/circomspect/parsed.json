@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v_ju6_ww/circuit.circom",
+            "line": 28,
+            "column": 32
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v_ju6_ww/circuit.circom",
+            "line": 28,
+            "column": 21
+        }
+    ],
+    "statistics": {
+        "total_issues": 2,
+        "warnings": 0,
+        "notes": 2,
+        "errors": 0
+    }
+}

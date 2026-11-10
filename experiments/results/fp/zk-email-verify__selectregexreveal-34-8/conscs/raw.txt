@@ -1,0 +1,5 @@
+** filename: select-regex-reveal-test.circom 
+** result: CONSTRAINED! 
+** time: 8.485543 
+** counterexample: {} 
+

@@ -1,0 +1,13 @@
+stdout:
+circomspect: analyzing template 'OwnershipProofTest'
+warning[CA01]: The signal `result` is not constrained by the template.
+   ┌─ /evaluation_tool/extended_dataset/dataset/codebases/circom/zkopru-network/zkopru/4236fc8a5cbf73b7f3860d87a1a447eea8d7abd4/packages/circuits/tester/ownership_proof.test.circom:12:3
+   │
+12 │   signal output result;
+   │   ^^^^^^^^^^^^^^^^^^^^ This signal does not occur in a constraint.
+   │
+   = To ignore this type of result, use `--allow CA01`.
+
+circomspect: 1 issue found.
+
+stderr:

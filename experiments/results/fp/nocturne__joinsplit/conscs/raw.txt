@@ -1,0 +1,5 @@
+** filename: joinsplit.circom 
+** result: TIMEOUT 
+** time: 607.4702382087708 
+** counterexample: None 
+

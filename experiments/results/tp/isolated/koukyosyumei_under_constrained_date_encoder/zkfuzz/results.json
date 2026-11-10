@@ -1,0 +1,33 @@
+{
+  "status": "bugs_found",
+  "execution_time": 2.63,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.encoded` is expected to be `13132945723103565133347843447154365053129018640249620606218922564946178578075`",
+      "position": {
+        "signal": "main.encoded"
+      },
+      "metadata": {
+        "severity": "error",
+        "expected_value": "13132945723103565133347843447154365053129018640249620606218922564946178578075",
+        "assignments": {
+          "main.yearEncoded": "12340",
+          "main.year": "4",
+          "main.encoded": "53000849862708",
+          "main.yearRest": "4",
+          "main.dayRest": "4",
+          "main.yearDecimals": "0",
+          "main.dayDecimals": "0",
+          "main.month": "21888242871839275222246405745257275088548364400416034343698204186575808495615",
+          "main.monthEncoded": "14548",
+          "main.dayEncoded": "12340",
+          "main.day": "4",
+          "main.monthDecimals": "9",
+          "main.monthRest": "21888242871839275222246405745257275088548364400416034343698204186575808495525"
+        }
+      }
+    }
+  ]
+}

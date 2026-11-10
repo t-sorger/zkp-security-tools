@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n54878 constraints, 79 inputs, 2 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: withdraw.circom \n** result: maximum recursion depth exceeded \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 490.89152789115906,
+  "raw_output_file": "output/fp-run/privacy-pools-core__withdraw/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,16 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.35,
+  "findings": [
+    {
+      "bug_title": "UnderConstrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "UNDER-CONSTRAINED: circuit.circom",
+      "file": "circuit.circom",
+      "metadata": {
+        "time": 0.076784,
+        "counter-example": "{1: ({4: 0, 3: 0, 2: 21888242871839275222246405745257275088548364400416034343698204186575808495616, 1: 0}, {4: 0, 3: 0, 2: 21888242871839275222246405745257275088548364400416034343698204186575808495616, 1: 1})}"
+      }
+    }
+  ]
+}

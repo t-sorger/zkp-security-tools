@@ -1,0 +1,47 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/comparators.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+            "line": 16,
+            "column": 1
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+            "line": 38,
+            "column": 27
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+            "line": 43,
+            "column": 38
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rl2vpn_x/circuit.circom",
+            "line": 46,
+            "column": 28
+        }
+    ],
+    "statistics": {
+        "total_issues": 4,
+        "warnings": 0,
+        "notes": 3,
+        "errors": 1
+    }
+}

@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/register/instances/register_sha256_sha256_sha256_rsa_65537_4096.circom" requires pragma version (2, 1, 9) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

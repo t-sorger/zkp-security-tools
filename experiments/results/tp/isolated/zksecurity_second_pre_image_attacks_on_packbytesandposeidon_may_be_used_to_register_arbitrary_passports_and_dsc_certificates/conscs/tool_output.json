@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1168 constraints, 5 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 2.724985 \n** counterexample: {} \n\n",
+  "execution_time": 3.1223409175872803,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_second_pre_image_attacks_on_packbytesandposeidon_may_be_used_to_register_arbitrary_passports_and_dsc_certificates/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

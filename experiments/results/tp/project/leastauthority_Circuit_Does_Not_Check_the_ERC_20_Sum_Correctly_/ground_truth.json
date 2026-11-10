@@ -1,0 +1,38 @@
+{
+  "bug_name": "Circuit Does Not Check the ERC-20 Sum Correctly ",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Circuit Design Issue",
+  "location": {
+    "Path": "packages/circuits/lib/zk_transaction.circom",
+    "Function": "ZkTransaction",
+    "Line": "257-274"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/zkopru-network/zkopru",
+  "commit": "4236fc8a5cbf73b7f3860d87a1a447eea8d7abd4",
+  "fix_commit": "30a19913ce1a018ce26a34d3d6621fcd38579171",
+  "reproduced": false,
+  "short_description": "In `ZkTransaction`, the ERC-20 sum check iterates over input notes and for each `spending_note_token_addr[i]`, computes inflow and outflow sums via `ERC20Sum`. The outflow component uses `outflow_erc20[i].addr <== spending_note_token_addr[i]`, meaning it only sums output notes whose token address matches an input note's address. Output notes with token addresses not present in any input note are completely ignored by the balance check. The constraint `inflow_erc20[i].out === outflow_erc20[i].out` only verifies per-address balance for addresses in the input set, allowing an attacker to create output notes with new token addresses and drain funds.",
+  "proposed_mitigation": "Enforce that output notes do not contain ERC-20 token addresses that are not present in any input (spend) note, or verify the sum across all token addresses appearing in both inputs and outputs.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/leastauthority-zkorpu.pdf",
+      "Bug ID": "Circuit Does Not Check the ERC-20 Sum Correctly "
+    }
+  },
+  "codebase": "dataset/codebases/circom/zkopru-network/zkopru/4236fc8a5cbf73b7f3860d87a1a447eea8d7abd4",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/impls/zk_transaction_1_1.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": false,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "original"
+}

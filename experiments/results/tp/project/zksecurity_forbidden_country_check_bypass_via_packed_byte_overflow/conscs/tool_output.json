@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n144742 constraints, 448 inputs, 10 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: vc_and_disclose_aadhaar_main.circom \n** result: maximum recursion depth exceeded \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 557.6118385791779,
+  "raw_output_file": "output/conscs-both-run-2/original/zksecurity_forbidden_country_check_bypass_via_packed_byte_overflow/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

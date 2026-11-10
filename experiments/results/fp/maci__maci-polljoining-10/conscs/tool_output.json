@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n23926 constraints, 19 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 1.277649 \n** counterexample: {} \n\n",
+  "execution_time": 1.6508655548095703,
+  "raw_output_file": "output/fp-run/maci__maci-polljoining-10/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

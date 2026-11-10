@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n581 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: withdraw.circom \n** result: CONSTRAINED! \n** time: 0.749285 \n** counterexample: {} \n\n",
+  "execution_time": 1.1310453414916992,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_spammers_may_slash_themselves/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

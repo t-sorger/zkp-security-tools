@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n12 constraints, 4 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.023767 \n** counterexample: {} \n\n",
+  "execution_time": 0.2760488986968994,
+  "raw_output_file": "output/conscs-both-run-2/direct/koukyosyumei_emitifinrange_lessthan_overflow/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

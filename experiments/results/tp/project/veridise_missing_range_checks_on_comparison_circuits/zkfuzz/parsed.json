@@ -1,0 +1,22 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Unexpected-Input)",
+    "assignments": {
+        "main.EPOCH_KEY_NONCE_PER_EPOCH": "3",
+        "main.reveal_nonce": "0",
+        "main.epoch": "4",
+        "main.identity_secret": "5",
+        "main.attester_id": "1",
+        "main.nonce": "21888242871839275222246405745257275088548364400416034343698204186575808495564",
+        "main.epoch_key": "21834490123833609470520758287153861745914447618125043729142642781274022838511",
+        "main.control": "4722366482869645214720",
+        "main.epoch_key_hasher.pEx.ark[3].out[4]": "4975046527187781388768896172230546438044702149940019869879856926108476797893",
+        "main.epoch_key_hasher.pEx.ark[7].out[0]": "6291061402197419926500818550482341254290277843322758961177170217281690946228",
+        "main.epoch_key_hasher.pEx.mixS[29].in[2]": "14052851050483133817148243679106991336889213099494245790163709084071386165172",
+        "main.epoch_key_hasher.pEx.mixS[52].in[4]": "19794124568504026044981613222212369151356899923530821907248217235498753555779",
+        "main.epoch_bits.out[181]": "0",
+        "main.attester_id_bits.out[22]": "0",
+        "main.attester_id_bits.out[70]": "0",
+        "main.epoch_key_hasher.pEx.mixS[59].out[3]": "17660248748078145737648099514408032944224122278839550700751937481573223250872"
+    }
+}

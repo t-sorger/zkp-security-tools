@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n225194 constraints, 584 inputs, 8 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: vc_and_disclose.circom \n** result: maximum recursion depth exceeded \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 476.5705780982971,
+  "raw_output_file": "output/fp-rerun-vc-and-disclose/self__vc-and-disclose/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

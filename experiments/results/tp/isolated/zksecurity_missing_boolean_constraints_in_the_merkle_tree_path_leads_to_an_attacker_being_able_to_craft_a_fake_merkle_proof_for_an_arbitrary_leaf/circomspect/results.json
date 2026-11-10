@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.01,
+  "findings": [
+    {
+      "bug_title": "P1000",
+      "unified_bug_title": "Computational-Issue",
+      "description": "Failed to open file `./binary-merkle-root.circom`.",
+      "file": "/tmp/evaluation_tool-circomspect-4riuyilm/circuit.circom",
+      "position": {
+        "line": 2,
+        "column": 1,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "P1000"
+      }
+    }
+  ]
+}

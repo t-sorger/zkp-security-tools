@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n77922 constraints, 67 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: creditVerifier_main.circom \n** result: CONSTRAINED! \n** time: 146.141543 \n** counterexample: {} \n\n",
+  "execution_time": 146.6255338191986,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_creditnoteproofs_can_be_stolen/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 0.008771,
+    "findings": [
+        {
+            "file": "circuit.circom",
+            "type": "UNDER-CONSTRAINED",
+            "time": 0.008771,
+            "counter-example": "{None: ({4: 0, 3: 0, 1: 0, 2: 0}, {4: 1368015184586208377692962645747596915105636153469842199510504144919754569108, 3: 0, 2: 0, 1: 1})}"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

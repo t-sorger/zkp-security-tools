@@ -1,0 +1,20 @@
+{
+  "status": "bugs_found",
+  "execution_time": 19.04,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component RotateLeft32Bits(3) does not satisfy weak safety",
+      "position": {
+        "component": "RotateLeft32Bits"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": [
+          3
+        ]
+      }
+    }
+  ]
+}

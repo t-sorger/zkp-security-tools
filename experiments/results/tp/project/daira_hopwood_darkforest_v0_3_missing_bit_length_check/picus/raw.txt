@@ -1,0 +1,5 @@
+stdout:
+The circuit is properly constrained
+Exiting Picus with the code 8
+
+stderr:

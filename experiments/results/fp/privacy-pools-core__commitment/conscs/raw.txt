@@ -1,0 +1,5 @@
+** filename: commitment.circom 
+** result: CONSTRAINED! 
+** time: 14.337748 
+** counterexample: {} 
+

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: subtract_main.circom \n** result: NOT SURE \n** time: 0.008873 \n** counterexample: {} \n\n",
+  "execution_time": 0.2716832160949707,
+  "raw_output_file": "output/conscs-both-run-2/original/koukyosyumei_subtract_unconstrained_multiplier/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

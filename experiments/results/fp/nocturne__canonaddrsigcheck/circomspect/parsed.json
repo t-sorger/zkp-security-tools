@@ -1,0 +1,29 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/canonAddrSigCheck.circom",
+            "line": 21,
+            "column": 17
+        },
+        {
+            "severity": "warning",
+            "code": "CS0018",
+            "name": "UnusedOutputSignal",
+            "message": "The output signal `vk` defined by the template `VKDerivation` is not constrained in `CanonAddrSigCheck`.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/nocturne/packages/circuits/circuits/canonAddrSigCheck.circom",
+            "line": 35,
+            "column": 27
+        }
+    ],
+    "statistics": {
+        "total_issues": 2,
+        "warnings": 1,
+        "notes": 1,
+        "errors": 0
+    }
+}

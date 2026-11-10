@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n40 constraints, 3 inputs, 2 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: check_depth_main.circom \n** result: CONSTRAINED! \n** time: 0.012353 \n** counterexample: {} \n\n",
+  "execution_time": 0.34479379653930664,
+  "raw_output_file": "output/conscs-both-run-2/original/koukyosyumei_checkdepth_comparator_overflow/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

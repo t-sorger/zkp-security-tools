@@ -1,0 +1,30 @@
+[
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circomspect",
+    "finding_index": 0,
+    "finding_fp": "50b251f1a3bc7c46",
+    "status": "FalsePositive"
+  },
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circomspect",
+    "finding_index": 1,
+    "finding_fp": "87926757da89d266",
+    "status": "FalsePositive"
+  },
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circomspect",
+    "finding_index": 2,
+    "finding_fp": "a5189dabbedbca4c",
+    "status": "FalsePositive"
+  },
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circomspect",
+    "finding_index": 3,
+    "finding_fp": "d720c8b94a89d99f",
+    "status": "FalsePositive"
+  }
+]

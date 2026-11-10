@@ -1,0 +1,5 @@
+** filename: smtverifier10_test.circom 
+** result: CONSTRAINED! 
+** time: 0.485636 
+** counterexample: {} 
+

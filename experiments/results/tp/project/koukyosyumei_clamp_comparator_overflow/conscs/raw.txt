@@ -1,0 +1,5 @@
+** filename: clamp_main.circom 
+** result: NOT SURE 
+** time: 0.479317 
+** counterexample: {} 
+

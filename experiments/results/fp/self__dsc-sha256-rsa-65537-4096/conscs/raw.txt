@@ -1,0 +1,5 @@
+** filename: dsc_sha256_rsa_65537_4096.circom 
+** result: TIMEOUT 
+** time: 605.297913312912 
+** counterexample: None 
+

@@ -1,0 +1,38 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CS0006",
+            "name": "UnusedVariableValue",
+            "message": "The signal `user_identifier` is not used by the template.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom",
+            "line": 26,
+            "column": 5
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom",
+            "line": 34,
+            "column": 43
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/59c16d6e924c946970665504d883ced46981e5c1/circuits/circuits/disclose/vc_and_disclose.circom",
+            "line": 60,
+            "column": 39
+        }
+    ],
+    "statistics": {
+        "total_issues": 3,
+        "warnings": 1,
+        "notes": 2,
+        "errors": 0
+    }
+}

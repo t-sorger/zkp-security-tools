@@ -1,0 +1,42 @@
+{
+  "bug_name": "Prover can lock user funds by including ill-formed BigInts in public key commitment",
+  "vulnerability": "Under-Constrained",
+  "impact": "Completeness",
+  "root_cause": "Unsafe Reuse of Circuit",
+  "location": {
+    "Path": "circuits/rotate.circom",
+    "Function": "Rotate",
+    "Line": "104-108"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/succinctlabs/telepathy-circuits",
+  "commit": "b0c839cef30c3c25ef41d1ad3000081784766934",
+  "fix_commit": "1a88e657932edc59b51e35095618f1e1a46ceef6",
+  "reproduced": false,
+  "short_description": "The `Rotate()` template in rotate.circom fails to validate the format of BigInts in public keys. SubgroupCheckG1WithValidX assumes that its input is a properly formed BigInt, with all limbs less than 2**55. This property is not validated anywhere in the `Rotate()` template. It allows a malicious prover to manipulate public keys by inserting ill-formed BigInts, specifically by altering the y-coordinate of public keys. This manipulation can lock user funds by preventing future provers from generating valid proofs, as the circuit uses these malformed keys without proper validation. The exploit involves modifying the y coordinate in a public key to create an invalid commitment, which then updates the system's commitment state, potentially leading to incorrect or fraudulent operations.",
+  "proposed_mitigation": "Use `Num2Bits()` template to verify that each limb of the `pubkeysBigIntY`, witness value is less than 2**55.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/trailofbits-telepathy.pdf",
+      "Bug ID": "1. Prover can lock user funds by including ill-formed BigInts in public key comitment"
+    }
+  },
+  "codebase": "dataset/codebases/circom/succinctlabs/telepathy-circuits/b0c839cef30c3c25ef41d1ad3000081784766934",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/step.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Moonsong-Labs/zksync-social-login-circuit/openzeppelin_mismatched_base64url_decoding_may_break_completeness",
+    "succinctlabs/telepathy-circuits/trailofbits_prover_can_lock_user_funds_by_supplying_non-reduced_Y_values_to_G1BigIntToSignFlag",
+    "succinctlabs/telepathy-circuits/veridise_template_CoreVerifyPubkeyG1_does_not_perform_input_validation_simplified"
+  ],
+  "mode": "original"
+}

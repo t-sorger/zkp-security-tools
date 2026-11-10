@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n9650 constraints, 9 inputs, 9 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result:  \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 491.4266667366028,
+  "raw_output_file": "output/conscs-both-run-2/direct/matterlabs_fromaddrregex_allows_email_address_spoofing/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

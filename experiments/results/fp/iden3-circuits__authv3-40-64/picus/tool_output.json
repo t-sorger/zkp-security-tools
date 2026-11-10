@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 1800.0174531936646,
+  "raw_output_file": "output/fp-run/iden3-circuits__authv3-40-64/picus/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

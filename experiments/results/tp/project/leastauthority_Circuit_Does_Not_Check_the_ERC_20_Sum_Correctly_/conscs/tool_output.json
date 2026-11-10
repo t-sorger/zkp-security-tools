@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n66354 constraints, 79 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: zk_transaction_1_1.circom \n** result: CONSTRAINED! \n** time: 59.597843 \n** counterexample: {} \n\n",
+  "execution_time": 59.942333698272705,
+  "raw_output_file": "output/conscs-both-run-2/original/leastauthority_Circuit_Does_Not_Check_the_ERC_20_Sum_Correctly_/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

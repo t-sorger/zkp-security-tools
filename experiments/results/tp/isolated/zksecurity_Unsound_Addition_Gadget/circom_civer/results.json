@@ -1,0 +1,18 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.07,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Add32Bits does not satisfy weak safety",
+      "position": {
+        "component": "Add32Bits"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    }
+  ]
+}

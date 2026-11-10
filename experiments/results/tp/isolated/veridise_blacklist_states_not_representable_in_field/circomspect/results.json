@@ -1,0 +1,36 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.13,
+  "findings": [
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-v_ju6_ww/circuit.circom",
+      "position": {
+        "line": 28,
+        "column": 32,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-v_ju6_ww/circuit.circom",
+      "position": {
+        "line": 28,
+        "column": 21,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    }
+  ]
+}

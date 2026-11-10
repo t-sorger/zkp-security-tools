@@ -1,0 +1,38 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/bitify.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-1pcpmufp/circuit.circom",
+            "line": 2,
+            "column": 1
+        },
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/comparators.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-1pcpmufp/circuit.circom",
+            "line": 3,
+            "column": 1
+        },
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/gates.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-1pcpmufp/circuit.circom",
+            "line": 4,
+            "column": 1
+        }
+    ],
+    "statistics": {
+        "total_issues": 3,
+        "warnings": 0,
+        "notes": 0,
+        "errors": 3
+    }
+}

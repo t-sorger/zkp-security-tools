@@ -1,0 +1,7 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Unused-Output)",
+    "assignments": {
+        "main.out": "0"
+    }
+}

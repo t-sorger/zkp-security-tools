@@ -1,0 +1,56 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v1qbb4eg/circuit.circom",
+            "line": 38,
+            "column": 34
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v1qbb4eg/circuit.circom",
+            "line": 52,
+            "column": 34
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v1qbb4eg/circuit.circom",
+            "line": 38,
+            "column": 21
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-v1qbb4eg/circuit.circom",
+            "line": 52,
+            "column": 21
+        },
+        {
+            "severity": "warning",
+            "code": "CS0018",
+            "name": "UnusedOutputSignal",
+            "message": "The output signal `amountPrp` defined by the template `RewardsExtended` is not constrained in `Wrapper`.",
+            "file": "/tmp/evaluation_tool-circomspect-v1qbb4eg/circuit.circom",
+            "line": 45,
+            "column": 19
+        }
+    ],
+    "statistics": {
+        "total_issues": 5,
+        "warnings": 1,
+        "notes": 4,
+        "errors": 0
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "circomspect: No issues found.\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "stdout:\ncircomspect: No issues found.\n\nstderr:\n",
+  "execution_time": 0.0748450756072998,
+  "raw_output_file": "output/fp-run/iden3-circuits__linkedmultiquery-10-32-64/circomspect/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

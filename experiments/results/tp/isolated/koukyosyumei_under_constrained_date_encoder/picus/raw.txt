@@ -1,0 +1,35 @@
+stdout:
+working directory: /var/tmp/picus17770264591777026459845
+The circuit is underconstrained
+Counterexample:
+  inputs:
+    main.day: 0
+    main.month: 0
+    main.year: 0
+  first possible outputs:
+[33m    main.encoded: 52983525027888[0m
+  second possible outputs:
+[33m    main.encoded: 0[0m
+  first internal variables:
+    main.dayDecimals: 0
+    main.dayRest: 0
+    main.monthDecimals: 0
+    main.monthRest: 0
+[33m    main.yearDecimals: 0[0m
+[33m    main.yearRest: 0[0m
+    main.dayEncoded: 12336
+    main.monthEncoded: 12336
+[33m    main.yearEncoded: 12336[0m
+  second internal variables:
+    main.dayDecimals: 0
+    main.dayRest: 0
+    main.monthDecimals: 0
+    main.monthRest: 0
+[33m    main.yearDecimals: 3486835820469396733930269561973471020774818747189416975514598196238731603694[0m
+[33m    main.yearRest: 8908127538984583105190115870779839969348541328937898932250426410764300954294[0m
+    main.dayEncoded: 12336
+    main.monthEncoded: 12336
+[33m    main.yearEncoded: 4120139833739862879236488180440142657219200192371236572361192998271443191997[0m
+Exiting Picus with the code 9
+
+stderr:

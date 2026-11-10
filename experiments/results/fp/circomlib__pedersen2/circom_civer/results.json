@@ -1,0 +1,42 @@
+{
+  "status": "bugs_found",
+  "execution_time": 1502.66,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component MontgomeryAdd does not satisfy weak safety",
+      "position": {
+        "component": "MontgomeryAdd"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    },
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Edwards2Montgomery does not satisfy weak safety",
+      "position": {
+        "component": "Edwards2Montgomery"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    },
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Montgomery2Edwards does not satisfy weak safety",
+      "position": {
+        "component": "Montgomery2Edwards"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n29835 constraints, 13 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 14.984683 \n** counterexample: {} \n\n",
+  "execution_time": 15.288038969039917,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_creditnoteproofs_can_be_stolen/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

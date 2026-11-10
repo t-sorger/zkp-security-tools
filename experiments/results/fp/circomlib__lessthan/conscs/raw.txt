@@ -1,0 +1,5 @@
+** filename: lessthan.circom 
+** result: CONSTRAINED! 
+** time: 0.003925 
+** counterexample: {} 
+

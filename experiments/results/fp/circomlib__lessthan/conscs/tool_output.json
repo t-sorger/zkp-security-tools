@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n36 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: lessthan.circom \n** result: CONSTRAINED! \n** time: 0.003925 \n** counterexample: {} \n\n",
+  "execution_time": 0.23928332328796387,
+  "raw_output_file": "output/fp-run/circomlib__lessthan/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

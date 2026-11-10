@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "The circuit is properly constrained\nExiting Picus with the code 8\n",
+  "stderr": "",
+  "return_code": 8,
+  "msg": "stdout:\nThe circuit is properly constrained\nExiting Picus with the code 8\n\nstderr:\n",
+  "execution_time": 1.3876121044158936,
+  "raw_output_file": "output/fp-run/circomlib__smtverifier10/picus/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

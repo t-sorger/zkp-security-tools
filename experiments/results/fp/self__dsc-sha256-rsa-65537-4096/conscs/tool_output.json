@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: dsc_sha256_rsa_65537_4096.circom \n** result: TIMEOUT \n** time: 605.297913312912 \n** counterexample: None \n\n",
+  "execution_time": 605.8063535690308,
+  "raw_output_file": "output/fp-run/self__dsc-sha256-rsa-65537-4096/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

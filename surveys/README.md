@@ -1,6 +1,7 @@
 # Survey Questions, Data, and Generated Artifacts
 
-This directory contains the questionnaire sources, filtered survey responses, scripts, and generated figures/tables used by the paper.
+This directory contains the questionnaire sources, filtered survey responses, the analysis script, and the generated survey figures/tables used by the paper.
+The tool experiments live in [`../experiments/`](../experiments/).
 
 ## Directory Layout
 
@@ -8,14 +9,13 @@ This directory contains the questionnaire sources, filtered survey responses, sc
 | --- | --- |
 | `questionnaires/` | LaTeX sources for the developer and auditor questionnaires. |
 | `responses/` | Filtered CSV survey responses: `devs.csv` and `auditors.csv`. Demographic answers and free-text practitioner answers are excluded. |
-| `scripts/` | Python scripts for generating paper figures, tables, and the tool-evaluation JSON dataset. |
+| `scripts/` | `generate_practitioner_artifacts.py`, which generates the survey figures and tables. |
 | `figures/` | Generated PDF figures. |
 | `tables/` | Generated LaTeX tables. |
-| `public/dataset/` | Checked-in tool-evaluation JSON and copied report PDFs. |
 
 ## Requirements
 
-The Python scripts require Python 3, `pandas`, and `matplotlib`.
+The script requires Python 3 and `matplotlib` (pinned in `requirements.txt`).
 
 ```bash
 python3 -m venv .venv
@@ -94,49 +94,13 @@ This generates:
 | `tables/practitioners_tool_characteristics.tex` | Tool-characteristics LaTeX table. |
 | `tables/practitioners_vulnerability_perceptions.tex` | Vulnerability perception LaTeX table. |
 
-## Generate RQ2 Tool-Evaluation Artifacts
-
-`scripts/generate_rq2_figures.py` expects a full tool-evaluation JSON with `modes.direct.bugs` and `modes.original.bugs` entries. The checked-in `public/dataset/tools-evaluation.json` currently contains tool metadata but no per-mode bug results, so it documents the dataset shape but is not sufficient by itself to regenerate Figure 2 or Table IV.
-
-Run this command from the `surveys/` directory:
-
-```bash
-python scripts/generate_rq2_figures.py \
-  --tools-evaluation-json <tools-evaluation.json> \
-  --tool-outcomes-figure figures/rq2_tool_outcomes.pdf \
-  --root-cause-table tables/rq2_root_cause_detection.tex
-```
-
-This generates:
-
-| Output | Contents |
-| --- | --- |
-| `figures/rq2_tool_outcomes.pdf` | Tool outcomes in isolated and project modes. |
-| `tables/rq2_root_cause_detection.tex` | Cumulative detection by ground-truth root cause. |
-
-## Build the Tool-Evaluation Dataset
-
-`scripts/build_tools_evaluation.py` converts a zkHydra output directory into the JSON dataset consumed by `generate_rq2_figures.py`.
-
-```bash
-python scripts/build_tools_evaluation.py \
-  --zkhydra-output-dir <zkhydra-output-dir> \
-  --website-bugs-json public/dataset/bugs.json \
-  --out-json public/dataset/tools-evaluation.json \
-  --out-pdfs-dir public/dataset/tools-evaluation
-```
-
-The script reads `summary.json`, per-mode bug outputs, per-tool result files, and optional `report.both.pdf`, `report.direct.pdf`, and `report.original.pdf` files from the zkHydra output directory.
-
 ## Paper Artifact Mapping
 
-The paper currently uses the following generated files:
+The paper uses the following generated files:
 
 | Paper item | Repository artifact |
 | --- | --- |
-| Figure 2 | `figures/rq2_tool_outcomes.pdf` |
-| Figure 3a | `figures/practitioners_overview_used_tools.pdf` |
-| Figure 3b | `figures/practitioners_overview_tool_traits.pdf` |
-| Figure 3c | `figures/practitioners_overview_missing_tools.pdf` |
-| Table IV | `tables/rq2_root_cause_detection.tex` |
-| Table VIII | `tables/practitioners_vulnerability_perceptions.tex` |
+| Figure 4a | `figures/practitioners_overview_used_tools.pdf` |
+| Figure 4b | `figures/practitioners_overview_tool_traits.pdf` |
+| Figure 4c | `figures/practitioners_overview_missing_tools.pdf` |
+| Table 7 | `tables/practitioners_vulnerability_perceptions.tex` |

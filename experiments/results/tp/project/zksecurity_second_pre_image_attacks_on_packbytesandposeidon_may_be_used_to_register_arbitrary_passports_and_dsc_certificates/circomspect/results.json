@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.04,
+  "findings": [
+    {
+      "bug_title": "TAC01",
+      "unified_bug_title": "Computational-Issue",
+      "description": "The template `Poseidon` does not exist.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/selfxyz/self/629dfdad1a867eb82ccba6857a545f3ef838e123/circuits/circuits/disclose/vc_and_disclose.circom",
+      "position": {
+        "line": 103,
+        "column": 33,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "TAC01"
+      }
+    }
+  ]
+}

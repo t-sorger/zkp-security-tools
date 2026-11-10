@@ -1,0 +1,40 @@
+{
+  "bug_name": "Unsound Left Rotation",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Wrong Translation of Logic into Constraints",
+  "location": {
+    "Path": "circuits/generics.circom",
+    "Function": "RotateLeft32Bits",
+    "Line": "39-45"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/reclaimprotocol/circom-chacha20",
+  "commit": "ef9f5a5ad899d852740a26b30eabe5765673c71f",
+  "fix_commit": "e5e756375fc1fc8dc48667b00cdf38c79a0fdf50",
+  "reproduced": false,
+  "short_description": "The `part1` and `part2` signals are not sufficiently constrained. One can arbitrarily set a value to `part1` or `part2` and find a value for the other signal to satisfy the constraint on line 45. This way you can get another `out` value for a given `in`.",
+  "proposed_mitigation": "The recommendation to fix this issue was to constrain `part1` (resp. `part2`) to be (resp. ) bit-sized values. For the concrete mitigation applied, check the commit of the fix.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/zksecurity-reclaimprotocol.pdf",
+      "Bug ID": "#1 Unsound Left Rotation Gadget"
+    }
+  },
+  "codebase": "dataset/codebases/circom/reclaimprotocol/circom-chacha20/ef9f5a5ad899d852740a26b30eabe5765673c71f",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "rarimo/passport-zk-circuits/koukyosyumei_under_constrained_date_encoder",
+    "reclaimprotocol/circom-chacha20/zksecurity_Unsound_Addition_Gadget",
+    "reclaimprotocol/circom-chacha20/zksecurity_Unsound_XOR_gadget"
+  ],
+  "mode": "direct"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2219 constraints, 8 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 82.27768 \n** counterexample: {} \n\n",
+  "execution_time": 82.73956227302551,
+  "raw_output_file": "output/conscs-both-run-2/direct/trailofbits_prover_can_lock_user_funds_by_supplying_non-reduced_Y_values_to_G1BigIntToSignFlag/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

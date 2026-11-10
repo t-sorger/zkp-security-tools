@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1305 constraints, 3 inputs, 1 outputs.\nparse done\nconsidering edge 12141  4.3e-05\ntrying grobner 1 6.4e-05\ntrying grobner 2 6.499665\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 33.591114 \n** counterexample: {} \n\n",
+  "execution_time": 33.96171236038208,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_underconstrained_circuit_allows_invalid_comparison/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

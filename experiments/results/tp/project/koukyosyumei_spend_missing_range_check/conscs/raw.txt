@@ -1,0 +1,5 @@
+** filename: spend.circom 
+** result: CONSTRAINED! 
+** time: 19.06264 
+** counterexample: {} 
+

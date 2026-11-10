@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n124892 constraints, 162 inputs, 8 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: joinsplit.circom \n** result: TIMEOUT \n** time: 607.4702382087708 \n** counterexample: None \n\n",
+  "execution_time": 620.9072103500366,
+  "raw_output_file": "output/fp-run/nocturne__joinsplit/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

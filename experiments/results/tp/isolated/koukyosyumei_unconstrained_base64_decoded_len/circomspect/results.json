@@ -1,0 +1,111 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.03,
+  "findings": [
+    {
+      "bug_title": "SignalAssignmentStatement",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Using the signal assignment operator `<--` does not constrain the assigned signal.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 13,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0005"
+      }
+    },
+    {
+      "bug_title": "SignalAssignmentStatement",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Using the signal assignment operator `<--` does not constrain the assigned signal.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 14,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0005"
+      }
+    },
+    {
+      "bug_title": "UnusedVariableValue",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "The signal `decoded_len` is not used by the template.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 12,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0006"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 10,
+        "column": 18,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 13,
+        "column": 18,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 14,
+        "column": 18,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+      "position": {
+        "line": 16,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    }
+  ]
+}

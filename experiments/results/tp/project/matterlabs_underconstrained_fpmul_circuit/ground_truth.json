@@ -1,0 +1,41 @@
+{
+  "bug_name": "Underconstrained FpMul circuit",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "packages/circuits/lib/fp.circom",
+    "Function": "FpMul",
+    "Line": "40-52"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/zkemail/zk-email-verify",
+  "commit": "fc9949763858ca363a73a2764d9c1d26ef227478",
+  "fix_commit": "9ed3769dc3d96fb0d7c45f1f014dcd9bfb63675b",
+  "reproduced": false,
+  "short_description": "The `FpMul(n, k)` template in `packages/circuits/lib/fp.circom` computes `a * b mod p` by invoking `long_div(n, k, k, ab_proper, p)` and assigning the returned quotient and remainder using the unconstrained `<--` operator: `q[i] <-- long_div_out[0][i]` and `r[i] <-- long_div_out[1][i]`. Each chunk is then range-checked to `n` bits via `Num2Bits(n)`, but the template never constrains the remainder to satisfy `r < p`. A malicious prover can therefore choose `q` and `r` values that still pass the `n`-bit range checks while violating the modular invariant `r < p`. The report demonstrates this with `FpMul(256, 2)` on inputs `A=(4,0), B=(4,0), P=(5,0)`: setting `Q=(0,0)` and `R=(16,0)` makes the circuit output `(16,0)` instead of the expected `(1,0)`, even though `16 >= 5 = P`. `FpMul` is used by `RSAVerifier65537` to compute `signature^65537 mod pubkey_modulus`, so the missing `R < P` check weakens a core step of DKIM signature verification.",
+  "proposed_mitigation": "Add a `BigLessThan(n, k)` gadget that constrains the remainder `r` to be strictly less than the modulus `p`, and enforce `r_p_lt_check.out === 1`. The fix commit `9ed3769d` introduces exactly this check inside `FpMul`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/matterlabs-zkemail.pdf",
+      "Bug ID": "#9 Underconstrained FpMul circuit"
+    }
+  },
+  "codebase": "dataset/codebases/circom/zkemail/zk-email-verify/fc9949763858ca363a73a2764d9c1d26ef227478",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/tests/test-circuits/rsa-test.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "0xbok/circom-bigint/veridise_missing_range_checks_in_bigmod",
+    "succinctlabs/telepathy-circuits/trailofbits_prover_can_lock_user_funds_by_supplying_non-reduced_Y_values_to_G1BigIntToSignFlag"
+  ],
+  "mode": "original"
+}

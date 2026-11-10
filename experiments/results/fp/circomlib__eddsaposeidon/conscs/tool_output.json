@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n21246 constraints, 8 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: eddsaposeidon_test.circom \n** result: CONSTRAINED! \n** time: 1.014314 \n** counterexample: {} \n\n",
+  "execution_time": 1.306096076965332,
+  "raw_output_file": "output/fp-run/circomlib__eddsaposeidon/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

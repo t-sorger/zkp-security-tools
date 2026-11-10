@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 602.9247508049011,
+    "findings": [
+        {
+            "file": "sha-test.circom",
+            "type": "TIMEOUT",
+            "time": 602.9247508049011,
+            "counter-example": "None"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

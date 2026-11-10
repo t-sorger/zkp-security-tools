@@ -1,0 +1,5 @@
+** filename: register_sha256_sha256_sha256_rsa_65537_4096.circom 
+** result: TIMEOUT 
+** time: 604.0907738208771 
+** counterexample: None 
+

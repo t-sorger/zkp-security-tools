@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.09,
+  "findings": [
+    {
+      "bug_title": "UnusedVariableValue",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "The signal `addressHash` is not used by the template.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/Rate-Limiting-Nullifier/circom-rln/022b690b5615d1e26874013cf216136875d8f3ab/circuits/withdraw.circom",
+      "position": {
+        "line": 7,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0006"
+      }
+    }
+  ]
+}

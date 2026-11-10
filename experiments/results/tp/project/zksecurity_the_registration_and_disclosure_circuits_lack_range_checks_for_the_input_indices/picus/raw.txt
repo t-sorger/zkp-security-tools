@@ -1,0 +1,4 @@
+stdout:
+
+stderr:
+/evaluation_tool/tools/picus/run-picus: line 5: 17819 Killed                  PLTSTDERR="error none@picus" racket $parent_path/picus.rkt "$@"

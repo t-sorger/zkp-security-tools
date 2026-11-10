@@ -1,0 +1,30 @@
+stdout:
+error[P1000]: Failed to open file `circuits/comparators.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom:3:1
+  │
+3 │ include "circuits/comparators.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+error[P1000]: Failed to open file `circuits/mimcsponge.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom:4:1
+  │
+4 │ include "circuits/mimcsponge.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+circomspect: analyzing template 'Spend'
+note[CS0004]: Field element arithmetic could overflow, which may produce unexpected results.
+   ┌─ /tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom:31:36
+   │
+31 │     remainingCoinHasher.ins[0] <== balance - withdrawnBalance;
+   │                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^ Field element arithmetic here.
+   │
+   = For more details, see https://github.com/trailofbits/circomspect/blob/main/doc/analysis_passes.md#field-element-arithmetic.
+   = To ignore this type of result, use `--allow CS0004`.
+
+circomspect: 3 issues found.
+
+stderr:

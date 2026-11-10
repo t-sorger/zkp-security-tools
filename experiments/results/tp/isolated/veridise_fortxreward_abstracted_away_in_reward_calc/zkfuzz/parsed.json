@@ -1,0 +1,22 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Unexpected-Input)",
+    "assignments": {
+        "main.utxoInAmount[1]": "21888242871839275222246405745257275088548364400416034343698204186575808495583",
+        "main.utxoInAmount[0]": "0",
+        "main.forUtxoReward": "21888242871839275222246405745257275088548364400416034343698204186575808495601",
+        "main.spendTime": "7",
+        "main.utxoInCreateTime[1]": "21888242871839275222246405745257275088548364400416034343698204186575808495585",
+        "main.forDepositReward": "0",
+        "main.depositScaledAmount": "21888242871839275222246405745257275088548364400416034343698204186575808495585",
+        "main.utxoInCreateTime[0]": "4",
+        "main.forTxReward": "21888242871839275222246405745257275088548364400416034343698204186575808495554",
+        "main.assetWeight": "8",
+        "main.nUtxoIn": "2",
+        "main.r.b2n.in[97]": "0",
+        "main.r.lessThen[0].n2b.out[0]": "1",
+        "main.r.n2b.out[245]": "0",
+        "main.r.n2b.out[228]": "0",
+        "main.r.spendTime": "7"
+    }
+}

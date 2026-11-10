@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 0.008873,
+    "findings": [
+        {
+            "file": "subtract_main.circom",
+            "type": "NOT SURE",
+            "time": 0.008873,
+            "counter-example": "{}"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

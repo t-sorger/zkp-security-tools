@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2965 constraints, 7 inputs, 5 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 165.833748 \n** counterexample: {} \n\n",
+  "execution_time": 166.43324494361877,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_missing_range_checks_in_bigmod/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

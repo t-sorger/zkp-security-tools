@@ -1,0 +1,20 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.04,
+  "findings": [
+    {
+      "bug_title": "Weak-Safety-Violation",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Component Decoder(4) does not satisfy weak safety",
+      "position": {
+        "component": "Decoder"
+      },
+      "metadata": {
+        "severity": "error",
+        "params": [
+          4
+        ]
+      }
+    }
+  ]
+}

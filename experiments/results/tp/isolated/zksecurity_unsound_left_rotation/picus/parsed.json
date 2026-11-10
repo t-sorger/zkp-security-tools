@@ -1,0 +1,22 @@
+{
+    "result": "Underconstrained",
+    "signals_with_multiple_values": [
+        {
+            "name": "main.out",
+            "first_value": "0",
+            "second_value": "1",
+            "template": "main"
+        }
+    ],
+    "counterexample": {
+        "inputs": {
+            "main.in": "0"
+        },
+        "first_outputs": {
+            "main.out": "0"
+        },
+        "second_outputs": {
+            "main.out": "1"
+        }
+    }
+}

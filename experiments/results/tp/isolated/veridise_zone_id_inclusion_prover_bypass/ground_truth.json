@@ -1,0 +1,38 @@
+{
+  "bug_name": "ZoneIdInclusionProver Check Can Be Bypassed",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Missing Input Constraints",
+  "location": {
+    "Path": "circuits/circuits/templates/zoneIdInclusionProver.circom",
+    "Function": "ZoneIdInclusionProver",
+    "Line": "14-41"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/pantherfoundation/panther-core",
+  "commit": "b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "fix_commit": "0621e84",
+  "reproduced": false,
+  "short_description": "The `ZoneIdInclusionProver` template (zoneIdInclusionProver.circom) is meant to verify that the caller's `zoneId` sits at position `offset` in a 16-slot `zoneIds` list. The main verification loop is `for(var i = 0; i < 15; i++)` and enables the per-slot `ForceEqualIfEnabled()` check only when `is_equal[i].out == 1` (i.e. `i == offset`). The template's assertion `assert(offset < 16);` is a compile-time `assert`, not a constraint — and the loop only iterates `i` from 0 to 14. Therefore setting `offset = 15` makes every `is_equal[i]` evaluate to 0, no ForceEqualIfEnabled is activated, and the whole zone-permission check is silently skipped. A malicious prover can bypass zone checks and send funds to a disallowed zone.",
+  "proposed_mitigation": "Constrain `offset` to be strictly less than 15 using a ForceLessThan(4) / LessThan() check so the silent skip is impossible, and/or iterate `i` from 0 to 15 inclusive to match the 4-bit domain of `offset`.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/veridise-panther.pdf",
+      "Bug ID": "V-PAN-VUL-015: ZoneIdInclusionProver check can be bypassed"
+    }
+  },
+  "codebase": "dataset/codebases/circom/pantherfoundation/panther-core/b464348b33155a5877f67c085c7206dc29ad7cb7",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "circuits/circuits/mainZTransactionV1.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [],
+  "mode": "direct"
+}

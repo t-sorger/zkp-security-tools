@@ -1,0 +1,12 @@
+stdout:
+error[TAC01]: The template `Poseidon` does not exist.
+    ┌─ /zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom:133:33
+    │
+133 │     signal output nullifier <== Poseidon(2)([secret, scope]);
+    │                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Unknown template `Poseidon` instantiated here.
+    │
+    = To ignore this type of result, use `--allow TAC01`.
+
+circomspect: 1 issue found.
+
+stderr:

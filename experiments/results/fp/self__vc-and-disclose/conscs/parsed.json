@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 99999999.0,
+    "findings": [
+        {
+            "file": "vc_and_disclose.circom",
+            "type": "maximum recursion depth exceeded",
+            "time": 99999999.0,
+            "counter-example": "None"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

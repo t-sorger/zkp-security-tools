@@ -1,0 +1,5 @@
+** filename: circuit.circom 
+** result: TIMEOUT 
+** time: 605.7031052112579 
+** counterexample: None 
+

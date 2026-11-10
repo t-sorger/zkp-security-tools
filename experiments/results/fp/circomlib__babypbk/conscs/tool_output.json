@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n10114 constraints, 2 inputs, 2 outputs.\nparse done\nconsidering edge 5668140  3.5e-05\ntrying grobner 1 5.2e-05\ntrying grobner 2 5.712017\nconsidering edge 5668140  2.9e-05\ntrying grobner 1 4.7e-05\ntrying grobner 2 5.680236\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: babypbk_test.circom \n** result: NOT SURE \n** time: 573.714472 \n** counterexample: {} \n\n",
+  "execution_time": 579.5211801528931,
+  "raw_output_file": "output/fp-run/circomlib__babypbk/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,5 @@
+** filename: emit_if_in_range_main.circom 
+** result: CONSTRAINED! 
+** time: 0.021029 
+** counterexample: {} 
+

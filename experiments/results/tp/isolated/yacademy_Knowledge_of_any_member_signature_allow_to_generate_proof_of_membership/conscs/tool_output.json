@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n22660 constraints, 27 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 6.389596 \n** counterexample: {} \n\n",
+  "execution_time": 6.647014379501343,
+  "raw_output_file": "output/conscs-both-run-2/direct/yacademy_Knowledge_of_any_member_signature_allow_to_generate_proof_of_membership/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

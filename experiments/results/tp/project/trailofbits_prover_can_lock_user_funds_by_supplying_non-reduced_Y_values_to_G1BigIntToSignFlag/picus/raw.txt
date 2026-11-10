@@ -1,0 +1,5 @@
+stdout:
+Exiting Picus with the code 1
+
+stderr:
+exception: "make-directory: cannot make directory\n  path: /var/tmp/picus17770441711777044171118\n  system error: No space left on device; errno=28\n  context...:\n   /usr/share/racket/collects/racket/file.rkt:203:4\n   /evaluation_tool/tools/picus/picus/tmpdir.rkt:10:0: ...

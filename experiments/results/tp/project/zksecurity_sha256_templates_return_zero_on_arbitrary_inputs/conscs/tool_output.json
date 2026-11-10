@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.0352456569672,
+  "raw_output_file": "output/conscs-both-run-2/original/zksecurity_sha256_templates_return_zero_on_arbitrary_inputs/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

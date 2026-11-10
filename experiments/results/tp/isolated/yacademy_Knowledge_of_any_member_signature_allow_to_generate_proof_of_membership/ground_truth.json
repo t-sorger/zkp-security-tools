@@ -1,0 +1,41 @@
+{
+  "bug_name": "Knowledge of any member signature allow to generate proof of membership",
+  "vulnerability": "Under-Constrained",
+  "impact": "Soundness",
+  "root_cause": "Circuit Design Issue",
+  "location": {
+    "Path": "packages/circuits/eff_ecdsa_membership/pubkey_membership.circom",
+    "Function": "PubKeyMembership",
+    "Line": "17-46"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/personaelabs/spartan-ecdsa",
+  "commit": "3386b30d9b5b62d8a60735cbeab42bfe42e80429",
+  "fix_commit": "",
+  "reproduced": false,
+  "short_description": "The `PubKeyMembership` template derives a public key from ECDSA parameters via `EfficientECDSA()` and checks it against a Merkle tree root. However, the inputs `Tx`, `Ty`, `Ux`, `Uy` are unconstrained private inputs that can be freely chosen by the prover. Since `pubKey = s * T + U`, an attacker who knows any valid member signature `s` can pick arbitrary `T` and `U` values to derive any target public key in the Merkle tree, generating a valid membership proof without being a member.",
+  "proposed_mitigation": "Bind the ECDSA verification inputs to a specific message and public key. The circuit should constrain that the signature corresponds to a known message, preventing the prover from freely choosing `Tx`, `Ty`, `Ux`, `Uy` to target arbitrary public keys.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/yacademy-spartan.md",
+      "Bug ID": "Knowledge of any member signature allow to generate proof of membership"
+    }
+  },
+  "codebase": "dataset/codebases/circom/personaelabs/spartan-ecdsa/3386b30d9b5b62d8a60735cbeab42bfe42e80429",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "packages/circuits/instances/pubkey_membership.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": false,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "Arianee/arianee-sdk/veridise_creditnoteproofs_can_be_stolen",
+    "personaelabs/spartan-ecdsa/yacademy_input_signal_s_is_not_constrained_in_eff_ecdsa_circom"
+  ],
+  "mode": "direct"
+}

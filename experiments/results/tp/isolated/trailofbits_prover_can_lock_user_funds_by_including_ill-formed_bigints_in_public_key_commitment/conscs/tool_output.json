@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n2304 constraints, 15 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.16729 \n** counterexample: {} \n\n",
+  "execution_time": 0.42130160331726074,
+  "raw_output_file": "output/conscs-both-run-2/direct/trailofbits_prover_can_lock_user_funds_by_including_ill-formed_bigints_in_public_key_commitment/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

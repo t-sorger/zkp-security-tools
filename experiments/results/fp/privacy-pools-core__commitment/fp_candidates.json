@@ -1,0 +1,115 @@
+{
+  "unit": "privacy-pools-core__commitment",
+  "source": {
+    "Audits": [
+      {
+        "auditor": "Oxorio",
+        "date": "2025-02-21",
+        "scope": "packages/circuits/circuits/{commitment,merkleTree,withdraw}.circom (initial 56d5d48, final 8da36d5)",
+        "url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/circuits_audit_oxorio.md"
+      }
+    ],
+    "BattleTested": {
+      "evidence": "0xbow Privacy Pools live on Ethereum mainnet since 2025: PrivacyPool ETH contract (Etherscan tag 'Privacy Pools: Simple') holds ~748 ETH; WithdrawalVerifier 0x0228...7d6d / RagequitVerifier 0xa45a...5ec6 listed in repo docs/deployments.md.",
+      "url": "https://etherscan.io/address/0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb"
+    },
+    "CommitNote": "'fix: address circuits audit issues (#4)' on main = the 'Final commit' verified in the Oxorio report. packages/circuits/circuits/ is byte-identical from here through v0.1.0 (first release tag, 2025-05-25), the trusted-setup commit a3fa7ab and HEAD/v1.3.0, so this is also the deployed circuit."
+  },
+  "provenance": {
+    "Project": "https://github.com/0xbow-io/privacy-pools-core",
+    "ProjectName": "privacy-pools-core",
+    "Commit": "8da36d5e2150ab3c567d85ca8a6b2eb6b51740cb",
+    "DSL": "Circom",
+    "Origin": "audited",
+    "Source": {
+      "Audits": [
+        {
+          "auditor": "Oxorio",
+          "date": "2025-02-21",
+          "scope": "packages/circuits/circuits/{commitment,merkleTree,withdraw}.circom (initial 56d5d48, final 8da36d5)",
+          "url": "https://github.com/0xbow-io/privacy-pools-core/blob/main/audit/circuits_audit_oxorio.md"
+        }
+      ],
+      "BattleTested": {
+        "evidence": "0xbow Privacy Pools live on Ethereum mainnet since 2025: PrivacyPool ETH contract (Etherscan tag 'Privacy Pools: Simple') holds ~748 ETH; WithdrawalVerifier 0x0228...7d6d / RagequitVerifier 0xa45a...5ec6 listed in repo docs/deployments.md.",
+        "url": "https://etherscan.io/address/0xf241d57c6debae225c0f2e6ea1529373c9a9c9fb"
+      },
+      "CommitNote": "'fix: address circuits audit issues (#4)' on main = the 'Final commit' verified in the Oxorio report. packages/circuits/circuits/ is byte-identical from here through v0.1.0 (first release tag, 2025-05-25), the trusted-setup commit a3fa7ab and HEAD/v1.3.0, so this is also the deployed circuit."
+    },
+    "KnownUnfixed": [
+      {
+        "id": "Oxorio WARNING-2",
+        "title": "Potential inclusion proof manipulation: actualDepth only range-checked (<= maxDepth), not enforced in the LeanIMT path computation (multiple valid proofs per leaf)",
+        "location": "packages/circuits/circuits/merkleTree.circom:LeanIMTInclusionProof",
+        "status": "acknowledged (auditor later judged it not exploitable here because leaves use Poseidon(3))"
+      },
+      {
+        "id": "Oxorio INFO-3",
+        "title": "Value range checks performed after computing remainingValue",
+        "location": "packages/circuits/circuits/withdraw.circom:Withdraw",
+        "status": "acknowledged (style)"
+      },
+      {
+        "id": "Oxorio INFO-4",
+        "title": "Use of non-anonymous components / `_ <==` discards",
+        "location": "packages/circuits/circuits/withdraw.circom:Withdraw",
+        "status": "acknowledged (style)"
+      }
+    ],
+    "Codebase": "dataset/codebases/audited/privacy-pools-core",
+    "LinkPaths": [
+      "dataset/codebases/audited/privacy-pools-core"
+    ],
+    "Entrypoint": "../../../../codebases/audited/privacy-pools-core/packages/circuits/circuits/main/commitment.circom",
+    "Input": "input.json",
+    "Compiled": true,
+    "Constraints": 2283
+  },
+  "tools": {
+    "circomspect": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "circom_civer": {
+      "status": "failed",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "conscs": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "picus": {
+      "status": "success",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    },
+    "zkfuzz": {
+      "status": "timeout",
+      "soundness_count": 0,
+      "warning_count": 0,
+      "soundness": [],
+      "warnings": [],
+      "tool_errors": [],
+      "suppressed_findings": []
+    }
+  }
+}

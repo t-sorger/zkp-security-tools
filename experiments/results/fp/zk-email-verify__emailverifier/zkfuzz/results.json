@@ -1,0 +1,33 @@
+{
+  "status": "bugs_found",
+  "execution_time": 244.57,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Counter example found: UnderConstrained (Unused-Output)",
+      "metadata": {
+        "severity": "error",
+        "assignments": {
+          "main.maskedBody[238]": "0",
+          "main.maskedBody[637]": "0",
+          "main.maskedBody[526]": "0",
+          "main.maskedBody[579]": "0",
+          "main.maskedBody[751]": "0",
+          "main.maskedHeader[28]": "0",
+          "main.maskedHeader[179]": "0",
+          "main.maskedBody[534]": "0",
+          "main.maskedHeader[137]": "0",
+          "main.maskedHeader[304]": "0",
+          "main.maskedBody[88]": "0",
+          "main.maskedBody[547]": "0",
+          "main.maskedBody[315]": "0",
+          "main.maskedBody[597]": "0",
+          "main.maskedBody[399]": "0",
+          "main.maskedBody[613]": "0",
+          "main.maskedHeader[76]": "0"
+        }
+      }
+    }
+  ]
+}

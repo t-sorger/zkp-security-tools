@@ -1,0 +1,41 @@
+{
+  "bug_name": "Mismatched Base64url Decoding May Break Completeness",
+  "vulnerability": "Over-Constrained",
+  "impact": "Completeness",
+  "root_cause": "Misimplementation of a Specification",
+  "location": {
+    "Path": "utils/jwt-verify.circom",
+    "Function": "JwtVerify",
+    "Line": "91-93"
+  },
+  "dsl": "Circom",
+  "project": "https://github.com/Moonsong-Labs/zksync-social-login-circuit",
+  "commit": "27cda6e74492fbad4aa3ca37ff5084ed391b534b",
+  "fix_commit": "0548942278a414d85e2f3d406e171eeac325349e",
+  "reproduced": false,
+  "short_description": "Per RFC-7519 the JWT payload is encoded with base64url (i.e., `-` and `_` instead of `+` and `/`), but `JwtVerify` decodes it with a plain base64 decoder: `b64Payload` (the URL-safe base64 bytes sliced out of `message`) is fed directly to `Base64Decode(maxPayloadLength)(b64Payload)` without first being converted from base64url to base64. The zkemail `Base64Decode` template only accepts the base64 alphabet, so any payload byte equal to `-` (45) or `_` (95) makes the constraints unsatisfiable — `reject such inputs` in the report's wording. While `VerifyNonce()` correctly calls `Base64UrlToBase64(maxNonceB64Length)(b64UrlNonce)` before `Base64Decode`, the main payload path skips this step, making it theoretically possible for a valid Google OIDC JWT containing `-` or `_` in its payload to be unverifiable by the circuit, breaking completeness.",
+  "proposed_mitigation": "Call `Base64UrlToBase64` on `b64Payload` before passing it to `Base64Decode`, matching how the nonce is handled. The fix in PR #40 (commit `0548942`) adds this conversion so that JWT payloads are correctly base64url-decoded.",
+  "source": {
+    "Audit Report": {
+      "Source Link": "https://github.com/zksecurity/zkbugs/blob/main/reports/documents/openzeppelin-sso.pdf",
+      "Bug ID": "Medium: Mismatched Base64url Decoding May Break Completeness"
+    }
+  },
+  "codebase": "dataset/codebases/circom/Moonsong-Labs/zksync-social-login-circuit/27cda6e74492fbad4aa3ca37ff5084ed391b534b",
+  "direct_entrypoint": "circuit.circom",
+  "original_entrypoint": [
+    "jwt-tx-validation.circom"
+  ],
+  "input": {
+    "Original": "input.json",
+    "Direct": "direct_input.json"
+  },
+  "executed": true,
+  "compiled_direct": true,
+  "compiled_original": true,
+  "similar_bugs": [
+    "succinctlabs/telepathy-circuits/trailofbits_prover_can_lock_user_funds_by_including_ill-formed_bigints_in_public_key_commitment",
+    "succinctlabs/telepathy-circuits/trailofbits_prover_can_lock_user_funds_by_supplying_non-reduced_Y_values_to_G1BigIntToSignFlag"
+  ],
+  "mode": "direct"
+}

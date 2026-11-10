@@ -1,0 +1,126 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.03,
+  "findings": [
+    {
+      "bug_title": "UnusedVariableValue",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "The signal `p` is not used by the template.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 18,
+        "column": 5,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0006"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 24,
+        "column": 43,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 33,
+        "column": 13,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 34,
+        "column": 13,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 35,
+        "column": 13,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 36,
+        "column": 20,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "UnconstrainedLessThan",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Inputs to `LessThan` need to be constrained to ensure that they are non-negative",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 37,
+        "column": 20,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0014"
+      }
+    },
+    {
+      "bug_title": "UnconstrainedLessThan",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Inputs to `LessThan` need to be constrained to ensure that they are non-negative",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/darkforest-eth/darkforest-v0.3/1c83685e22e0463d5481c83e21616745b3204c9c/circuits/init/circuit.circom",
+      "position": {
+        "line": 36,
+        "column": 20,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0014"
+      }
+    }
+  ]
+}

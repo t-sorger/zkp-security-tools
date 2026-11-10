@@ -1,0 +1,28 @@
+stdout:
+[32mtemplate instances[0m: 108
+
+--------------------------------------------
+--------------------------------------------
+-------- CIVER VERIFICATION RESULTS --------
+--------------------------------------------
+--------------------------------------------
+
+-> CIVER could not verify weak safety of all components
+Components timeout when checking weak-safety: 
+    - BinSum(32,5), 
+    - BinSum(32,2), 
+    - BinSum(32,4), 
+  * Number of verified components (weak-safety): 105
+  * Number of failed components (weak-safety): 0
+  * Number of timeout components (weak-safety): 3
+  * Percentage of verified constraints: 94.80857836211226 - (1969433 / 2077273)
+  * Percentage of verified components: 87.29176000977557 - (21431 / 24551)
+
+
+--------------------------------------------
+--------------------------------------------
+
+[32mEverything went okay, circom safe[0m
+
+stderr:
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1416 constraints, 36 inputs, 8 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: select-regex-reveal-test.circom \n** result: CONSTRAINED! \n** time: 8.485543 \n** counterexample: {} \n\n",
+  "execution_time": 9.004450559616089,
+  "raw_output_file": "output/fp-run/zk-email-verify__selectregexreveal-34-8/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

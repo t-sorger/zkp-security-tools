@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n12 constraints, 4 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: emit_if_in_range_main.circom \n** result: CONSTRAINED! \n** time: 0.021029 \n** counterexample: {} \n\n",
+  "execution_time": 0.267378568649292,
+  "raw_output_file": "output/conscs-both-run-2/original/koukyosyumei_emitifinrange_lessthan_overflow/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

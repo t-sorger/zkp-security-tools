@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1 constraints, 3 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: UNDER-CONSTRAINED! \n** time: 0.008771 \n** counterexample: {None: ({4: 0, 3: 0, 1: 0, 2: 0}, {4: 1368015184586208377692962645747596915105636153469842199510504144919754569108, 3: 0, 2: 0, 1: 1})} \n\n",
+  "execution_time": 0.2678368091583252,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_Unsound_Addition_Gadget/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

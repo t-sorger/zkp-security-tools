@@ -1,0 +1,38 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/comparators.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+            "line": 3,
+            "column": 1
+        },
+        {
+            "severity": "error",
+            "code": "P1000",
+            "name": "P1000",
+            "message": "Failed to open file `circuits/mimcsponge.circom`.",
+            "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+            "line": 4,
+            "column": 1
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-k6ihofpn/circuit.circom",
+            "line": 31,
+            "column": 36
+        }
+    ],
+    "statistics": {
+        "total_issues": 3,
+        "warnings": 0,
+        "notes": 1,
+        "errors": 2
+    }
+}

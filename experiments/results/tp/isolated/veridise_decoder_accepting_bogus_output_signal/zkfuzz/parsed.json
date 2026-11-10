@@ -1,0 +1,15 @@
+{
+    "result": "found_bug",
+    "vulnerability": "UnderConstrained (Non-Deterministic)",
+    "signal": "main.out[1]",
+    "expected_value": "1",
+    "assignments": {
+        "main.out[1]": "0",
+        "main.inp": "1",
+        "main.out[3]": "0",
+        "main.success": "0",
+        "main.out[0]": "0",
+        "main.w": "4",
+        "main.out[2]": "0"
+    }
+}

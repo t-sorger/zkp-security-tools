@@ -1,0 +1,5 @@
+** filename: test_bigmod_22.circom 
+** result: NOT SURE 
+** time: 11.133932 
+** counterexample: {} 
+

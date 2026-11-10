@@ -1,0 +1,76 @@
+stdout:
+🎲 Random Seed: 10506049675680593964
+
+[2K🧬 Generation: 0/500 (0)
+    └─ Solution found in generation 0
+
+stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...
+╔══════════════════════════════════════════════════════════════╗
+║🚨 Counter Example:                                           ║
+║    🧟 UnderConstrained (Unexpected-Input) 🧟
+║           Violated Condition: (BoolOr (BoolAnd (Eq 1 main.exceed_depth.lt.out) (Lt main.exceed_depth.lt.in[0] main.exceed_depth.lt.in[1])) (BoolAnd (Eq 0 main.exceed_depth.lt.out) (GEq main.exceed_depth.lt.in[0] main.exceed_depth.lt.in[1]))) 
+║    🔍 Assignment Details: 
+║           ➡️ main.leaf_depth = 7 
+║           ➡️ main.is_parent = 1 
+║           ➡️ main.depth = 21888242871839275222246405745257275088548364400416034343698204186575808495529 
+║           ➡️ main.is_root = 0 
+║           ➡️ main.exceed_depth.lt.n2b.out[4] = 1 
+║           ➡️ main.check_parent.in[1] = 6 
+║           ➡️ main.check_root.in[0] = 21888242871839275222246405745257275088548364400416034343698204186575808495529 
+║           ➡️ main.check_parent.n2b.out[4] = 0 
+║           ➡️ main.exceed_depth.lt.n2b.out[2] = 1 
+║           ➡️ main.exceed_depth.lt.n2b.out[0] = 0 
+║           ➡️ main.check_parent.n2b.out[5] = 1 
+║           ➡️ main.exceed_depth.in[0] = 21888242871839275222246405745257275088548364400416034343698204186575808495529 
+║           ➡️ main.check_parent.n2b.out[3] = 0 
+║           ➡️ main.check_parent.in[0] = 21888242871839275222246405745257275088548364400416034343698204186575808495529 
+║           ➡️ main.exceed_depth.lt.n2b.out[3] = 1 
+║           ➡️ main.check_root.isz.in = 88 
+║           ➡️ main.exceed_depth.lt.n2b.out[7] = 0 
+║           ➡️ main.check_parent.out = 1 
+║           ➡️ main.exceed_depth.lt.n2b.out[6] = 1 
+║           ➡️ main.exceed_depth.out = 0 
+║           ➡️ main.check_parent.n2b.out[2] = 0 
+║           ➡️ main.exceed_depth.lt.in[1] = 21888242871839275222246405745257275088548364400416034343698204186575808495530 
+║           ➡️ main.check_parent.n2b.out[0] = 0 
+║           ➡️ main.exceed_depth.lt.n2b.out[5] = 0 
+║           ➡️ main.exceed_depth.lt.out = 0 
+║           ➡️ main.check_root.in[1] = 0 
+║           ➡️ main.check_root.isz.out = 0 
+║           ➡️ main.check_parent.n2b.out[1] = 1 
+║           ➡️ main.exceed_depth.in[1] = 7 
+║           ➡️ main.exceed_depth.lt.in[0] = 7 
+║           ➡️ main.check_parent.n2b.out[7] = 1 
+║           ➡️ main.exceed_depth.lt.n2b.out[8] = 1 
+║           ➡️ main.check_root.out = 0 
+║           ➡️ main.exceed_depth.lt.n2b.in = 350 
+║           ➡️ main.check_parent.n2b.in = 162 
+║           ➡️ main.exceed_depth.lt.n2b.out[1] = 1 
+║           ➡️ main.check_root.isz.inv = 3730950489518058276519273706577944617366198477343642217675830259075421902662 
+║           ➡️ main.check_parent.n2b.out[8] = 0 
+║           ➡️ main.check_parent.n2b.out[6] = 0 
+╚══════════════════════════════════════════════════════════════╝
+
+╔═══════════════════════════════════════════════════════════════╗
+║                        zkFuzz Report                        ║
+╚═══════════════════════════════════════════════════════════════╝
+📊 Execution Summary:
+ ├─ Prime Number      : 21888242871839275222246405745257275088548364400416034343698204186575808495617
+ ├─ Compression Rate  : 64.52% (40/62)
+ ├─ Verification      : 💥 NOT SAFE 💥
+ └─ Execution Time    : 43.929718ms
+════════════════════════════════════════════════════════════════
+Everything went okay

@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/siv-org/verifiable-private-overrides/7bda2311d7a33dcab611cfea0c67707b0b65c24c/circuits/generated/emit_if_in_range_main.circom" requires pragma version (2, 2, 2) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

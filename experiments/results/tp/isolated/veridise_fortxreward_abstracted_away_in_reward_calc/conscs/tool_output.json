@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1256 constraints, 11 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.047556 \n** counterexample: {} \n\n",
+  "execution_time": 0.3203859329223633,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_fortxreward_abstracted_away_in_reward_calc/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,32 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.03,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Counter example found: UnderConstrained (Unexpected-Input)",
+      "metadata": {
+        "severity": "error",
+        "assignments": {
+          "main.leaf_depth": "8",
+          "main.is_parent": "1",
+          "main.depth": "21888242871839275222246405745257275088548364400416034343698204186575808495561",
+          "main.is_root": "0",
+          "main.exceed_depth.lt.n2b.out[4]": "1",
+          "main.check_parent.in[1]": "7",
+          "main.check_root.in[0]": "21888242871839275222246405745257275088548364400416034343698204186575808495561",
+          "main.check_parent.n2b.out[4]": "0",
+          "main.exceed_depth.lt.n2b.out[2]": "1",
+          "main.exceed_depth.lt.n2b.out[0]": "1",
+          "main.check_parent.n2b.out[5]": "0",
+          "main.exceed_depth.in[0]": "21888242871839275222246405745257275088548364400416034343698204186575808495561",
+          "main.check_parent.n2b.out[3]": "0",
+          "main.check_parent.in[0]": "21888242871839275222246405745257275088548364400416034343698204186575808495561",
+          "main.exceed_depth.lt.n2b.out[3]": "1",
+          "main.check_root.isz.in": "56"
+        }
+      }
+    }
+  ]
+}

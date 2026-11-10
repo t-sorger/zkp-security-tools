@@ -1,0 +1,21 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.12,
+  "findings": [
+    {
+      "bug_title": "UnconstrainedSignal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "The signal `result` is not constrained by the template.",
+      "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/zkopru-network/zkopru/4236fc8a5cbf73b7f3860d87a1a447eea8d7abd4/packages/circuits/tester/ownership_proof.test.circom",
+      "position": {
+        "line": 12,
+        "column": 3,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CA01"
+      }
+    }
+  ]
+}

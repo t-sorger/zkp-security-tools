@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n514 constraints, 5 inputs, 3 outputs.\nparse done\nconsidering edge 217275  5.8e-05\ntrying grobner 1 8e-05\ntrying grobner 2 5.072401\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 26.897599 \n** counterexample: {} \n\n",
+  "execution_time": 27.254509210586548,
+  "raw_output_file": "output/conscs-both-run-2/direct/openzeppelin_mismatched_base64url_decoding_may_break_completeness/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

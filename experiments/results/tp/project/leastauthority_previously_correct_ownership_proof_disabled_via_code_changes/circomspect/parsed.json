@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CA01",
+            "name": "UnconstrainedSignal",
+            "message": "The signal `result` is not constrained by the template.",
+            "file": "/evaluation_tool/extended_dataset/dataset/codebases/circom/zkopru-network/zkopru/4236fc8a5cbf73b7f3860d87a1a447eea8d7abd4/packages/circuits/tester/ownership_proof.test.circom",
+            "line": 12,
+            "column": 3
+        }
+    ],
+    "statistics": {
+        "total_issues": 1,
+        "warnings": 1,
+        "notes": 0,
+        "errors": 0
+    }
+}

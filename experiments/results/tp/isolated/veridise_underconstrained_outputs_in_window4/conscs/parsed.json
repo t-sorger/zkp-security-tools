@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "execution_time": 20.541234,
+    "findings": [
+        {
+            "file": "circuit.circom",
+            "type": "NOT SURE",
+            "time": 20.541234,
+            "counter-example": "{}"
+        }
+    ],
+    "statistics": {
+        "total_findings": 1
+    }
+}

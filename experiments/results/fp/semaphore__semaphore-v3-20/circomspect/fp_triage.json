@@ -1,0 +1,9 @@
+[
+  {
+    "unit": "semaphore__semaphore-v3-20",
+    "tool": "circomspect",
+    "finding_index": 0,
+    "finding_fp": "5e2578f12eca0ad8",
+    "status": "FalsePositive"
+  }
+]

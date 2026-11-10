@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CS0006",
+            "name": "UnusedVariableValue",
+            "message": "The signal `addressHash` is not used by the template.",
+            "file": "/tmp/evaluation_tool-circomspect-wp9cg3nn/circuit.circom",
+            "line": 13,
+            "column": 5
+        }
+    ],
+    "statistics": {
+        "total_issues": 1,
+        "warnings": 1,
+        "notes": 0,
+        "errors": 0
+    }
+}

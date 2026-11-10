@@ -1,0 +1,24 @@
+{
+  "status": "bugs_found",
+  "execution_time": 2.62,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained Signal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.encoded` can be `52983525027888` or `0` for inputs (main.day=0, main.month=0, main.year=0)",
+      "position": {
+        "signal": "main.encoded"
+      },
+      "metadata": {
+        "severity": "error",
+        "inputs": {
+          "main.day": "0",
+          "main.month": "0",
+          "main.year": "0"
+        },
+        "first_value": "52983525027888",
+        "second_value": "0"
+      }
+    }
+  ]
+}

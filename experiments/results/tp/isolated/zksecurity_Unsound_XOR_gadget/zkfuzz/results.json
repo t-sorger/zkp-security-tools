@@ -1,0 +1,36 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.03,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out` is expected to be `109`",
+      "position": {
+        "signal": "main.out"
+      },
+      "metadata": {
+        "severity": "error",
+        "expected_value": "109",
+        "assignments": {
+          "main.out": "66033133",
+          "main.b": "21888242871839275222246405745257275088548364400416034343698204186575808495522",
+          "main.a": "21888242871839275222246405745257275088548364400416034343698204186575808495567",
+          "main.xor.xor_bits[28]": "0",
+          "main.xor.a_bits[24]": "1",
+          "main.xor.xor_bits[1]": "64",
+          "main.xor.a_bits[31]": "1",
+          "main.xor.xor_bits[29]": "0",
+          "main.xor.a_bits[14]": "1",
+          "main.xor.b_bits[10]": "1",
+          "main.xor.xor_bits[2]": "1",
+          "main.xor.b_bits[19]": "1",
+          "main.xor.xor_bits[10]": "0",
+          "main.xor.xor_bits[19]": "0",
+          "main.xor.xor_bits[0]": "1",
+          "main.xor.xor_bits[23]": "0"
+        }
+      }
+    }
+  ]
+}

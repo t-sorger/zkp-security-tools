@@ -1,0 +1,7 @@
+{
+  "status": "TruePositive",
+  "reason": "Found Under-Constrained at lines 12",
+  "need_manual_analysis": false,
+  "manual_analysis": "N/A",
+  "manual_analysis_reasoning": "N/A"
+}

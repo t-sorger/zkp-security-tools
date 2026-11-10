@@ -1,0 +1,27 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.09,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out[1]` is expected to be `1`",
+      "position": {
+        "signal": "main.out[1]"
+      },
+      "metadata": {
+        "severity": "error",
+        "expected_value": "1",
+        "assignments": {
+          "main.out[1]": "0",
+          "main.inp": "1",
+          "main.out[3]": "0",
+          "main.success": "0",
+          "main.out[0]": "0",
+          "main.w": "4",
+          "main.out[2]": "0"
+        }
+      }
+    }
+  ]
+}

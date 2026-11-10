@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "🎲 Random Seed: 13456605930782941152\n\r\u001b[2K🧬 Generation: 0/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)\r\u001b[2K🧬 Generation: 1/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)\r\u001b[2K🧬 Generation: 2/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)",
+  "stderr": "\n           zkFuzz      \n      ZK Circuit Fuzzer\n    \nWelcome to the zkFuzz\n══════════════════════════════════\n🧾 Loading Whitelists...\n🧩 Parsing Templates...\n⚙️ Parsing Function...\n🛒 Gathering Trace/Side Constraints...\n══════════════════════════════════\n══════════════════════════════════\n🩺 Scanning TCCT Instances...\n",
+  "return_code": -1,
+  "msg": "[Timed out]\nPartial stdout:\n🎲 Random Seed: 13456605930782941152\n\r\u001b[2K🧬 Generation: 0/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)\r\u001b[2K🧬 Generation: 1/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)\r\u001b[2K🧬 Generation: 2/500 (-21888242871839275222246405745257275088548364400416034343698204186575808495617)\nPartial stderr:\n\n           zkFuzz      \n      ZK Circuit Fuzzer\n    \nWelcome to the zkFuzz\n══════════════════════════════════\n🧾 Loading Whitelists...\n🧩 Parsing Templates...\n⚙️ Parsing Function...\n🛒 Gathering Trace/Side Constraints...\n══════════════════════════════════\n══════════════════════════════════\n🩺 Scanning TCCT Instances...\n",
+  "execution_time": 1800.5860350131989,
+  "raw_output_file": "output/fp-run/maci__maci-messageprocessorqv-10-20-2/zkfuzz/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

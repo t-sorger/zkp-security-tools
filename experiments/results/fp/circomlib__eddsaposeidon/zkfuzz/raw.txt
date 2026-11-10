@@ -1,0 +1,18 @@
+[Timed out]
+Partial stdout:
+🎲 Random Seed: 8208043673829479398
+[2K🧬 Generation: 0/500 (-2)[2K🧬 Generation: 1/500 (-6)[2K🧬 Generation: 2/500 (-4)[2K🧬 Generation: 3/500 (-6)[2K🧬 Generation: 4/500 (-2)
+Partial stderr:
+
+           zkFuzz      
+      ZK Circuit Fuzzer
+    
+Welcome to the zkFuzz
+══════════════════════════════════
+🧾 Loading Whitelists...
+🧩 Parsing Templates...
+⚙️ Parsing Function...
+🛒 Gathering Trace/Side Constraints...
+══════════════════════════════════
+══════════════════════════════════
+🩺 Scanning TCCT Instances...

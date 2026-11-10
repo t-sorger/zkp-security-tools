@@ -1,0 +1,12 @@
+stdout:
+error[P1000]: Failed to open file `./binary-merkle-root.circom`.
+  ┌─ /tmp/evaluation_tool-circomspect-4riuyilm/circuit.circom:2:1
+  │
+2 │ include "./binary-merkle-root.circom";
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File included here.
+  │
+  = To ignore this type of result, use `--allow P1000`.
+
+circomspect: 1 issue found.
+
+stderr:

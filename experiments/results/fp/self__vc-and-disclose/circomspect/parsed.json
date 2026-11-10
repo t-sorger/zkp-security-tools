@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "error",
+            "code": "TAC01",
+            "name": "TAC01",
+            "message": "The template `Poseidon` does not exist.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/self/circuits/circuits/disclose/vc_and_disclose.circom",
+            "line": 133,
+            "column": 33
+        }
+    ],
+    "statistics": {
+        "total_issues": 1,
+        "warnings": 0,
+        "notes": 0,
+        "errors": 1
+    }
+}

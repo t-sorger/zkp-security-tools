@@ -1,0 +1,9 @@
+[Timed out]
+Partial stdout:
+[32mtemplate instances[0m: 110
+
+Partial stderr:
+[0m[1m[38;5;11mwarning[P1004][0m[1m: File "/evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-email-verify/f2fb77c6ab49f4e85c424c3334ce69c018648fa7/packages/circuits/utils/functions.circom" does not include pragma version. Assuming pragma version (2, 1, 6)[0m
+ [0m[34m=[0m At the beginning of file "/evaluation_tool/extended_dataset/dataset/codebases/circom/zkemail/zk-email-verify/f2fb77c6ab49f4e85c424c3334ce69c018648fa7/packages/circuits/utils/functions.circom", you should add the directive "pragma circom <Version>", to indicate which compiler version you are using.
+
+[33mNot including tag specifications: in case you want to add extra tag specifications, use the flag --civer followed by the name of the file including the specifications (example: --civer tags.circom)[0m

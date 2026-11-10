@@ -1,0 +1,11 @@
+{
+  "status": "timeout",
+  "stdout": "",
+  "stderr": "",
+  "return_code": -1,
+  "msg": "[Timed out]",
+  "execution_time": 600.033079624176,
+  "raw_output_file": "output/conscs-both-run-2/original/zksecurity_exclusion_check_of_forbidden_countries_is_unsound_and_incomplete_due_to_incorrect_indexing/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

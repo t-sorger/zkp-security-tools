@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n742 constraints, 5 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.020614 \n** counterexample: {} \n\n",
+  "execution_time": 0.29701924324035645,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_zone_id_inclusion_prover_bypass/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

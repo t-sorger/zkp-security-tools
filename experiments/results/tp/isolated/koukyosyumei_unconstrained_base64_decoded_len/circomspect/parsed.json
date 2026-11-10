@@ -1,0 +1,74 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "warning",
+            "code": "CS0005",
+            "name": "SignalAssignmentStatement",
+            "message": "Using the signal assignment operator `<--` does not constrain the assigned signal.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 13,
+            "column": 5
+        },
+        {
+            "severity": "warning",
+            "code": "CS0005",
+            "name": "SignalAssignmentStatement",
+            "message": "Using the signal assignment operator `<--` does not constrain the assigned signal.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 14,
+            "column": 5
+        },
+        {
+            "severity": "warning",
+            "code": "CS0006",
+            "name": "UnusedVariableValue",
+            "message": "The signal `decoded_len` is not used by the template.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 12,
+            "column": 5
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 10,
+            "column": 18
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 13,
+            "column": 18
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 14,
+            "column": 18
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/tmp/evaluation_tool-circomspect-rb_tdx1v/circuit.circom",
+            "line": 16,
+            "column": 5
+        }
+    ],
+    "statistics": {
+        "total_issues": 7,
+        "warnings": 3,
+        "notes": 4,
+        "errors": 0
+    }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circom_civer",
+    "finding_index": 0,
+    "finding_fp": "8381ad3d86c2eb36",
+    "status": "FalsePositive"
+  },
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circom_civer",
+    "finding_index": 1,
+    "finding_fp": "5ca47ec53371c09a",
+    "status": "FalsePositive"
+  },
+  {
+    "unit": "tornado-core__withdraw",
+    "tool": "circom_civer",
+    "finding_index": 2,
+    "finding_fp": "afbd7463227a11ec",
+    "status": "FalsePositive"
+  }
+]

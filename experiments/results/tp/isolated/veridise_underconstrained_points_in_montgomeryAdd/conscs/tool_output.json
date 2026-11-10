@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n3 constraints, 5 inputs, 2 outputs.\nparse done\nconsidering edge 0  3.1e-05\ntrying grobner 1 4.8e-05\nfound grobner 0.020145\nconflict NOT found  0.244616\nBUT SAT FOUND  0.43514\nCOUNTER FOUND  0.531408\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: UNDER-CONSTRAINED! \n** time: 0.541976 \n** counterexample: {7: ({6: 1182136368, 5: 5, 4: 1182136368, 7: 411, 3: 5, 2: 21888242871839275222246405745257275088548364400416034343698204186574626273761, 1: 213}, {6: 1182136368, 5: 5, 4: 1182136368, 2: 21888242871839275222246405745257275088548364400416034343698204186574626359249, 1: 21888242871839275222246405745257275088548364400416034343698204186575808326909, 7: 0, 3: 5})} \n\n",
+  "execution_time": 0.8570168018341064,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_underconstrained_points_in_montgomeryAdd/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

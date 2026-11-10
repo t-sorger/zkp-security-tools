@@ -1,0 +1,4 @@
+stdout:
+circomspect: No issues found.
+
+stderr:

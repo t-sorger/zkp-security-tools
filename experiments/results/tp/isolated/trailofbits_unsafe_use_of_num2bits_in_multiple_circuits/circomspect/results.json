@@ -1,0 +1,126 @@
+{
+  "status": "bugs_found",
+  "execution_time": 0.01,
+  "findings": [
+    {
+      "bug_title": "P1000",
+      "unified_bug_title": "Computational-Issue",
+      "description": "Failed to open file `circuits/bitify.circom`.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 3,
+        "column": 1,
+        "template": null
+      },
+      "metadata": {
+        "severity": "error",
+        "code": "P1000"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 16,
+        "column": 25,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 22,
+        "column": 24,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementArithmetic",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Field element arithmetic could overflow, which may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 25,
+        "column": 26,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0004"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 16,
+        "column": 19,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 22,
+        "column": 19,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    },
+    {
+      "bug_title": "FieldElementComparison",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 25,
+        "column": 19,
+        "template": null
+      },
+      "metadata": {
+        "severity": "note",
+        "code": "CS0003"
+      }
+    },
+    {
+      "bug_title": "NonStrictBinaryConversion",
+      "unified_bug_title": "Warning (Other -- probably not a bug)",
+      "description": "Using `Num2Bits` to convert field elements to bits may lead to aliasing issues.",
+      "file": "/tmp/evaluation_tool-circomspect-ovs5c5yz/circuit.circom",
+      "position": {
+        "line": 14,
+        "column": 24,
+        "template": null
+      },
+      "metadata": {
+        "severity": "warning",
+        "code": "CS0010"
+      }
+    }
+  ]
+}

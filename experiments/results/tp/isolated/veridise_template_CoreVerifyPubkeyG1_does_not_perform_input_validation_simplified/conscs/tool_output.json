@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n5380 constraints, 71 inputs, 1 outputs.\nparse done\nconsidering edge 55868  0.000111\ntrying grobner 1 0.00013\ntrying grobner 2 2.416211\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: b'canceled' \n** time: 99999999 \n** counterexample: None \n\n",
+  "execution_time": 39.5319082736969,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_template_CoreVerifyPubkeyG1_does_not_perform_input_validation_simplified/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

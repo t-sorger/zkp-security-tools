@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n1339 constraints, 2 inputs, 256 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 24.770976 \n** counterexample: {} \n\n",
+  "execution_time": 25.077415227890015,
+  "raw_output_file": "output/conscs-both-run-2/direct/yacademy_under_constrained_circuits_compromising_the_soundness_of_the_system/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

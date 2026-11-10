@@ -1,0 +1,10 @@
+{
+    "status": "success",
+    "issues": [],
+    "statistics": {
+        "total_issues": 0,
+        "warnings": 0,
+        "notes": 0,
+        "errors": 0
+    }
+}

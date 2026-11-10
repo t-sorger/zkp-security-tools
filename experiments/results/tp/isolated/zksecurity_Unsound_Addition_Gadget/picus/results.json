@@ -1,0 +1,23 @@
+{
+  "status": "bugs_found",
+  "execution_time": 1.69,
+  "findings": [
+    {
+      "bug_title": "Under-Constrained Signal",
+      "unified_bug_title": "Under-Constrained",
+      "description": "Signal `main.out` can be `0` or `1` for inputs (main.a=0, main.b=0)",
+      "position": {
+        "signal": "main.out"
+      },
+      "metadata": {
+        "severity": "error",
+        "inputs": {
+          "main.a": "0",
+          "main.b": "0"
+        },
+        "first_value": "0",
+        "second_value": "1"
+      }
+    }
+  ]
+}

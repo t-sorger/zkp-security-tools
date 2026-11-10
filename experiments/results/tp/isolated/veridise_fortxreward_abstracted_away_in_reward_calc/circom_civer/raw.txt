@@ -1,0 +1,6 @@
+stdout:
+
+stderr:
+[0m[1m[38;5;9merror[P1003][0m[1m: File "/evaluation_tool/extended_dataset/dataset/circom/pantherfoundation/panther-core/veridise_fortxreward_abstracted_away_in_reward_calc/circuit.circom" requires pragma version (2, 1, 9) that is not supported by the compiler (version (2, 1, 6))[0m
+
+[31mprevious errors were found[0m

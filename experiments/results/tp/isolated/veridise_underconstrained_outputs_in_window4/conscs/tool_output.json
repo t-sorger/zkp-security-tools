@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n90 constraints, 7 inputs, 4 outputs.\nparse done\nconsidering edge 106924  3.6e-05\ntrying grobner 1 5.5e-05\ntrying grobner 2 5.037477\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: NOT SURE \n** time: 20.541234 \n** counterexample: {} \n\n",
+  "execution_time": 20.839988231658936,
+  "raw_output_file": "output/conscs-both-run-2/direct/veridise_underconstrained_outputs_in_window4/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

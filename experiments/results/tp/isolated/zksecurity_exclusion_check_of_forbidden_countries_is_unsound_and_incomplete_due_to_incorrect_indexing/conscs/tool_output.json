@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n59 constraints, 97 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.057459 \n** counterexample: {} \n\n",
+  "execution_time": 0.33237624168395996,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_exclusion_check_of_forbidden_countries_is_unsound_and_incomplete_due_to_incorrect_indexing/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

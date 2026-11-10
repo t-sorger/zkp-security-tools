@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n23 constraints, 4 inputs, 1 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: circuit.circom \n** result: CONSTRAINED! \n** time: 0.001593 \n** counterexample: {} \n\n",
+  "execution_time": 0.28617143630981445,
+  "raw_output_file": "output/conscs-both-run-2/direct/zksecurity_the_registration_and_disclosure_circuits_lack_range_checks_for_the_input_indices/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

@@ -1,0 +1,47 @@
+{
+    "status": "success",
+    "issues": [
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+            "line": 20,
+            "column": 23
+        },
+        {
+            "severity": "note",
+            "code": "CS0004",
+            "name": "FieldElementArithmetic",
+            "message": "Field element arithmetic could overflow, which may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+            "line": 24,
+            "column": 24
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+            "line": 20,
+            "column": 16
+        },
+        {
+            "severity": "note",
+            "code": "CS0003",
+            "name": "FieldElementComparison",
+            "message": "Comparisons with field elements greater than `p/2` may produce unexpected results.",
+            "file": "/zkhydra/output/fp-corpus/dataset/codebases/audited/circomlib/test/circuits/pedersen2_test.circom",
+            "line": 24,
+            "column": 17
+        }
+    ],
+    "statistics": {
+        "total_issues": 4,
+        "warnings": 0,
+        "notes": 4,
+        "errors": 0
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n190532 constraints, 281 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: mainZAccountRenewalV1.circom \n** result: CONSTRAINED! \n** time: 475.720286 \n** counterexample: {} \n\n",
+  "execution_time": 476.2221648693085,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_zaccount_renewal_kyc_expiry_not_validated/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}

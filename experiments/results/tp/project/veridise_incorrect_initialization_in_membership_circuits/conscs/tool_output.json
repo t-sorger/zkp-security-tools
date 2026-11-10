@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stdout": "read done\n56623 constraints, 86 inputs, 0 outputs.\nparse done\n",
+  "stderr": "",
+  "return_code": 0,
+  "msg": "** filename: poseidon_vanchor_2_2.circom \n** result: CONSTRAINED! \n** time: 40.793352 \n** counterexample: {} \n\n",
+  "execution_time": 41.10734415054321,
+  "raw_output_file": "output/conscs-both-run-2/original/veridise_incorrect_initialization_in_membership_circuits/conscs/raw.txt",
+  "parsed_output_file": null,
+  "results_file": null
+}
