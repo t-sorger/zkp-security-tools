@@ -15,15 +15,14 @@ All figures and tables can be regenerated from the data in this repository.
 ## Contents
 
 1. [Repository Overview](#repository-overview)
-2. [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)
-3. [Tool Experiments](#tool-experiments)
+2. [Tool Experiments](#tool-experiments)
    - [Tool Selection](#tool-selection)
    - [Main Experiment: Known Vulnerabilities](#main-experiment-known-vulnerabilities)
    - [False-Positive Experiment: Audited Projects](#false-positive-experiment-audited-projects)
-   - [Results and Verdicts](#results-and-verdicts)
-   - [Re-running the Experiments](#re-running-the-experiments)
-4. [Practitioner Survey](#practitioner-survey)
-5. [License](#license)
+3. [Practitioner Survey](#practitioner-survey)
+4. [Re-running the Experiments](#re-running-the-experiments)
+5. [Results and Verdicts](#results-and-verdicts)
+6. [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)
 
 ## Repository Overview
 
@@ -42,86 +41,6 @@ All figures and tables can be regenerated from the data in this repository.
 | `surveys/`     | Figure 4, Table 7                          | [surveys/README.md](surveys/README.md)         |
 
 The submodules are needed only to re-run the experiments (see [Re-running the Experiments](#re-running-the-experiments)).
-
-## Reproducing the Paper's Figures and Tables
-
-This needs Python 3 and, for the questionnaire PDFs, a LaTeX installation with `pdflatex`.
-
-| Paper item                                  | Generated file                                               | Script                                               |
-|---------------------------------------------|--------------------------------------------------------------|------------------------------------------------------|
-| Figure 2                                    | `experiments/figures/rq2_tool_outcomes.pdf`                  | `experiments/scripts/generate_rq2_figures.py`        |
-| Table 4                                     | `experiments/tables/rq2_root_cause_detection.tex`            | `experiments/scripts/generate_rq2_figures.py`        |
-| Table 5                                     | `experiments/tables/rq2_fp_results.tex`                      | `experiments/scripts/generate_fp_figures.py`         |
-| False-positive figure (Table 5 as a figure) | `experiments/figures/rq2_fp_outcomes.pdf`                    | `experiments/scripts/generate_fp_figures.py`         |
-| Figure 4a                                   | `surveys/figures/practitioners_overview_used_tools.pdf`      | `surveys/scripts/generate_practitioner_artifacts.py` |
-| Figure 4b                                   | `surveys/figures/practitioners_overview_tool_traits.pdf`     | `surveys/scripts/generate_practitioner_artifacts.py` |
-| Figure 4c                                   | `surveys/figures/practitioners_overview_missing_tools.pdf`   | `surveys/scripts/generate_practitioner_artifacts.py` |
-| Table 7                                     | `surveys/tables/practitioners_vulnerability_perceptions.tex` | `surveys/scripts/generate_practitioner_artifacts.py` |
-
-### Figures and Tables of the Tool Experiments
-
-```bash
-cd experiments
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# Rebuild the summary of the main experiment from the raw results (optional).
-# data/tools-evaluation.json is committed; rebuilding reproduces it byte for byte, so `git diff` stays empty.
-python3 scripts/build_tools_evaluation.py \
---zkhydra-output-dir results/tp \
---website-bugs-json data/bugs.json \
---out-json data/tools-evaluation.json \
---out-pdfs-dir data/tools-evaluation
-
-# Figure 2 and Table 4
-python3 scripts/generate_rq2_figures.py \
---tools-evaluation-json data/tools-evaluation.json \
---tool-outcomes-figure figures/rq2_tool_outcomes.pdf \
---root-cause-table tables/rq2_root_cause_detection.tex
-
-# False-positive figure and Table 5
-python3 scripts/generate_fp_figures.py \
---fp-results-dir results/fp \
---fp-outcomes-figure figures/rq2_fp_outcomes.pdf \
---fp-table tables/rq2_fp_results.tex
-
-deactivate
-cd ..
-```
-
-### Figures and Tables of the Survey
-
-```bash
-cd surveys
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# Questionnaire PDFs: questionnaires/developers.pdf and questionnaires/auditors.pdf
-(cd questionnaires && make)
-
-# Survey figures and tables
-python3 scripts/generate_practitioner_artifacts.py \
---dev-csv responses/devs.csv \
---auditor-csv responses/auditors.csv \
---tool-categories-figure figures/practitioners_tool_categories.pdf \
---frameworks-figure figures/practitioners_frameworks.pdf \
---onboarding-figure figures/practitioners_tool_onboarding_effort.pdf \
---vulnerability-gaps-figure figures/practitioners_vulns_tool_gaps.pdf \
---missing-market-tools-figure figures/practitioners_missing_market_tools.pdf \
---overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
---overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
---overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf \
---tool-characteristics-figure figures/practitioners_tool_characteristics.pdf \
---tool-characteristics-table tables/practitioners_tool_characteristics.tex \
---vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
-
-deactivate
-cd ..
-```
-
-Besides Figure 4 and Table 7, the script writes further survey figures and a tool-characteristics table that the paper does not include; [surveys/README.md](surveys/README.md) describes each file.
 
 ## Tool Experiments
 
@@ -173,8 +92,8 @@ This gives five tools:
 ### Main Experiment: Known Vulnerabilities
 
 **Dataset.**
-We extend the dataset of Chaliasos et al. ([*SoK: What Don't We Know? Understanding Security Vulnerabilities in SNARKs*](https://www.usenix.org/system/files/usenixsecurity24-chaliasos.pdf), USENIX Security 2024), which contains real-world ZKP circuit vulnerabilities, from 29 to 70 Circom bugs.
-We added the high- and critical-severity vulnerabilities disclosed in audit reports and security disclosures of deployed projects and their libraries, since CVEs and issue trackers rarely exist in this field.
+The dataset of Chaliasos et al. ([*SoK: What Don't We Know? Understanding Security Vulnerabilities in SNARKs*](https://www.usenix.org/system/files/usenixsecurity24-chaliasos.pdf), USENIX Security 2024) contains 29 real-world Circom vulnerabilities.
+We extend it to 70 by adding the high- and critical-severity vulnerabilities disclosed in audit reports and security disclosures of deployed projects and their libraries, since CVEs and issue trackers rarely exist in this field.
 Findings reported in multiple sources were deduplicated, and each root cause was derived from the reports and fixes.
 The 70 bugs span 27 projects and come from 22 audits (60 bugs), 6 advisories (8 bugs), and 2 community bug trackers (2 bugs).
 The dataset is the [`zkbugs`](zkbugs/README.md) submodule (`dataset/circom/`); [experiments/README.md](experiments/README.md#main-experiment-the-70-bugs) lists all 70 bugs.
@@ -230,7 +149,7 @@ Two projects need small patches that do not change circuit semantics:
 This gives 25 circuits from 9 projects:
 
 | Project                                                              | Stars | Audit(s)                                         | Pinned commit | Circuits (constraints)                                                                                                     |
-|----------------------------------------------------------------------|--:----|--------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------|
+|----------------------------------------------------------------------|------:|--------------------------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------|
 | [tornado-core](https://github.com/tornadocash/tornado-core)          | 1,680 | ABDK 2019                                        | `a533ad9ffb`  | withdraw (59,009)                                                                                                          |
 | [self](https://github.com/selfxyz/self)                              | 1,267 | zkSecurity 2025 (3 audits)                       | `b50a2892be`  | register-sha256-sha256-sha256-rsa-65537-4096 (3,314,606), dsc-sha256-rsa-65537-4096 (6,436,994), vc-and-disclose (225,194) |
 | [semaphore](https://github.com/semaphore-protocol/semaphore)         | 1,095 | Veridise 2023                                    | `1bb57ca607`  | semaphore-v3-20 (17,689)                                                                                                   |
@@ -256,29 +175,24 @@ There were no disagreements.
 **Setup.**
 TODO
 
-### Results and Verdicts
+## Practitioner Survey
 
-The raw results of both experiments are in [`experiments/results/`](experiments/results):
+We designed two questionnaire variants, one for developers and researchers building ZKP systems and one for security practitioners auditing them, covering security tool usage, perceived tooling gaps, formal verification workflows, and LLM-assisted security practices.
+Both were anonymous, and all questions were optional.
+We contacted 200 practitioners and received 48 responses (36 developers, 12 auditors), a response rate of 24%.
 
-```text
-experiments/results/
-├── tp/                   # main experiment (zkhydra `zkbugs` mode)
-│   ├── summary.json
-│   ├── isolated/<bug>/   # isolated mode (zkhydra writes it as direct/)
-│   └── project/<bug>/    # project mode (zkhydra writes it as original/)
-└── fp/                   # false-positive experiment (zkhydra `fp` mode)
-    ├── summary.json
-    └── <project>__<circuit>/
-```
+[`surveys/`](surveys/README.md) contains:
 
-Each `<bug>/<tool>/` folder holds the tool's raw output (`raw.txt`), its parsed findings (`parsed.json`, `results.json`), and the verdict against the ground truth (`evaluation.json`).
-Verdicts that zkhydra could not decide automatically have `"need_manual_analysis": true`; their final `status` was decided by the authors (`"manual_analysis": "Done"`).
-Each `<project>__<circuit>/` folder holds `fp_candidates.json`, which splits each tool's alerts into soundness alerts and lint warnings, and, per tool, the raw output and `fp_triage.json`, the authors' verdict (`FalsePositive`, `RealIssue`, or `Undecided`) for each soundness alert.
-[experiments/README.md](experiments/README.md#result-files) describes every file.
+- the LaTeX sources of both questionnaires (`questionnaires/`);
+- the filtered responses (`responses/devs.csv`, `responses/auditors.csv`), from which demographic and free-text answers are removed;
+- the analysis script that produces the survey figures and tables (`scripts/generate_practitioner_artifacts.py`).
 
-### Re-running the Experiments
+How to run it is described in [Figures and Tables of the Survey](#figures-and-tables-of-the-survey).
 
-Re-running the tools is not needed to reproduce the figures and tables; it repeats the experiments from scratch.
+## Re-running the Experiments
+
+This repeats both experiments from scratch.
+It is optional: the figures and tables can be reproduced from the stored results (see [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)).
 It needs an x86-64 machine with Docker; the false-positive experiment needs at least 32 GB of RAM and takes one to two days.
 Initialize the submodules first:
 
@@ -287,7 +201,7 @@ git submodule update --init
 git submodule update --init --recursive zkhydra/
 ```
 
-#### Main experiment
+### Main Experiment
 
 All commands run from the repository root.
 
@@ -352,7 +266,7 @@ The most relevant flags of step 3:
 | `--timeout`              | Timeout per tool and bug, in seconds.                                                   |
 | `--output`               | Output directory, relative to `zkhydra/`.                                               |
 
-#### False-positive experiment
+### False-Positive Experiment
 
 All commands run from `zkhydra/`; [zkhydra/fp_experiment/README.md](zkhydra/fp_experiment/README.md) documents them in detail.
 
@@ -375,16 +289,101 @@ python3 scripts/process_fp_results.py output/fp-run
 
 This writes the results to `zkhydra/output/fp-run/`, the same layout as `experiments/results/fp/`.
 
-## Practitioner Survey
+## Results and Verdicts
 
-We designed two questionnaire variants, one for developers and researchers building ZKP systems and one for security practitioners auditing them, covering security tool usage, perceived tooling gaps, formal verification workflows, and LLM-assisted security practices.
-Both were anonymous, and all questions were optional.
-We contacted 200 practitioners and received 48 responses (36 developers, 12 auditors), a response rate of 24%.
+The raw results of both experiments are in [`experiments/results/`](experiments/results):
 
-[`surveys/`](surveys/README.md) contains:
+```text
+experiments/results/
+├── tp/                   # main experiment (zkhydra `zkbugs` mode)
+│   ├── summary.json
+│   ├── isolated/<bug>/   # isolated mode (zkhydra writes it as direct/)
+│   └── project/<bug>/    # project mode (zkhydra writes it as original/)
+└── fp/                   # false-positive experiment (zkhydra `fp` mode)
+    ├── summary.json
+    └── <project>__<circuit>/
+```
 
-- the LaTeX sources of both questionnaires (`questionnaires/`);
-- the filtered responses (`responses/devs.csv`, `responses/auditors.csv`), from which demographic and free-text answers are removed;
-- the analysis script that produces the survey figures and tables (`scripts/generate_practitioner_artifacts.py`).
+Each `<bug>/<tool>/` folder holds the tool's raw output (`raw.txt`), its parsed findings (`parsed.json`, `results.json`), and the verdict against the ground truth (`evaluation.json`).
+Verdicts that zkhydra could not decide automatically have `"need_manual_analysis": true`; their final `status` was decided by the authors (`"manual_analysis": "Done"`).
+Each `<project>__<circuit>/` folder holds `fp_candidates.json`, which splits each tool's alerts into soundness alerts and lint warnings, and, per tool, the raw output and `fp_triage.json`, the authors' verdict (`FalsePositive`, `RealIssue`, or `Undecided`) for each soundness alert.
+[experiments/README.md](experiments/README.md#result-files) describes every file.
 
-How to run it is described in [Figures and Tables of the Survey](#figures-and-tables-of-the-survey).
+## Reproducing the Paper's Figures and Tables
+
+This needs Python 3 and, for the questionnaire PDFs, a LaTeX installation with `pdflatex`.
+
+| Paper item                                  | Script                                               | Generated file                                               |
+|---------------------------------------------|------------------------------------------------------|--------------------------------------------------------------|
+| Figure 2                                    | `experiments/scripts/generate_rq2_figures.py`        | `experiments/figures/rq2_tool_outcomes.pdf`                  |
+| Table 4                                     | `experiments/scripts/generate_rq2_figures.py`        | `experiments/tables/rq2_root_cause_detection.tex`            |
+| Table 5                                     | `experiments/scripts/generate_fp_figures.py`         | `experiments/tables/rq2_fp_results.tex`                      |
+| False-positive figure (Table 5 as a figure) | `experiments/scripts/generate_fp_figures.py`         | `experiments/figures/rq2_fp_outcomes.pdf`                    |
+| Figure 4a                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_used_tools.pdf`      |
+| Figure 4b                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_tool_traits.pdf`     |
+| Figure 4c                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_missing_tools.pdf`   |
+| Table 7                                     | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/tables/practitioners_vulnerability_perceptions.tex` |
+
+### Figures and Tables of the Tool Experiments
+
+```bash
+cd experiments
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# 1. Summary of the main experiment, from the raw results
+python3 scripts/build_tools_evaluation.py \
+--zkhydra-output-dir results/tp \
+--website-bugs-json data/bugs.json \
+--out-json data/tools-evaluation.json \
+--out-pdfs-dir data/tools-evaluation
+
+# 2. Figure 2 and Table 4
+python3 scripts/generate_rq2_figures.py \
+--tools-evaluation-json data/tools-evaluation.json \
+--tool-outcomes-figure figures/rq2_tool_outcomes.pdf \
+--root-cause-table tables/rq2_root_cause_detection.tex
+
+# 3. False-positive figure and Table 5
+python3 scripts/generate_fp_figures.py \
+--fp-results-dir results/fp \
+--fp-outcomes-figure figures/rq2_fp_outcomes.pdf \
+--fp-table tables/rq2_fp_results.tex
+
+deactivate
+cd ..
+```
+
+### Figures and Tables of the Survey
+
+```bash
+cd surveys
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Questionnaire PDFs: questionnaires/developers.pdf and questionnaires/auditors.pdf
+(cd questionnaires && make)
+
+# Survey figures and tables
+python3 scripts/generate_practitioner_artifacts.py \
+--dev-csv responses/devs.csv \
+--auditor-csv responses/auditors.csv \
+--tool-categories-figure figures/practitioners_tool_categories.pdf \
+--frameworks-figure figures/practitioners_frameworks.pdf \
+--onboarding-figure figures/practitioners_tool_onboarding_effort.pdf \
+--vulnerability-gaps-figure figures/practitioners_vulns_tool_gaps.pdf \
+--missing-market-tools-figure figures/practitioners_missing_market_tools.pdf \
+--overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
+--overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
+--overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf \
+--tool-characteristics-figure figures/practitioners_tool_characteristics.pdf \
+--tool-characteristics-table tables/practitioners_tool_characteristics.tex \
+--vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
+
+deactivate
+cd ..
+```
+
+Besides Figure 4 and Table 7, the script writes further survey figures and a tool-characteristics table that the paper does not include; [surveys/README.md](surveys/README.md) describes each file.
