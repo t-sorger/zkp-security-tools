@@ -173,7 +173,9 @@ Two authors independently review every soundness alert against the circuit sourc
 There were no disagreements.
 
 **Setup.**
-TODO
+1,800-second timeout per tool and circuit, circom 2.2.3, and the zkhydra Docker image, with one circuit at a time in a container capped at 24 GB of memory without swap.
+A tool that exceeds the memory cap is killed and counted as failed.
+Runs that time out or fail are reported separately and are not counted as false positives.
 
 ## Practitioner Survey
 
@@ -241,15 +243,17 @@ All commands run from the repository root.
 
    This writes the results to `zkhydra/output/zkbugs-run/{direct,original}/`, the same layout as `experiments/results/tp/{isolated,project}/`.
 
-4. Print the summary:
+4. Print the summary of each mode:
 
    ```bash
    docker run --rm \
      -v "$(pwd)/zkhydra/output:/zkhydra/output" \
      -v "$(pwd)/zkhydra/scripts:/zkhydra/scripts:ro" \
      zkhydra:local \
-     python3 scripts/print_zkbugs_summary.py output/zkbugs-run
+     python3 scripts/print_zkbugs_summary.py output/zkbugs-run/direct
    ```
+
+   and the same with `output/zkbugs-run/original` for project mode.
 
 5. Review the `Undecided` verdicts manually, as described in [zkhydra/README.md](zkhydra/README.md).
 
@@ -311,7 +315,7 @@ Each `<project>__<circuit>/` folder holds `fp_candidates.json`, which splits eac
 
 ## Reproducing the Paper's Figures and Tables
 
-This needs Python 3 and, for the questionnaire PDFs, a LaTeX installation with `pdflatex`.
+This needs Python 3.11 or newer and, for the questionnaire PDFs, a LaTeX installation with `pdflatex`.
 
 | Paper item | Script                                                       | Generated file                                               |
 |------------|--------------------------------------------------------------|--------------------------------------------------------------|

@@ -15,7 +15,7 @@ The tool experiments live in [`../experiments/`](../experiments/).
 
 ## Requirements
 
-The script requires Python 3 and `matplotlib` (pinned in `requirements.txt`).
+The scripts require Python 3.11 or newer and `matplotlib` (pinned in `requirements.txt`).
 
 ```bash
 python3 -m venv .venv
