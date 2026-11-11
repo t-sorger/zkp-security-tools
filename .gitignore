@@ -3,5 +3,5 @@ __pycache__/
 .venv/
 .mplconfig/
 surveys/figures/summary.md
-# build_tools_evaluation.py copies zkhydra report PDFs here when the results contain them
+# tools_evaluation.py copies zkhydra report PDFs here when the results contain them
 experiments/data/tools-evaluation/

@@ -6,16 +6,17 @@ This file is the detailed reference: which bugs and circuits were analyzed, what
 
 ## Contents
 
-| Path                                | Contents                                                                                          |
-|-------------------------------------|---------------------------------------------------------------------------------------------------|
-| `results/tp/`                       | Raw results of the main experiment (known vulnerabilities), produced by zkhydra's `zkbugs` mode.  |
-| `results/fp/`                       | Raw results of the false-positive experiment (audited projects), produced by zkhydra's `fp` mode. |
-| `data/tools-evaluation.json`        | Post-processed summary of `results/tp/`, the input of Figure 2 and Table 4.                       |
-| `data/bugs.json`                    | Bug metadata from the zkbugs website, used to link each bug to its website entry.                 |
-| `scripts/build_tools_evaluation.py` | Builds `data/tools-evaluation.json` from `results/tp/`.                                           |
-| `scripts/generate_rq2_figures.py`   | Figure 2 and Table 4, from `data/tools-evaluation.json`.                                          |
-| `scripts/generate_fp_figures.py`    | The false-positive figure and Table 5, from `results/fp/`.                                        |
-| `figures/`, `tables/`               | Generated outputs (not tracked).                                                                  |
+| Path                                  | Contents                                                                                          |
+|---------------------------------------|---------------------------------------------------------------------------------------------------|
+| `results/tp/`                         | Raw results of the main experiment (known vulnerabilities), produced by zkhydra's `zkbugs` mode.  |
+| `results/fp/`                         | Raw results of the false-positive experiment (audited projects), produced by zkhydra's `fp` mode. |
+| `data/tools-evaluation.json`          | Post-processed summary of `results/tp/`, the input of Figure 2 and Table 4.                       |
+| `data/bugs.json`                      | Bug metadata from the zkbugs website, used to link each bug to its website entry.                 |
+| `scripts/tools_evaluation.py`         | Builds `data/tools-evaluation.json` from `results/tp/`.                                           |
+| `scripts/rq2_tool_outcomes.py`        | Figure 2, from `data/tools-evaluation.json`.                                                      |
+| `scripts/rq2_root_cause_detection.py` | Table 4, from `data/tools-evaluation.json`.                                                       |
+| `scripts/rq2_fp_outcomes.py`          | Figure 3, from `results/fp/`.                                                                     |
+| `figures/`, `tables/`                 | Generated outputs (not tracked).                                                                  |
 
 The commands are in the main README, under [Reproducing the Paper's Figures and Tables](../README.md#reproducing-the-papers-figures-and-tables).
 
@@ -297,7 +298,7 @@ A correct reproduction of the figures and tables gives these numbers.
 
 7 true positives in total; at least one tool detects 6 of the 56 bugs.
 
-**False-positive experiment (25 circuits, Table 5):**
+**False-positive experiment (25 circuits; Figure 3 shows Done split into FP and No FP, Error, and Timeout):**
 
 | Tool        | Done | Timeout | Error | Alerts | FP | Real | Circuits with ≥1 FP |
 |-------------|-----:|--------:|------:|-------:|---:|-----:|--------------------:|

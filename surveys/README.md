@@ -9,7 +9,7 @@ The tool experiments live in [`../experiments/`](../experiments/).
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `questionnaires/` | LaTeX sources for the developer and auditor questionnaires.                                                                        |
 | `responses/`      | Filtered CSV survey responses: `devs.csv` and `auditors.csv`. Demographic answers and free-text practitioner answers are excluded. |
-| `scripts/`        | `generate_practitioner_artifacts.py`, which generates the survey figures and tables.                                               |
+| `scripts/`        | `practitioners_overview.py` (Figure 5) and `practitioners_vulnerability_perceptions.py` (Table 6).                                 |
 | `figures/`        | Generated PDF figures.                                                                                                             |
 | `tables/`         | Generated LaTeX tables.                                                                                                            |
 
@@ -59,48 +59,27 @@ The filtered response files are:
 
 ## Generate Practitioner Survey Artifacts
 
-Run this command from the `surveys/` directory:
+Run these commands from the `surveys/` directory:
 
 ```bash
-python scripts/generate_practitioner_artifacts.py \
+python3 scripts/practitioners_overview.py \
   --dev-csv responses/devs.csv \
   --auditor-csv responses/auditors.csv \
-  --tool-categories-figure figures/practitioners_tool_categories.pdf \
-  --frameworks-figure figures/practitioners_frameworks.pdf \
-  --onboarding-figure figures/practitioners_tool_onboarding_effort.pdf \
-  --vulnerability-gaps-figure figures/practitioners_vulns_tool_gaps.pdf \
-  --missing-market-tools-figure figures/practitioners_missing_market_tools.pdf \
   --overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
   --overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
-  --overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf \
-  --tool-characteristics-figure figures/practitioners_tool_characteristics.pdf \
-  --tool-characteristics-table tables/practitioners_tool_characteristics.tex \
+  --overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf
+
+python3 scripts/practitioners_vulnerability_perceptions.py \
+  --dev-csv responses/devs.csv \
+  --auditor-csv responses/auditors.csv \
   --vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
 ```
 
-This generates:
+This generates the survey figure and table of the paper:
 
-| Output                                               | Contents                                                                                 |
-|------------------------------------------------------|------------------------------------------------------------------------------------------|
-| `figures/practitioners_tool_categories.pdf`          | Security tool categories used by developers and auditors.                                |
-| `figures/practitioners_frameworks.pdf`               | Languages and frameworks where respondents use security tools.                           |
-| `figures/practitioners_tool_onboarding_effort.pdf`   | Integration/onboarding effort for security analysis and formal verification tools.       |
-| `figures/practitioners_vulns_tool_gaps.pdf`          | Crucial vulnerability classes respondents report as unsupported by tools they have used. |
-| `figures/practitioners_missing_market_tools.pdf`     | Tool categories respondents report as missing from the market.                           |
-| `figures/practitioners_overview_used_tools.pdf`      | Compact overview panel for used tools.                                                   |
-| `figures/practitioners_overview_missing_tools.pdf`   | Compact overview panel for missing tools.                                                |
-| `figures/practitioners_overview_tool_traits.pdf`     | Compact overview panel for desired tool traits.                                          |
-| `figures/practitioners_tool_characteristics.pdf`     | Full tool-characteristics figure.                                                        |
-| `tables/practitioners_tool_characteristics.tex`      | Tool-characteristics LaTeX table.                                                        |
-| `tables/practitioners_vulnerability_perceptions.tex` | Vulnerability perception LaTeX table.                                                    |
-
-## Paper Artifact Mapping
-
-The paper uses the following generated files:
-
-| Paper item | Repository artifact                                  |
-|------------|------------------------------------------------------|
-| Figure 4a  | `figures/practitioners_overview_used_tools.pdf`      |
-| Figure 4b  | `figures/practitioners_overview_tool_traits.pdf`     |
-| Figure 4c  | `figures/practitioners_overview_missing_tools.pdf`   |
-| Table 7    | `tables/practitioners_vulnerability_perceptions.tex` |
+| Output                                               | Paper item | Contents                                                                                  |
+|------------------------------------------------------|------------|-------------------------------------------------------------------------------------------|
+| `figures/practitioners_overview_used_tools.pdf`      | Figure 5a  | Security tool categories used by developers and auditors.                                 |
+| `figures/practitioners_overview_tool_traits.pdf`     | Figure 5b  | Tool traits that developers and auditors find important.                                  |
+| `figures/practitioners_overview_missing_tools.pdf`   | Figure 5c  | Tool categories that respondents report as missing from the market.                       |
+| `tables/practitioners_vulnerability_perceptions.tex` | Table 6    | Vulnerability classes rated hard to detect manually and adequately covered by tools.      |

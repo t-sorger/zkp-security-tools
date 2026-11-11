@@ -2,7 +2,7 @@
 """Generate tools-evaluation.json from a zkhydra output dir.
 
 Usage (from experiments/):
-python3 scripts/build_tools_evaluation.py \
+python3 scripts/tools_evaluation.py \
 --zkhydra-output-dir results/tp \
 --website-bugs-json data/bugs.json \
 --out-json data/tools-evaluation.json \

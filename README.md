@@ -37,8 +37,8 @@ All figures and tables can be regenerated from the data in this repository.
 |----------------|--------------------------------------------|------------------------------------------------|
 | `zkhydra/`     | Runs the tools in both experiments         | [zkhydra/README.md](zkhydra/README.md)         |
 | `zkbugs/`      | The vulnerabilities of the main experiment | [zkbugs/README.md](zkbugs/README.md)           |
-| `experiments/` | Figure 2, Table 4, Table 5                 | [experiments/README.md](experiments/README.md) |
-| `surveys/`     | Figure 4, Table 7                          | [surveys/README.md](surveys/README.md)         |
+| `experiments/` | Figure 2, Table 4, Figure 3                | [experiments/README.md](experiments/README.md) |
+| `surveys/`     | Figure 5, Table 6                          | [surveys/README.md](surveys/README.md)         |
 
 The submodules are needed only to re-run the experiments (see [Re-running the Experiments](#re-running-the-experiments)).
 
@@ -185,7 +185,7 @@ We contacted 200 practitioners and received 48 responses (36 developers, 12 audi
 
 - the LaTeX sources of both questionnaires (`questionnaires/`);
 - the filtered responses (`responses/devs.csv`, `responses/auditors.csv`), from which demographic and free-text answers are removed;
-- the analysis script that produces the survey figures and tables (`scripts/generate_practitioner_artifacts.py`).
+- the analysis scripts that produce Figure 5 (`scripts/practitioners_overview.py`) and Table 6 (`scripts/practitioners_vulnerability_perceptions.py`).
 
 How to run it is described in [Figures and Tables of the Survey](#figures-and-tables-of-the-survey).
 
@@ -313,16 +313,15 @@ Each `<project>__<circuit>/` folder holds `fp_candidates.json`, which splits eac
 
 This needs Python 3 and, for the questionnaire PDFs, a LaTeX installation with `pdflatex`.
 
-| Paper item                                  | Script                                               | Generated file                                               |
-|---------------------------------------------|------------------------------------------------------|--------------------------------------------------------------|
-| Figure 2                                    | `experiments/scripts/generate_rq2_figures.py`        | `experiments/figures/rq2_tool_outcomes.pdf`                  |
-| Table 4                                     | `experiments/scripts/generate_rq2_figures.py`        | `experiments/tables/rq2_root_cause_detection.tex`            |
-| Table 5                                     | `experiments/scripts/generate_fp_figures.py`         | `experiments/tables/rq2_fp_results.tex`                      |
-| False-positive figure (Table 5 as a figure) | `experiments/scripts/generate_fp_figures.py`         | `experiments/figures/rq2_fp_outcomes.pdf`                    |
-| Figure 4a                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_used_tools.pdf`      |
-| Figure 4b                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_tool_traits.pdf`     |
-| Figure 4c                                   | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/figures/practitioners_overview_missing_tools.pdf`   |
-| Table 7                                     | `surveys/scripts/generate_practitioner_artifacts.py` | `surveys/tables/practitioners_vulnerability_perceptions.tex` |
+| Paper item | Script                                                       | Generated file                                               |
+|------------|--------------------------------------------------------------|--------------------------------------------------------------|
+| Figure 2   | `experiments/scripts/rq2_tool_outcomes.py`                   | `experiments/figures/rq2_tool_outcomes.pdf`                  |
+| Table 4    | `experiments/scripts/rq2_root_cause_detection.py`            | `experiments/tables/rq2_root_cause_detection.tex`            |
+| Figure 3   | `experiments/scripts/rq2_fp_outcomes.py`                     | `experiments/figures/rq2_fp_outcomes.pdf`                    |
+| Figure 5a  | `surveys/scripts/practitioners_overview.py`                  | `surveys/figures/practitioners_overview_used_tools.pdf`      |
+| Figure 5b  | `surveys/scripts/practitioners_overview.py`                  | `surveys/figures/practitioners_overview_tool_traits.pdf`     |
+| Figure 5c  | `surveys/scripts/practitioners_overview.py`                  | `surveys/figures/practitioners_overview_missing_tools.pdf`   |
+| Table 6    | `surveys/scripts/practitioners_vulnerability_perceptions.py` | `surveys/tables/practitioners_vulnerability_perceptions.tex` |
 
 ### Figures and Tables of the Tool Experiments
 
@@ -333,23 +332,26 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # 1. Summary of the main experiment, from the raw results
-python3 scripts/build_tools_evaluation.py \
+python3 scripts/tools_evaluation.py \
 --zkhydra-output-dir results/tp \
 --website-bugs-json data/bugs.json \
 --out-json data/tools-evaluation.json \
 --out-pdfs-dir data/tools-evaluation
 
-# 2. Figure 2 and Table 4
-python3 scripts/generate_rq2_figures.py \
+# 2. Figure 2
+python3 scripts/rq2_tool_outcomes.py \
 --tools-evaluation-json data/tools-evaluation.json \
---tool-outcomes-figure figures/rq2_tool_outcomes.pdf \
+--tool-outcomes-figure figures/rq2_tool_outcomes.pdf
+
+# 3. Table 4
+python3 scripts/rq2_root_cause_detection.py \
+--tools-evaluation-json data/tools-evaluation.json \
 --root-cause-table tables/rq2_root_cause_detection.tex
 
-# 3. False-positive figure and Table 5
-python3 scripts/generate_fp_figures.py \
+# 4. Figure 3
+python3 scripts/rq2_fp_outcomes.py \
 --fp-results-dir results/fp \
---fp-outcomes-figure figures/rq2_fp_outcomes.pdf \
---fp-table tables/rq2_fp_results.tex
+--fp-outcomes-figure figures/rq2_fp_outcomes.pdf
 
 deactivate
 cd ..
@@ -366,24 +368,20 @@ pip install -r requirements.txt
 # Questionnaire PDFs: questionnaires/developers.pdf and questionnaires/auditors.pdf
 (cd questionnaires && make)
 
-# Survey figures and tables
-python3 scripts/generate_practitioner_artifacts.py \
+# Figure 5
+python3 scripts/practitioners_overview.py \
 --dev-csv responses/devs.csv \
 --auditor-csv responses/auditors.csv \
---tool-categories-figure figures/practitioners_tool_categories.pdf \
---frameworks-figure figures/practitioners_frameworks.pdf \
---onboarding-figure figures/practitioners_tool_onboarding_effort.pdf \
---vulnerability-gaps-figure figures/practitioners_vulns_tool_gaps.pdf \
---missing-market-tools-figure figures/practitioners_missing_market_tools.pdf \
 --overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
 --overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
---overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf \
---tool-characteristics-figure figures/practitioners_tool_characteristics.pdf \
---tool-characteristics-table tables/practitioners_tool_characteristics.tex \
+--overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf
+
+# Table 6
+python3 scripts/practitioners_vulnerability_perceptions.py \
+--dev-csv responses/devs.csv \
+--auditor-csv responses/auditors.csv \
 --vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
 
 deactivate
 cd ..
 ```
-
-Besides Figure 4 and Table 7, the script writes further survey figures and a tool-characteristics table that the paper does not include; [surveys/README.md](surveys/README.md) describes each file.
