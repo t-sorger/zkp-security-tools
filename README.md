@@ -14,15 +14,29 @@ All figures and tables can be regenerated from the data in this repository.
 
 ## Contents
 
-1. [Repository Overview](#repository-overview)
-2. [Tool Experiments](#tool-experiments)
+1. [Installation](#installation)
+2. [Repository Overview](#repository-overview)
+3. [Tool Experiments](#tool-experiments)
    - [Tool Selection](#tool-selection)
    - [Main Experiment: Known Vulnerabilities](#main-experiment-known-vulnerabilities)
    - [False-Positive Experiment: Audited Projects](#false-positive-experiment-audited-projects)
-3. [Practitioner Survey](#practitioner-survey)
-4. [Re-running the Experiments](#re-running-the-experiments)
-5. [Results and Verdicts](#results-and-verdicts)
-6. [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)
+4. [Practitioner Survey](#practitioner-survey)
+5. [Re-running the Experiments](#re-running-the-experiments)
+6. [Results and Verdicts](#results-and-verdicts)
+7. [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)
+
+## Installation
+
+```bash
+git clone https://github.com/t-sorger/zkp-security-tools.git
+cd zkp-security-tools
+git submodule update --init
+git submodule update --init --recursive --force zkhydra/
+```
+
+The submodules are needed only to re-run the experiments (see [Re-running the Experiments](#re-running-the-experiments)).
+Don't use `git clone --recurse-submodules` or `git submodule update --init --recursive`: zkbugs has nested entries without URLs, which abort the run and leave zkhydra empty.
+The `--force` above also repairs a zkhydra left empty by such a run.
 
 ## Repository Overview
 
@@ -39,8 +53,6 @@ All figures and tables can be regenerated from the data in this repository.
 | `zkbugs/`      | The vulnerabilities of the main experiment | [zkbugs/README.md](zkbugs/README.md)           |
 | `experiments/` | Figure 2, Table 4, Figure 3                | [experiments/README.md](experiments/README.md) |
 | `surveys/`     | Figure 5, Table 6                          | [surveys/README.md](surveys/README.md)         |
-
-The submodules are needed only to re-run the experiments (see [Re-running the Experiments](#re-running-the-experiments)).
 
 ## Tool Experiments
 
@@ -196,12 +208,7 @@ How to run it is described in [Figures and Tables of the Survey](#figures-and-ta
 This repeats both experiments from scratch.
 It is optional: the figures and tables can be reproduced from the stored results (see [Reproducing the Paper's Figures and Tables](#reproducing-the-papers-figures-and-tables)).
 It needs an x86-64 machine with Docker; the false-positive experiment needs at least 32 GB of RAM and takes one to two days.
-Initialize the submodules first:
-
-```bash
-git submodule update --init
-git submodule update --init --recursive zkhydra/
-```
+Initialize the submodules first (see [Installation](#installation)).
 
 ### Main Experiment
 
