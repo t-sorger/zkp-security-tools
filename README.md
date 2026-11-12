@@ -205,7 +205,7 @@ We contacted 200 practitioners and received 48 responses (36 developers, 12 audi
 [`surveys/`](surveys/README.md) contains:
 
 - the LaTeX sources of both questionnaires (`questionnaires/`);
-- the anonymized and aggregated responses (`responses/devs_aggregated.csv`, `responses/auditors_aggregated.csv`): for each question that Figure 5 and Table 6 use, how many respondents answered it and how many chose each option.
+- the anonymized and aggregated responses (`responses/devs_aggregated.csv`, `responses/auditors_aggregated.csv`): for each multiple-choice question, how many respondents answered it and how many chose each option.
   As the questionnaires promised the participants, individual responses are not published;
 - the analysis scripts that produce Figure 5 (`scripts/practitioners_overview.py`) and Table 6 (`scripts/practitioners_vulnerability_perceptions.py`).
 

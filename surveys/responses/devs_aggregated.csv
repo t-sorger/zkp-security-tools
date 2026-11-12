@@ -1,4 +1,70 @@
 question,answer,count,answered
+Please specify your software development experience in years.,11+,18,36
+Please specify your software development experience in years.,6-10,12,36
+Please specify your software development experience in years.,3-5,5,36
+Please specify your software development experience in years.,0-2,1,36
+Please specify your ZKP development experience in years.,3-5,18,36
+Please specify your ZKP development experience in years.,1-2,10,36
+Please specify your ZKP development experience in years.,6+,6,36
+Please specify your ZKP development experience in years.,Less than 1,2,36
+What is the size of the engineering (ZK-focused) team in the organisation you work for?,1-5,18,36
+What is the size of the engineering (ZK-focused) team in the organisation you work for?,6-25,15,36
+What is the size of the engineering (ZK-focused) team in the organisation you work for?,26+,2,36
+What is the size of the engineering (ZK-focused) team in the organisation you work for?,I'm an independent dev/researcher,1,36
+What best describes the deployment stage of the most advanced ZK project you have contributed to?,Mainnet or production deployment,19,36
+What best describes the deployment stage of the most advanced ZK project you have contributed to?,Public testnet or staging,7,36
+What best describes the deployment stage of the most advanced ZK project you have contributed to?,Academic/research prototype (not production-bound),5,36
+What best describes the deployment stage of the most advanced ZK project you have contributed to?,Active development,5,36
+Which ZKP system do you work with? Select all that apply.,"Circuit DSLs (e.g., Circom, Noir, Cairo, Leo, Halo2, Plonky3)",28,35
+Which ZKP system do you work with? Select all that apply.,"zkVMs (e.g., RISC Zero, SP1, Jolt, zkWasm)",23,35
+Which ZKP system do you work with? Select all that apply.,"zkVM Guest Programs (e.g., Bridges implemented with zkVMs)",10,35
+Which ZKP system do you work with? Select all that apply.,"zkEVMs (e.g., Scroll, Polygon zkEVM)",7,35
+Which ZKP system do you work with? Select all that apply.,Other,4,35
+In which primary domain(s) are the ZK systems you develop deployed?,"Public Blockchain Infrastructure (e.g., L1/L2 scaling, zkEVMs, Bridges)",25,36
+In which primary domain(s) are the ZK systems you develop deployed?,"Libraries/Infra (e.g., cryptographic libraries)",14,36
+In which primary domain(s) are the ZK systems you develop deployed?,"Privacy Infrastructure (e.g., privacy enabling L1/L2s)",14,36
+In which primary domain(s) are the ZK systems you develop deployed?,"Digital Identity & Credentials (e.g., zk-ID, KYC/AML compliance, Sybil resistance)",12,36
+In which primary domain(s) are the ZK systems you develop deployed?,"Verifiable Computing & AI (e.g., ZK-ML, verifying outsourced computation)",11,36
+In which primary domain(s) are the ZK systems you develop deployed?,"Decentralised Applications (dApps) (e.g., DeFi, Privacy Mixers, On-chain Gaming)",8,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,Circuit/constraint correctness,30,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,Proof system,20,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,Verifiers,17,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,VM semantics,10,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,Compilation Pipelines,9,36
+What layer of the ZKP stack do you primarily work with? Select all that apply.,Other,2,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Research papers (e.g., ePrint, conference proceedings)",28,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Social media (e.g., X (Twitter), YouTube)",27,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"GitHub repositories (e.g., bug trackers, issues)",25,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Colleagues,24,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Blog posts (e.g., Medium)",22,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Conferences/workshops,22,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Documentation,17,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Security company reports (e.g., zkSecurity, Veridise, Trail of Bits)",17,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"ZKP community forums (e.g., ZKProof, Ethereum Research)",17,36
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Other,1,36
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?","Steady Growth: There is a consistent stream of new information, but the core security principles remain largely unchanged month-to-month.",19,35
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?","Fragmented: Information is being produced, but it is too scattered across resources to track effectively.",6,35
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?","Static/Slow: The ""classic"" papers and docs still cover 90% of what I need; new exploits are rare or mostly variations of known issues.",6,35
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?",High Velocity: New vulnerabilities and techniques emerge weekly; I must check these resources constantly to stay relevant.,4,35
+How knowledgeable are you about zero-knowledge security from 1 (not familiar) to 5 (expert)?,3,13,36
+How knowledgeable are you about zero-knowledge security from 1 (not familiar) to 5 (expert)?,4,12,36
+How knowledgeable are you about zero-knowledge security from 1 (not familiar) to 5 (expert)?,5,11,36
+What is the average duration of a full external ZK security audit for projects you work on?,1-2 months,13,28
+What is the average duration of a full external ZK security audit for projects you work on?,2-4 weeks,8,28
+What is the average duration of a full external ZK security audit for projects you work on?,3 months+,4,28
+What is the average duration of a full external ZK security audit for projects you work on?,One week or less,3,28
+"How much effort is typically required to integrate security analysis or formal verification tools into your ZK codebase (e.g., specifications, frontends, CI)?",High (Requires a dedicated sub-phase of the audit),17,30
+"How much effort is typically required to integrate security analysis or formal verification tools into your ZK codebase (e.g., specifications, frontends, CI)?",Moderate (1-3 days of custom coding/specs),11,30
+"How much effort is typically required to integrate security analysis or formal verification tools into your ZK codebase (e.g., specifications, frontends, CI)?",Low (Few hours of configuration),2,30
+How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?,Reduced time/cost significantly (more than 25% efficiency gain),15,32
+How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?,"Marginal efficiency gains, but delivery expectations from stakeholders remain the same",12,32
+How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?,Other,3,32
+How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?,Increased time/cost due to manual verification of AI-generated code or suggestions,1,32
+How has the introduction of AI/LLMs affected your ZK development workflow or team productivity?,No impact on timing or workload yet,1,32
+How has the introduction of AI/LLMs affected the security of your ZK codebases during development?,"More secure (i.e., AI detected bugs during development)",17,30
+How has the introduction of AI/LLMs affected the security of your ZK codebases during development?,Other,7,30
+How has the introduction of AI/LLMs affected the security of your ZK codebases during development?,No impact,4,30
+How has the introduction of AI/LLMs affected the security of your ZK codebases during development?,"Less secure (i.e., bugs introduced by the AI and went uncovered during development)",2,30
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal or paid tools. Select all that apply.,LLMs (Interactive sessions with Claude/Codex with or without agent skills),28,33
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal or paid tools. Select all that apply.,"Static analyser (e.g., Circomspect, Custom Static Analysis Tools)",13,33
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal or paid tools. Select all that apply.,"Theorem Provers/DSLs (e.g., Clean, zkLean, Lean)",13,33
@@ -68,6 +134,42 @@ Which vulnerabilities do you think are more adequately covered by security tools
 Which vulnerabilities do you think are more adequately covered by security tools?,Unsound proof system implementation or configuration,3,28
 Which vulnerabilities do you think are more adequately covered by security tools?,Incorrect integration in a system,2,28
 Which vulnerabilities do you think are more adequately covered by security tools?,Other,1,28
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Unsound proof system implementation or configuration,14,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Fiat-Shamir related attacks,10,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Incorrect integration in a system,10,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Hash function or cryptographic primitive misuse in circuits,9,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,"Over-constrained circuits (constraints that are too strict, blocking valid witnesses)",6,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Under-constrained circuits (missing constraints allowing unsound proofs),6,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Incorrect public input handling or signal aliasing,4,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences),4,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,"Bit decomposition, range-check, or overflow/underflow errors",3,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,"Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic)",2,22
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Other,1,22
+Do you find security tools helpful when developing or reviewing ZK circuits and systems?,4,12,30
+Do you find security tools helpful when developing or reviewing ZK circuits and systems?,3,11,30
+Do you find security tools helpful when developing or reviewing ZK circuits and systems?,5,5,30
+Do you find security tools helpful when developing or reviewing ZK circuits and systems?,2,2,30
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,zkVM Guest Programs,13,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Plonky3,12,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Circom,10,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Noir,9,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Halo2,5,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Other,4,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Gnark,3,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Leo,3,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Cairo,1,26
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Zirgen,1,26
+What percentage of security researchers do you believe AI auditing currently outperforms?,26-50%,11,30
+What percentage of security researchers do you believe AI auditing currently outperforms?,51-75%,8,30
+What percentage of security researchers do you believe AI auditing currently outperforms?,1-25%,6,30
+What percentage of security researchers do you believe AI auditing currently outperforms?,76-99%,3,30
+What percentage of security researchers do you believe AI auditing currently outperforms?,0%,1,30
+What percentage of security researchers do you believe AI auditing currently outperforms?,100%,1,30
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,76-99%,12,29
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,51-75%,9,29
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,100%,3,29
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,26-50%,3,29
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,1-25%,2,29
 Which tools do you think are mostly missing on the market and would you use if available?,Automated Formal Verification,18,26
 Which tools do you think are mostly missing on the market and would you use if available?,LLM Skills,15,26
 Which tools do you think are mostly missing on the market and would you use if available?,AI Tools,11,26
@@ -75,3 +177,61 @@ Which tools do you think are mostly missing on the market and would you use if a
 Which tools do you think are mostly missing on the market and would you use if available?,Proof Assistants,8,26
 Which tools do you think are mostly missing on the market and would you use if available?,Domain Specific Interactive Provers (with LLM support),6,26
 Which tools do you think are mostly missing on the market and would you use if available?,Fuzzers,3,26
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Validating bugs and Producing PoC,18,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,"Finding bugs in non-ZK application code (e.g., Rust)",17,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Finding bugs in Circuit Code,9,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Finding bugs in zkVM guest programs,9,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Finding bugs in proof system code,7,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Nothing,3,30
+In which tasks do you think LLMs are extremely good already? Select all that apply.,Everything,2,30
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Somewhat concerned: We perform sanity checks on tool outputs.,22,31
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Not concerned: The risk is negligible compared to human error.,5,31
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Highly concerned: We use multiple tools or manual cross-checks to mitigate TCB risks.,4,31
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Manual verification,23,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Using LLMs interactively,19,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Property-based or fuzz testing,16,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,"Running/extending developer test suites (e.g., unit and integration tests)",15,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Differential testing (comparing circuit output against a reference implementation),12,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Formal verification,12,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Using customized LLM Skills,9,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Using internal security tools,9,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Using open source security tools,9,29
+What techniques does the organisation you work for employ when developing and securing ZK circuits and systems?,Using automated AI tools,7,29
+What are the security practices that your organisation follows? Select all that apply.,Code Reviews,26,29
+What are the security practices that your organisation follows? Select all that apply.,"Testing (e.g., unit testing, integration testing)",25,29
+What are the security practices that your organisation follows? Select all that apply.,Internal Auditing,21,29
+What are the security practices that your organisation follows? Select all that apply.,External Auditing,16,29
+What are the security practices that your organisation follows? Select all that apply.,Bug Bounty,11,29
+What are the security practices that your organisation follows? Select all that apply.,Runtime monitoring,11,29
+What kind of security tools are you using inside the organisation you work for? Select all that apply.,Open-source,20,26
+What kind of security tools are you using inside the organisation you work for? Select all that apply.,Internally developed,13,26
+What kind of security tools are you using inside the organisation you work for? Select all that apply.,Extended existing open-source tools,8,26
+What kind of security tools are you using inside the organisation you work for? Select all that apply.,Third-party service,8,26
+What kind of security tools are you using inside the organisation you work for? Select all that apply.,We don't use any security tools,2,26
+Does the organisation you work for develop in-house security tools? Select all that apply.,Traditional (Non-AI) Security Tools,13,22
+Does the organisation you work for develop in-house security tools? Select all that apply.,No In-House Development,6,22
+Does the organisation you work for develop in-house security tools? Select all that apply.,AI-Assisted Decision Support,4,22
+Does the organisation you work for develop in-house security tools? Select all that apply.,Autonomous AI Security Systems,3,22
+Does the organisation you work for develop in-house security tools? Select all that apply.,Other,1,22
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Circuit/protocol developers,13,24
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Auditors and developers collaboratively,5,24
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",I don't know,4,24
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Auditors,1,24
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Other,1,24
+What is the most common reason your organisation might push back against adopting certain automated or formal verification tools during development?,Cost/Extra budget requirements,15,22
+What is the most common reason your organisation might push back against adopting certain automated or formal verification tools during development?,Timeline: Belief that it will slow down delivery,14,22
+What is the most common reason your organisation might push back against adopting certain automated or formal verification tools during development?,Skepticism: Lack of trust in ''mathematical proof'' over manual review,4,22
+What is the most common reason your organisation might push back against adopting certain automated or formal verification tools during development?,Other,1,22
+To what extent do you agree with each of the following statements? [The feedback of security audits improves the quality of the audited application],Agree,11,29
+To what extent do you agree with each of the following statements? [The feedback of security audits improves the quality of the audited application],Strongly Agree,11,29
+To what extent do you agree with each of the following statements? [The feedback of security audits improves the quality of the audited application],Neutral,6,29
+To what extent do you agree with each of the following statements? [The feedback of security audits improves the quality of the audited application],Strongly Disagree,1,29
+To what extent do you agree with each of the following statements? [Most of the issues reported on security audits are resolved before shipping an application],Agree,13,28
+To what extent do you agree with each of the following statements? [Most of the issues reported on security audits are resolved before shipping an application],Strongly Agree,7,28
+To what extent do you agree with each of the following statements? [Most of the issues reported on security audits are resolved before shipping an application],Neutral,5,28
+To what extent do you agree with each of the following statements? [Most of the issues reported on security audits are resolved before shipping an application],Disagree,2,28
+To what extent do you agree with each of the following statements? [Most of the issues reported on security audits are resolved before shipping an application],Strongly Disagree,1,28
+To what extent do you agree with each of the following statements? [A primary reason to do a security audit is that they are typically considered important],Strongly Agree,10,28
+To what extent do you agree with each of the following statements? [A primary reason to do a security audit is that they are typically considered important],Agree,7,28
+To what extent do you agree with each of the following statements? [A primary reason to do a security audit is that they are typically considered important],Neutral,7,28
+To what extent do you agree with each of the following statements? [A primary reason to do a security audit is that they are typically considered important],Disagree,4,28

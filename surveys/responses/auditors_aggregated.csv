@@ -1,4 +1,49 @@
 question,answer,count,answered
+Please specify your ZKP auditing experience in years.,1-2,6,12
+Please specify your ZKP auditing experience in years.,3-5,4,12
+Please specify your ZKP auditing experience in years.,Less than 1,2,12
+What is the size of the security team in the organisation you work for?,6-25,8,12
+What is the size of the security team in the organisation you work for?,1-5,2,12
+What is the size of the security team in the organisation you work for?,25+,1,12
+What is the size of the security team in the organisation you work for?,I'm an independent auditor,1,12
+Which ZKP system do you work with? Select all that apply.,"Circuit DSLs (e.g., Circom, Noir, Cairo, Leo, Halo2, Plonky3)",11,12
+Which ZKP system do you work with? Select all that apply.,"zkVMs (e.g., RISC Zero, SP1, Jolt, zkWasm)",8,12
+Which ZKP system do you work with? Select all that apply.,"zkEVMs (e.g., Scroll, Polygon zkEVM)",7,12
+Which ZKP system do you work with? Select all that apply.,"zkVM Guest (e.g., Bridges implemented with zkVMs)",2,12
+Which ZKP system do you work with? Select all that apply.,Other,1,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Public Blockchain Infrastructure (e.g., L1/L2 scaling, zkEVMs, Bridges)",12,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Privacy Infrastructure (e.g., privacy enabling L1/L2s)",9,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Decentralized Applications (dApps) (e.g., DeFi, Privacy Mixers, On-chain Gaming)",7,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Libraries/Infra (e.g., cryptographic libraries)",7,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Digital Identity & Credentials (e.g., zk-ID, KYC/AML compliance, Sybil resistance)",6,12
+In which primary domain(s) are the ZK systems you audit or develop deployed? Select all that apply.,"Verifiable Computing & AI (e.g., ZK-ML, verifying outsourced computation)",1,12
+What layer of the ZKP stack do you primarily audit? Select all that apply.,Circuit/constraint correctness,11,12
+What layer of the ZKP stack do you primarily audit? Select all that apply.,Proof system,9,12
+What layer of the ZKP stack do you primarily audit? Select all that apply.,Verifiers,8,12
+What layer of the ZKP stack do you primarily audit? Select all that apply.,VM semantics,6,12
+What layer of the ZKP stack do you primarily audit? Select all that apply.,Compilation Pipelines,4,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Social media (e.g., X (Twitter), YouTube)",11,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Research papers (e.g., ePrint, conference proceedings)",10,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Security company reports (e.g., zkSecurity, Veridise, Trail of Bits)",10,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"GitHub repositories (e.g., bug trackers, issues)",8,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"Blog posts (e.g., Medium)",7,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Colleagues,7,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Conferences/workshops,7,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,"ZKP community forums (e.g., ZKProof, Ethereum Research)",6,12
+Which resources do you use to get informed about ZKP security and the latest exploits? Select all that apply.,Documentation,3,12
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?","Steady Growth: There is a consistent stream of new information, but the core security principles remain largely unchanged month-to-month.",9,12
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?",High Velocity: New vulnerabilities and techniques emerge weekly; I must check these resources constantly to stay relevant.,2,12
+"Regarding the resources selected in the previous question, how would you characterise the current rate of new security information being produced?","Fragmented: Information is being produced, but it is too scattered across resources to track effectively.",1,12
+What is the average duration of a ZKP security engagement in your organisation?,2-4 weeks,8,12
+What is the average duration of a ZKP security engagement in your organisation?,1-2 months,3,12
+What is the average duration of a ZKP security engagement in your organisation?,3 months+,1,12
+How has the introduction of AI/LLMs affected the economics of your audits?,"Marginal efficiency gains, but price to client remains the same",5,12
+How has the introduction of AI/LLMs affected the economics of your audits?,Reduced costs/time significantly (more than 25 efficiency gain),4,12
+How has the introduction of AI/LLMs affected the economics of your audits?,No impact on timing or pricing yet,2,12
+How has the introduction of AI/LLMs affected the economics of your audits?,Increased time/cost due to manual verification of AI-generated leads,1,12
+"How much effort is typically required to ""onboard"" a project into your advanced tooling/formal verification (e.g., writing frontends, custom specifications)? Skip the question if not applicable.",High (Requires a dedicated sub-phase of the audit),5,11
+"How much effort is typically required to ""onboard"" a project into your advanced tooling/formal verification (e.g., writing frontends, custom specifications)? Skip the question if not applicable.",Low (Few hours of configuration),3,11
+"How much effort is typically required to ""onboard"" a project into your advanced tooling/formal verification (e.g., writing frontends, custom specifications)? Skip the question if not applicable.",Moderate (1-3 days of custom coding/specs),3,11
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,LLMs (Interactive sessions with Claude/Codex with or without skills),10,12
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,Customized Property-based testing/fuzzing,6,12
 Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Static analyser (e.g., Circomspect, Custom Static Analysis Tools)",6,12
@@ -58,6 +103,39 @@ Which vulnerabilities do you think are more adequately covered by security tools
 Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Fiat Shamir related attacks,3,12
 Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Unsound proof system implementation or configuration,3,12
 Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Incorrect public input handling or signal aliasing,1,12
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences),5,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Hash function or cryptographic primitive misuse in circuits,4,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Unsound proof system implementation or configuration,4,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Fiat Shamir related attacks,3,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Incorrect integration in a system,2,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Incorrect public input handling or signal aliasing,2,8
+Which vulnerabilities that you deem crucial cannot be detected by automated security tools (including LLMs) that you have used? Select all that apply.,Under-constrained circuits (missing constraints allowing unsound proofs),1,8
+Do you find security tools helpful when auditing ZK circuits and systems?,4,4,12
+Do you find security tools helpful when auditing ZK circuits and systems?,5,4,12
+Do you find security tools helpful when auditing ZK circuits and systems?,2,2,12
+Do you find security tools helpful when auditing ZK circuits and systems?,3,2,12
+"If you have developed an automated security tool, specify its type. Select all that apply.","Automated tools leveraging AI (e.g., zkao)",6,10
+"If you have developed an automated security tool, specify its type. Select all that apply.",LLM Reusable Prompts/Skills,5,10
+"If you have developed an automated security tool, specify its type. Select all that apply.","Static analyser (e.g., Circomspect, ZKAP, Custom Static Analysis Tools)",5,10
+"If you have developed an automated security tool, specify its type. Select all that apply.",Customized Property-based testing/fuzzing,3,10
+"If you have developed an automated security tool, specify its type. Select all that apply.","Fuzzer for circuits or ZKVMs (e.g., zkFuzz, Arguzz)",3,10
+"If you have developed an automated security tool, specify its type. Select all that apply.","Theorem Provers/DSLs (e.g., Clean, zkLean, Lean)",3,10
+"If you have developed an automated security tool, specify its type. Select all that apply.","Automated (or semi-automated) Formal Verification (e.g., Picus, Civer)",1,10
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Circom,11,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Noir,6,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Gnark,5,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Halo2,4,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Cairo,3,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Plonky3,3,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,zkVM Guest Programs,2,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Leo,1,12
+For which languages or frameworks do you use security tools (excluding interactive LLMs)? Select all that apply.,Other,1,12
+What percentage of security researchers do you believe AI auditing currently outperforms?,51-75%,6,10
+What percentage of security researchers do you believe AI auditing currently outperforms?,26-50%,3,10
+What percentage of security researchers do you believe AI auditing currently outperforms?,1-25%,1,10
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,79-99%,6,11
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,51-75%,3,11
+What percentage of security researchers do you believe AI auditing will outperform in the next 3 years?,26-50%,2,11
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Automated Formal Verification,7,11
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Domain Specific Interactive Provers (with LLM support),6,11
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Quick Static Analysis or Linters,5,11
@@ -65,3 +143,38 @@ Which tools do you think are mostly missing on the market and would you use if a
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,LLM Skills,3,11
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,AI Tools,1,11
 Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Proof assistants,1,11
+In which tasks do you think LLMs are extremely good already. Select all that apply.,"Leads in Normal Code Parts (e.g., Rust)",11,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Validating Leads and Producing PoC,8,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Leads in Circuit Code,5,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Scoping,5,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Leads in Proof System Code,3,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Everything,2,12
+In which tasks do you think LLMs are extremely good already. Select all that apply.,Leads in zkVM Guest Programs,2,12
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Somewhat concerned: We perform sanity checks on tool outputs.,6,11
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Highly concerned: We use multiple tools or manual cross-checks to mitigate TCB risks.,3,11
+"When using Formal Verification (FV) or automated tools, how concerned are you about the Trusted Computing Base (TCB) (e.g., bugs in the solver, compiler, or the tool itself)?",Not concerned: The risk is negligible compared to human error.,2,11
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Manual auditing,10,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Using LLMs Interactively,10,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Using automated AI tools,8,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Using internal security tools,7,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Formal verification,6,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Property-based or fuzz testing,6,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Using customized LLM Skills,6,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Differential testing (comparing circuit output against a reference implementation),3,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,Using open source security tools,3,12
+What techniques does the organisation you work for employ when auditing ZK circuits and systems? Select all that apply.,"Running/extending developer test suites (e.g., unit and integration tests)",2,12
+Does the organisation you work for develop in-house security tools? Select all that apply.,Autonomous AI Security Systems,8,10
+Does the organisation you work for develop in-house security tools? Select all that apply.,AI-Assisted Decision Support,6,10
+Does the organisation you work for develop in-house security tools? Select all that apply.,Traditional (Non-AI) Security Tools,5,10
+Does the organisation you work for publish open source security tools?,Yes,7,11
+Does the organisation you work for publish open source security tools?,No,4,11
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Auditors,6,10
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",Auditors and developers collaboratively,3,10
+"If the organisation you work for runs any tool that requires specifications (e.g., for formal verification of circuit correctness), who writes them?",I don't know,1,10
+What is the most common reason a client might push back against using certain automated or formal verification tools? Select all that apply.,Cost/Extra budget requirements,10,11
+What is the most common reason a client might push back against using certain automated or formal verification tools? Select all that apply.,Timeline: They believe it will slow down the audit,7,11
+What is the most common reason a client might push back against using certain automated or formal verification tools? Select all that apply.,Integration: They don't want to provide the necessary specs/access,4,11
+What is the most common reason a client might push back against using certain automated or formal verification tools? Select all that apply.,"Skepticism: They don't trust the ""mathematical proof"" over manual review",1,11
+"How difficult is it to communicate the ""Security Guarantee"" or the limitations of your tools to clients?",Moderate: Requires significant education during the reporting phase.,5,10
+"How difficult is it to communicate the ""Security Guarantee"" or the limitations of your tools to clients?","Hard: Clients often over-rely on tool results or misunderstand gaps (e.g., TCB).",3,10
+"How difficult is it to communicate the ""Security Guarantee"" or the limitations of your tools to clients?","Easy: Clients understand what ""90% coverage"" or ""Formal Proof"" means.",2,10

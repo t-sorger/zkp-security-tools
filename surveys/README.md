@@ -58,9 +58,9 @@ The anonymized and aggregated response files are:
 | `responses/devs_aggregated.csv`     | Aggregated developer responses (36 respondents).           |
 | `responses/auditors_aggregated.csv` | Aggregated auditor responses (12 respondents).             |
 
-They cover the questions that Figure 5 and Table 6 use.
+They cover every multiple-choice question; answers to the free-text questions are not published.
 Each row gives a `question`, an `answer`, the number of respondents who chose it (`count`), and the number who answered the question (`answered`).
-Free-text answers are counted as `Other` and not published.
+Free-text answers to an "Other" option are counted as `Other`.
 Table 6 reports arithmetic field errors and bit-decomposition errors as one class, so these two options form one row that counts the respondents who chose either.
 
 ## Generate Practitioner Survey Artifacts
