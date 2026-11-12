@@ -1,6 +1,6 @@
 # Survey Questions, Data, and Generated Artifacts
 
-This directory contains the questionnaire sources, anonymized survey responses, the analysis script, and the generated survey figures/tables used by the paper.
+This directory contains the questionnaire sources, anonymized and aggregated survey responses, the analysis script, and the generated survey figures/tables used by the paper.
 The tool experiments live in [`../experiments/`](../experiments/).
 
 ## Directory Layout
@@ -8,7 +8,7 @@ The tool experiments live in [`../experiments/`](../experiments/).
 | Path              | Contents                                                                                                                           |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `questionnaires/` | LaTeX sources for the developer and auditor questionnaires.                                                                        |
-| `responses/`      | Anonymized CSV survey responses, one row per respondent: `devs.csv` and `auditors.csv`. Submission timestamps are removed.         |
+| `responses/`      | Aggregated survey responses: `devs_aggregated.csv` and `auditors_aggregated.csv`. Individual responses are not published.          |
 | `scripts/`        | `practitioners_overview.py` (Figure 5) and `practitioners_vulnerability_perceptions.py` (Table 6).                                 |
 | `figures/`        | Generated PDF figures.                                                                                                             |
 | `tables/`         | Generated LaTeX tables.                                                                                                            |
@@ -50,12 +50,18 @@ This writes:
 
 ## Survey Responses
 
-The anonymized response files are:
+The questionnaires promised the participants that only aggregated results are published, so the repository contains no individual responses.
+The anonymized and aggregated response files are:
 
-| File                     | Description                                     |
-|--------------------------|-------------------------------------------------|
-| `responses/devs.csv`     | Developer survey responses used by the scripts. |
-| `responses/auditors.csv` | Auditor survey responses used by the scripts.   |
+| File                                | Description                                                |
+|-------------------------------------|------------------------------------------------------------|
+| `responses/devs_aggregated.csv`     | Aggregated developer responses (36 respondents).           |
+| `responses/auditors_aggregated.csv` | Aggregated auditor responses (12 respondents).             |
+
+They cover the questions that Figure 5 and Table 6 use.
+Each row gives a `question`, an `answer`, the number of respondents who chose it (`count`), and the number who answered the question (`answered`).
+Free-text answers are counted as `Other` and not published.
+Table 6 reports arithmetic field errors and bit-decomposition errors as one class, so these two options form one row that counts the respondents who chose either.
 
 ## Generate Practitioner Survey Artifacts
 
@@ -63,15 +69,15 @@ Run these commands from the `surveys/` directory:
 
 ```bash
 python3 scripts/practitioners_overview.py \
-  --dev-csv responses/devs.csv \
-  --auditor-csv responses/auditors.csv \
+  --dev-csv responses/devs_aggregated.csv \
+  --auditor-csv responses/auditors_aggregated.csv \
   --overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
   --overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
   --overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf
 
 python3 scripts/practitioners_vulnerability_perceptions.py \
-  --dev-csv responses/devs.csv \
-  --auditor-csv responses/auditors.csv \
+  --dev-csv responses/devs_aggregated.csv \
+  --auditor-csv responses/auditors_aggregated.csv \
   --vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
 ```
 

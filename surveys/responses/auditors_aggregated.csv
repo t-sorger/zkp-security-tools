@@ -1,0 +1,67 @@
+question,answer,count,answered
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,LLMs (Interactive sessions with Claude/Codex with or without skills),10,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,Customized Property-based testing/fuzzing,6,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Static analyser (e.g., Circomspect, Custom Static Analysis Tools)",6,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Automated (or semi-automated) Formal Verification (e.g., Picus, Civer)",5,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Automated tools leveraging AI (e.g., zkao)",5,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Fuzzer for circuits or ZKVMs (e.g., zkFuzz, Arguzz)",5,12
+Which of the following types of tools have you used for ZKP security analysis? Including potentially internal tools. Select all that apply.,"Theorem Provers/DSLs (e.g., Clean, zkLean, Lean)",5,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Low false positives (tool does not wrongly indicate that there is a vulnerability)],Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Low false positives (tool does not wrongly indicate that there is a vulnerability)],Strongly Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Low false positives (tool does not wrongly indicate that there is a vulnerability)],Disagree,3,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Low false positives (tool does not wrongly indicate that there is a vulnerability)],Neutral,1,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Ease of use (e.g., simple CLI, integrated into IDE)]",Neutral,4,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Ease of use (e.g., simple CLI, integrated into IDE)]",Agree,3,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Ease of use (e.g., simple CLI, integrated into IDE)]",Strongly Agree,3,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Ease of use (e.g., simple CLI, integrated into IDE)]",Disagree,2,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Documentation],Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Documentation],Strongly Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Documentation],Neutral,2,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Documentation],Disagree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Documentation],Strongly Disagree,1,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Report quality (i.e., detail of vulnerabilities detected)]",Agree,8,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Report quality (i.e., detail of vulnerabilities detected)]",Strongly Agree,3,12
+"Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Report quality (i.e., detail of vulnerabilities detected)]",Disagree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Scalability/performance (Time to report)],Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Scalability/performance (Time to report)],Neutral,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Scalability/performance (Time to report)],Disagree,2,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Scalability/performance (Time to report)],Strongly Agree,2,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Producing PoC],Agree,6,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Producing PoC],Strongly Agree,3,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Producing PoC],Disagree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Producing PoC],Neutral,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Producing PoC],Strongly Disagree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Cost (Free vs Paid options)],Neutral,6,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Cost (Free vs Paid options)],Agree,5,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Cost (Free vs Paid options)],Strongly Agree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Integration with CI/CD pipelines],Neutral,5,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Integration with CI/CD pipelines],Strongly Disagree,3,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Integration with CI/CD pipelines],Agree,2,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Integration with CI/CD pipelines],Disagree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Integration with CI/CD pipelines],Strongly Agree,1,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Confidence of completeness],Agree,6,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Confidence of completeness],Strongly Agree,4,12
+Below we enumerate a number of security analysis characteristics. To what extent do you agree regarding their importance? [Confidence of completeness],Neutral,2,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Under-constrained circuits (missing constraints allowing unsound proofs),9,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Unsound proof system implementation or configuration,8,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Fiat Shamir related attacks,6,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Incorrect integration in a system,6,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences),5,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,"Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic) or Bit decomposition, range-check, or overflow/underflow errors",4,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Hash function or cryptographic primitive misuse in circuits,4,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,"Over-constrained circuits (constraints that are too strict, blocking valid witnesses)",3,12
+Which vulnerabilities do you think are more difficult to detect manually? Select all that apply.,Incorrect public input handling or signal aliasing,2,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,"Arithmetic field errors (e.g., unintended modular reduction, non-native field arithmetic) or Bit decomposition, range-check, or overflow/underflow errors",10,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Under-constrained circuits (missing constraints allowing unsound proofs),9,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,"Over-constrained circuits (constraints that are too strict, blocking valid witnesses)",6,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Logic/semantic errors (circuit does not match intended specification or constraint and witness divergences),4,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Fiat Shamir related attacks,3,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Unsound proof system implementation or configuration,3,12
+Which vulnerabilities do you think are more adequately covered by security tools? Select all that apply.,Incorrect public input handling or signal aliasing,1,12
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Automated Formal Verification,7,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Domain Specific Interactive Provers (with LLM support),6,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Quick Static Analysis or Linters,5,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Fuzzers,4,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,LLM Skills,3,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,AI Tools,1,11
+Which tools do you think are mostly missing on the market and would you use if available? Select all that apply.,Proof assistants,1,11

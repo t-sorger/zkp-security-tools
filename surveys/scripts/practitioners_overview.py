@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Generate Figure 5 (practitioner survey overview: used tools, tool traits, missing tools) from the survey responses.
+"""Generate Figure 5 (practitioner survey overview: used tools, tool traits, missing tools) from the aggregated survey responses.
 
 Usage (from surveys/):
 python3 scripts/practitioners_overview.py \
---dev-csv responses/devs.csv \
---auditor-csv responses/auditors.csv \
+--dev-csv responses/devs_aggregated.csv \
+--auditor-csv responses/auditors_aggregated.csv \
 --overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
 --overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
 --overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf
@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import re
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -42,37 +41,30 @@ AUD_MISSING_COL = (
 
 GROUP_COLORS = {"Developers": "#4C78A8", "Auditors": "#F58518"}
 
+# question -> (respondents who answered it, {answer: respondents who chose it})
+Counts = dict[str, tuple[int, dict[str, int]]]
 
-def rows(path: Path) -> list[dict[str, str]]:
+
+def load_aggregated(path: Path) -> Counts:
+    data: Counts = {}
     with path.open(newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-
-def split_multi(value: str) -> list[str]:
-    if not value or not value.strip():
-        return []
-    return [part.strip() for part in re.split(r"\s*;\s*", value.strip()) if part.strip()]
-
-
-def answered_multi(data: list[dict[str, str]], col: str) -> list[list[str]]:
-    return [split_multi(row.get(col, "")) for row in data if split_multi(row.get(col, ""))]
-
-
-def answered_single(data: list[dict[str, str]], col: str) -> list[str]:
-    return [row[col].strip() for row in data if row.get(col, "").strip()]
+        for row in csv.DictReader(f):
+            _, answers = data.setdefault(row["question"], (int(row["answered"]), {}))
+            answers[row["answer"]] = int(row["count"])
+    return data
 
 
 def pct(count: int, total: int) -> float:
     return 100 * count / total if total else 0.0
 
 
-def selected_pct(data: list[dict[str, str]], col: str, predicates: list[str]) -> tuple[int, int, float]:
-    answers = answered_multi(data, col)
-    count = 0
-    for answer in answers:
-        if any(any(predicate.lower() in item.lower() for predicate in predicates) for item in answer):
-            count += 1
-    return count, len(answers), pct(count, len(answers))
+def selected_pct(data: Counts, col: str, predicates: list[str]) -> tuple[int, int, float]:
+    answered, answers = data[col]
+    matches = [n for answer, n in answers.items() if any(p.lower() in answer.lower() for p in predicates)]
+    # Summing two answers would count respondents who chose both twice.
+    assert len(matches) <= 1, f"{predicates} match {len(matches)} answers of {col!r}"
+    count = sum(matches)
+    return count, answered, pct(count, answered)
 
 
 def setup_style() -> None:
@@ -167,7 +159,7 @@ def save_overview_panel(
     plt.close(fig)
 
 
-def save_survey_overview_panels(dev: list[dict[str, str]], aud: list[dict[str, str]]) -> None:
+def save_survey_overview_panels(dev: Counts, aud: Counts) -> None:
     labels = [label for label, _ in TOOL_CATEGORY_SPECS]
     save_overview_panel(
         OUT_OVERVIEW_USED_TOOLS,
@@ -205,7 +197,7 @@ def save_survey_overview_panels(dev: list[dict[str, str]], aud: list[dict[str, s
     )
 
 
-def characteristic_values(dev: list[dict[str, str]], aud: list[dict[str, str]]) -> list[tuple[str, float, float]]:
+def characteristic_values(dev: Counts, aud: Counts) -> list[tuple[str, float, float]]:
     rows_out = []
     labels = {
         "Low false positives": "Low false positives",
@@ -219,11 +211,10 @@ def characteristic_values(dev: list[dict[str, str]], aud: list[dict[str, str]]) 
         "Confidence of completeness": "Completeness confidence",
     }
 
-    def agree_counts(data: list[dict[str, str]], label_fragment: str) -> tuple[int, int]:
-        col = next(col for col in data[0] if "Below we enumerate" in col and label_fragment in col)
-        answers = answered_single(data, col)
-        count = sum(1 for answer in answers if answer in {"Agree", "Strongly Agree"})
-        return count, len(answers)
+    def agree_counts(data: Counts, label_fragment: str) -> tuple[int, int]:
+        col = next(col for col in data if "Below we enumerate" in col and label_fragment in col)
+        answered, answers = data[col]
+        return answers.get("Agree", 0) + answers.get("Strongly Agree", 0), answered
 
     for fragment, label in labels.items():
         dev_count, dev_total = agree_counts(dev, fragment)
@@ -260,7 +251,7 @@ def main() -> None:
 
     ensure_output_parents([OUT_OVERVIEW_USED_TOOLS, OUT_OVERVIEW_MISSING_TOOLS, OUT_OVERVIEW_TOOL_TRAITS])
     setup_style()
-    save_survey_overview_panels(rows(DEV), rows(AUD))
+    save_survey_overview_panels(load_aggregated(DEV), load_aggregated(AUD))
 
 
 if __name__ == "__main__":

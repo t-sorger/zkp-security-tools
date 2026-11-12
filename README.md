@@ -8,7 +8,7 @@ It covers the paper's two empirical parts:
   The repository contains the harness that runs the tools, the vulnerability dataset, the raw output of every run, the authors' verdicts, and the scripts that produce the figures and tables.
 - **Practitioner survey (RQ4, RQ5).**
   We surveyed 48 ZKP developers and auditors.
-  The repository contains the questionnaires, the anonymized responses, and the analysis script.
+  The repository contains the questionnaires, the anonymized and aggregated responses, and the analysis script.
 
 All figures and tables can be regenerated from the data in this repository.
 
@@ -205,7 +205,8 @@ We contacted 200 practitioners and received 48 responses (36 developers, 12 audi
 [`surveys/`](surveys/README.md) contains:
 
 - the LaTeX sources of both questionnaires (`questionnaires/`);
-- the anonymized responses (`responses/devs.csv`, `responses/auditors.csv`), one row per respondent, with the demographic and free-text answers but without submission timestamps;
+- the anonymized and aggregated responses (`responses/devs_aggregated.csv`, `responses/auditors_aggregated.csv`): for each question that Figure 5 and Table 6 use, how many respondents answered it and how many chose each option.
+  As the questionnaires promised the participants, individual responses are not published;
 - the analysis scripts that produce Figure 5 (`scripts/practitioners_overview.py`) and Table 6 (`scripts/practitioners_vulnerability_perceptions.py`).
 
 How to run it is described in [Figures and Tables of the Survey](#figures-and-tables-of-the-survey).
@@ -388,16 +389,16 @@ pip install -r requirements.txt
 
 # Figure 5
 python3 scripts/practitioners_overview.py \
---dev-csv responses/devs.csv \
---auditor-csv responses/auditors.csv \
+--dev-csv responses/devs_aggregated.csv \
+--auditor-csv responses/auditors_aggregated.csv \
 --overview-used-tools-figure figures/practitioners_overview_used_tools.pdf \
 --overview-missing-tools-figure figures/practitioners_overview_missing_tools.pdf \
 --overview-tool-traits-figure figures/practitioners_overview_tool_traits.pdf
 
 # Table 6
 python3 scripts/practitioners_vulnerability_perceptions.py \
---dev-csv responses/devs.csv \
---auditor-csv responses/auditors.csv \
+--dev-csv responses/devs_aggregated.csv \
+--auditor-csv responses/auditors_aggregated.csv \
 --vulnerability-perceptions-table tables/practitioners_vulnerability_perceptions.tex
 
 deactivate
