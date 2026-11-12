@@ -8,7 +8,7 @@ It covers the paper's two empirical parts:
   The repository contains the harness that runs the tools, the vulnerability dataset, the raw output of every run, the authors' verdicts, and the scripts that produce the figures and tables.
 - **Practitioner survey (RQ4, RQ5).**
   We surveyed 48 ZKP developers and auditors.
-  The repository contains the questionnaires, the filtered responses, and the analysis script.
+  The repository contains the questionnaires, the anonymized responses, and the analysis script.
 
 All figures and tables can be regenerated from the data in this repository.
 
@@ -91,6 +91,7 @@ During our search for ZKP security tools, we compiled the following overview:
 From the Circom tools, we selected *all* that are open source, could be built and run, and need no user input such as properties or specifications.
 Several tools failed to compile or could not be executed, and were excluded.
 For tools with optional specification-driven modes, we use only the modes that need no manual annotations.
+Ecne also meets these criteria, but we exclude it since when it judges a circuit unsound, it can list thousands of potentially bad constraints, which makes its alerts impractical to triage.
 This gives five tools:
 
 | Tool        | Technique                                                       | Repository                                                              |
@@ -118,7 +119,7 @@ This lets us run each tool in two settings:
   The analysis scope is narrow, as when a vulnerable circuit is already known or suspected.
   All 70 bugs compile in this mode.
 - In **project mode** (zkhydra: `--zkbugs-mode original`), the tool starts from the project's own entry point and has to analyze the surrounding codebase, as in a real audit where the location of the bug is unknown.
-  56 bugs compile in this mode; the other projects fail because of stale code or deprecated dependencies.
+  56 bugs have such an entry point in the dataset; the other 14 (9 in circomlib, 3 in circom-chacha20, 1 in iden3/circuits, 1 in maci) have none and run in isolated mode only.
 
 **Verdicts.**
 Each run is labeled detected (true positive), missed (false negative), error, or timeout.
@@ -130,11 +131,15 @@ A detection requires evidence tied to the annotated root cause:
 - a warning on the root-cause lines (Circomspect).
 
 When a tool reports a vulnerability but its output does not identify the ground-truth location, zkhydra marks the run as undecided, and two authors independently inspect the raw output and compare it with the dataset annotation before assigning the final label.
-This was needed for 39 of the 65 true positives across both modes, all from Picus and zkFuzz, whose outputs lack source locations.
+This was needed for 54 of the 65 true positives across both modes: all 39 from Picus and zkFuzz, whose outputs lack source locations, all 12 from ConsCS, whose finding categories zkhydra cannot match to the annotated vulnerability type, and 3 from Civer, which reported the violation in a different template than the annotated one.
 There were no disagreements.
 
 **Setup.**
 600-second timeout per tool and bug, 4 bugs in parallel, on a virtual machine with 8 vCPUs, 32 GB RAM, and an AMD EPYC-Milan CPU at 2.4 GHz.
+Some errors come from the setup, not the tools.
+14 of the 20 Picus errors in project mode are `No space left on device` errors of the virtual machine.
+In 16 isolated and 2 project-mode Circomspect runs, the harness did not resolve the wrapper's includes (`Failed to open file`); 13 of these runs are counted as errors, and the other 5, which still produced partial output, as missed.
+An error never counts as a detection, so these runs can only lower the reported detection rates.
 
 ### False-Positive Experiment: Audited Projects
 
@@ -147,7 +152,9 @@ Audited code has been reviewed by security experts and is expected to be largely
 3. It is battle-tested: deployed in production, or a library used by deployed circuits.
 4. Its circuits compile with Circom 2.2.3, the latest release at the time of the experiment.
 
-We rank the eligible projects by GitHub stars (snapshot of 2026-11-05) and pin each one to the first commit that includes the audit fixes, so that we analyze the audited code before any later, unaudited changes.
+We select 9 eligible projects, favoring those with many GitHub stars (snapshot of 2026-11-05); the sample is purposive, not exhaustive.
+We pin each one to the first commit that includes the audit fixes, so that we analyze the audited code before any later, unaudited changes.
+circomlib never fixed its audit findings, so it is pinned to its audited release (v2.0.5), whose circuits are unchanged up to its latest commit.
 
 **Circuit selection.**
 For applications, we analyze their top-level circuits (`component main`) with the parameters used in production.
@@ -198,7 +205,7 @@ We contacted 200 practitioners and received 48 responses (36 developers, 12 audi
 [`surveys/`](surveys/README.md) contains:
 
 - the LaTeX sources of both questionnaires (`questionnaires/`);
-- the filtered responses (`responses/devs.csv`, `responses/auditors.csv`), from which demographic and free-text answers are removed;
+- the anonymized responses (`responses/devs.csv`, `responses/auditors.csv`), one row per respondent, with the demographic and free-text answers but without submission timestamps;
 - the analysis scripts that produce Figure 5 (`scripts/practitioners_overview.py`) and Table 6 (`scripts/practitioners_vulnerability_perceptions.py`).
 
 How to run it is described in [Figures and Tables of the Survey](#figures-and-tables-of-the-survey).

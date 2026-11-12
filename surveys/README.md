@@ -1,6 +1,6 @@
 # Survey Questions, Data, and Generated Artifacts
 
-This directory contains the questionnaire sources, filtered survey responses, the analysis script, and the generated survey figures/tables used by the paper.
+This directory contains the questionnaire sources, anonymized survey responses, the analysis script, and the generated survey figures/tables used by the paper.
 The tool experiments live in [`../experiments/`](../experiments/).
 
 ## Directory Layout
@@ -8,7 +8,7 @@ The tool experiments live in [`../experiments/`](../experiments/).
 | Path              | Contents                                                                                                                           |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `questionnaires/` | LaTeX sources for the developer and auditor questionnaires.                                                                        |
-| `responses/`      | Filtered CSV survey responses: `devs.csv` and `auditors.csv`. Demographic answers and free-text practitioner answers are excluded. |
+| `responses/`      | Anonymized CSV survey responses, one row per respondent: `devs.csv` and `auditors.csv`. Submission timestamps are removed.         |
 | `scripts/`        | `practitioners_overview.py` (Figure 5) and `practitioners_vulnerability_perceptions.py` (Table 6).                                 |
 | `figures/`        | Generated PDF figures.                                                                                                             |
 | `tables/`         | Generated LaTeX tables.                                                                                                            |
@@ -50,7 +50,7 @@ This writes:
 
 ## Survey Responses
 
-The filtered response files are:
+The anonymized response files are:
 
 | File                     | Description                                     |
 |--------------------------|-------------------------------------------------|

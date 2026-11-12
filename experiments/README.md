@@ -29,7 +29,7 @@ How the dataset was extended is described in the main README; the numbers are:
 - Vulnerability: 60 under-constrained, 6 computational issues, 3 over-constrained, 1 private information leakage.
 - Root cause: 22 missing input constraints, 18 wrong translation of logic into constraints, 10 unsafe reuse of a circuit, 6 assigned but unconstrained, 6 circuit design issues, 4 arithmetic field issues, 3 misimplementations of a specification, 1 other programming error.
 - All 70 bugs are run in *isolated* mode.
-  56 of them are also run in *project* mode; the other 14 projects no longer compile (stale code or deprecated dependencies).
+  56 of them are also run in *project* mode; the other 14 bugs have no project entry point in the dataset (`"Original Entrypoint": []`).
 
 <details>
 <summary>All 70 bugs (from <code>results/tp/isolated/*/ground_truth.json</code>)</summary>
@@ -216,6 +216,18 @@ Shared libraries use [circomlib](https://github.com/iden3/circomlib) at `cff5ab6
 
 </details>
 
+The 7 alerts triaged as real issues all match known unfixed findings:
+
+| Unit                           | Tool   | `finding_index` | Alert                                                                     | Known finding       |
+|--------------------------------|--------|----------------:|---------------------------------------------------------------------------|---------------------|
+| `circomlib__babypbk`           | Civer  |               0 | Montgomery2Edwards does not satisfy weak safety                           | V-CIRCOMLIB-VUL-003 |
+| `circomlib__babypbk`           | Civer  |               1 | Edwards2Montgomery does not satisfy weak safety                           | V-CIRCOMLIB-VUL-002 |
+| `circomlib__babypbk`           | Civer  |               2 | MontgomeryAdd does not satisfy weak safety                                | V-CIRCOMLIB-VUL-004 |
+| `circomlib__pedersen2`         | Civer  |               0 | MontgomeryAdd does not satisfy weak safety                                | V-CIRCOMLIB-VUL-004 |
+| `circomlib__pedersen2`         | Civer  |               1 | Edwards2Montgomery does not satisfy weak safety                           | V-CIRCOMLIB-VUL-002 |
+| `circomlib__pedersen2`         | Civer  |               2 | Montgomery2Edwards does not satisfy weak safety                           | V-CIRCOMLIB-VUL-003 |
+| `privacy-pools-core__withdraw` | zkFuzz |               0 | Counterexample with `ASPTreeDepth` = p − 2, which passes the depth check  | Oxorio WARNING-2    |
+
 ## Result Files
 
 All paths inside raw tool output are paths inside the zkhydra Docker container (e.g. `/evaluation_tool/...` or `/zkhydra/...`).
@@ -241,6 +253,9 @@ results/tp/
 
 `<tool>` is one of `picus`, `circom_civer`, `circomspect`, `zkfuzz`, and `conscs`.
 A tool folder without `results.json` means the run ended in an error or a timeout (see `raw.txt` and `summary.json`).
+The converse does not hold: some failed runs still have a `results.json` and an `evaluation.json` with `FalseNegative`.
+Figures and tables therefore take error and timeout from `raw.txt` (`scripts/tools_evaluation.py`), and `data/tools-evaluation.json` holds the final label of every run.
+The main [README](../README.md#main-experiment-known-vulnerabilities) (*Setup*) lists the errors caused by the setup rather than the tools.
 Some `run.log` files come from re-runs that also ran Ecne, which is not part of the evaluation; they are kept unchanged as raw logs.
 
 `evaluation.json` has the following fields:
